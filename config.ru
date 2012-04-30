@@ -3,4 +3,4 @@
 require 'bundler/setup'
 require 'middleman'
 
-run Middleman::Server
+run Middleman.server
