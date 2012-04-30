@@ -1,39 +1,8 @@
-:javascript
-  var eurucamp;
-  eurucamp = {
-    theme: {
-      shell: {
-        background: '#ffffff',
-        color:      '#ff003f'
-      },
-      tweets: {
-        background: '#ffffff',
-        color:      '#30070c',
-        links:      '#ff003f'
-      }
-    },
-    twitterFeatures: {
-      scrollbar: false,
-      loop:      false,
-      live:      true,
-      hashtags:  true,
-      timestamp: true,
-      avatars:   true,
-      behavior:  'default'
-    }
-  }
-
 %section#splash
   #logo
-    = image_tag 'tools.png'
+    /= image_tag 'tools.png'
     %h1 eurucamp
-    %h2 Berlin 2012
-    %h3 Coming Soon
-    %p  &nbsp;
-    -# TODO: we want to use margins here!
+    %h2 European Ruby Conference &amp; Camp | Summer Edition
 
-/= partial 'sponsors'
-/= partial 'conference'
-/= partial 'location'
-/= partial 'people'
-/= partial 'contact'
+    %h3 Coming back to Berlin in August 2012
+    %p  &nbsp;

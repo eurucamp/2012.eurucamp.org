@@ -20,19 +20,7 @@
     = javascript_include_tag 'http://maps.google.com/maps/api/js?sensor=false'
 
   %body
-    %header
-      #nav
-        %h2 eurucamp
-        /%ul
-        /  %li=link_to 'sponsors',    '#sponsors'
-        /  %li=link_to 'conference',  '#conference'
-        /  %li=link_to 'register',    '#register'
-        /  %li=link_to 'location',    '#location'
-        /  %li=link_to 'people',      '#people'
-        /  %li=link_to 'contact',     '#contact'
-        /  %li.imp=link_to 'wiki',    'https://github./com/myabc/eurucamp_website/wiki'
     #container
-
       #main{:role => "main"}
         = yield
 

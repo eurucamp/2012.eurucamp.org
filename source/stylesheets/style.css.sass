@@ -5,14 +5,16 @@
 +blueprint-grid
 
 body
-  background: white
+  //background: white
+  +background-image(linear-gradient($light-green, $green))
   +blueprint-typography(true)
 
 
 #container
-  +container
+  //+container
+
 #main
-  margin-top: 70px
+  margin-top: 0px
   z-index: 5
 
 section
@@ -23,8 +25,8 @@ section
     border-top: 1px solid $anthracite
 
 header
-  position: fixed
-  background: #ccc
+  position:   fixed
+  background: black
   z-index:  99
   top:      0
   height:   40px
@@ -64,15 +66,23 @@ header
       display: inline-block
       font-weight: bold
       font-style:  italic
+      color: white
 
 #logo
+  +background-image(linear-gradient($dark-carmine, $carmine))
   +prepend(1)
+  color: white
+
   h1
-    color:       $carmine
+    padding-top: 150px
+    color: white
     font-size:   11em
     font-weight: bold
     font-style:  italic
-    +single-text-shadow($light-pink, 2px, 2px, 5px)
+    +single-text-shadow(black, 2px, 2px, 5px)
+
+  h2, h3
+    color: white
 
 h2, h3
   text-transform: lowercase
