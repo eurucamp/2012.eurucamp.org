@@ -3,4 +3,5 @@
 *.swp
 *.swo
 .sass-cache
-tmp
+preview/
+tmp/
