@@ -1,17 +1,15 @@
 @import "base"
-@import "github_badge"
-@import "sponsors"
+//@import "github_badge"
+//@import "sponsors"
 
 +blueprint-grid
 
 body
-  //background: white
-  +background-image(linear-gradient($light-green, $green))
+  background: black
   +blueprint-typography(true)
 
-
-#container
-  //+container
+.container
+  +container
 
 #main
   margin-top: 0px
@@ -20,102 +18,20 @@ body
 section
   +clearfix
 
-  > h2
-    margin-top: 2em
-    border-top: 1px solid $anthracite
+#teaser
+  background-color: black
+  //+background-image(linear-gradient($dark-carmine, $carmine))
+  text-align: center
 
-header
-  position:   fixed
-  background: black
-  z-index:  99
-  top:      0
-  height:   40px
-  // +box-shadow(#666 0px 0px 12px)
-  width: 100%
-  #nav
-    margin: 0 auto
-    width: 940px
-
-
-    ul
-      // +horizontal-list
-      margin: 7px 0 0 0
-      padding: 0
-      li
-        font-size:  1.2em
-        // +column(1.9)
-        padding: 0
-        display: inline
-        float: left
-
-        a
-          color:       $anthracite
-          text-decoration: none
-          font-weight: normal
-          font-weight: 500
-          // +border-top-radius(5px)
-          height: 40px
-          padding: 5px 20px
-          background: #eee
-          &:hover,
-          &.link-active
-
-            background-color: #ccc
-    h2
-      margin: 0
-      display: inline-block
-      font-weight: bold
-      font-style:  italic
-      color: white
-
-#logo
-  +background-image(linear-gradient($dark-carmine, $carmine))
   +prepend(1)
-  color: white
+
+  img
+    margin-top: 100px
 
   h1
-    padding-top: 150px
-    color: white
-    font-size:   11em
+    font-size:   6em
     font-weight: bold
     font-style:  italic
-    +single-text-shadow(black, 2px, 2px, 5px)
-
-  h2, h3
-    color: white
 
 h2, h3
   text-transform: lowercase
-
-#location
-  ul
-    padding-left: 5px
-    li
-      margin-top: 10px
-      list-style: none
-      h6
-        color: #000
-.bvg
-  list-style: none
-  margin-top: 20px
-
-.line
-  padding: 2px 6px 1px
-  font-weight: bold
-  text-align: center
-  width: 30px
-  color: white
-  font-family: Arial
-  font-size: 12px
-
-#people
-  a
-    text-decoration: none
-#conference
-  table
-    tr
-      height: 45px
-      margin-bottom: 5px
-      border-bottom: 1px solid #ccc
-    td:first-child
-      width: 75px
