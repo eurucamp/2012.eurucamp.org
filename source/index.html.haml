@@ -1,10 +1,10 @@
 %section#teaser
   %h1 eurucamp
   #centralimage
-    = image_tag 'teaser.png'
+    = image_tag 'teaser.png', width: 300, height: 300
   #twitter
-    %a{:href=>"http://twitter.com/#!/eurucamp"}
-      %img{:src=>"images/twitter.png"}
+    = link_to 'http://twitter.com/#!/eurucamp', title: 'Follow us on Twitter for updates' do
+      = image_tag 'twitter.png', width: 30, height: 30
   %h2 eurucamp | European Ruby Conference &amp; Camp | Summer Edition
 
   %h3 Coming back in Berlin, August 2012
