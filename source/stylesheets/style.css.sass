@@ -24,14 +24,46 @@ section
   text-align: center
 
   +prepend(1)
-
-  img
-    margin-top: 100px
+  
+  h1, h2, h3
+    text-transform: lowercase
 
   h1
-    font-size:   6em
+    /* Safari */
+    -webkit-transform: rotate(-90deg)
+    /* Firefox */
+    -moz-transform: rotate(-90deg)
+    /* IE */
+    -ms-transform: rotate(-90deg)
+    /* Opera */
+    -o-transform: rotate(-90deg)
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+    position: absolute
+    width: 10px
+    height: 10px
+    margin-top: 600px
+    text-align: left
+    font-size:   10em
     font-weight: bold
     font-style:  italic
+    color: #c2124f
+    opacity: .2
 
-h2, h3
-  text-transform: lowercase
+  h2
+    color: #c2124f
+    font-size: 1.5em
+    letter-spacing: .2em
+    opacity: .5
+
+  h3
+    font-size: 1em
+
+  #twitter
+    margin-top: -300px
+    margin-bottom: 300px
+    img
+      margin-left: -250px
+
+  #centralimage
+    margin-top: 100px
