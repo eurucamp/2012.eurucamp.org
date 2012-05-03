@@ -1,3 +1,4 @@
+.mm-pid-*
 *.tmproj
 .DS_Store
 *.swp
