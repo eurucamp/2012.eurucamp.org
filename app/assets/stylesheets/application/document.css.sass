@@ -1,0 +1,60 @@
+@import "base"
+//@import "github_badge"
+//@import "sponsors"
+
++blueprint-grid
+
+body
+  background: black
+  +blueprint-typography(true)
+
+.container
+  +container
+
+#main
+  margin-top: 0px
+  z-index: 5
+
+section
+  +clearfix
+
+#teaser
+  background-color: black
+  //+background-image(linear-gradient($dark-carmine, $carmine))
+  text-align: center
+
+  +prepend(1)
+  
+  h1, h2, h3
+    text-transform: lowercase
+
+  h1
+    +transform(rotate(-90deg))
+    position: absolute
+    width: 10px
+    height: 10px
+    margin-top: 600px
+    text-align: left
+    font-size:   10em
+    font-weight: bold
+    font-style:  italic
+    color: #c2124f
+    opacity: .2
+
+  h2
+    color: #c2124f
+    font-size: 1.5em
+    letter-spacing: .2em
+    opacity: .7
+
+  h3
+    font-size: 1em
+
+  #twitter
+    margin-top: -300px
+    margin-bottom: 300px
+    img
+      margin-left: -250px
+
+  #centralimage
+    margin-top: 100px

@@ -15,3 +15,13 @@
 
     -# Javascript at the bottom for fast page loading
     = render "javascripts"
+    /[if lt IE 7 ]
+      = javascript_include_tag 'dd_belatedpng.js'
+      :javascript
+        DD_belatedPNG.fix('img, .png_bg');
+    :javascript
+      var _gaq=[['_setAccount','UA-22009575-1'],['_trackPageview']];
+      _gaq.push(['_setDomainName', '2012.eurucamp.org']);
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
