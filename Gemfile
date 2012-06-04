@@ -14,3 +14,4 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'settingslogic', '~> 2.0.8'

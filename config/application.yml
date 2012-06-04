@@ -1,0 +1,17 @@
+defaults: &defaults
+  developers:
+    emails:
+      - florian@polarblau.com
+      - alex.coles@gmail.com
+      - pietia@appgrinder.pl
+  mailers:
+    from: "Eurucamp <info@eurucamp.org>"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
