@@ -8,3 +8,5 @@ preview/
 tmp/
 *.idea
 *.iml
+db/*.sqlite3
+log
