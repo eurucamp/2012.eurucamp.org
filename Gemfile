@@ -1,15 +1,18 @@
 source 'https://rubygems.org'
 
 gem 'rails',          '3.2.5'
-gem 'sqlite3-ruby',   '1.3.3'
 gem 'settingslogic',  '~> 2.0.8'
 gem 'haml-rails',     '~> 0.3.4'
 gem 'html5-rails',    '~> 0.0.5'
 gem 'jquery-rails'
 
 group :development do
-  gem 'heroku',       '2.26.6'  , :require => false
+  gem 'heroku',       '2.26.6', :require => false
   gem "heroku_san",   '3.0.2'
+end
+
+group :development, :test do
+  gem 'sqlite3-ruby',  '1.3.3', :require => "sqlite3"
 end
 
 group :assets do
@@ -18,8 +21,6 @@ group :assets do
   gem 'compass-rails','~> 1.0.2'
   gem 'compass-h5bp', '~> 0.0.5'
   gem 'uglifier',     '>= 1.0.3'
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
 end
 
 group :production do
