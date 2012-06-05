@@ -19,6 +19,6 @@
 
 staging:
   stack: cedar
-  app: eurucamp-staging
+  app: eurucamp-dev
   config: &default
     BUNDLE_WITHOUT: "development:test"
