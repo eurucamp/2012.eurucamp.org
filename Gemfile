@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.5'
-gem 'sqlite3'
+gem 'rails',          '3.2.5'
+gem 'sqlite3-ruby',   '1.3.3'
 gem 'settingslogic',  '~> 2.0.8'
 gem 'haml-rails',     '~> 0.3.4'
 gem 'html5-rails',    '~> 0.0.5'
