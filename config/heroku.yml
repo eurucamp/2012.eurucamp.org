@@ -17,6 +17,12 @@
 #    BUNDLE_WITHOUT: "development:test"
 #    GOOGLE_ANALYTICS: "UA-12345678-1"
 
+production:
+  stack: cedar
+  app: eurucamp2012
+  config: &default
+    BUNDLE_WITHOUT: "development:test"
+
 staging:
   stack: cedar
   app: eurucamp-dev
