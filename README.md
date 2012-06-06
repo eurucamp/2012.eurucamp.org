@@ -4,7 +4,7 @@
 
 Staging env.
 
-  * [http://eurucamp-dev.herokuapp.com/](http://eurucamp-dev.herokuapp.com/)
+  * [http://eurucamp-dev.herokuapp.com/](http://eurucamp-dev.herokuapp.com/) or [http://dev.eurucamp.org](http://dev.eurucamp.org)
   * `bundle exec rake staging deploy`
 
 Production
