@@ -116,6 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  coffee-script
   html5-boilerplate!
   middleman (~> 3.0.0.rc1)
   middleman-blog (~> 3.0.0.rc1)
