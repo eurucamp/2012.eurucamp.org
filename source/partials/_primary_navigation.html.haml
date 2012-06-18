@@ -1,0 +1,5 @@
+%nav.primary-navigation
+  %ul
+    - %w(Speakers Venue Schedule Blog).each do |item|
+      %li(class="#{item.downcase}")
+        = link_to item, "/#{item.downcase}"
