@@ -1,52 +1,28 @@
 !!! 5
 - ie_html :lang => 'en', :class => 'no-js' do
   %head
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta(charset="utf-8")
+    %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
     %title eurucamp Berlin 2012 | coming in August
-    %meta{:content => "", :name => "description"}/
-    %meta{:content => "", :name => "author"}/
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta(content="" name="description")
+    %meta(content="" name="author")
+    %meta(content="width=device-width, initial-scale=1.0" name="viewport")
 
-    %link{:href => "favicon.png", :rel => "shortcut icon"}/
+    %link(href="favicon.png" rel="shortcut icon")
 
-    %link{:href => "stylesheets/style.css?v=2", :rel => "stylesheet"}/
+    %link(href="stylesheets/style.css?v=2" rel="stylesheet")
 
     = javascript_include_tag 'http://use.typekit.com/snt3fzj.js'
     :javascript
       try{Typekit.load();}catch(e){}
 
   %body
-    #main{:role => "main"}
-      = yield
+    #main(role="main")
+      %header#header
 
-    %aside
-      %h2 Recent Articles
-      %ol
-        - blog.articles[0...10].each do |article|
-          %li
-            = link_to article.title, article.url
-            %span= article.date.strftime('%b %e')
+      #content
+        = yield
 
-      %h2 Tags
-      %ol
-        - blog.tags.each do |tag, articles|
-          %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+      %footer#footer
 
-      %h2 By Year
-      %ol
-        - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-          %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
-
-    %footer
-      &nbsp;
-    /[if lt IE 7 ]
-      = javascript_include_tag 'js/libs/dd_belatedpng.js'
-      :javascript
-        DD_belatedPNG.fix('img, .png_bg');
-    :javascript
-      var _gaq=[['_setAccount','UA-22009575-1'],['_trackPageview']];
-      _gaq.push(['_setDomainName', '2012.eurucamp.org']);
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+        = partial 'partials/analytics'

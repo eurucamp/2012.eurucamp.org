@@ -1,21 +1,2 @@
-%section#teaser
-  %h1 eurucamp
-  #centralimage
-    = image_tag 'teaser.png', width: 300, height: 300
-  #twitter
-    = link_to 'http://twitter.com/#!/eurucamp', title: 'Follow us on Twitter for updates' do
-      = image_tag 'twitter.png', width: 30, height: 30
-  %h2 eurucamp | European Ruby Camp | Summer Edition
-
-  %h3 Back. Berlin. 17 - 19 August 2012
-
-  %p= link_to 'Call for Proposals', 'https://eurucamp2012.busyconf.com/proposals/new'
-
-%section#blog
-  %ul
-    - blog.articles[0...10].each do |article|
-      %li
-        %h2
-          = link_to article.title, article.url
-          %span= article.date.strftime('%b %e')
-        %p= article.summary
+%article
+  Home
