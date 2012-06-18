@@ -2,4 +2,4 @@
   %ul
     - %w(Sponsors Policy Blog Imprint).each do |item|
       %li(class="#{item.downcase}")
-        = link_to item, "/#{item.downcase}"
+        = link_to item, "#{item.downcase}.html"
