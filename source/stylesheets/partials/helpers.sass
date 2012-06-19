@@ -1,0 +1,9 @@
+// Bourbon provides us with this kind of helper, but we don't
+// have all formats available for Sonar Sans
+=sonar-font-face($font-name, $weight: normal, $style: normal)
+  @font-face
+    font-family: Sonar#{$font-name}
+    src: url('/fonts/sonar_sans/eot/Sonar-#{$font-name}TT.eot')
+    src: url('/fonts/sonar_sans/eot/Sonar-#{$font-name}.eot?#iefix') format('embedded-opentype'), url('/fonts/sonar_sans/woff/Sonar-#{$font-name}.woff') format('woff')
+    font-weight: $weight
+    font-style: $style
