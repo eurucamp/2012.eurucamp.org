@@ -20,7 +20,7 @@
 
   %body
     #main(role="main")
-      %header#header
+      = wrapped :header, :id => 'header' do
         = partial 'partials/header'
 
       #content
