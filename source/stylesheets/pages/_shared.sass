@@ -1,6 +1,6 @@
 body
   +custom-serif
-  background: $white url('/images/layout/background_tile.png')
+  //background: $white url('/images/layout/background_tile.png')
 
   #jump-to-nav
     color: $white
@@ -25,6 +25,9 @@ body
         img
           width: 100%
 
+    p.date
+      display: none
+
     nav
       display: none
       border-top: 1px solid $grey
@@ -42,7 +45,6 @@ body
           a
             color: lighten($black, 50%)
             font-weight: bold
-
             +text-inset
             +caps
             +transition(color 0.5s)
@@ -137,6 +139,7 @@ body
 
 
     #footer
+      padding-top: 1em
       text-align: center
 
       .primary-navigation
@@ -161,39 +164,42 @@ body
 
         a
           img
-            width: 180px
+            width: 100%
+
+      p.date
+        display: block
+        background: $pink
+        padding: 0.5em 0.5em 0.75em 1em
+        width: 140%
+        margin: 0.5em 0 -0.5em -30%
+        color: $white
+        line-height: 1.2em
+        +shadowed
+        +transform(rotate(-4deg))
 
       nav
         float: none
         margin-top: 2em
-        padding-top: 2em
+        padding-top: 1em
         border-top: 1px dotted $grey
 
         ul
           li
             margin: 0
+            padding: 0.25em 0
             display: block
 
-            a
-              display: block
-              text-align: left
-              padding: 0 0.5em 0.5em 0.5em
+    #footer
+      a.twin
+        img
+          margin: 0 0 0 -15px
 
-              &.active
-                border: none
-                background: $pink
-                color: $white
-                +shadowed
-                +transform(rotate(-1deg))
 
-            &.speakers a.active
-              +transform(rotate(-1deg))
-            &.venue a.active
-              +transform(rotate(2deg))
-            &.schedule a.active
-              +transform(rotate(1deg))
-            &.blog a.active
-              +transform(rotate(-2deg))
-
+  +respond-to(desktop)
+    #header
+      h1
+        a
+          img
+            width: 180px
 
 
