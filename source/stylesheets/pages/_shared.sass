@@ -3,12 +3,13 @@ body
   background: $white url('/images/layout/background_tile.png')
 
   #jump-to-nav
-    background: $black
     color: $white
     display: block
     height: 2em
+    line-height: 2em
     padding: 0 1em
     text-align: right
+    border-bottom: 1px solid $grey
     vertical-align: middle
 
   #header
@@ -26,11 +27,57 @@ body
 
     nav
       display: none
+      border-top: 1px solid $grey
+      margin: 1em auto 0 auto
+      padding-top: 1em
+
+      ul
+        +unlisted
+        line-height: 1.2em
+
+        li
+          display: inline-block
+          margin: 0 1em
+
+          a
+            color: lighten($black, 50%)
+            font-weight: bold
+
+            +text-inset
+            +caps
+            +transition(color 0.5s)
+
+            &:hover
+              color: $pink
+              +transition(color 0.5s)
+
+            &.active
+              border-bottom: 3px solid $pink
 
   #footer
     text-align: center
 
-    .primary-navigation,
+    .primary-navigation
+      margin: 0 0 2em 0
+
+      ul
+        +unlisted
+
+        li
+          a
+            padding: 0.5em 1em
+            text-align: left
+            display: block
+            font-weight: bold
+            border-bottom: 1px dotted $grey
+            +transition(color 0.5s, background-color 0.5s)
+
+            &:hover
+              background-color: $pink
+              color: $white
+              +transition(color 0.5s, background-color 0.5s)
+
+
     .secondary-navigation
       ul
         +unlisted
@@ -47,6 +94,12 @@ body
             &:hover
               color: $pink
               +transition(color 0.5s)
+
+    a.twin
+      margin: 2em 0 0 0
+      display: block
+      padding: 2em 0
+      color: $white
 
   +respond-to(mid-range)
     #header
@@ -81,32 +134,7 @@ body
 
       nav
         display: block
-        border-top: 1px solid $grey
-        margin: 1em auto 0 auto
-        padding-top: 1em
 
-        ul
-          +unlisted
-          line-height: 1.2em
-
-          li
-            display: inline
-            margin: 0 1em
-
-            a
-              color: lighten($black, 50%)
-              font-weight: bold
-
-              +text-inset
-              +caps
-              +transition(color 0.5s)
-
-              &:hover
-                color: $pink
-                +transition(color 0.5s)
-
-              &.active
-                border-bottom: 3px solid $pink
 
     #footer
       text-align: center
@@ -133,7 +161,7 @@ body
 
         a
           img
-            width: 100%
+            width: 180px
 
       nav
         float: none
@@ -144,6 +172,7 @@ body
         ul
           li
             margin: 0
+            display: block
 
             a
               display: block
@@ -155,16 +184,16 @@ body
                 background: $pink
                 color: $white
                 +shadowed
-                +transform(rotate(-3deg))
+                +transform(rotate(-1deg))
 
             &.speakers a.active
-              +transform(rotate(-3deg))
+              +transform(rotate(-1deg))
             &.venue a.active
-              +transform(rotate(-4deg))
+              +transform(rotate(2deg))
             &.schedule a.active
-              +transform(rotate(-2deg))
+              +transform(rotate(1deg))
             &.blog a.active
-              +transform(rotate(-3deg))
+              +transform(rotate(-2deg))
 
 
 
