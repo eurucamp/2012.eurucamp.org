@@ -8,4 +8,21 @@ module CustomTagHelpers
     end
   end
 
+  def image(url, sizes = [], attrs = {})
+    attrs[:src] = url
+    sizes.each do |size|
+      attrs[:"data-#{size}"] = image_url_for_size(url, size)
+    end
+    capture_haml do
+      haml_tag :img, attrs
+    end
+  end
+
+private
+
+  def image_url_for_size(url, size)
+    extension = File.extname(url)
+    url.chomp(extension) + '-' + size.to_s + extension
+  end
+
 end

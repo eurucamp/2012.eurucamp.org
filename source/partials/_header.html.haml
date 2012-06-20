@@ -1,6 +1,7 @@
-%h1
-  = link_to '/' do
-    = image_tag 'logo.png', :alt => "Eurucamp 2012"
+.wrapper
+  %h1
+    = link_to '/' do
+      = image 'layout/header/logo.png', [480, 960], :alt => "Eurucamp 2012"
 
-= link_to 'Navigation', '#footer'
-= partial 'partials/primary_navigation'
+  = link_to 'Navigation', '#footer'
+  = partial 'partials/primary_navigation'
