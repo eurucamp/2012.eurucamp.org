@@ -1,0 +1,28 @@
+=respond-to($media)
+  @if $media == low-end
+    @media screen and (min-width: 160px)
+      @content
+  @else if $media == mid-range
+    @media screen and (min-width: 240px)
+      @content
+  @else if $media == smartphone-portrait
+    @media screen and (min-width: 320px)
+      @content
+  @else if $media == smartphone-landscape
+    @media screen and (min-width: 480px)
+      @content
+  @else if $media == tablet-lite
+    @media screen and (min-width: 640px)
+      @content
+  @else if $media == tablet-portrait
+    @media screen and (min-width: 768px)
+      @content
+  @else if $media == tablet-landscape
+    @media screen and (min-width: 1024px)
+      @content
+  @else if $media == desktop
+    @media screen and (min-width: 1280px)
+      @content
+  @else if $media == large-screen
+    @media screen and (min-width: 1400px)
+      @content

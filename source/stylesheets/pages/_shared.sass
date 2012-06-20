@@ -1,0 +1,76 @@
+body
+  +custom-serif
+  background: $white url('/images/layout/background_tile.png')
+
+  #header
+    text-align: center
+
+    h1
+      margin: 0
+
+      a
+        display: block
+        position: relative
+
+        img
+          width: 100%
+
+    nav
+      display: none
+
+  #footer
+    clear: both
+    border-top: 1px dotted $grey
+
+    a.twin
+      background: $pink
+
+  +respond-to(tablet-landscape)
+    #header
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      width: 20%
+      border-right: 1px solid $grey
+      +padded
+
+      a.jump-to-nav
+        display: none
+
+      a.tickets
+        display: block
+        width: 120%
+        margin: 0 0 0 -10%
+        +transform(rotate(-3deg))
+        padding: 0.5em
+        font-size: 1.2em
+        color: $white
+        text-align: center
+        +custom-sans(bold)
+        +shadowed
+        background: $pink
+
+      nav
+        margin-top: 2em
+
+        ul
+          +unlisted
+
+          li
+            a
+              color: $black
+              +text-inset
+
+    #content
+      margin-left: 20%
+
+    #footer
+      margin-left: 20%
+
+      a.twin
+        position: fixed
+        right: 0
+        top: 0
+        bottom: 0
+        width: 2em

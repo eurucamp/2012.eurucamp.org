@@ -7,3 +7,24 @@
     src: url('/fonts/sonar_sans/eot/Sonar-#{$font-name}.eot?#iefix') format('embedded-opentype'), url('/fonts/sonar_sans/woff/Sonar-#{$font-name}.woff') format('woff')
     font-weight: $weight
     font-style: $style
+
+=text-shadow($shadow)
+  +prefixer(text-shadow, $shadow)
+
+=text-inset($inverted: true)
+  @if $inverted == true
+    +text-shadow(0 1px 0 $white)
+  @else
+    +text-shadow(0 -1px 0 $black)
+
+=padded
+  .wrapper
+    margin: 2em
+
+=shadowed
+  +box-shadow(3px 3px 0 0 transparentize($grey, 0.5))
+
+=unlisted
+  list-style: none
+  padding: 0
+  margin: 0
