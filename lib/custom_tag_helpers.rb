@@ -10,6 +10,9 @@ module CustomTagHelpers
 
   def image(url, sizes = [], attrs = {})
     attrs[:src] = url
+    attrs[:class] ||= ''
+    attrs[:class] << ' resp'
+    attrs[:class].strip!
     sizes.each do |size|
       attrs[:"data-#{size}"] = image_url_for_size(url, size)
     end
