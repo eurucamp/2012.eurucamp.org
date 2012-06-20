@@ -9,6 +9,7 @@ module CustomTagHelpers
   end
 
   def image(url, sizes = [], attrs = {})
+    # TODO: Move into private method
     attrs[:src] = url
     attrs[:class] ||= ''
     attrs[:class] << ' resp'

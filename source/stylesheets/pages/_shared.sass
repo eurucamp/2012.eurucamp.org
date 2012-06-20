@@ -2,6 +2,15 @@ body
   +custom-serif
   background: $white url('/images/layout/background_tile.png')
 
+  #jump-to-nav
+    background: $black
+    color: $white
+    display: block
+    height: 2em
+    padding: 0 1em
+    text-align: right
+    vertical-align: middle
+
   #header
     text-align: center
 
@@ -19,58 +28,143 @@ body
       display: none
 
   #footer
-    clear: both
-    border-top: 1px dotted $grey
+    text-align: center
 
-    a.twin
-      background: $pink
+    .primary-navigation,
+    .secondary-navigation
+      ul
+        +unlisted
 
-  +respond-to(tablet-landscape)
+        li
+          display: inline
+          margin: 0 1em
+
+          a
+            color: lighten($black, 50%)
+            +text-inset
+            +transition(color 0.5s)
+
+            &:hover
+              color: $pink
+              +transition(color 0.5s)
+
+  +respond-to(mid-range)
     #header
-      position: fixed
-      top: 0
-      left: 0
-      bottom: 0
-      width: 20%
-      border-right: 1px solid $grey
-      +padded
+      h1
+        a
+          img
+            width: auto
 
-      a.jump-to-nav
-        display: none
+  // show main nav
+  +respond-to(tablet-lite)
+    #jump-to-nav
+      display: none
+
+    #header
+      +clearfix
+
+      h1
+        width: auto
 
       a.tickets
-        display: block
+        display: none
         width: 120%
         margin: 0 0 0 -10%
-        +transform(rotate(-3deg))
         padding: 0.5em
+        background: $pink
         font-size: 1.2em
         color: $white
         text-align: center
         +custom-sans(bold)
         +shadowed
-        background: $pink
+        +transform(rotate(-3deg))
 
       nav
-        margin-top: 2em
+        display: block
+        border-top: 1px solid $grey
+        margin: 1em auto 0 auto
+        padding-top: 1em
 
         ul
           +unlisted
+          line-height: 1.2em
 
           li
-            a
-              color: $black
-              +text-inset
+            display: inline
+            margin: 0 1em
 
-    #content
-      margin-left: 20%
+            a
+              color: lighten($black, 50%)
+              font-weight: bold
+
+              +text-inset
+              +caps
+              +transition(color 0.5s)
+
+              &:hover
+                color: $pink
+                +transition(color 0.5s)
+
+              &.active
+                border-bottom: 3px solid $pink
 
     #footer
-      margin-left: 20%
+      text-align: center
 
-      a.twin
-        position: fixed
-        right: 0
-        top: 0
-        bottom: 0
-        width: 2em
+      .primary-navigation
+        display: none
+
+
+  +respond-to(tablet-portrait)
+    #header
+      h1
+        float: left
+
+      nav
+        float: right
+        margin: 0
+        padding: 0
+        border: none
+
+  +respond-to(tablet-landscape)
+    #header
+      h1
+        margin: 0
+
+        a
+          img
+            width: 100%
+
+      nav
+        float: none
+        margin-top: 2em
+        padding-top: 2em
+        border-top: 1px dotted $grey
+
+        ul
+          li
+            margin: 0
+
+            a
+              display: block
+              text-align: left
+              padding: 0 0.5em 0.5em 0.5em
+
+              &.active
+                border: none
+                background: $pink
+                color: $white
+                +shadowed
+                +transform(rotate(-3deg))
+
+            &.speakers a.active
+              +transform(rotate(-3deg))
+            &.venue a.active
+              +transform(rotate(-4deg))
+            &.schedule a.active
+              +transform(rotate(-2deg))
+            &.blog a.active
+              +transform(rotate(-3deg))
+
+
+

@@ -1,5 +1,9 @@
 (function($) {
 
+  function compareNumbers(a, b){
+    return a - b;
+  }
+
   $.fn.responsiveImages = function(options) {
 
     var $window = $(window);
@@ -15,7 +19,7 @@
           sizes.push(parseInt(key, 10));
         }
       });
-      sizes = sizes.sort();
+      sizes = sizes.sort(compareNumbers);
 
       var onResize = function() {
         var width = $window.width(),

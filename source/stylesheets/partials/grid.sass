@@ -1,28 +1,68 @@
-=respond-to($media)
-  @if $media == low-end
-    @media screen and (min-width: 160px)
-      @content
-  @else if $media == mid-range
-    @media screen and (min-width: 240px)
-      @content
-  @else if $media == smartphone-portrait
-    @media screen and (min-width: 320px)
-      @content
-  @else if $media == smartphone-landscape
-    @media screen and (min-width: 480px)
-      @content
-  @else if $media == tablet-lite
-    @media screen and (min-width: 640px)
-      @content
-  @else if $media == tablet-portrait
-    @media screen and (min-width: 768px)
-      @content
-  @else if $media == tablet-landscape
-    @media screen and (min-width: 1024px)
-      @content
-  @else if $media == desktop
-    @media screen and (min-width: 1280px)
-      @content
-  @else if $media == large-screen
-    @media screen and (min-width: 1400px)
-      @content
+body
+  #container
+
+    #header
+      +padded
+
+    #main
+      // TEMP
+      height: 800px
+
+    #footer
+      clear: both
+      border-top: 1px dotted $grey
+
+      a.twin
+        background: $pink
+
+    +respond-to(tablet-portrait)
+      font-size: 1.1em
+
+    // tablet and up fill
+    +respond-to(tablet-landscape)
+      font-size: 1.2em
+
+      #header
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        width: 20%
+        border-right: 1px solid $grey
+
+        h1
+          float: none
+
+      #main
+        margin-left: 20%
+
+      #footer
+        margin-left: 20%
+
+        a.twin
+          position: fixed
+          right: 0
+          top: 0
+          bottom: 0
+          width: 2em
+
+
+    // desktop and up center
+    +respond-to(desktop)
+      font-size: 1.2em
+      width: 1024px
+      margin: 0 auto
+
+      #header
+        position: relative
+        float: left
+        width: 224px
+        border: none
+
+      #main
+        float: right
+        margin: 0
+        width: 800px
+
+      #footer
+        margin: 0

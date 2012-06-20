@@ -3,6 +3,10 @@
 +sonar-font-face(Medium)
 +sonar-font-face(Bold, bold)
 
+=caps
+  text-transform: lowercase
+  font-variant: small-caps
+
 =custom-sans($weight: normal, $caps: true)
   @if $weight == bold
     font-family: SonarBold, Helvetica, Arial, sans-serif
@@ -14,8 +18,7 @@
     font-family: SonarMedium, Helvetica, Arial, sans-serif
     font-weight: normal
   @if $caps == true
-    text-transform: lowercase
-    font-variant: small-caps
+    +caps
 
 =custom-serif
   // get info from typekit
@@ -28,4 +31,8 @@ h1, h2, h3
 a
   color: $green
   text-decoration: none
+
+  &:hover
+    color: $pink
+    +transition(color 1.0s)
 
