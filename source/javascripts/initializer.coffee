@@ -1,3 +1,3 @@
 $ ->
 
-  $('img.resp').replaceResponsiveImages()
+  $('img.resp').responsiveImages()
