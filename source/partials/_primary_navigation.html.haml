@@ -1,7 +1,1 @@
-%nav.primary-navigation
-  %ul
-    - %w(Speakers Venue Schedule Blog).each do |item|
-      %li(class="#{item.downcase}")
-        -# TODO: Move into helper (without crashing system)
-        - path = "/#{item.downcase}.html"
-        = link_to item, path, :class => ('active' if request.path == path)
+= nav %w(Speakers Venue Schedule Blog), :class => 'primary-navigation'
