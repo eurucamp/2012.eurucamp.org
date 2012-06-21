@@ -1,8 +1,38 @@
 // Custom local fonts
-+sonar-font-face(Light, bold)
-+sonar-font-face(Medium, bold)
++sonar-font-face(Light)
++sonar-font-face(Medium)
 +sonar-font-face(Bold, bold)
+
+=caps
+  text-transform: lowercase
+  font-variant: small-caps
+
+=custom-sans($weight: normal, $caps: true)
+  @if $weight == bold
+    font-family: SonarBold, Helvetica, Arial, sans-serif
+    font-weight: bold
+  @else if $weight == light
+    font-family: SonarLight, Helvetica, Arial, sans-serif
+    font-weight: normal
+  @else
+    font-family: SonarMedium, Helvetica, Arial, sans-serif
+    font-weight: normal
+  @if $caps == true
+    +caps
+
+=custom-serif
+  // get info from typekit
+  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia, serif
 
 // Headlines
 h1, h2, h3
-  font-family: SonarBold
+  +custom-sans(bold)
+
+a
+  color: $green
+  text-decoration: none
+
+  &:hover
+    color: $pink
+    +transition(color 1.0s)
+

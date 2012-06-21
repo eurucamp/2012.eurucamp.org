@@ -1,0 +1,69 @@
+body
+  #container
+
+    #header
+      +padded
+
+    #main
+      // TEMP
+      height: 600px
+
+    #footer
+      clear: both
+      border-top: 1px dotted $grey
+
+      a.twin
+        background: $pink
+
+    +respond-to(tablet-portrait)
+      font-size: 1.1em
+
+    // tablet and up fill
+    +respond-to(tablet-landscape)
+      font-size: 1.2em
+
+      #header
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        width: 20%
+        border-right: 1px solid $grey
+
+        h1
+          float: none
+
+      #main
+        margin-left: 20%
+
+      #footer
+        margin-left: 20%
+
+        a.twin
+          position: fixed
+          right: 0
+          top: 0
+          bottom: 0
+          width: 2em
+          margin: 0
+
+
+    // desktop and up center
+    +respond-to(desktop)
+      font-size: 1.2em
+      width: 1024px
+      margin: 0 auto
+
+      #header
+        position: relative
+        float: left
+        width: 224px
+        border: none
+
+      #main
+        float: right
+        margin: 0
+        width: 800px
+
+      #footer
+        margin: 0

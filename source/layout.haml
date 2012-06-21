@@ -17,12 +17,16 @@
       try { Typekit.load(); } catch (e) {}
 
   %body
-    #main(role="main")
-      %header#header
+    #container
+      = link_to '#footer', :id => 'jump-to-nav' do
+        %img(src="/images/layout/jump_to_main_nav.png" width="20" height="13" alt="Jump to main navigation")
+
+      = wrapped :header, :id => 'header' do
         = partial 'partials/header'
 
-      #content
+      #main(role="main")
         = yield
 
       %footer#footer
         = partial 'partials/footer'
+        = javascript_include_tag 'application'
