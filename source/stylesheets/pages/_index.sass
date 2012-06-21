@@ -1,8 +1,43 @@
 body.index
 
+  #header
+    background: white
+    z-index: 1000
+
   article
+    position: relative
+
+    & > header
+      strong,
+      span
+        display: block
+        background: transparentize($pink, 0.25)
+        color: $white
+        text-align: center
+        font-size: 1.5em
+        width: 110%
+        margin-left: -5%
+        line-height: 1.2em
+        +box-shadow(3px 3px 1px 0 transparentize($black, 0.9))
+        +transform(rotate(-3deg))
+
+      strong
+        z-index: 50
+        position: relative
+        padding-bottom: 0.25em
+
+      span
+        +custom-sans
+        display: block
+        z-index: 40
+        margin-top: -0.5em
+        padding-left: 25%
+        +transform(rotate(4deg))
 
     section.sponsors
+      header
+        +padded
+
       div
         +padded
 
@@ -21,9 +56,16 @@ body.index
 
             a
               display: block
+              border-bottom: 1px solid white
+              +transition(border-color, 0.25s)
 
               img
                 width: 100%
+
+              &:hover
+                border-color: $pink
+                +transition(border-color, 0.25s)
+
 
 
   +respond-to(mid-range)
