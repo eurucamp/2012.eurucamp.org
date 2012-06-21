@@ -1,2 +1,41 @@
+---
+body_class: index
+---
+
 %article
-  Content
+  %header
+
+  %section.sponsors
+    %header
+      %h3 Sponsors
+
+    = wrapped :div, :class => 'kastanien' do
+      %h4 Kastanien
+      %ul
+        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
+            'Railslove'        => 'http://railslove.com/',
+            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
+          = wrapped :li do
+            = link_to url do
+              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
+
+    = wrapped :div, :class => 'linden' do
+      %h4 Linden
+      %ul
+        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
+            'Railslove'        => 'http://railslove.com/',
+            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
+          = wrapped :li do
+            = link_to url do
+              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
+
+    = wrapped :div, :class => 'birken' do
+      %h4 Birken
+      %ul
+        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
+            'Railslove'        => 'http://railslove.com/',
+            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
+          = wrapped :li do
+            = link_to url do
+              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
+

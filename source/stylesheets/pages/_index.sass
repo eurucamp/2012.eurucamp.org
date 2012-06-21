@@ -1,2 +1,71 @@
-// use body class
+body.index
+
+  article
+
+    section.sponsors
+      div
+        +padded
+
+        h4
+          margin-bottom: 0.5em
+          color: $grey
+          +custom-sans
+
+        ul
+          border: 1px solid lighten($grey, 7%)
+          +clearfix
+          +unlisted
+
+          li
+            +padded
+
+            a
+              display: block
+
+              img
+                width: 100%
+
+
+  +respond-to(mid-range)
+    article
+      section.sponsors
+        div
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 50%
+                float: left
+
+  +respond-to(smartphone-landscape)
+    article
+      section.sponsors
+        div
+          &.kastanien
+            ul
+              li
+                width: 25%
+                float: left
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 20%
+                float: left
+
+  +respond-to(tablet-portrait)
+    article
+      section.sponsors
+        div
+          &.kastanien
+            ul
+              li
+                width: 25%
+                float: left
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 20%
+                float: left
 

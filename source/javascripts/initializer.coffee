@@ -12,4 +12,6 @@ $ ->
     padding: '0.25em'
     color: 'white'
 
-  $(window).on 'resize', -> $size.text $(window).width()
+  $(window)
+    .on('resize', -> $size.text $(window).width())
+    .trigger('resize')
