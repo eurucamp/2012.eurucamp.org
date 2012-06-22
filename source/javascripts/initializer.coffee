@@ -1,7 +1,14 @@
 $ ->
 
+  # Responsive images
   $('img.resp').responsiveImages()
 
+  # Twitter
+  if $('body').hasClass 'index'
+    new TwitterFeed 'eurucamp', $('.twitter-feed > div')
+
+
+  # ----------------------------------------------------------------------------
   # development
   $size = $('<div />').appendTo('body')
   $size.css
