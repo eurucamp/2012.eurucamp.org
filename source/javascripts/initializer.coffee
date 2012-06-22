@@ -5,7 +5,7 @@ $ ->
 
   # Twitter
   if $('body').hasClass 'index'
-    new TwitterFeed 'eurucamp', $('.twitter-feed > div')
+    new TwitterFeed 'eurucamp', $('.twitter-feed .tweets')
 
 
   # ----------------------------------------------------------------------------
