@@ -27,6 +27,14 @@ body_class: index
           %img(src="/images/content/highlights/spare_time.png" alt="Best BBQ!")
           A sentence about the lighter side of things, BBQ, siesta.
 
+  = wrapped :section, :class => 'attendees' do
+    %h3 Who’s coming
+    %ul
+      - %w(a2800276 abuiles alpinegizmo andypsilon aofner batdevis captainhagbard carlosmoutinho chrismcg cubbi dasgib der_kronn dira_geek_girl dirksiemers eamodeorubio eeppa effkay entropyfw evilchelu fbandov felipeelias ferblape florianvallen galfert halfbyte harryfk henrikberggren heragu ialcazar ifesdjeen j2vidal jacekbecela jkwebs josephwilk juliancheal klaste klickmich koos leipeleon lmmendes localeapp manufaktor maser matthewling mcberros mikejust mseppae muescha piotrgega priithaamer punkrats purbon ralph rbjl sabman salesking skddc sven_kr tassmann TheDeadSerious thegcat tigrish tow8ie zomoco _solnic_ _tomash __snusnu__).each do |id|
+        %li
+          %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
+            %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
+
   = wrapped :section, :class => 'twitter-feed' do
     %h3 Lately on Twitter
     .tweets

@@ -36,10 +36,34 @@ body.index
         padding-left: 25%
         +transform(rotate(4deg))
 
+    section.attendees
+      +padded
+      +clearfix
+
+      h3
+        +custom-sans(bold)
+        text-align: center
+        border-bottom: 1px solid $grey
+        color: $grey
+        padding: 55px 0 0.5em 0
+
+      ul
+        +unlisted
+
+        li
+          float: left
+          width: 20%
+
+          a
+
+          img
+            width: 100%
+            display: block
+
+
     section.twitter-feed
       +padded
       +clearfix
-      width: 50%
 
       .wrapper
         background: url(/images/content/twitter_feed/icon.png) no-repeat center top
@@ -106,6 +130,11 @@ body.index
 
   +respond-to(mid-range)
     article
+      section.attendees
+        ul
+          li
+            width: 10%
+
       section.sponsors
         div
           &.linden,
@@ -131,6 +160,25 @@ body.index
                 width: 20%
                 float: left
 
+
+  +respond-to(tablet-lite)
+    article
+      section.attendees
+        width: 50%
+        float: left
+
+        ul
+          li
+            width: 20%
+
+      section.twitter-feed
+        width: 50%
+        float: right
+
+      section.sponsors
+        clear: both
+
+
   +respond-to(tablet-portrait)
     article
       section.sponsors
@@ -151,3 +199,11 @@ body.index
     article
       header
         display: none
+
+  +respond-to(desktop)
+    article
+      section.attendees
+        ul
+          li
+            width: 10%
+
