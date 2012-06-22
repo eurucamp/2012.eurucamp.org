@@ -3,7 +3,7 @@
   %head
     %meta(charset="utf-8")
     %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
-    %title eurucamp
+    %title= [current_page.data.title, 'eurucamp'].compact.flatten.join(' | ')
     %meta(content="" name="description")
     %meta(content="" name="author")
     %meta(content="width=device-width, initial-scale=1.0" name="viewport")
@@ -16,7 +16,7 @@
     :javascript
       try { Typekit.load(); } catch (e) {}
 
-  %body
+  %body(class="#{current_page.data.body_class}")
     #container
       = link_to '#footer', :id => 'jump-to-nav' do
         %img(src="/images/layout/jump_to_main_nav.png" width="20" height="13" alt="Jump to main navigation")

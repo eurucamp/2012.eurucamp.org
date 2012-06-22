@@ -1,0 +1,6 @@
++ split index into file
++ textshadow where applicable
++ sharpen rotated elements?
++ sharpen images
++ remove duplication
++ mediaqueries for .wrapper

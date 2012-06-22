@@ -1,2 +1,153 @@
-// use body class
+body.index
 
+  #header
+    z-index: 1000
+
+  article
+    position: relative
+
+    & > header
+      padding: 0 0 1em 0
+      overflow: hidden
+
+      strong,
+      span
+        display: block
+        background: transparentize($pink, 0.25)
+        color: $white
+        text-align: center
+        font-size: 1.5em
+        width: 110%
+        margin-left: -5%
+        line-height: 1.2em
+        +box-shadow(3px 3px 1px 0 transparentize($black, 0.9))
+        +transform(rotate(-3deg))
+
+      strong
+        z-index: 50
+        position: relative
+        padding-bottom: 0.25em
+
+      span
+        +custom-sans
+        display: block
+        z-index: 40
+        margin-top: -0.5em
+        padding-left: 25%
+        +transform(rotate(4deg))
+
+    section.twitter-feed
+      +padded
+      +clearfix
+      width: 50%
+
+      .wrapper
+        background: url(/images/content/twitter_feed/icon.png) no-repeat center top
+
+      h3
+        +custom-sans(bold)
+        text-align: center
+        border-bottom: 1px solid $grey
+        color: $grey
+        padding: 55px 0 0.5em 0
+
+
+      ul
+        +unlisted
+        color: lighten($black, 55%)
+        font-size: 0.9em
+
+        li
+          margin-bottom: 1em
+
+          & > a
+            display: block
+            font-size: 0.8em
+
+      .tweets > a
+        display: block
+        border-top: 1px dotted $grey
+        margin: 1em 0 0 0
+        padding: 0.75em 0 0.5em 0
+        text-align: center
+
+    section.sponsors
+      header
+        +padded
+
+      div
+        +padded
+
+        h4
+          margin-bottom: 0.5em
+          color: $grey
+          +custom-sans
+
+        ul
+          border: 1px solid lighten($grey, 7%)
+          +clearfix
+          +unlisted
+
+          li
+            +padded
+
+            a
+              display: block
+              border-bottom: 1px solid white
+              +transition(border-color, 0.25s)
+
+              img
+                width: 100%
+
+              &:hover
+                border-color: $pink
+                +transition(border-color, 0.25s)
+
+
+  +respond-to(mid-range)
+    article
+      section.sponsors
+        div
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 50%
+                float: left
+
+  +respond-to(smartphone-landscape)
+    article
+      section.sponsors
+        div
+          &.kastanien
+            ul
+              li
+                width: 25%
+                float: left
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 20%
+                float: left
+
+  +respond-to(tablet-portrait)
+    article
+      section.sponsors
+        div
+          &.kastanien
+            ul
+              li
+                width: 25%
+                float: left
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 20%
+                float: left
+
+  +respond-to(tablet-landscape)
+    article
+      header
+        display: none

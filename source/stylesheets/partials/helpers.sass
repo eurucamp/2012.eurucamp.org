@@ -17,18 +17,6 @@
   @else
     +text-shadow(0 -1px 0 $black)
 
-=padded
-  .wrapper
-    margin: 2em
-
-=shadowed
-  +box-shadow(3px 3px 0 0 transparentize($grey, 0.2))
-
-=unlisted
-  list-style: none
-  padding: 0
-  margin: 0
-
 =respond-to($media)
   @if $media == low-end
     @media screen and (min-width: 160px)
@@ -57,3 +45,25 @@
   @else if $media == large-screen
     @media screen and (min-width: 1400px)
       @content
+
+=padded
+  .wrapper
+    position: relative
+    margin: 0.75em
+  +respond-to(smartphone-portrait)
+    .wrapper
+      margin: 1em
+  +respond-to(tablet-portrait)
+    .wrapper
+      margin: 1.5em
+
+
+=shadowed
+  +box-shadow(3px 3px 0 0 transparentize($grey, 0.2))
+
+=unlisted
+  list-style: none
+  padding: 0
+  margin: 0
+
+

@@ -1,7 +1,14 @@
 $ ->
 
+  # Responsive images
   $('img.resp').responsiveImages()
 
+  # Twitter
+  if $('body').hasClass 'index'
+    new TwitterFeed 'eurucamp', $('.twitter-feed .tweets')
+
+
+  # ----------------------------------------------------------------------------
   # development
   $size = $('<div />').appendTo('body')
   $size.css
@@ -12,4 +19,6 @@ $ ->
     padding: '0.25em'
     color: 'white'
 
-  $(window).on 'resize', -> $size.text $(window).width()
+  $(window)
+    .on('resize', -> $size.text $(window).width())
+    .trigger('resize')

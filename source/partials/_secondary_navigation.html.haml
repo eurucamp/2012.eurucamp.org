@@ -1,5 +1,1 @@
-%nav.secondary-navigation
-  %ul
-    - %w(Sponsors Policy Blog Imprint).each do |item|
-      %li(class="#{item.downcase}")
-        = link_to item, "#{item.downcase}.html"
+= nav ['Sponsors', 'Anti-Harassment Policy', 'Blog', 'Imprint'], :class => 'secondary-navigation'
