@@ -54,9 +54,14 @@ class TwitterFeed
   _findAndConvertHashTags: (tweet) ->
     tweet.replace(/(^|\s)#(\w+)/g, "$1#<a href=\"http://search.twitter.com/search?q=%23$2\">$2</a>")
 
+  _findAndConvertLinks: (tweet) ->
+    url_pattern = /(\b(https?):\/\/[\-A-Z0-9+&@#\/%?=~_|!:,.;]*[\-A-Z0-9+&@#\/%=~_|])/ig
+    tweet.replace url_pattern, "<a href='$1'>$1</a>"
+
   _parseTweet: (tweet) ->
     tweet = @_findAndConvertUsers(tweet)
     tweet = @_findAndConvertHashTags(tweet)
+    tweet = @_findAndConvertLinks(tweet)
     tweet
 
 window['TwitterFeed'] = TwitterFeed
