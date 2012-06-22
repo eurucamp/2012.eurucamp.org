@@ -8,12 +8,13 @@ class TwitterFeed
       <% _.each(tweets, function(tweet) { %>
         <li>
           <%= tweet.text %>
-          <a href="<%= 'https://twitter.com/' + tweet.user.name + '/status/' + tweet.id_str %>" title="View on Twitter">
+          <a href="<%= 'https://twitter.com/' + user + '/status/' + tweet.id_str %>" title="View on Twitter">
             <%= $.timeago(tweet.created_at) %>
           </a>
         </li>
       <% }); %>
     </ul>
+    <a href="https://twitter.com/<%= user %>" title="View on twitter">More tweets</a>
   """
   errorTmpl  = '<p class="failed">Tweets could not be loaded.</p>'
 
@@ -32,7 +33,7 @@ class TwitterFeed
   #
 
   _renderTweets: (tweets) =>
-    @$el.html _.template(tweetsTmpl, tweets: tweets)
+    @$el.html _.template(tweetsTmpl, tweets: tweets, user: @user)
 
   _renderError: =>
     @$el.html errorTmpl

@@ -1,13 +1,15 @@
 body.index
 
   #header
-    background: white
     z-index: 1000
 
   article
     position: relative
 
     & > header
+      padding: 0 0 1em 0
+      overflow: hidden
+
       strong,
       span
         display: block
@@ -67,7 +69,6 @@ body.index
                 +transition(border-color, 0.25s)
 
 
-
   +respond-to(mid-range)
     article
       section.sponsors
@@ -111,3 +112,7 @@ body.index
                 width: 20%
                 float: left
 
+  +respond-to(tablet-landscape)
+    article
+      header
+        display: none

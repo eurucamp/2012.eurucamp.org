@@ -8,6 +8,27 @@ body_class: index
       %strong 17 - 19 August 2012
       %span Berlin
 
+  %section.intro
+    = wrapped :p do
+      One or two sentences about eurucamp. A little bit about the history, maybe a mood setter.
+
+
+  = wrapped :section, :class => 'highlights' do
+    %h3
+      What to expect
+    %ul
+      %li.venue
+        %img(src="/images/content/highlights/venue.png" alt="Awesome location!")
+        A sentence about the awesome location and the great hotel.
+      %li.content
+        %img(src="/images/content/highlights/content.png" alt="Best speakers!")
+        A sentence about jRuby, Rails Girls, great speakers or something.
+      %li.spare-time
+        %img(src="/images/content/highlights/spare_time.png" alt="Best BBQ!")
+        A sentence about the lighter side of things, BBQ, siesta.
+
+  = wrapped :section, :class => 'twitter-feed'
+
   %section.sponsors
     = wrapped :header do
       %h3 Our sponsors

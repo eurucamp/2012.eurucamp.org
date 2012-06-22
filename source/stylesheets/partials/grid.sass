@@ -11,7 +11,13 @@ body
       border-top: 1px dotted $grey
 
       a.twin
-        background: $pink
+        border-top: 1px dotted $pink
+        +transition(background-color 0.5s)
+
+        &:hover
+          border: none
+          background-color: $pink
+          +transition(background-color 0.5s)
 
     +respond-to(tablet-portrait)
       font-size: 1.1em
@@ -43,7 +49,25 @@ body
           top: 0
           bottom: 0
           width: 2em
+          border: none
+          border-left: 1px dotted $pink
           margin: 0
+          +transition(width 0.25s, background-color 0.25s)
+
+          img
+            +transition(margin 0.25s)
+
+
+          &:hover
+            width: 100px
+            background-color: $pink
+            +box-shadow(-3px 0 0 0 transparentize($grey, 0.2))
+            +transition(width 0.25s, background-color 0.25s)
+
+            img
+              margin: 0
+              +transition(margin 0.25s)
+
 
 
     // desktop and up center
