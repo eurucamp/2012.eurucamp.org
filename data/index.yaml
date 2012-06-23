@@ -1,20 +1,20 @@
 featured_speakers:
  -
     name: James Coglan
-    image: Songkick
-    company: jcoglan.png
+    company: Songkick
+    image: jcoglan.png
  -
     name: Tom Enebo
-    image: Redhat
-    company: tenebo.png
+    company: Redhat
+    image: tenebo.png
  -
     name: Konstantin Haase
-    image: Travis CI
-    company: khaase.png
+    company: Travis CI
+    image: khaase.png
  -
     name: Steve Klabnik
-    image: Jumpstart Lab
-    company: sklabnik.png
+    company: Jumpstart Lab
+    image: sklabnik.png
 
 attendees:
   - a2800276
