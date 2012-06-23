@@ -35,16 +35,16 @@ body.schedule
             position: absolute
 
             &.friday
-              left: 10%
-              width: 25%
+              left: 20%
+              width: 50%
 
             &.saturday
-              left: 40%
-              width: 25%
+              left: 30%
+              width: 50%
 
             &.sunday
-              left: 70%
-              width: 25%
+              left: 40%
+              width: 50%
 
             & > strong
               margin-top: -1.5em
@@ -77,3 +77,20 @@ body.schedule
                   background: transparentize($green, 0.15)
                   color: $white
                   +shadowed
+
+    +respond-to(tablet-lite)
+      .schedules
+        ul.days
+          li
+            &.friday
+              left: 10%
+              width: 25%
+
+            &.saturday
+              left: 40%
+              width: 25%
+
+            &.sunday
+              left: 70%
+              width: 25%
+
