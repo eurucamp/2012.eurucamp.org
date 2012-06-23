@@ -1,0 +1,132 @@
+body
+  #header
+    +padded
+    text-align: center
+
+    h1
+      margin: 0
+
+      a
+        display: block
+        position: relative
+
+        img
+          width: 100%
+
+    p.date
+      display: none
+
+    nav
+      display: none
+      border-top: 1px solid $grey
+      margin: 1em auto 0 auto
+      padding-top: 1em
+
+      ul
+        +unlisted
+        line-height: 1.2em
+
+        li
+          display: inline-block
+          margin: 0 1em
+
+          a
+            color: lighten($black, 50%)
+            font-weight: bold
+            +text-inset
+            +caps
+            +transition(color 0.5s)
+
+            &:hover
+              color: $pink
+              +transition(color 0.5s)
+
+            &.active
+              border-bottom: 3px solid $pink
+
+
+    +respond-to(mid-range)
+
+      h1
+        a
+          img
+            width: auto
+
+
+    +respond-to(tablet-lite)
+      +clearfix
+
+      h1
+        width: auto
+
+      nav
+        display: block
+
+
+    +respond-to(tablet-portrait)
+      h1
+        float: left
+
+      nav
+        float: right
+        margin: 0
+        padding: 0
+        border: none
+
+
+    +respond-to(tablet-landscape)
+      position: fixed
+      top: 0
+      bottom: 0
+      left: 0
+      width: 20%
+      border-right: 1px solid $grey
+
+      h1
+        margin: 0
+        float: none
+
+        a
+          img
+            width: 100%
+
+      p.date
+        display: block
+        background: $pink
+        padding: 0.5em 0.5em 0.75em 1em
+        width: 140%
+        margin: 0.5em 0 -0.5em -30%
+        color: $white
+        line-height: 1.2em
+        +shadowed
+        +transform(rotate(-4deg))
+
+      nav
+        float: none
+        margin-top: 2em
+        padding-top: 1em
+        border-top: 1px dotted $grey
+
+        ul
+          li
+            margin: 0
+            padding: 0.25em 0
+            display: block
+
+
+    +respond-to(desktop)
+      position: relative
+      float: left
+      width: 224px
+      border: none
+
+      h1
+        a
+          img
+            width: 180px
+
+      p.date
+        display: block
+        background: $pink
+        padding: 0.5em 0.5em 0.75em 0.5em
+        margin: -0.5em 0 0.5em -20%

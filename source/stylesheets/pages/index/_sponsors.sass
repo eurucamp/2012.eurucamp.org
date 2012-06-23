@@ -1,0 +1,75 @@
+body.index
+  article
+    section.sponsors
+      div
+        +padded
+
+        h4
+          margin-bottom: 0.5em
+          color: $grey
+          +custom-sans
+
+        ul
+          border: 1px solid lighten($grey, 7%)
+          +clearfix
+          +unlisted
+
+          li
+            +padded
+
+            a
+              display: block
+              border-bottom: 1px solid white
+              +transition(border-color, 0.25s)
+
+              img
+                width: 100%
+
+              &:hover
+                border-color: $pink
+                +transition(border-color, 0.25s)
+
+
+      +respond-to(mid-range)
+        div
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 50%
+                float: left
+
+
+      +respond-to(smartphone-landscape)
+        div
+          &.kastanien
+            ul
+              li
+                width: 25%
+                float: left
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 20%
+                float: left
+
+
+      +respond-to(tablet-lite)
+        clear: both
+
+
+      +respond-to(tablet-portrait)
+        div
+          &.kastanien
+            ul
+              li
+                width: 25%
+                float: left
+          &.linden,
+          &.birken
+            ul
+              li
+                width: 20%
+                float: left
+

@@ -11,199 +11,29 @@ body
     border-bottom: 1px solid $grey
     vertical-align: middle
 
-  #header
-    text-align: center
-
-    h1
-      margin: 0
-
-      a
-        display: block
-        position: relative
-
-        img
-          width: 100%
-
-    p.date
-      display: none
-
-    nav
-      display: none
-      border-top: 1px solid $grey
-      margin: 1em auto 0 auto
-      padding-top: 1em
-
-      ul
-        +unlisted
-        line-height: 1.2em
-
-        li
-          display: inline-block
-          margin: 0 1em
-
-          a
-            color: lighten($black, 50%)
-            font-weight: bold
-            +text-inset
-            +caps
-            +transition(color 0.5s)
-
-            &:hover
-              color: $pink
-              +transition(color 0.5s)
-
-            &.active
-              border-bottom: 3px solid $pink
-
-  #footer
-    text-align: center
-
-    .primary-navigation
-      margin: 0 0 2em 0
-
-      ul
-        +unlisted
-
-        li
-          a
-            padding: 0.5em 1em
-            text-align: left
-            display: block
-            font-weight: bold
-            border-bottom: 1px dotted $grey
-            +transition(color 0.5s, background-color 0.5s)
-
-            &:hover
-              background-color: $pink
-              color: $white
-              +transition(color 0.5s, background-color 0.5s)
-
-
-    .secondary-navigation
-      ul
-        +unlisted
-
-        li
-          display: inline
-          margin: 0 1em
-
-          a
-            color: lighten($black, 50%)
-            +text-inset
-            +transition(color 0.5s)
-
-            &:hover
-              color: $pink
-              +transition(color 0.5s)
-
-    a.twin
-      margin: 1em 0 0 0
-      display: block
-      padding: 1em 0
-
-  +respond-to(mid-range)
-    #header
-      h1
-        a
-          img
-            width: auto
-
-  // show main nav
   +respond-to(tablet-lite)
     #jump-to-nav
       display: none
 
-    #header
-      +clearfix
-
-      h1
-        width: auto
-
-      a.tickets
-        display: none
-        width: 120%
-        margin: 0 0 0 -10%
-        padding: 0.5em
-        background: $pink
-        font-size: 1.2em
-        color: $white
-        text-align: center
-        +custom-sans(bold)
-        +shadowed
-        +transform(rotate(-3deg))
-
-      nav
-        display: block
-
-
-    #footer
-      padding-top: 1em
-      text-align: center
-
-      .primary-navigation
-        display: none
-
 
   +respond-to(tablet-portrait)
-    #header
-      h1
-        float: left
-
-      nav
-        float: right
-        margin: 0
-        padding: 0
-        border: none
+    font-size: 1.1em
 
 
   +respond-to(tablet-landscape)
-    #header
-      h1
-        margin: 0
+    font-size: 1.2em
 
-        a
-          img
-            width: 100%
-
-      p.date
-        display: block
-        background: $pink
-        padding: 0.5em 0.5em 0.75em 1em
-        width: 140%
-        margin: 0.5em 0 -0.5em -30%
-        color: $white
-        line-height: 1.2em
-        +shadowed
-        +transform(rotate(-4deg))
-
-      nav
-        float: none
-        margin-top: 2em
-        padding-top: 1em
-        border-top: 1px dotted $grey
-
-        ul
-          li
-            margin: 0
-            padding: 0.25em 0
-            display: block
-
-    #footer
-      a.twin
-        img
-          margin: 0 0 0 -15px
+    #main
+      margin: 0 2em 0 20%
 
 
   +respond-to(desktop)
-    #header
-      h1
-        a
-          img
-            width: 180px
+    font-size: 1.2em
+    width: 1024px
+    margin: 0 auto
 
-      p.date
-        display: block
-        background: $pink
-        padding: 0.5em 0.5em 0.75em 0.5em
-        margin: -0.5em 0 0.5em -20%
+    #main
+      float: right
+      margin: 0
+      width: 800px
 

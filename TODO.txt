@@ -1,6 +1,6 @@
-+ split index into file
 + textshadow where applicable
 + sharpen rotated elements?
 + sharpen images
 + remove duplication
-+ mediaqueries for .wrapper
++ create mixin for brand stripes, blocks with headline and icon
++ headline mixin (grey)
