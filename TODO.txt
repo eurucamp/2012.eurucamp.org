@@ -4,3 +4,4 @@
 + remove duplication
 + create mixin for brand stripes, blocks with headline and icon
 + headline mixin (grey)
++ colors (more greys, text)

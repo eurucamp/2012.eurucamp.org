@@ -1,15 +1,10 @@
 article
-
   section.attendees
     +padded
     +clearfix
 
     h3
-      +custom-sans(bold)
-      text-align: center
-      border-bottom: 1px solid $grey
-      color: $grey
-      padding: 55px 0 0.5em 0
+      +section-headline
 
     ul
       +unlisted
@@ -38,7 +33,5 @@ article
           width: 20%
 
 
-    +respond-to(desktop)
-      ul
-        li
-          width: 10%
+    +respond-to(tablet-landscape)
+      width: 40%

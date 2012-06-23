@@ -1,0 +1,52 @@
+article
+  section.speakers
+    +padded
+
+    h3
+      +section-headline
+
+    ul
+      +unlisted
+      +clearfix
+      font-size: 0.9em
+      line-height: 1.2em
+
+      li
+        text-align: center
+        margin-bottom: 1.5em
+        color: $grey
+
+        img
+          width: 100%
+          display: block
+          margin-bottom: 0.5em
+
+        strong
+          display: block
+          color: lighten($black, 55%)
+
+    .wrapper > a
+      +more-link
+      margin-top: 0
+
+    +respond-to(mid-range)
+      ul
+        li
+          width: 50%
+          float: left
+
+
+    +respond-to(smartphone-landscape)
+      ul
+        li
+          width: 25%
+
+
+    +respond-to(tablet-landscape)
+      width: 20%
+      float: left
+
+      ul
+        li
+          width: 100%
+

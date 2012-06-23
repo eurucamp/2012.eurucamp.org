@@ -46,7 +46,6 @@ body
 
 
     +respond-to(mid-range)
-
       h1
         a
           img
@@ -91,15 +90,10 @@ body
             width: 100%
 
       p.date
-        display: block
-        background: $pink
-        padding: 0.5em 0.5em 0.75em 1em
+        +brand-stripe(-4deg)
+        margin: 0.5em 0 -0.5em -30%
         width: 140%
         margin: 0.5em 0 -0.5em -30%
-        color: $white
-        line-height: 1.2em
-        +shadowed
-        +transform(rotate(-4deg))
 
       nav
         float: none
@@ -128,5 +122,6 @@ body
       p.date
         display: block
         background: $pink
-        padding: 0.5em 0.5em 0.75em 0.5em
-        margin: -0.5em 0 0.5em -20%
+        width: 224px
+        padding: 0.5em 10px 0.75em 10px
+        margin: -0.5em 0 0.5em -40px

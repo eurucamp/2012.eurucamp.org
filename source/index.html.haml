@@ -27,8 +27,34 @@ body_class: index
           %img(src="/images/content/highlights/spare_time.png" alt="Best BBQ!")
           A sentence about the lighter side of things, BBQ, siesta.
 
+
+  = wrapped :section, :class => 'speakers' do
+    %h3 Speaking
+    %ul
+      %li
+        %img(src="/images/content/speakers/jcoglan.png" alt="Portrait: James Coglan")
+        %strong James Coglan
+        Songkick
+
+      %li
+        %img(src="/images/content/speakers/tenebo.png" alt="Portrait: Tom Enebo")
+        %strong Tom Enebo
+        Redhat
+
+      %li
+        %img(src="/images/content/speakers/khaase.png" alt="Portrait: Konstantin Haase")
+        %strong Konstantin Haase
+        Travis CI
+
+      %li
+        %img(src="/images/content/speakers/sklabnik.png" alt="Portrait: Steve Klabnik")
+        %strong Steve Klabnik
+        Jumpstart Lab
+
+    = link_to "All speakers", "speakers"
+
   = wrapped :section, :class => 'attendees' do
-    %h3 Who’s coming
+    %h3 Attending
     %ul
       - %w(a2800276 abuiles alpinegizmo andypsilon aofner batdevis captainhagbard carlosmoutinho chrismcg cubbi dasgib der_kronn dira_geek_girl dirksiemers eamodeorubio eeppa effkay entropyfw evilchelu fbandov felipeelias ferblape florianvallen galfert halfbyte harryfk henrikberggren heragu ialcazar ifesdjeen j2vidal jacekbecela jkwebs josephwilk juliancheal klaste klickmich koos leipeleon lmmendes localeapp manufaktor maser matthewling mcberros mikejust mseppae muescha piotrgega priithaamer punkrats purbon ralph rbjl sabman salesking skddc sven_kr tassmann TheDeadSerious thegcat tigrish tow8ie zomoco _solnic_ _tomash __snusnu__).each do |id|
         %li
