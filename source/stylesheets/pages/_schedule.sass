@@ -1,0 +1,52 @@
+body.schedule
+  article
+
+    .schedules
+      position: relative
+
+      ul
+        +unlisted
+
+        &.legend
+          li
+            height: 59px
+            border-top: 1px solid $grey
+
+        &.track
+          position: absolute
+          top: 0
+
+          li
+            position: absolute
+            width: 100%
+            font-size: 0.8em
+            border-bottom: 1px dotted $white
+
+            span
+              display: block
+              padding: 0.15em 0.4em
+
+            &.other
+              background: transparentize($grey, 0.25)
+
+            &.break
+              background: transparentize($grey, 0.15)
+
+            &.talk
+              background: transparentize($green, 0.15)
+              color: $white
+              +shadowed
+
+          &.friday
+            left: 10%
+            width: 25%
+
+          &.saturday
+            left: 40%
+            width: 25%
+
+          &.sunday
+            left: 70%
+            width: 25%
+
+

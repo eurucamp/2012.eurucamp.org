@@ -1,0 +1,21 @@
+---
+body_class: schedule
+---
+%article
+  %header
+    %h2 Schedule
+
+  .schedules
+    %ul.legend
+      - (8..22).step(0.5) do |hour|
+        %li
+          = float_to_time hour
+
+    - %w(friday saturday sunday).each do |day|
+      %ul.track(class="#{day}")
+        - schedule_for data.schedule[day], :start => 8 do |item, duration, distance|
+          %li(class="#{item.type}" style="height:#{duration * 2 - 1}px;top:#{distance * 2}px")
+            %span
+              = "%0.2f" % item.start
+              %strong= item.title
+

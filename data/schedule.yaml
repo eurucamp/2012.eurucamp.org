@@ -1,0 +1,212 @@
+friday:
+  -
+    start: 8.45
+    title: Coffee, Registration
+    type: other
+  -
+    start: 9.30
+    title: Introduction
+    type: other
+  -
+    start: 9.45
+    title: Session 1 (Keynote)
+    type: talk
+  -
+    start: 10.30
+    title: Session 2
+    type: talk
+  -
+    start: 11.00
+    title: Coffee Break
+    type: break
+  -
+    start: 11.15
+    title: Session 3
+    type: talk
+  -
+    start: 11.45
+    title: Session 4
+    type: talk
+  -
+    start: 12.10
+    title: Session 5
+    type: talk
+  -
+    start: 12.40
+    title: Lunch
+    type: break
+  -
+    start: 14.00
+    title: Session 6
+    type: talk
+  -
+    start: 14.30
+    title: Session 7
+    type: talk
+  -
+    start: 15.00
+    title: Coffee Break
+    type: break
+  -
+    start: 15.15
+    title: Session 8
+    type: talk
+  -
+    start: 15.45
+    title: Session 9
+    type: talk
+  -
+    start: 16.00
+    title: Snack Break
+    type: break
+  -
+    start: 16.15
+    title: Lightning Talks
+    type: talk
+  -
+    start: 17.15
+    title: Goodbye
+    type: other
+  -
+    start: 17.30
+    title: Drinks, Dinner-Time
+    type: other
+  -
+    start: 19.30
+    title: Introduction
+    type: other
+  -
+    start: 19.45
+    title: Keynote
+    type: talk
+  -
+    start: 20.30
+    end: 22.00
+    title: Party
+    type: other
+
+saturday:
+  -
+    start: 9.00
+    title: Coffee, Registration
+    type: other
+  -
+    start: 9.45
+    title: Introduction to the Day
+    type: other
+  -
+    start: 10.00
+    title: Session 1
+    type: talk
+  -
+    start: 10.30
+    title: Session 2
+    type: talk
+  -
+    start: 11.00
+    title: Coffee Break
+    type: break
+  -
+    start: 11.15
+    title: Micro Talk 1
+    type: talk
+  -
+    start: 11.30
+    title: Micro Talk 2
+    type: talk
+  -
+    start: 11.45
+    title: Session 3
+    type: talk
+  -
+    start: 12.15
+    title: Session 4
+    type: talk
+  -
+    start: 12.45
+    title: Lunch
+    type: break
+  -
+    start: 17.00
+    title: Session 5
+    type: talk
+  -
+    start: 17.30
+    title: Session 6
+    type: talk
+  -
+    start: 18.00
+    title: Break
+    type: break
+  -
+    start: 18.15
+    title: Session 7
+    type: talk
+  -
+    start: 18.45
+    title: Session 8
+    type: talk
+  -
+    start: 19.15
+    title: Break
+    type: break
+  -
+    start: 19.30
+    title: Session 9
+    type: talk
+  -
+    start: 20.00
+    end: 20.15
+    title: Close
+    type: other
+
+sunday:
+  -
+    start: 9.00
+    title: Coffee, Registration
+    type: other
+  -
+    start: 9.30
+    title: Session 1 (45 minutes)
+    type: talk
+  -
+    start: 10.15
+    title: Micro Talk 1
+    type: talk
+  -
+    start: 10.30
+    title: Micro Talk 2
+    type: talk
+  -
+    start: 10.45
+    title: Coffee Break
+    type: break
+  -
+    start: 11.00
+    title: Lightning Talks
+    type: talk
+  -
+    start: 11.45
+    title: Micro Talk 3
+    type: talk
+  -
+    start: 12.00
+    title: Micro Talk 4
+    type: talk
+  -
+    start: 12.15
+    title: Lunch
+    type: break
+  -
+    start: 14.15
+    title: Session 2
+    type: talk
+  -
+    start: 14.45
+    title: Session 3
+    type: talk
+  -
+    start: 15.15
+    end: 15.30
+    title: Close
+    type: other
