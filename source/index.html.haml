@@ -32,31 +32,15 @@ body_class: index
     %h3 Speaking
     %ul
       %li
-        %img(src="/images/content/speakers/jcoglan.png" alt="Portrait: James Coglan")
-        %strong James Coglan
-        Songkick
-
-      %li
-        %img(src="/images/content/speakers/tenebo.png" alt="Portrait: Tom Enebo")
-        %strong Tom Enebo
-        Redhat
-
-      %li
-        %img(src="/images/content/speakers/khaase.png" alt="Portrait: Konstantin Haase")
-        %strong Konstantin Haase
-        Travis CI
-
-      %li
-        %img(src="/images/content/speakers/sklabnik.png" alt="Portrait: Steve Klabnik")
-        %strong Steve Klabnik
-        Jumpstart Lab
-
+        %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+        %strong= speaker.name
+        speaker.company
     = link_to "All speakers", "speakers"
 
   = wrapped :section, :class => 'attendees' do
     %h3 Attending
     %ul
-      - %w(a2800276 abuiles alpinegizmo andypsilon aofner batdevis captainhagbard carlosmoutinho chrismcg cubbi dasgib der_kronn dira_geek_girl dirksiemers eamodeorubio eeppa effkay entropyfw evilchelu fbandov felipeelias ferblape florianvallen galfert halfbyte harryfk henrikberggren heragu ialcazar ifesdjeen j2vidal jacekbecela jkwebs josephwilk juliancheal klaste klickmich koos leipeleon lmmendes localeapp manufaktor maser matthewling mcberros mikejust mseppae muescha piotrgega priithaamer punkrats purbon ralph rbjl sabman salesking skddc sven_kr tassmann TheDeadSerious thegcat tigrish tow8ie zomoco _solnic_ _tomash __snusnu__).each do |id|
+      - data.index.attendees.each do |id|
         %li
           %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
             %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
@@ -69,33 +53,12 @@ body_class: index
     = wrapped :header do
       %h3 Our sponsors
 
-    = wrapped :div, :class => 'kastanien' do
-      %h4 Kastanien
-      %ul
-        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
-            'Railslove'        => 'http://railslove.com/',
-            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
-          = wrapped :li do
-            = link_to url do
-              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
-
-    = wrapped :div, :class => 'linden' do
-      %h4 Linden
-      %ul
-        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
-            'Railslove'        => 'http://railslove.com/',
-            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
-          = wrapped :li do
-            = link_to url do
-              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
-
-    = wrapped :div, :class => 'birken' do
-      %h4 Birken
-      %ul
-        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
-            'Railslove'        => 'http://railslove.com/',
-            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
-          = wrapped :li do
-            = link_to url do
-              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
+    - data.index.sponsors.each do |group|
+      = wrapped :div, :class => group.type.downcase do
+        %h4= group.type
+        %ul
+          - group.companies.each do |company|
+            = wrapped :li do
+              = link_to company.url do
+                %img(src="/images/content/sponsors/#{company.image}" alt="Sponsor: #{company.name}")
 

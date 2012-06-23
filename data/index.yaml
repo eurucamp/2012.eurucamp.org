@@ -1,0 +1,134 @@
+featured_speakers:
+  _
+    name: James Coglan
+    image: Songkick
+    company: jcoglan.png
+ _
+    name: Tom Enebo
+    image: Redhat
+    company: tenebo.png
+ _
+    name: Konstantin Haase
+    image: Travis CI
+    company: khaase.png
+ _
+    name: Steve Klabnik
+    image: Jumpstart Lab
+    company: sklabnik.png
+
+attendees:
+  - a2800276
+  - abuiles
+  - alpinegizmo
+  - andypsilon
+  - aofner
+  - batdevis
+  - captainhagbard
+  - carlosmoutinho
+  - chrismcg
+  - cubbi
+  - dasgib
+  - der_kronn
+  - dira_geek_girl
+  - dirksiemers
+  - eamodeorubio
+  - eeppa
+  - effkay
+  - entropyfw
+  - evilchelu
+  - fbandov
+  - felipeelias
+  - ferblape
+  - florianvallen
+  - galfert
+  - halfbyte
+  - harryfk
+  - henrikberggren
+  - heragu
+  - ialcazar
+  - ifesdjeen
+  - j2vidal
+  - jacekbecela
+  - jkwebs
+  - josephwilk
+  - juliancheal
+  - klaste
+  - klickmich
+  - koos
+  - leipeleon
+  - lmmendes
+  - localeapp
+  - manufaktor
+  - maser
+  - matthewling
+  - mcberros
+  - mikejust
+  - mseppae
+  - muescha
+  - piotrgega
+  - priithaamer
+  - punkrats
+  - purbon
+  - ralph
+  - rbjl
+  - sabman
+  - salesking
+  - skddc
+  - sven_kr
+  - tassmann
+  - TheDeadSerious
+  - thegcat
+  - tigrish
+  - tow8ie
+  - zomoco
+  - _solnic_
+  - _tomash
+  - __snusnu_
+
+sponsors:
+  -
+    type: Kastanien
+    companies:
+      -
+        name: Edenspiekermann
+        image: edenspiekermann_.png
+        url: http://edenspiekermann.com/
+      -
+        name: Railslove
+        image: railslove.png
+        url: http://railslove.com/
+      -
+        name: Scalarium
+        image: scalarium.png
+        url: http://scalarium.com/
+  -
+    type: Linden
+    companies:
+      -
+        name: Edenspiekermann
+        image: edenspiekermann_.png
+        url: http://edenspiekermann.com/
+      -
+        name: Railslove
+        image: railslove.png
+        url: http://railslove.com/
+      -
+        name: Scalarium
+        image: scalarium.png
+        url: http://scalarium.com/
+
+  -
+    type: Birken
+    companies:
+      -
+        name: Edenspiekermann
+        image: edenspiekermann_.png
+        url: http://edenspiekermann.com/
+      -
+        name: Railslove
+        image: railslove.png
+        url: http://railslove.com/
+      -
+        name: Scalarium
+        image: scalarium.png
+        url: http://scalarium.com/
