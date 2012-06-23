@@ -30,11 +30,12 @@ body_class: index
 
   = wrapped :section, :class => 'speakers' do
     %h3 Speaking
-    %ul
-      %li
-        %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
-        %strong= speaker.name
-        speaker.company
+    - data.index.featured_speakers.each do |speaker|
+      %ul
+        %li
+          %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+          %strong= speaker.name
+          speaker.company
     = link_to "All speakers", "speakers"
 
   = wrapped :section, :class => 'attendees' do
