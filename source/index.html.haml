@@ -25,13 +25,14 @@ body_class: index
           A sentence about jRuby, Rails Girls, great speakers or something.
         %li.spare-time
           %img(src="/images/content/highlights/spare_time.png" alt="Best BBQ!")
-          A sentence about the lighter side of things, BBQ, siesta.
+          A sentence about
+          the lighter side of things, BBQ, siesta.
 
 
   = wrapped :section, :class => 'speakers' do
     %h3 Speaking
-    - data.index.featured_speakers.each do |speaker|
-      %ul
+    %ul
+      - data.index.featured_speakers.each do |speaker|
         %li
           %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
           %strong= speaker.name
