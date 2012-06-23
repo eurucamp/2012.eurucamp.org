@@ -1,9 +1,10 @@
 ---
 body_class: schedule
 ---
-%article
+= wrapped :article do
   %header
     %h2 Schedule
+    %p A few words about the schedule maybe here and here.
 
   .schedules
     %ul.legend
@@ -11,11 +12,14 @@ body_class: schedule
         %li
           = float_to_time hour
 
-    - %w(friday saturday sunday).each do |day|
-      %ul.track(class="#{day}")
-        - schedule_for data.schedule[day], :start => 8 do |item, duration, distance|
-          %li(class="#{item.type}" style="height:#{duration * 2 - 1}px;top:#{distance * 2}px")
-            %span
-              = "%0.2f" % item.start
-              %strong= item.title
+    %ul.days
+      - %w(Friday Saturday Sunday).each do |day|
+        %li(class="#{day.downcase}")
+          %strong= day
+          %ul
+            - schedule_for data.schedule[day.downcase], :start => 8 do |item, duration, distance|
+              %li(class="#{item.type}" style="height:#{duration * 2 - 1}px;top:#{distance * 2}px")
+                %span
+                  = "%0.2f" % item.start
+                  %strong= item.title
 

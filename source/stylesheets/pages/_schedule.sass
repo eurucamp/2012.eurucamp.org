@@ -1,5 +1,16 @@
 body.schedule
   article
+    +padded
+
+    header
+      margin: 0 0 4em 0
+
+      h2
+        +brand-stripe(0)
+        color: $white
+        margin-bottom: 0.5em
+        font-size: 2em
+        color: $grey
 
     .schedules
       position: relative
@@ -9,44 +20,60 @@ body.schedule
 
         &.legend
           li
-            height: 59px
+            height: 54px
             border-top: 1px solid $grey
+            color: $grey
+            padding: 5px 0 0 0.25em
 
-        &.track
+        &.days
           position: absolute
           top: 0
+          left: 0
+          width: 100%
 
           li
             position: absolute
-            width: 100%
-            font-size: 0.8em
-            border-bottom: 1px dotted $white
 
-            span
+            &.friday
+              left: 10%
+              width: 25%
+
+            &.saturday
+              left: 40%
+              width: 25%
+
+            &.sunday
+              left: 70%
+              width: 25%
+
+            & > strong
+              margin-top: -1.5em
+              +section-headline
+              color: lighten($black, 50%)
+              border: none
               display: block
-              padding: 0.15em 0.4em
 
-            &.other
-              background: transparentize($grey, 0.25)
+            ul
+              position: absolute
+              top: 0
+              width: 100%
 
-            &.break
-              background: transparentize($grey, 0.15)
+              li
+                width: 100%
+                font-size: 0.8em
+                border-bottom: 1px dotted $white
 
-            &.talk
-              background: transparentize($green, 0.15)
-              color: $white
-              +shadowed
+                span
+                  display: block
+                  padding: 0.15em 0.4em
 
-          &.friday
-            left: 10%
-            width: 25%
+                &.other
+                  background: transparentize($grey, 0.25)
 
-          &.saturday
-            left: 40%
-            width: 25%
+                &.break
+                  background: transparentize($grey, 0.15)
 
-          &.sunday
-            left: 70%
-            width: 25%
-
-
+                &.talk
+                  background: transparentize($green, 0.15)
+                  color: $white
+                  +shadowed
