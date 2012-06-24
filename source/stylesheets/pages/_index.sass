@@ -7,9 +7,6 @@ body.index
   #header
     z-index: 1000
 
-  #main
-    padding: 0 1em
-
   article
     position: relative
 
@@ -46,6 +43,14 @@ body.index
 
 
   +respond-to(tablet-landscape)
+    #main
+      padding: 0 1em
+
     article
       header
         display: none
+
+
+  +respond-to(desktop)
+    #main
+      padding: 0
