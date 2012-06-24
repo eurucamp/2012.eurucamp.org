@@ -7,3 +7,16 @@
 + define h2 headline style
 + tweak overal feel (PS)
 + colors (more greys, text)
++ proper footer content / layout (copyright, etc.)
++ tweak sponsor logo sizes
+
+- Home page
+  - Don't show attendees at the beginning
+  - Show all confirmed speakers on front page
+  - Use official images (Google drive)
+
+- Colors
+  - Try adding blue
+
+- Logo
+  - Spikes higher
