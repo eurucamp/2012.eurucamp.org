@@ -3,7 +3,30 @@ body_class: venue
 title: Location
 ---
 %article
-  %header
+  = wrapped :header do
+    %h2 The venue
+    %h3 Some cheese sub headline describing the feel?
 
-    %section.map
+  = wrapped :section, :class => 'intro' do
+    %p= lorem.paragraph
+
+  = wrapped :address, :class => 'address' do
+    %h4 Hotel Müggelsee
+
+  = wrapped :section, :class => 'directions' do
+    %ul
+      %li.train
+        %strong By train
+        %ul
+          %li Step 1 and so forth
+      %li.plane
+        %strong By plane
+        %ul
+          %li Step 1 and so forth
+      %li.public-transportation
+        %strong By public transportation
+        %ul
+          %li Step 1 and so forth
+
+  %section.map
 
