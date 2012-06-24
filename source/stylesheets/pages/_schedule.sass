@@ -3,55 +3,80 @@ body.schedule
     +padded
 
     header
-      margin: 0 0 4em 0
 
       h2
         +brand-stripe(0)
         color: $white
         margin-bottom: 0.5em
         font-size: 2em
-        color: $grey
 
     .schedules
       position: relative
 
       ul
-        +unlisted
-
         &.legend
-          li
-            height: 54px
-            border-top: 1px solid $grey
-            color: $grey
-            padding: 5px 0 0 0.25em
+          display: none
 
         &.days
-          position: absolute
-          top: 0
-          left: 0
-          width: 100%
+          +unlisted
 
           li
+            & > strong
+              +section-headline
+              display: block
+              font-size: 1.5em
+
+            ul
+              +unlisted
+
+              li
+                //
+                  height: auto !important
+                  top: auto !important
+
+  +respond-to(tablet-portrait)
+    article
+      header
+        margin: 0 0 4em 0
+
+      .schedules
+        ul
+          +unlisted
+
+          &.legend
+            display: block
+
+            li
+              height: 54px
+              border-top: 1px solid $grey
+              color: $grey
+              padding: 5px 0 0 0.25em
+
+          &.days
             position: absolute
+            top: 0
+            left: 0
+            width: 100%
 
-            &.friday
-              left: 20%
-              width: 50%
+            li
+              position: absolute
 
-            &.saturday
-              left: 30%
-              width: 50%
+              &.friday
+                left: 10%
+                width: 25%
 
-            &.sunday
-              left: 40%
-              width: 50%
+              &.saturday
+                left: 40%
+                width: 25%
+
+              &.sunday
+                left: 70%
+                width: 25%
 
             & > strong
               margin-top: -1.5em
-              +section-headline
               color: lighten($black, 50%)
               border: none
-              display: block
 
             ul
               position: absolute
@@ -77,20 +102,3 @@ body.schedule
                   background: transparentize($green, 0.15)
                   color: $white
                   +shadowed
-
-    +respond-to(tablet-lite)
-      .schedules
-        ul.days
-          li
-            &.friday
-              left: 10%
-              width: 25%
-
-            &.saturday
-              left: 40%
-              width: 25%
-
-            &.sunday
-              left: 70%
-              width: 25%
-

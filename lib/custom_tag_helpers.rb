@@ -70,7 +70,7 @@ module CustomTagHelpers
   def float_to_time(num)
     hours = num.to_int
     minutes = ((num - hours.to_f) * 60).to_int
-    "#{"%02d" % hours}:#{"%02d" % minutes}"
+    "#{"%02d" % hours}.#{"%02d" % minutes}"
   end
 
 private

@@ -1,5 +1,6 @@
 ---
 body_class: schedule
+title: Schedule
 ---
 = wrapped :article do
   %header
@@ -18,7 +19,10 @@ body_class: schedule
           %strong= day
           %ul
             - schedule_for data.schedule[day.downcase], :start => 8 do |item, duration, distance|
-              %li(class="#{item.type}" style="height:#{duration * 2 - 1}px;top:#{distance * 2}px")
+              - style = "height: #{duration * 2 - 1}px; top: #{distance * 2}px"
+              - title = "#{"%0.2f" % item.start}: #{item.title}"
+
+              %li(class="#{item.type}" style="#{style}" title="#{title}")
                 %span
                   = "%0.2f" % item.start
                   %strong= item.title
