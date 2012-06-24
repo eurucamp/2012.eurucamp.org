@@ -16,7 +16,14 @@
   - Use official images (Google drive)
 
 - Colors
-  - Try adding blue
+  - More use of color throughout.
+  - Try adding blue.
 
 - Logo
-  - Spikes higher
+  - Spikes higher.
+
+- Typography
+  - Try using Sonar Sans for h2, h3 headline styles
+
+- Content
+  - Provide content for big header, front-page (AC)
