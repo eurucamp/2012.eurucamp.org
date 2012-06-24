@@ -2,6 +2,8 @@
 + sharpen rotated elements?
 + sharpen images
 + remove duplication
-+ create mixin for brand stripes, blocks with headline and icon
-+ headline mixin (grey)
++ clean images folder
++ fix strip in header (>desktop)
++ define h2 headline style
++ tweak overal feel (PS)
 + colors (more greys, text)
