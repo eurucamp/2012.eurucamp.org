@@ -45,3 +45,16 @@ To run:
     bundle exec middleman server
 
 You will see the generated HTML & CSS by navigating to <http://localhost:4567/>.
+
+Deployment
+----------
+
+### Staging
+
+* <http://eurucamp-dev.herokuapp.com/>
+* `bundle exec rake staging deploy`>
+
+### Production
+
+* <http://2012.eurucamp.org/>
+* `bundle exec rake production deploy`
