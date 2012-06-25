@@ -22,9 +22,11 @@ production:
   app: eurucamp2012
   config: &default
     BUNDLE_WITHOUT: "development:test"
+    BUILDPACK_URL: http://github.com/indirect/heroku-buildpack-middleman.git
 
 staging:
   stack: cedar
   app: eurucamp-dev
   config: &default
     BUNDLE_WITHOUT: "development:test"
+    BUILDPACK_URL: http://github.com/indirect/heroku-buildpack-middleman.git
