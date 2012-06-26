@@ -25,7 +25,27 @@ body_class: index
           A sentence about jRuby, Rails Girls, great speakers or something.
         %li.spare-time
           %img(src="/images/content/highlights/spare_time.png" alt="Best BBQ!")
-          A sentence about the lighter side of things, BBQ, siesta.
+          A sentence about
+          the lighter side of things, BBQ, siesta.
+
+
+  = wrapped :section, :class => 'speakers' do
+    %h3 Speaking
+    %ul
+      - data.index.featured_speakers.each do |speaker|
+        %li
+          %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+          %strong= speaker.name
+          speaker.company
+    = link_to "All speakers", "speakers"
+
+  = wrapped :section, :class => 'attendees' do
+    %h3 Attending
+    %ul
+      - data.index.attendees.each do |id|
+        %li
+          %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
+            %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
 
   = wrapped :section, :class => 'twitter-feed' do
     %h3 Lately on Twitter
@@ -35,33 +55,12 @@ body_class: index
     = wrapped :header do
       %h3 Our sponsors
 
-    = wrapped :div, :class => 'kastanien' do
-      %h4 Kastanien
-      %ul
-        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
-            'Railslove'        => 'http://railslove.com/',
-            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
-          = wrapped :li do
-            = link_to url do
-              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
-
-    = wrapped :div, :class => 'linden' do
-      %h4 Linden
-      %ul
-        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
-            'Railslove'        => 'http://railslove.com/',
-            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
-          = wrapped :li do
-            = link_to url do
-              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
-
-    = wrapped :div, :class => 'birken' do
-      %h4 Birken
-      %ul
-        - { 'Edenspiekermann_' => 'http://edenspiekermann.com/',
-            'Railslove'        => 'http://railslove.com/',
-            'Scalarium'        => 'http://www.scalarium.com/' }.each do |name, url|
-          = wrapped :li do
-            = link_to url do
-              %img(src="/images/content/sponsors/#{name.underscore}.png" alt="Sponsor: #{name}")
+    - data.index.sponsors.each do |group|
+      = wrapped :div, :class => group.type.downcase do
+        %h4= group.type
+        %ul
+          - group.companies.each do |company|
+            = wrapped :li do
+              = link_to company.url do
+                %img(src="/images/content/sponsors/#{company.image}" alt="Sponsor: #{company.name}")
 

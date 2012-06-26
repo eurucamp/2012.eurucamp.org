@@ -1,0 +1,96 @@
+body
+  #footer
+    clear: both
+    border-top: 1px dotted $grey
+    text-align: center
+
+    .primary-navigation
+      margin: 0 0 2em 0
+
+      ul
+        +unlisted
+
+        li
+          a
+            padding: 0.5em 1em
+            text-align: left
+            display: block
+            font-weight: bold
+            border-bottom: 1px dotted $grey
+            +transition(color 0.5s, background-color 0.5s)
+
+            &:hover
+              background-color: $pink
+              color: $white
+              +transition(color 0.5s, background-color 0.5s)
+
+    .secondary-navigation
+      ul
+        +unlisted
+
+        li
+          display: inline
+          margin: 0 1em
+
+          a
+            color: lighten($black, 50%)
+            +text-inset
+            +transition(color 0.5s)
+
+            &:hover
+              color: $pink
+              +transition(color 0.5s)
+
+    a.twin
+      margin: 1em 0 0 0
+      display: block
+      padding: 1em 0
+      border-top: 1px dotted $pink
+      +transition(background-color 0.5s)
+
+      &:hover
+        border: none
+        background-color: $pink
+        +transition(background-color 0.5s)
+
+
+    +respond-to(tablet-lite)
+      padding-top: 1em
+      text-align: center
+
+      .primary-navigation
+        display: none
+
+
+    +respond-to(tablet-landscape)
+      margin-left: 20%
+      padding-bottom: 1em
+
+      a.twin
+        position: fixed
+        right: 0
+        top: 0
+        bottom: 0
+        width: 2em
+        border: none
+        border-left: 1px dotted $pink
+        margin: 0
+        +transition(width 0.25s, background-color 0.25s)
+
+        img
+          margin: 0 0 0 -15px
+          +transition(margin 0.25s)
+
+        &:hover
+          width: 100px
+          background-color: $pink
+          +box-shadow(-3px 0 0 0 transparentize($grey, 0.2))
+          +transition(width 0.25s, background-color 0.25s)
+
+          img
+            margin: 0
+            +transition(margin 0.25s)
+
+
+    +respond-to(desktop)
+      margin: 0

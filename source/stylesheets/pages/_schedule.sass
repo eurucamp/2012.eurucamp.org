@@ -1,0 +1,104 @@
+body.schedule
+  article
+    +padded
+
+    header
+
+      h2
+        +brand-stripe(0)
+        color: $white
+        margin-bottom: 0.5em
+        font-size: 2em
+
+    .schedules
+      position: relative
+
+      ul
+        &.legend
+          display: none
+
+        &.days
+          +unlisted
+
+          li
+            & > strong
+              +section-headline
+              display: block
+              font-size: 1.5em
+
+            ul
+              +unlisted
+
+              li
+                //
+                  height: auto !important
+                  top: auto !important
+
+  +respond-to(tablet-portrait)
+    article
+      header
+        margin: 0 0 4em 0
+
+      .schedules
+        ul
+          +unlisted
+
+          &.legend
+            display: block
+
+            li
+              height: 54px
+              border-top: 1px solid $grey
+              color: $grey
+              padding: 5px 0 0 0.25em
+
+          &.days
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+
+            li
+              position: absolute
+
+              &.friday
+                left: 10%
+                width: 25%
+
+              &.saturday
+                left: 40%
+                width: 25%
+
+              &.sunday
+                left: 70%
+                width: 25%
+
+            & > strong
+              margin-top: -1.5em
+              color: lighten($black, 50%)
+              border: none
+
+            ul
+              position: absolute
+              top: 0
+              width: 100%
+
+              li
+                width: 100%
+                font-size: 0.8em
+                border-bottom: 1px dotted $white
+
+                span
+                  display: block
+                  padding: 0.15em 0.4em
+
+                &.other
+                  background: transparentize($grey, 0.25)
+
+                &.break
+                  background: transparentize($grey, 0.15)
+
+                &.talk
+                  background: transparentize($green, 0.15)
+                  color: $white
+                  +shadowed

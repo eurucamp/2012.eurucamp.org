@@ -1,0 +1,31 @@
+article
+  section.twitter-feed
+    +padded
+    +clearfix
+
+    h3
+      +section-headline
+
+    ul
+      +unlisted
+      color: lighten($black, 55%)
+      font-size: 0.9em
+
+      li
+        margin-bottom: 1em
+
+        & > a
+          display: block
+          font-size: 0.8em
+
+    .tweets > a
+      +more-link
+
+
+    +respond-to(tablet-lite)
+      width: 50%
+      float: right
+
+    +respond-to(tablet-landscape)
+      width: 40%
+

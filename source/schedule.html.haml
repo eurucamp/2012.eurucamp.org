@@ -1,2 +1,29 @@
-%h1 Schedule
-%h2 Yet to be announced
+---
+body_class: schedule
+title: Schedule
+---
+= wrapped :article do
+  %header
+    %h2 Schedule
+    %p A few words about the schedule maybe here and here.
+
+  .schedules
+    %ul.legend
+      - (8..22).step(0.5) do |hour|
+        %li
+          = float_to_time hour
+
+    %ul.days
+      - %w(Friday Saturday Sunday).each do |day|
+        %li(class="#{day.downcase}")
+          %strong= day
+          %ul
+            - schedule_for data.schedule[day.downcase], :start => 8 do |item, duration, distance|
+              - style = "height: #{duration * 2 - 1}px; top: #{distance * 2}px"
+              - title = "#{"%0.2f" % item.start}: #{item.title}"
+
+              %li(class="#{item.type}" style="#{style}" title="#{title}")
+                %span
+                  = "%0.2f" % item.start
+                  %strong= item.title
+

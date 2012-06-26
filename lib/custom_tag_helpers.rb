@@ -39,6 +39,40 @@ module CustomTagHelpers
     end
   end
 
+  def schedule_for(items, options, &block)
+    schedule_start  = Time.utc 2012, 1, 1, options[:start], 0, 0
+
+    first_start_h, first_start_min = items.first.start.to_s.split('.')
+    first_start_time = Time.utc 2012, 1, 1, first_start_h, first_start_min, 0
+
+    items.each_with_index do |item, index|
+      start              = item.start
+      stop               = item.end || items[index + 1].start
+
+      start_h, start_min = start.to_s.split('.')
+      stop_h, stop_min   = stop.to_s.split('.')
+
+      start_min          = start_min.ljust(2, '0')
+      stop_min           = stop_min.ljust(2, '0')
+
+      start_time         = Time.utc 2012, 1, 1, start_h, start_min, 0
+      stop_time          = Time.utc 2012, 1, 1, stop_h, stop_min, 0
+
+      duration_min       = (stop_time - start_time) / 60
+
+      distance_min       = (start_time - first_start_time + (first_start_time - schedule_start)) / 60
+
+      yield item, duration_min, distance_min
+
+    end
+  end
+
+  def float_to_time(num)
+    hours = num.to_int
+    minutes = ((num - hours.to_f) * 60).to_int
+    "#{"%02d" % hours}.#{"%02d" % minutes}"
+  end
+
 private
 
   def inject_class(attributes, klass)

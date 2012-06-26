@@ -1,0 +1,37 @@
+article
+  section.attendees
+    +padded
+    +clearfix
+
+    h3
+      +section-headline
+
+    ul
+      +unlisted
+
+      li
+        float: left
+        width: 20%
+
+        img
+          width: 100%
+          display: block
+
+
+    +respond-to(mid-range)
+      ul
+        li
+          width: 10%
+
+
+    +respond-to(tablet-lite)
+      width: 50%
+      float: left
+
+      ul
+        li
+          width: 20%
+
+
+    +respond-to(tablet-landscape)
+      width: 40%
