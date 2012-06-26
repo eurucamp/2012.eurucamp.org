@@ -36,7 +36,7 @@ $ ->
 
   # ----------------------------------------------------------------------------
   # development
-  if false
+  if true
     $size = $('<div />').appendTo('body')
     $size.css
       position: 'fixed'

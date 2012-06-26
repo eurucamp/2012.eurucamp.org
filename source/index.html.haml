@@ -36,7 +36,7 @@ body_class: index
         %li
           %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
           %strong= speaker.name
-          speaker.company
+          = speaker.company
     = link_to "All speakers", "speakers"
 
   = wrapped :section, :class => 'attendees' do

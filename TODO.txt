@@ -20,3 +20,8 @@
 
 - Logo
   - Spikes higher
+
+- For Tuesday:
+  - Fix layout
+  - Fix home page
+  - Remove links to empty pages
