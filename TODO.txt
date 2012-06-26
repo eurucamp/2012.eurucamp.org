@@ -16,12 +16,18 @@
   - Use official images (Google drive)
 
 - Colors
-  - Try adding blue
+  - More use of color throughout.
+  - Try adding blue.
 
 - Logo
   - Spikes higher
 
-- For Tuesday:
   - Fix layout
   - Fix home page
   - Remove links to empty pages
+
+- Typography
+  - Try using Sonar Sans for h2, h3 headline styles
+
+- Content
+  - Provide content for big header, front-page (AC)
