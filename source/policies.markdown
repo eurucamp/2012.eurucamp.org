@@ -1,0 +1,19 @@
+---
+title: Policies
+body_class: policies
+---
+
+# Anti-Harassment Policy
+## +1 for Inclusiveness
+
+eurucamp has been designed to be an inclusive, welcoming conference for everyone regardless of gender, sexual orientation, disability, physical appearance, race, or religion. We will not tolerate harassment of conference participants in any form, be it verbal comments (said aloud or typed into a backchannel), imagery, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately.
+
+We reserve the right to warn or expel offenders from the conference with no refund, and to bar them from future participation (both speaking and attendance) in eurucamp for severe violations.
+
+If you are being harassed, see someone else being harassed, or have any other concerns on-site please contact one of the conference organizers or volunteers immediately.
+
+We have adapted this anti-harassment policy [from a sample] provided by [Geek Feminism] and [RubyConf2012].
+
+[from a sample]:http://geekfeminism.wikia.com/
+[RubyConf2012]:http://railsconf2012.com/antiharassment
+[Geek Feminism]:http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy
