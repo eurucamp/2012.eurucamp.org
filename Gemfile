@@ -20,3 +20,6 @@ end
 
 # FIXME: Need to set this up with Bundler groups correctly
 gem 'heroku_san',   '3.0.2'
+
+gem 'rack-contrib'
+gem 'rack-rewrite'

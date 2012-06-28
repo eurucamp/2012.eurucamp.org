@@ -108,8 +108,11 @@ GEM
       i18n (~> 0.6)
       padrino-core (= 0.10.6)
     rack (1.4.1)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-protection (1.2.0)
       rack
+    rack-rewrite (1.2.1)
     rack-test (0.6.1)
       rack (>= 1.0)
     rake (0.9.2.2)
@@ -154,5 +157,7 @@ DEPENDENCIES
   html5-boilerplate!
   middleman (~> 3.0.0.rc1)
   middleman-blog (~> 3.0.0.rc1)
+  rack-contrib
+  rack-rewrite
   rake (~> 0.9.2)
   sass!
