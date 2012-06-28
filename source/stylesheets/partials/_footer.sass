@@ -1,7 +1,8 @@
 body
   #footer
     clear: both
-    //border-top: 1px dotted $grey
+    +padded
+    +clearfix
     text-align: center
     background: $black
 
@@ -26,6 +27,8 @@ body
               +transition(color 0.5s, background-color 0.5s)
 
     .secondary-navigation
+      float: right
+
       ul
         +unlisted
 
@@ -35,12 +38,32 @@ body
           font-size: 0.8em
 
           a
-            color: $white
+            color: $grey
+            +custom-sans(bold)
             +transition(color 0.5s)
 
             &:hover
               color: $pink
               +transition(color 0.5s)
+
+
+    ul.links
+      +unlisted
+      float: left
+
+      li
+        float: left
+        margin: 0 0.5em 0 0
+        a
+          display: block
+          text-indent: -999em
+          width: 40px
+          height: 40px
+          background: transparent url(/images/layout/footer/twitter_icon.png) no-repeat center
+
+        &.lanyrd
+          a
+            background-image: url(/images/layout/footer/lanyrd_icon.png)
 
     a.twin
       margin: 1em 0 0 0

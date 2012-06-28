@@ -27,7 +27,7 @@
       #main(role="main")
         = yield
 
-      %footer#footer
+      = wrapped :footer, :id => 'footer' do
         = partial 'partials/footer'
         %script(src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAOu7SQll9IyZ_csBrwRS7WBh-6by8_IQE&sensor=true")
         = javascript_include_tag 'application'

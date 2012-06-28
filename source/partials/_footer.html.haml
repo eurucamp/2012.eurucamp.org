@@ -1,5 +1,12 @@
 = partial 'partials/primary_navigation'
 = partial 'partials/secondary_navigation'
+
+%ul.links
+  %li.twitter
+    %a(href="https://twitter.com/eurucamp" title="Eurucamp on Twitter") @eurucamp
+  %li.lanyrd
+    %a(href="http://lanyrd.com/2012/eurucamp/" title="Eurucamp on Lanyrd") Eurucamp
+
 = link_to '#', :class => 'twin' do
   %img(src="/images/layout/footer/jruby_head.png" alt="jRuby Logo")
 = partial 'partials/analytics'
