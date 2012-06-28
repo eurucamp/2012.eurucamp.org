@@ -27,8 +27,6 @@ body
               +transition(color 0.5s, background-color 0.5s)
 
     .secondary-navigation
-      float: right
-
       ul
         +unlisted
 
@@ -49,11 +47,12 @@ body
 
     ul.links
       +unlisted
-      float: left
+      margin: 1em auto
 
       li
-        float: left
+        display: inline-block
         margin: 0 0.5em 0 0
+
         a
           display: block
           text-indent: -999em
@@ -84,6 +83,13 @@ body
 
       .primary-navigation
         display: none
+
+      .secondary-navigation
+        float: right
+
+      ul.links
+        margin: 0
+        float: left
 
 
     +respond-to(tablet-landscape)
