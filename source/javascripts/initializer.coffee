@@ -4,8 +4,7 @@ $ ->
   $('img.resp').responsiveImages()
 
   # BG image
-  if /\?bg/.test(window.location.search)
-    $.backstretch '/images/layout/background.jpg'
+  $.backstretch '/images/layout/background.jpg'
 
   # Twitter
   if $('body').hasClass 'index'
