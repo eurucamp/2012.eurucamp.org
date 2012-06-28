@@ -52,7 +52,7 @@ Deployment
 ### Staging
 
 * <http://eurucamp-dev.herokuapp.com/>
-* `bundle exec rake staging deploy`>
+* `bundle exec rake staging deploy`
 
 ### Production
 
