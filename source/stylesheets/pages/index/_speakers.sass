@@ -1,33 +1,52 @@
 article
   section.speakers
+    +clearfix
     +padded
 
     h3
-      +section-headline
+      +brand-stripe(2deg, $blue)
+      font-size: 0.9em
+      top: -1em
+      left: 0
+      position: absolute
+      padding: 0.15em 1em 0.35em
+      margin: 0 -1em 0 -1em
 
     ul
       +unlisted
       +clearfix
-      font-size: 0.9em
+      font-size: 0.75em
       line-height: 1.2em
 
       li
         text-align: center
-        margin-bottom: 1.5em
-        color: $grey
+        color: $white
+        position: relative
+
+        &:hover
+          span
+            display: block
+            top: 0
+            +transition(top 0.25s)
+
+        span
+          display: none
+          position: absolute
+          background: transparentize($black, 0.25)
+          top: 100%
+          width: 100%
+          padding-top: 30%
+          height: 70%
+          +transition(top 0.25s)
+
 
         img
           width: 100%
           display: block
-          margin-bottom: 0.5em
 
         strong
           display: block
-          color: lighten($black, 55%)
 
-    .wrapper > a
-      +more-link
-      margin-top: 0
 
     +respond-to(mid-range)
       ul
@@ -42,10 +61,14 @@ article
           width: 25%
 
 
-    +respond-to(tablet-landscape)
-      width: 20%
+    +respond-to(tablet-lite)
+      width: 50%
       float: left
 
+
+    +respond-to(tablet-landscape)
+      float: none
+      width: 100%
       ul
         li
-          width: 100%
+          width: 12.5%

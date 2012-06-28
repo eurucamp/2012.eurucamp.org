@@ -4,7 +4,11 @@ article
     +clearfix
 
     h3
-      +section-headline
+      +brand-stripe(-3deg, $blue)
+      position: absolute
+      left: -0.5em
+      top: 4em
+      font-size: 0.9em
 
     ul
       +unlisted
@@ -34,4 +38,8 @@ article
 
 
     +respond-to(tablet-landscape)
-      width: 40%
+      width: 50%
+
+      ul
+        li
+          width: 10%

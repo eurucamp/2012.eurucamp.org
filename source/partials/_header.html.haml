@@ -1,9 +1,6 @@
 %h1
   = link_to '/' do
-    = image '/images/layout/header/logo.png', [360], :alt => "Eurucamp 2012"
-
-%p.date
-  %strong 17 - 19 August 2012
-  Berlin
+    - sizes = request.path =~ /index/ ? [360, 1280] : [360]
+    = image '/images/layout/header/logo.png', sizes, :alt => "Eurucamp 2012"
 
 = partial 'partials/primary_navigation'

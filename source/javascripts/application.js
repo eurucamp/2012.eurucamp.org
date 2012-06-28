@@ -3,5 +3,6 @@
 //= require "lib/jquery.debounce"
 //= require "lib/jquery.timeago"
 //= require "lib/jquery.responsive_images"
+//= require "lib/jquery.backstretch"
 //= require "lib/twitter_feed"
 //= require "initializer"

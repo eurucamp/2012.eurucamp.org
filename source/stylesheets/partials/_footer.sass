@@ -1,8 +1,9 @@
 body
   #footer
     clear: both
-    border-top: 1px dotted $grey
+    //border-top: 1px dotted $grey
     text-align: center
+    background: $black
 
     .primary-navigation
       margin: 0 0 2em 0
@@ -31,10 +32,10 @@ body
         li
           display: inline
           margin: 0 1em
+          font-size: 0.8em
 
           a
-            color: lighten($black, 50%)
-            +text-inset
+            color: $white
             +transition(color 0.5s)
 
             &:hover
@@ -43,7 +44,7 @@ body
 
     a.twin
       margin: 1em 0 0 0
-      display: block
+      display: none
       padding: 1em 0
       border-top: 1px dotted $pink
       +transition(background-color 0.5s)
@@ -63,7 +64,6 @@ body
 
 
     +respond-to(tablet-landscape)
-      margin-left: 20%
       padding-bottom: 1em
 
       a.twin

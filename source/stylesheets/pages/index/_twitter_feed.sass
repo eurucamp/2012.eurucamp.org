@@ -3,8 +3,25 @@ article
     +padded
     +clearfix
 
+
     h3
-      +section-headline
+      padding: 0.15em 1em 0.35em
+      margin: 0 -1em 0 -1em
+      position: absolute
+      z-index: 600
+      top: -2em
+      right: -1em
+      font-size: 0.9em
+      font-weight: light
+      overflow: hidden
+      display: block
+      background: transparentize($blue, 0.05)
+      color: $white
+      text-align: center
+      +text-shadow(0 1px 0 darken($blue, 10%))
+      +shadowed
+      +transform(rotate(1.5deg))
+      -webkit-backface-visibility: hidden
 
     ul
       +unlisted
@@ -18,13 +35,7 @@ article
           display: block
           font-size: 0.8em
 
-    .tweets > a
-      +more-link
-
 
     +respond-to(tablet-lite)
       width: 50%
       float: right
-
-    +respond-to(tablet-landscape)
-      width: 40%
