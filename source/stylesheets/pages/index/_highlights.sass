@@ -13,7 +13,6 @@ section.highlights
     +clearfix
     +unlisted
     padding: 10em 0 2em 0
-    +custom-sans(bold, false)
     font-size: 1.1em
 
     li
@@ -21,9 +20,12 @@ section.highlights
         display: block
         color: $medium-grey
         text-align: center
+        +custom-sans(bold, false)
+        +text-shadow(0 1px 0 white)
 
         br
           display: none
+
 
   +respond-to(mid-range)
     ul
