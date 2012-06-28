@@ -1,7 +1,6 @@
 article
   section.attendees
     +padded
-    +clearfix
 
     h3
       +brand-stripe(2deg, $blue)
@@ -12,6 +11,7 @@ article
 
     ul
       +unlisted
+      +clearfix
 
       li
         float: left
@@ -20,6 +20,9 @@ article
         img
           width: 100%
           display: block
+
+    p.more
+      +more
 
 
     +respond-to(mid-range)

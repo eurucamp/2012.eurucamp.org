@@ -14,7 +14,9 @@ class TwitterFeed
         </li>
       <% }); %>
     </ul>
-    <a href="https://twitter.com/<%= user %>" title="View on twitter">More tweets on Twitter</a>
+    <p class="more">
+      <a href="https://twitter.com/<%= user %>" title="View on twitter">More tweets on Twitter</a>
+    </p>
   """
   errorTmpl  = '<p class="failed">Tweets could not be loaded.</p>'
 
