@@ -13,13 +13,14 @@ section.highlights
     +clearfix
     +unlisted
     padding: 10em 0 2em 0
+    +custom-sans(bold, false)
+    font-size: 1.1em
 
     li
       span
         display: block
         color: $medium-grey
         text-align: center
-        +custom-serif(bold)
 
         br
           display: none
@@ -36,14 +37,14 @@ section.highlights
 
   +respond-to(tablet-portrait)
     ul
-      padding: 2em 0
+      padding: 3em 0 1em 0
 
       li
         width: 33.33333%
         float: left
 
         span
-          padding-top: 1em
+          padding: 1em 0
           border-right: 1px dotted $grey
 
           br

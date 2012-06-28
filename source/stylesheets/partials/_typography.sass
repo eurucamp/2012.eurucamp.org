@@ -1,22 +1,19 @@
 // Custom local fonts
-+sonar-font-face(Light)
-+sonar-font-face(Medium)
-+sonar-font-face(Bold, bold)
 
 =caps
   text-transform: lowercase
   font-variant: small-caps
 
 =custom-sans($weight: normal, $caps: true)
-  @if $weight == bold
-    font-family: SonarBold, Helvetica, Arial, sans-serif
-    font-weight: bold
-  @else if $weight == light
-    font-family: SonarLight, Helvetica, Arial, sans-serif
-    font-weight: normal
+  font-family: "proxima-nova-1", "proxima-nova-2", Helvetica, Arial, sans-serif
+  @if $weight == light
+    font-weight: 300
+  @else if $weight == bold
+    font-weight: 700
+  @else if $weight == black
+    font-weight: 900
   @else
-    font-family: SonarMedium, Helvetica, Arial, sans-serif
-    font-weight: normal
+    font-weight: 400 // regular
   @if $caps == true
     +caps
 

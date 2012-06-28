@@ -2,12 +2,13 @@ article
   section.speakers
     +clearfix
     +padded
+    border-bottom: 1px dotted $grey
 
     h3
-      +brand-stripe(2deg, $blue)
-      font-size: 0.9em
-      top: -1em
-      left: 0
+      +brand-stripe(-1deg, $blue)
+      +custom-sans(black)
+      top: -0.5em
+      left: -1em
       position: absolute
       padding: 0.15em 1em 0.35em
       margin: 0 -1em 0 -1em
@@ -22,22 +23,30 @@ article
         text-align: center
         color: $white
         position: relative
+        overflow: hidden
 
         &:hover
+          cursor: pointer
+
           span
-            display: block
             top: 0
-            +transition(top 0.25s)
+            +transition(top 0.25s ease-in)
+            +custom-sans(normal, false)
+
+
+            strong
+              +custom-sans(bold, false)
+              text-transform: none
 
         span
-          display: none
           position: absolute
           background: transparentize($black, 0.25)
           top: 100%
-          width: 100%
-          padding-top: 30%
-          height: 70%
+          width: 90%
+          padding: 35% 5% 0 5%
+          height: 65%
           +transition(top 0.25s)
+
 
 
         img
