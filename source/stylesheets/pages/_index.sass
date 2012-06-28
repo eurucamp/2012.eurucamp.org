@@ -1,4 +1,5 @@
 body.index
+  @import "index/highlights"
   @import "index/speakers"
   @import "index/attendees"
   @import "index/sponsors"
@@ -11,58 +12,32 @@ body.index
     position: relative
 
     & > header
-      padding: 0.5em 0 1em 0
-      margin-top: -1em
-      overflow: hidden
+      padding: 3em 0 0 0
+      position: absolute
+      width: 100%
+      +clearfix
 
-      strong,
-      span
-        display: block
-        background: transparentize($pink, 0.25)
-        color: $white
-        text-align: center
-        font-size: 1.5em
-        width: 100%
-        margin-left: -5%
-        line-height: 1.2em
-        +box-shadow(3px 3px 1px 0 transparentize($black, 0.9))
-        +transform(rotate(-3deg))
+      h2, h3
+        +brand-stripe(-2deg, $pink, false)
 
-      strong
-        z-index: 50
-        position: relative
-        padding: 0 5% 0.25em 15%
-        margin-left: -15%
+      h2
+        +shadowed
+        z-index: 500
 
-      span
-        +custom-sans
-        display: block
-        z-index: 40
-        padding: 0 0% 0 20%
-        margin: -0.5em 0 0 -10%
-        +transform(rotate(4deg))
+      h3
+        font-size: 0.9em
+        margin-top: 0
+        width: 82%
+        margin-left: 20%
+        background: transparentize($pink, 0.10)
+        +transform(rotate(1deg))
+        z-index: 400
+
+    .block
+      +clearfix
+      background: transparentize(white, 0.1)
 
 
   +respond-to(tablet-landscape)
     #main
       padding: 0
-
-    article
-      header
-        overflow: visible
-        display: block
-        text-align: center
-        width: 300%
-        +brand-stripe
-        background: transparentize($pink, 0.25)
-        margin: 0 0 0 -100%
-        z-index: 0
-
-        strong,
-        span
-          display: inline
-          background: none
-          padding: 0
-          margin: 0
-          +transform(rotate(0))
-          +box-shadow(0 0 0 0 white)

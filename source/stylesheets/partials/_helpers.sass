@@ -58,37 +58,26 @@
       margin: 1.5em
 
 =shadowed
-  +box-shadow(3px 3px 0 0 transparentize($grey, 0.2))
+  +box-shadow(3px 3px 1px 0 transparentize($black, 0.9))
 
 =unlisted
   list-style: none
   padding: 0
   margin: 0
 
-=brand-stripe($rotation: -3deg, $shadowed: true)
+=brand-stripe($rotation: -3deg, $color: $pink, $shadowed: true)
+  padding: 0.15em 1em 0.35em
+  margin: -2.75em -1em 0 -1em
+  font-weight: light
+  overflow: hidden
   display: block
-  background: $pink
-  padding: 0.5em 0.5em 0.75em 0.5em
+  background: transparentize($color, 0.05)
   color: $white
-  line-height: 1.2em
+  text-align: center
+  position: relative
+  z-index: 1000
+  +text-shadow(0 1px 0 darken($color, 10%))
+  -webkit-backface-visibility: hidden
   +transform(rotate(#{$rotation}))
   @if $shadowed
     +shadowed
-
-=more-link
-  +brand-stripe(0)
-  font-size: 0.8em
-  text-align: center
-  margin: 2em 0 0 0
-  color: $pink
-  background: none
-  border: 1px solid $pink
-
-
-=section-headline
-  +custom-sans(bold)
-  text-align: center
-  border-bottom: 1px solid $grey
-  color: $grey
-  padding: 0 0 0.5em 0
-

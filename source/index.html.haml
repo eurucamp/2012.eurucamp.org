@@ -5,62 +5,64 @@ body_class: index
 %article
   %header
     %h2
-      %strong 17 - 19 August 2012
-      %span Berlin
+      european ruby camp | summer edition
+    %h3
+      17 - 19 August 2012, Berlin
 
-  /
-    %section.intro
-      = wrapped :p do
-        One or two sentences about eurucamp. A little bit about the history, maybe a mood setter.
+  = wrapped :section, :class => 'highlights' do
+    %ul
+      %li.venue
+        %span
+          On Berlin's Largest Lake,
+          %br
+          Müggelsee.
+      %li.content
+        %span
+          Community-organised,
+          %br
+          not-for-profit.
+      %li.spare-time
+        %span
+          Sessions. Hacking.
+          %br
+          Siesta breaks and Grill.
 
-    = wrapped :section, :class => 'highlights' do
-      %h3
-        What to expect
+  .block
+    = wrapped :section, :class => 'speakers' do
+      %h3 Our speakers
       %ul
-        %li.venue
-          %img(src="/images/content/highlights/venue.png" alt="Awesome location!")
-          A sentence about the awesome location and the great hotel.
-        %li.content
-          %img(src="/images/content/highlights/content.png" alt="Best speakers!")
-          A sentence about jRuby, Rails Girls, great speakers or something.
-        %li.spare-time
-          %img(src="/images/content/highlights/spare_time.png" alt="Best BBQ!")
-          A sentence about
-          the lighter side of things, BBQ, siesta.
+        - 3.times do
+          - data.index.featured_speakers.each do |speaker|
+            %li
+              %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+              %span
+                %strong= speaker.name
+                = speaker.company
 
+    = wrapped :section, :class => 'twitter-feed' do
+      %h3 Lately on Twitter
+      .tweets
 
-  = wrapped :section, :class => 'speakers' do
-    %h3 Speaking
-    %ul
-      - data.index.featured_speakers.each do |speaker|
-        %li
-          %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
-          %strong= speaker.name
-          = speaker.company
-    = link_to "All speakers", "speakers"
+    = wrapped :section, :class => 'attendees' do
+      %h3 Attending
+      %ul
+        - data.index.attendees.each do |id|
+          %li
+            %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
+              %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
 
-  = wrapped :section, :class => 'attendees' do
-    %h3 Attending
-    %ul
-      - data.index.attendees.each do |id|
-        %li
-          %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
-            %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
-
-  = wrapped :section, :class => 'twitter-feed' do
-    %h3 Lately on Twitter
-    .tweets
-
+/
   %section.sponsors
     = wrapped :header do
       %h3 Our sponsors
 
-    - data.index.sponsors.each do |group|
-      = wrapped :div, :class => group.type.downcase do
-        %h4= group.type
-        %ul
-          - group.companies.each do |company|
-            = wrapped :li do
-              = link_to company.url do
-                %img(src="/images/content/sponsors/#{company.image}" alt="Sponsor: #{company.name}")
+      - data.index.sponsors.each do |group|
+        = wrapped :div, :class => group.type.downcase do
+          %h4= group.type
+          %ul
+            - group.companies.each do |company|
+              = wrapped :li do
+                = link_to company.url do
+                  %img(src="/images/content/sponsors/#{company.image}" alt="Sponsor: #{company.name}")
+
 

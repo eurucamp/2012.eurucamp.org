@@ -20,12 +20,12 @@
   @if $caps == true
     +caps
 
-=custom-serif
-  // get info from typekit
+=custom-serif($weight: normal)
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia, serif
-
-// Headlines
-
+  @if $weight == bold
+    font-weight: 700
+  @else
+    font-weight: 400
 
 a
   color: $green

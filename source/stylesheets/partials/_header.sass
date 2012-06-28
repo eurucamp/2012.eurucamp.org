@@ -1,8 +1,10 @@
 body
   #header
     z-index: 10
-    +padded
+    padding: 1em 0
+    background: white
     text-align: center
+    +padded
 
     h1
       margin: 0
@@ -14,38 +16,8 @@ body
         img
           width: 100%
 
-    p.date
-      display: none
-
     nav
       display: none
-      border-top: 1px solid $grey
-      margin: 1em auto 0 auto
-      padding-top: 1em
-      z-index: 1000
-      position: relative
-
-      ul
-        +unlisted
-        line-height: 1.75em
-
-        li
-          display: inline-block
-          margin: 0 1em
-
-          a
-            color: lighten($black, 50%)
-            font-weight: bold
-            +text-inset
-            +caps
-            +transition(color 0.5s)
-
-            &:hover
-              color: $pink
-              +transition(color 0.5s)
-
-            &.active
-              border-bottom: 3px solid $pink
 
 
     +respond-to(mid-range)
@@ -57,13 +29,38 @@ body
 
     +respond-to(tablet-lite)
       +clearfix
-      padding-top: 1em
-
-      h1
-        width: auto
+      padding: 1em 0 0 0
 
       nav
         display: block
+        border-top: 1px dotted $grey
+        margin: 1em auto 0 auto
+        padding: 0.5em 1em 0.75em
+        z-index: 1000
+
+        ul
+          +unlisted
+          line-height: 1.75em
+
+          li
+            display: inline-block
+            margin: 0 1em
+            +custom-sans
+
+            a
+              color: $dark-grey
+              font-weight: bold
+              +text-inset
+              +caps
+              +transition(color 0.5s)
+
+              &:hover
+                color: $pink
+                +transition(color 0.5s)
+
+              &.active
+                border-bottom: 3px solid $pink
+
 
 
     +respond-to(tablet-portrait)
@@ -81,3 +78,18 @@ body
         ul
           li
             margin: 0 0 0 2em
+
+
+    +respond-to(tablet-landscape)
+      h1
+        float: none
+
+      nav
+        float: none
+        border-top: 1px dotted $grey
+        margin: 1em auto 0 auto
+        padding: 0.5em 1em 0.75em
+
+        ul
+          li
+            margin: 0 1em

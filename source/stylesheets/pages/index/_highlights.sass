@@ -1,0 +1,54 @@
+section.highlights
+  +padded
+  +clearfix
+  background: white
+  border-bottom: 1px dotted $grey
+  z-index: 0
+  position: relative
+
+  .wrapper
+    margin-bottom: 0
+
+  ul
+    +clearfix
+    +unlisted
+    padding: 10em 0 2em 0
+
+    li
+      span
+        display: block
+        color: $medium-grey
+        text-align: center
+        +custom-serif(bold)
+
+        br
+          display: none
+
+  +respond-to(mid-range)
+    ul
+      padding: 6em 0 2em 0
+
+
+  +respond-to(smartphone-landscape)
+    ul
+      padding: 4em 0 2em 0
+
+
+  +respond-to(tablet-portrait)
+    ul
+      padding: 2em 0
+
+      li
+        width: 33.33333%
+        float: left
+
+        span
+          padding-top: 1em
+          border-right: 1px dotted $grey
+
+          br
+            display: inherit
+
+        &.spare-time
+          span
+            border: none
