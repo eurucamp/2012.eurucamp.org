@@ -31,13 +31,12 @@ body_class: index
     = wrapped :section, :class => 'speakers' do
       %h3 Our speakers
       %ul
-        - 3.times do
-          - data.index.featured_speakers.each do |speaker|
-            %li
-              %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
-              %span
-                %strong= speaker.name
-                = speaker.company
+        - data.speakers.each do |speaker|
+          %li
+            %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+            %span
+              %strong= speaker.name
+              = speaker.company
 
     = wrapped :section, :class => 'twitter-feed' do
       %h3 Lately on Twitter
