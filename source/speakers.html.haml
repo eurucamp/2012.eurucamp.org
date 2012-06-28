@@ -1,39 +1,9 @@
-:markdown
-  James Coglan
-  [Songkick](http://www.songkick.com/)
-  @jcoglan
-  http://jcoglan.com/
+%h1 Speakers
 
-  Tom Enebo
-  [Red Hat, Inc.](http://www.redhat.com/)
-  @tom_enebo
-  http://blog.enebo.com/
-
-  Konstantin Haase
-  [Travis CI](https://love.travis-ci.org/)
-  @konstantinhaase
-  http://rkh.im/
-
-  Theo Hultberg
-  [Burt](http://burtcorp.com/)
-  @ikonara
-  http://architecturalatrocities.com/
-
-  Steve Klabnik
-  [Jumpstart Lab](http://jumpstartlab.com/)
-  @steveklabnik
-  http://www.steveklabnik.com/
-
-  Erik Michaels Ober
-  [Twitter](http://twitter.com)
-  @sferik
-
-  Nicolás Sanguinetti
-  [Cubox](http://cuboxlabs.com/)
-  @godfoca
-  http://nicolassanguinetti.info/
-
-  Nick Sutterer
-  Freelancer
-  @apotonick
-  http://nicksda.apotomo.de/
+%ul
+  - data.speakers.speakers.each do |speaker|
+    %li
+      %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+      %strong= link_to speaker.name, speaker.url
+      = link_to speaker.company, speaker.company_url
+      = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
