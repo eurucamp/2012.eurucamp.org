@@ -8,7 +8,8 @@
 *.swp
 *.swo
 *.tmproj
-.idea
+/.idea
+*.iml
 
 # Ignore bundler config
 /.bundle
