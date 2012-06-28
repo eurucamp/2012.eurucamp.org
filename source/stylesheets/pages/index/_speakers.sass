@@ -47,14 +47,22 @@ article
           height: 65%
           +transition(top 0.25s)
 
-
-
         img
           width: 100%
           display: block
 
         strong
           display: block
+
+    p.cfp
+      +brand-stripe(0, $black)
+      +custom-sans(bold)
+      position: absolute
+      right: -1em
+      bottom: -0.5em
+
+      a
+        color: $blue
 
 
     +respond-to(mid-range)

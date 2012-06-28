@@ -39,7 +39,7 @@ $ ->
 
   # ----------------------------------------------------------------------------
   # development
-  if true
+  if /\?dev/.test window.location.search
     $size = $('<div />').appendTo('body')
     $size.css
       position: 'fixed'
