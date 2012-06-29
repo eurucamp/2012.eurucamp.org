@@ -7,7 +7,7 @@ require 'rack/contrib/try_static'
 use Rack::Rewrite do
   # ie:
   # HOST_EURUCAMP=lvh.me HOST_JRUBYCONF=jruby.lvh.me bundle exec rackup
-  rewrite %r{(.*)}, '/eurucamp/$1',  host: (ENV['HOST_EURUCAMP']  || '2012.eurucamp.eu')
+  rewrite %r{(.*)}, '/eurucamp/$1',  host: (ENV['HOST_EURUCAMP']  || '2012.eurucamp.org')
   rewrite %r{(.*)}, '/jrubyconf/$1', host: (ENV['HOST_JRUBYCONF'] || 'jrubyconf.eu')
 end
 use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html', 'index.html', '/index.html']
