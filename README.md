@@ -25,6 +25,12 @@ You can build the site into a `build`-directory:
 The `build` directory will contain the generated HTML, CSS and JavaScript and
 the contents can be uploaded to any standard web server.
 
+### Setting up host names when testing rewriting
+
+You can use well known `lvh.me` domain if you don't like to mess around with local DNS config:
+
+    `HOST_EURUCAMP=lvh.me HOST_JRUBYCONF=jruby.lvh.me bundle exec rackup`
+
 ### With Pow
 
 Download and install [POW](http://pow.cx/):
