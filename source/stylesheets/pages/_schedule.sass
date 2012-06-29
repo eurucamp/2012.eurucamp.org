@@ -1,17 +1,23 @@
 body.schedule
   article
     +padded
+    +clearfix
+    background: white
 
     header
+      text-align: center
+      color: $dark-grey
 
       h2
-        +brand-stripe(0)
-        color: $white
-        margin-bottom: 0.5em
-        font-size: 2em
+        +brand-stripe(0, $brand-3, false)
+        padding: 0.5em
+        margin: 0
+        display: block
+        +custom-sans(black)
 
     .schedules
       position: relative
+      padding-top: 1em
 
       ul
         &.legend
@@ -19,19 +25,58 @@ body.schedule
 
         &.days
           +unlisted
+          margin-bottom: 1em
 
           li
             & > strong
               display: block
               font-size: 1.5em
+              +custom-sans
+              text-align: center
+              color: $medium-grey
+              border-bottom: 1px dotted $grey
+              margin: 1em 0
 
             ul
               +unlisted
 
               li
-                //
-                  height: auto !important
-                  top: auto !important
+                color: $medium-grey
+                border-bottom: 1px dotted $white
+
+                span
+                  display: block
+                  padding: 0.15em 0.4em
+
+                  span
+                    display: inline
+                    padding: 0
+
+                &.other
+                  background: transparentize($grey, 0.25)
+
+                &.break
+                  background: transparentize($grey, 0.15)
+
+                &.talk
+                  background: transparentize($brand-1, 0.15)
+                  +shadowed
+
+                  span,
+                    strong ,span
+                      color: $white
+
+
+  +respond-to(smartphone-portrait)
+    article
+      header
+        h2
+          padding: 0.15em 2em 0.35em 2em
+          width: 100%
+          margin: -1em -4em 0 -2em
+          +transform(rotate(-2deg))
+          +shadowed
+
 
   +respond-to(tablet-portrait)
     article
@@ -50,6 +95,7 @@ body.schedule
               border-top: 1px solid $grey
               color: $grey
               padding: 5px 0 0 0.25em
+
 
           &.days
             position: absolute
@@ -72,32 +118,17 @@ body.schedule
                 left: 70%
                 width: 25%
 
-            & > strong
-              margin-top: -1.5em
-              color: lighten($black, 50%)
-              border: none
+              & > strong
+                color: $medium-grey
+                border: none
+                margin: -1em 0 0 0
+                border: none
 
-            ul
-              position: absolute
-              top: 0
-              width: 100%
-
-              li
+              ul
+                position: absolute
+                top: 0
                 width: 100%
-                font-size: 0.8em
-                border-bottom: 1px dotted $white
 
-                span
-                  display: block
-                  padding: 0.15em 0.4em
-
-                &.other
-                  background: transparentize($grey, 0.25)
-
-                &.break
-                  background: transparentize($grey, 0.15)
-
-                &.talk
-                  background: transparentize($brand-1, 0.15)
-                  color: $white
-                  +shadowed
+                li
+                  width: 100%
+                  font-size: 0.8em

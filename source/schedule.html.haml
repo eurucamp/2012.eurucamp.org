@@ -5,7 +5,6 @@ title: Schedule
 = wrapped :article do
   %header
     %h2 Schedule
-    %p A few words about the schedule maybe here and here.
 
   .schedules
     %ul.legend
@@ -24,5 +23,5 @@ title: Schedule
 
               %li(class="#{item.type}" style="#{style}" title="#{title}")
                 %span
-                  = "%0.2f" % item.start
+                  %span= "%0.2f" % item.start
                   %strong= item.title
