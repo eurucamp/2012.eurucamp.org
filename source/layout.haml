@@ -12,9 +12,16 @@
 
     = stylesheet_link_tag 'screen'
 
-    = javascript_include_tag 'http://use.typekit.com/uxm6bkh.js'
+    %script(src="/javascripts/lib/modernizr.js")
+
     :javascript
-      try { Typekit.load(); } catch (e) {}
+      Modernizr.load([{
+        test    : Modernizr.fontface,
+        yep     : 'http://use.typekit.com/uxm6bkh.js',
+        complete: function() {
+          try { Typekit.load(); } catch(e) {};
+        }
+      }]);
 
   %body(class="#{current_page.data.body_class}")
     #container
