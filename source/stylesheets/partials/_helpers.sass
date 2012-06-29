@@ -72,6 +72,8 @@
   +text-shadow(0 1px 0 darken($color, 10%))
   -webkit-backface-visibility: hidden
   +transform(rotate(#{$rotation}))
+  -webkit-background-clip: padding-box
+  background-clip: padding-box
   @if $shadowed
     +shadowed
 
