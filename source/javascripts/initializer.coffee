@@ -3,9 +3,6 @@ $ ->
   # Responsive images
   $('img.resp').responsiveImages()
 
-  # BG image
-  $.backstretch '/images/layout/background.jpg'
-
   # Twitter
   if $('body').hasClass 'index'
     new TwitterFeed 'eurucamp', $('.twitter-feed .tweets')
