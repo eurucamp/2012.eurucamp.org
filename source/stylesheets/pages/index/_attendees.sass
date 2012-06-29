@@ -43,7 +43,7 @@ section.attendees
         width: 10%
 
     h3
-      top: -0.5em
+      top: 0.5em
       left: 0
       position: absolute
       padding: 0.15em 1em 0.35em
@@ -62,14 +62,14 @@ section.attendees
         width: 12.5%
 
 
-  +respond-to(tablet-portrait)
-    h3
-      left: -1em
-
-
   +respond-to(tablet-landscape)
     width: 50%
 
     ul
       li
         width: 10%
+
+
+  +respond-to(tablet-oversize)
+    h3
+      left: -1em

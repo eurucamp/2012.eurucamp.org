@@ -16,17 +16,26 @@ body
     vertical-align: middle
     background: white
 
+
   +respond-to(tablet-lite)
     #jump-to-nav
       display: none
 
+
   +respond-to(tablet-portrait)
     font-size: 1.1em
+
 
   +respond-to(tablet-landscape)
     font-size: 1.2em
     width: 1024px
     margin: 0 auto
+
+
+  +respond-to(tablet-oversize)
+    #container
+      overflow: visible
+
 
   +respond-to(desktop)
     #container
