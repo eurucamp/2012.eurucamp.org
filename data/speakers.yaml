@@ -3,52 +3,52 @@
   company:      Songkick
   company_url:  http://www.songkick.com/
   twitter:      jcoglan
-  image:        jcoglan.png
+  image:        jcoglan.jpg
   url:          http://jcoglan.com/
 -
   name:         Tom Enebo
   company:      "Red Hat, Inc."
   company_url:  http://www.redhat.com/
   twitter:      tom_enebo
-  image:        tenebo.png
+  image:        tenebo.jpg
   url:          http://blog.enebo.com/
 -
   name:         Konstantin Haase
   company:      Travis CI
   company_url:  https://love.travis-ci.org/
   twitter:      konstantinhaase
-  image:        khaase.png
+  image:        khaase.jpg
   url:          http://rkh.im/
 -
   name:         Theo Hultberg
   company:      Burt
   company_url:  http://burtcorp.com/
   twitter:      ikonara
-  image:        thultberg.png
+  image:        thultberg.jpg
   url:          http://architecturalatrocities.com/
 -
   name:         Steve Klabnik
   company:      Jumpstart Lab
   company_url:  http://jumpstartlab.com/
   twitter:      steveklabnik
-  image:        sklabnik.png
+  image:        sklabnik.jpg
   url:          http://www.steveklabnik.com/
 -
   name:         Erik Michaels Ober
   company:      Twitter
   company_url:  http://twitter.com
-  image:        emichaelsober.png
+  image:        emichaelsober.jpg
   twitter:      sferik
 -
   name:         Nicolás Sanguinetti
   company:      Cubox
   company_url:  http://cuboxlabs.com/
   twitter:      godfoca
-  image:        nsanguinetti.png
+  image:        nsanguinetti.jpg
   url:          http://nicolassanguinetti.info/
 -
   name:         Nick Sutterer
   company:      Freelancer
   twitter:      apotonick
-  image:        nsutterer.png
+  image:        nsutterer.jpg
   url:          http://nicksda.apotomo.de/
