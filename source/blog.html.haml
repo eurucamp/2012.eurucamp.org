@@ -3,5 +3,6 @@
 - blog.articles[0...20].each do |article|
   %time= article.date.strftime('%e %b %Y')
   %h3= link_to article.title, article.url
-  %p=  article.summary
-  %p=  link_to 'read more',   article.url
+  %p= article.summary
+  %p= link_to 'read more',   article.url
+  %p= "by #{article.data.author}"
