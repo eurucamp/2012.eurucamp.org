@@ -1,30 +1,48 @@
-article
-  section.twitter-feed
-    +padded
-    +clearfix
+section.twitter-feed
+  margin: 2em 0
+  +padded
+  +clearfix
+
+  h3
+    +brand-stripe(0, $brand-3, false)
+    +custom-sans(black)
+    margin: 0 0 1em 0
+
+  ul
+    +unlisted
+    color: lighten($black, 55%)
+    font-size: 0.9em
+
+    li
+      margin-bottom: 1em
+
+      & > a
+        display: block
+        font-size: 0.8em
+
+  p
+    +more
+
+
+  +respond-to(smartphone-portrait)
+    margin: 1em 0
 
     h3
-      +brand-stripe(2deg, $brand-3)
-      +custom-sans(black)
       position: absolute
       bottom: 0.75em
-      right: -1em
+      right: 0
+      margin: 0 -1em 0 -1em
+      +shadowed
+      +transform(rotation(2deg))
 
-    ul
-      +unlisted
-      color: lighten($black, 55%)
-      font-size: 0.9em
-
-      li
-        margin-bottom: 1em
-
-        & > a
-          display: block
-          font-size: 0.8em
-
-    p
-      +more
 
     +respond-to(tablet-lite)
       width: 50%
       float: right
+      margin: 0
+
+
+    +respond-to(tablet-portrait)
+      h3
+        right: -1em
+

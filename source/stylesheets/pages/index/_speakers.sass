@@ -5,13 +5,9 @@ article
     border-bottom: 1px dotted $grey
 
     h3
-      +brand-stripe(-1deg, $brand-3)
+      +brand-stripe(0, $brand-3, false)
       +custom-sans(black)
-      top: -0.5em
-      left: -1em
-      position: absolute
-      padding: 0.15em 1em 0.35em
-      margin: 0 -1em 0 -1em
+      margin: 0
 
     ul
       +unlisted
@@ -32,7 +28,6 @@ article
             top: 0
             +transition(top 0.25s ease-in)
             +custom-sans(normal, false)
-
 
             strong
               +custom-sans(bold, false)
@@ -57,9 +52,6 @@ article
     p.cfp
       +brand-stripe(0, $black)
       +custom-sans(bold)
-      position: absolute
-      right: -1em
-      bottom: -0.5em
 
       a
         color: $brand-3
@@ -72,15 +64,36 @@ article
           float: left
 
 
+    +respond-to(smartphone-portrait)
+      h3
+        top: -0.5em
+        left: 0
+        position: absolute
+        padding: 0.15em 1em 0.35em
+        margin: 0 -1em 0 -1em
+        +shadowed
+        +transform(rotation(-1deg))
+
+
     +respond-to(smartphone-landscape)
       ul
         li
           width: 25%
 
+      p.cfp
+        position: absolute
+        right: 0
+        bottom: -0.5em
+
 
     +respond-to(tablet-lite)
       width: 50%
       float: left
+
+
+    +respond-to(tablet-portrait)
+      h3
+        left: -1em
 
 
     +respond-to(tablet-landscape)
@@ -89,3 +102,6 @@ article
       ul
         li
           width: 12.5%
+
+      p.cfp
+        right: -1em

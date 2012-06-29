@@ -12,31 +12,54 @@ body.index
     position: relative
 
     & > header
-      padding: 4em 0 0 0
-      position: absolute
-      width: 100%
+      background: white
       +clearfix
 
       h2, h3
-        +brand-stripe(-2deg, $brand-2, false)
+        +brand-stripe(0, $brand-2, false)
+        padding: 0.5em
+        margin: 0
 
       h2
-        +shadowed
         z-index: 500
 
       h3
         font-size: 0.9em
-        margin-top: 0
-        width: 82%
-        margin-left: 20%
-        background: transparentize($brand-2, 0.10)
-        +transform(rotate(1deg))
+        background: none
+        color: $brand-2
+        border-bottom: 1px dotted $brand-2
         z-index: 400
+        +no-text-shadow
 
     .block
       +clearfix
       background: transparentize(white, 0.1)
 
+
+  +respond-to(smartphone-portrait)
+    article
+      & > header
+        text-align: center
+        position: absolute
+        width: 100%
+        padding: 4em 0 0 0
+
+        h2, h3
+          padding: 0.15em 1em 0.35em
+          margin: -2.75em -1em 0 -1em
+
+        h2
+          +transform(rotate(-2deg))
+          +shadowed
+
+        h3
+          +transform(rotate(1deg))
+          +text-shadow(0 1px 0 darken($brand-2, 10%))
+          background: transparentize($brand-2, 0.1)
+          width: 82%
+          margin-left: 20%
+          margin-top: 0
+          color: $white
 
   +respond-to(tablet-landscape)
     article

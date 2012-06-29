@@ -1,48 +1,75 @@
-article
-  section.attendees
-    +padded
+section.attendees
+  margin: 2em 0
+  +padded
 
-    h3
-      +brand-stripe(-2deg, $brand-3)
-      +custom-sans(black)
-      position: absolute
-      top: 2em
-      left: -1em
+  h3
+    +brand-stripe(0, $brand-3, false)
+    +custom-sans(black)
+    margin: 0
 
+  ul
+    +unlisted
+    +clearfix
+
+    li
+      float: left
+      width: 50%
+
+      img
+        width: 100%
+        display: block
+
+  p.more
+    +more
+
+
+  +respond-to(low-end)
     ul
-      +unlisted
-      +clearfix
-
       li
-        float: left
+        width: 25%
+
+
+  +respond-to(mid-range)
+    ul
+      li
         width: 20%
 
-        img
-          width: 100%
-          display: block
 
-    p.more
-      +more
+  +respond-to(smartphone-portrait)
+    margin: 1em 0
 
+    ul
+      li
+        width: 10%
 
-    +respond-to(mid-range)
-      ul
-        li
-          width: 10%
-
-
-    +respond-to(tablet-lite)
-      width: 50%
-      float: left
-
-      ul
-        li
-          width: 20%
+    h3
+      top: 2em
+      left: 0
+      position: absolute
+      padding: 0.15em 1em 0.35em
+      margin: 0 -1em 0 -1em
+      +shadowed
+      +transform(rotation(-2deg))
 
 
-    +respond-to(tablet-landscape)
-      width: 50%
+  +respond-to(tablet-lite)
+    width: 50%
+    float: left
+    margin: 0
 
-      ul
-        li
-          width: 12.5%
+    ul
+      li
+        width: 12.5%
+
+
+  +respond-to(tablet-portrait)
+    h3
+      left: -1em
+
+
+  +respond-to(tablet-landscape)
+    width: 50%
+
+    ul
+      li
+        width: 10%
