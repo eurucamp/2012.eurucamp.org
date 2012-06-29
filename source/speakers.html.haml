@@ -1,7 +1,7 @@
 %h1 Speakers
 
 %ul
-  - data.speakers.speakers.each do |speaker|
+  - data.speakers.each do |speaker|
     %li
       %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
       %strong= link_to speaker.name, speaker.url
