@@ -1,8 +1,7 @@
-%h1 Blog
+%h2 Blog
 
 - blog.articles[0...20].each do |article|
-  %h3
-    %time= article.date.strftime('%e %b %Y')
-    %h1= link_to article.title, article.url
-    %p=  article.summary
-    %p=  link_to 'read more',   article.url
+  %time= article.date.strftime('%e %b %Y')
+  %h3= link_to article.title, article.url
+  %p=  article.summary
+  %p=  link_to 'read more',   article.url
