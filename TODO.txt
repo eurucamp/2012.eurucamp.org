@@ -4,7 +4,6 @@
 + tweak sponsor logo sizes
 + Remove links to empty pages
 + fix headlines for iOS and smaller devices
-+ define general headline styles
 + remove some more duplication from page styles
 + nodge text?
 

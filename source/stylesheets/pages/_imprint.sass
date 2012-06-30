@@ -1,0 +1,27 @@
+body.imprint
+  article
+    header
+      margin-bottom: 2em
+
+    section
+      &.info,
+      &.disclaimer
+        border-top: 1px dotted $grey
+
+
+  +respond-to(tablet-lite)
+    article
+      section
+        &.contact
+          width: 50%
+          float: left
+
+        &.info
+          width: 50%
+          float: right
+          border-top: none
+
+        &.disclaimer
+          clear: both
+          padding-right: 33.33333%
+          border-right: 1px dotted $grey
