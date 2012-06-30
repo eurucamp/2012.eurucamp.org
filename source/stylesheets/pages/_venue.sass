@@ -25,16 +25,62 @@ body.venue
         +text-shadow(0 1px 0 white)
 
     section
-      margin-bottom: 2em
-
       h4
         +brand-stripe(0, $black)
         +custom-sans(bold)
         margin: 1.5em 0 0 0
 
+      ul
+        +unlisted
+
+        &.stand-alone
+          margin-top: 1em
+
+      &.directions
+        margin-bottom: 0
+
+        .wrapper > ul,
+        & > ul
+          & > li
+            padding: 1.5em 0
+            border-bottom: 1px dotted $grey
+
+            &:last-child
+              border: none
+
+            ul
+              margin: 0.5em 0 0 0
+              background: transparent url(/images/layout/venue/line.png) repeat-y 4px top
+              li
+                padding-left: 20px
+                color: $medium-grey
+                background: transparent url(/images/layout/venue/circle.png) no-repeat left center
+
+            strong
+              display: block
+              +custom-sans(bold)
+              color: $brand-3
+              margin: 0 0 0.25em 0
+
+      &.city
+        ul
+          li
+            padding-left: 20px
+            background: transparent url(/images/layout/venue/circle_grey.png) no-repeat left center
+
+
+    address
+      border-top: 1px solid $grey
+      font-style: normal
+
+      h4
+        margin: 0
+
     section, address
       +padded
+      +clearfix
       color: $dark-grey
+
 
     section.map
       z-index: 0
