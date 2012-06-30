@@ -1,4 +1,25 @@
-// Bourbon provides us with this kind of helper, but we don't
+=caps
+  text-transform: lowercase
+  font-variant: small-caps
+
+=custom-sans($weight: normal, $caps: true)
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif
+  @if $weight == bold
+    font-weight: 700
+  @else if $weight == black
+    font-weight: 900
+  @else
+    font-weight: 400 // regular
+  @if $caps == true
+    +caps
+
+=custom-serif($weight: normal)
+  font-family: "ff-tisa-web-pro", Georgia, serif
+  @if $weight == bold
+    font-weight: 700
+  @else
+    font-weight: 300
+
 =text-shadow($shadow)
   +prefixer(text-shadow, $shadow)
 

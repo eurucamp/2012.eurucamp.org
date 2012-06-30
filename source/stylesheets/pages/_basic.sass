@@ -1,4 +1,12 @@
 body
+  a
+  color: $brand-1
+  text-decoration: none
+
+    &:hover
+      color: $brand-2
+      +transition(color 1.0s)
+
   &.imprint,
   &.policies,
   &.blog
