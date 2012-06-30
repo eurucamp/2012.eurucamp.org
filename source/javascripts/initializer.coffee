@@ -52,3 +52,8 @@ $ ->
     $(window)
       .on('resize', -> $size.text $(window).width())
       .trigger('resize')
+
+    $('a').on 'click', ->
+      if /localhost/.test @href
+        document.location.href = "#{@href}.html?dev"
+      false
