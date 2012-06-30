@@ -1,0 +1,47 @@
+body
+  &.imprint,
+  &.policies,
+  &.blog
+    color: $dark-grey
+
+    article
+      +clearfix
+      background: white
+
+      header
+        +padded
+        text-align: center
+        color: $dark-grey
+
+        h2
+          +brand-stripe(0, $brand-3, false)
+          padding: 0.5em
+          margin: 0
+          display: block
+          +custom-sans(black)
+
+      h3
+        +custom-sans(black)
+
+      h4, h5, h6
+        +custom-sans(bold)
+
+      h3, h4, h5, h5
+        margin-bottom: 0.25em
+        color: $medium-grey
+
+      address
+        font-style: normal
+
+      section
+        +padded
+
+    +respond-to(smartphone-portrait)
+      article
+        header
+          h2
+            padding: 0.15em 2em 0.35em 2em
+            width: 100%
+            margin: -1em 0 0 -2em
+            +transform(rotate(-2deg))
+            +shadowed
