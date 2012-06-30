@@ -3,20 +3,38 @@ body.venue
     +clearfix
     background: white
 
-    section, address
-      +padded
-
     header
       +padded
       text-align: center
       color: $dark-grey
 
-      h2
+      h2, h3
         +brand-stripe(0, $brand-3, false)
         padding: 0.5em
         margin: 0
         display: block
         +custom-sans(black)
+
+      h3
+        z-index: 400
+        color: $medium-grey
+        background: none
+        +custom-sans(bold, false)
+        text-transform: none
+        font-variant: normal
+        +text-shadow(0 1px 0 white)
+
+    section
+      margin-bottom: 2em
+
+      h4
+        +brand-stripe(0, $black)
+        +custom-sans(bold)
+        margin: 1.5em 0 0 0
+
+    section, address
+      +padded
+      color: $dark-grey
 
     section.map
       z-index: 0
