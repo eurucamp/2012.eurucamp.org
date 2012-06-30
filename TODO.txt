@@ -1,12 +1,4 @@
-+ textshadow where applicable
-+ sharpen rotated elements?
-+ sharpen images
-+ tweak sponsor logo sizes
-+ Remove links to empty pages
-+ fix headlines for iOS and smaller devices
-+ remove some more duplication from page styles
-+ nodge text?
-
-- Logo
-  - Spikes higher
-
++ blog single
++ refactor / compact
++ blog index
++ index
