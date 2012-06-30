@@ -1,8 +1,0 @@
-%h1 Articles tagged ‘#{@tag}’
-
-- if @articles
-  %ul
-    - @articles[0...12].each do |article|
-      %li
-        =link_to article.title, article.url
-        %time= article.date.strftime('%b %e')
