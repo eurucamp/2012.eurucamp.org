@@ -37,16 +37,18 @@ title: Location
       Prefer to really ‘rough it‘ and camp? Camping facilities are available
       nearby, and we will be posting further information shortly.
 
-  = wrapped :section, :class => 'city' do
+  = wrapped :section, :class => 'city-intro' do
     %h4 Staying in the city
     %p
       Alternatively, if all this talk of the outdoors is too much for you, you can
       also elect to stay in the centre of Berlin and do a reverse commute out
       each day with the local crowd.
 
+  = wrapped :section, :class => 'hostels' do
     %h4 Hostels
     %p Hostel information will be posted shortly.
 
+  = wrapped :section, :class => 'couch' do
     %h4 Couch
     %p
       Berlin has an active couch surfing scene with a monthly meet-up.
@@ -54,6 +56,7 @@ title: Location
       %li= link_to 'Couchsurfing',         'http://www.couchsurfing.org/'
       %li= link_to 'The Hospitality Club', 'http://www.hospitalityclub.org/'
 
+  = wrapped :section, :class => 'apartment' do
     %h4 Apartment Rental
     %ul.stand-alone
       %li= link_to '9flats',           'http://www.9flats.com/'

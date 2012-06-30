@@ -86,3 +86,52 @@ body.venue
       z-index: 0
       width: 100%
       height: 20em
+
+
+  +respond-to(smartphone-portrait)
+    article
+      header
+        h2
+          padding: 0.15em 2em 0.35em 2em
+          width: 100%
+          margin: -1em -4em 0 -2em
+          +transform(rotate(-2deg))
+          +shadowed
+
+
+  +respond-to(tablet-portrait)
+    article
+      header
+        margin: 0 0 4em 0
+
+      section
+        &.hotel
+          float: left
+          width: 50%
+
+        &.camping
+          float: right
+          width: 50%
+
+        &.city-intro,
+        &.directions
+          clear: both
+
+        &.hostels,
+        &.couch,
+        &.apartment
+          float: left
+          width: 33.33333%
+
+        &.directions
+          h4
+            clear: both
+
+          .wrapper > ul
+            & > li
+              width: 50%
+              float: left
+              border: none
+
+
+
