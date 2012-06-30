@@ -51,6 +51,10 @@ $ ->
       .trigger('resize')
 
     $('a').on 'click', ->
-      if /localhost/.test @href
-        document.location.href = "#{@href}.html?dev"
-      false
+      href = $(@).attr 'href'
+      if href == '/'
+        window.location = "#{href}?dev"
+        false
+      else if !/^http/.test href
+        window.location = "#{href}.html?dev"
+        false
