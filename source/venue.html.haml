@@ -19,6 +19,12 @@ title: Location
     %p
       Activites will take place around (and possibly in) the lake.
 
+  = wrapped :section, :class => 'images' do
+    %ul
+      - (1..4).each do |i|
+        %li
+          %img(src="/images/content/venue/hotel_#{i}.jpg" alt="Hotel Müggelsee")
+
   = wrapped :section, :class => 'hotel' do
     %h4 Staying at Hotel Müggelsee
     %p
@@ -45,11 +51,11 @@ title: Location
       each day with the local crowd.
 
   = wrapped :section, :class => 'hostels' do
-    %h4 Hostels
+    %h5 Hostels
     %p Hostel information will be posted shortly.
 
   = wrapped :section, :class => 'couch' do
-    %h4 Couch
+    %h5 Couch
     %p
       Berlin has an active couch surfing scene with a monthly meet-up.
     %ul
@@ -57,7 +63,7 @@ title: Location
       %li= link_to 'The Hospitality Club', 'http://www.hospitalityclub.org/'
 
   = wrapped :section, :class => 'apartment' do
-    %h4 Apartment Rental
+    %h5 Apartment Rental
     %ul.stand-alone
       %li= link_to '9flats',           'http://www.9flats.com/'
       %li= link_to 'AirBnB',           'https://www.airbnb.com/'
@@ -68,35 +74,40 @@ title: Location
     %h4 To Berlin from Out of Town
     %ul
       %li.train
-        %strong By train
-        %ul
-          %li Train information will be posted shortly
+        %span
+          %strong By train
+          %ul
+            %li Train information will be posted shortly
       %li.plane
-        %strong By plane
-        Unfortunately, the opening of Berlin's new mega-airport Berlin-Brandenburg (BER) has been delayed until March 2013. In the meantime, Berlin's two existing airports remain open: Berlin Tegel (TXL) and Berlin Schönefeld (SXF).
-
-        Of the two airports, the venue is located nearest to Schönefeld (17km), and 20 minutes by car/taxi. TXL is 37km.
+        %span
+          %strong By plane
+          Unfortunately, the opening of Berlin's new mega-airport Berlin-Brandenburg (BER) has been delayed until March 2013. In the meantime, Berlin's two existing airports remain open: Berlin Tegel (TXL) and Berlin Schönefeld (SXF).
+          %br
+          Of the two airports, the venue is located nearest to Schönefeld (17km), and 20 minutes by car/taxi. TXL is 37km.
 
     %h4 From Berlin and surroundings
     %ul
       %li.campbus
-        %strong By CampBus
-        If you are coming from the centre of Berlin, please stand by for information about the CampBus.
+        %span
+          %strong By CampBus
+          If you are coming from the centre of Berlin, please stand by for information about the CampBus.
       %li.bike
-        %strong By bike
-        The venue lies directly on the <a href="http://www.euroroute-r1.de/EN/Introduction/Details/Introducing_the_Euroroute_R1/K407.htm">Euroroute R1 bicycle path</a>, which runs from Boulogne-sur-Mer in France to St. Petersberg in Russia.
-        %ul
-          %li Distance to Mitte (city centre): 23km.
-          %li Distance to Altstadt Köpenick (S-Bahn): 6.8km.
-          %li Distance to Erkner (S-Bahn): 8.8km.
+        %span
+          %strong By bike
+          The venue lies directly on the <a href="http://www.euroroute-r1.de/EN/Introduction/Details/Introducing_the_Euroroute_R1/K407.htm">Euroroute R1 bicycle path</a>, which runs from Boulogne-sur-Mer in France to St. Petersberg in Russia.
+          %ul
+            %li Distance to Mitte (city centre): 23km.
+            %li Distance to Altstadt Köpenick (S-Bahn): 6.8km.
+            %li Distance to Erkner (S-Bahn): 8.8km.
         /More info: http://www.euroroute-r1.de/EN/Introduction/Germany/Berlin/Brandenburg/Details/Route_Berlin_Brandenburg/K460.htm?RID=435
         /Want to rent a bike? http://www.vmz-info.de/web/guest/fahrradverleih
       %li.public-transportation
-        %strong By public transportation
-        %a(href="http://www.fahrinfo-berlin.de/Fahrinfo/bin/query.bin/en?ld=0.1&" title="Use the journey planner of the BVG") Journey planner of BVG
-        //Bus 164
-        //Richtung: S Kaulsdorf [1]
-        //alle 20 Minuten
+        %span
+          %strong By public transportation
+          %a(href="http://www.fahrinfo-berlin.de/Fahrinfo/bin/query.bin/en?ld=0.1&" title="Use the journey planner of the BVG") Journey planner of BVG
+          //Bus 164
+          //Richtung: S Kaulsdorf [1]
+          //alle 20 Minuten
 
   = wrapped :address, :class => 'address' do
     %h4 Hotel Müggelsee

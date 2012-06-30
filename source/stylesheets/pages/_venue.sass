@@ -30,11 +30,26 @@ body.venue
         +custom-sans(bold)
         margin: 1.5em 0 0 0
 
+      h5
+        +custom-sans(bold)
+        font-size: 1.2em
+        margin-bottom: 0.25em
+
       ul
         +unlisted
 
         &.stand-alone
           margin-top: 1em
+
+      &.images
+        ul
+          li
+            width: 50%
+            float: left
+
+            img
+              width: 100%
+              display: block
 
       &.directions
         margin-bottom: 0
@@ -53,6 +68,7 @@ body.venue
               background: transparent url(/images/layout/venue/line.png) repeat-y 4px top
               li
                 padding-left: 20px
+                margin-bottom: 0.25em
                 color: $medium-grey
                 background: transparent url(/images/layout/venue/circle.png) no-repeat left center
 
@@ -62,12 +78,14 @@ body.venue
               color: $brand-3
               margin: 0 0 0.25em 0
 
-      &.city
+      &.city,
+      &.apartment,
+      &.couch,
+      &.hostels
         ul
           li
-            padding-left: 20px
-            background: transparent url(/images/layout/venue/circle_grey.png) no-repeat left center
-
+            a
+              +custom-sans(normal, false)
 
     address
       border-top: 1px solid $grey
@@ -98,17 +116,23 @@ body.venue
           +transform(rotate(-2deg))
           +shadowed
 
+      section.images
+        ul
+          li
+            width: 25%
 
-  +respond-to(tablet-portrait)
+
+  +respond-to(tablet-lite)
     article
-      header
-        margin: 0 0 4em 0
-
       section
+
+        &.intro,
         &.hotel
           float: left
           width: 50%
+          clear: both
 
+        &.images,
         &.camping
           float: right
           width: 50%
@@ -123,6 +147,11 @@ body.venue
           float: left
           width: 33.33333%
 
+        &.images
+          ul
+            li
+              width: 50%
+
         &.directions
           h4
             clear: both
@@ -133,5 +162,29 @@ body.venue
               float: left
               border: none
 
+              span
+                display: block
+                padding-right: 1em
 
+              &.bike
+                float: right
+
+
+  +respond-to(tablet-landscape)
+    article
+      position: relative
+
+      address
+        background: transparentize($black, 0.2)
+        color: $white
+        position: absolute
+        width: 33.33333%
+        height: 20em
+        bottom: 0
+        left: 0
+        border: none
+        z-index: 999
+
+      section.map
+        z-index: 1
 

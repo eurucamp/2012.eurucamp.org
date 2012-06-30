@@ -20,18 +20,25 @@ module CustomTagHelpers
   end
 
   def nav(items, attrs)
+    attrs_to_merge = [:type, :rel].freeze
     capture_haml do
       haml_tag :nav, attrs do
         haml_tag :ul do
           items.each do |item|
             haml_tag :li, :class => item.downcase do
-              path = "/#{item.downcase.dasherize}.html"
-              attrs = {
+              path  = attrs[:path]  || "/#{item.downcase.dasherize}"
+              title = attrs[:title] || "Read about #{item.downcase}"
+
+              new_attrs = {
                 :href  => path,
                 :class => ('active' if request.path == path),
-                :title => "Read about #{item.downcase}"
+                :title => title
               }
-              haml_tag :a, item, attrs
+              attrs_to_merge.each do |key|
+                new_attrs.merge! key => attrs[key] if attrs[key]
+              end
+
+              haml_tag :a, item, new_attrs
             end
           end
         end
