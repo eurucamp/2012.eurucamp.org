@@ -1,11 +1,22 @@
 body.venue
   article
-    +padded
     +clearfix
     background: white
 
+    section, address
+      +padded
+
     header
       +padded
+      text-align: center
+      color: $dark-grey
+
+      h2
+        +brand-stripe(0, $brand-3, false)
+        padding: 0.5em
+        margin: 0
+        display: block
+        +custom-sans(black)
 
     section.map
       z-index: 0
