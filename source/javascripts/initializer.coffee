@@ -54,6 +54,6 @@ $ ->
       .trigger('resize')
 
     $('a').on 'click', ->
-      if /localhost/.test @href
+      if @href.length && /localhost/.test @href
         document.location.href = "#{@href}.html?dev"
       false
