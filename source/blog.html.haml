@@ -8,8 +8,10 @@ body_class: blog
 
   = wrapped :section, :class => 'articles' do
     - blog.articles[0...20].each do |article|
-      %time= article.date.strftime('%e %b %Y')
-      %h3= link_to article.title, article.url_without_extension
+
+      %h3= article.title
+      %p.meta
+        %span.date= article.date.strftime('%e %b %Y')
+        %span.author= "by #{article.data.author}"
+
       %p= article.summary
-      %p= link_to 'read more', article.url_without_extension
-      %p= "by #{article.data.author}"
