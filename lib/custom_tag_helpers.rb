@@ -25,7 +25,7 @@ module CustomTagHelpers
         haml_tag :ul do
           items.each do |item|
             haml_tag :li, :class => item.downcase do
-              path = "/#{item.downcase.dasherize}.html"
+              path = "/#{item.downcase.dasherize}"
               attrs = {
                 :href  => path,
                 :class => ('active' if request.path == path),
