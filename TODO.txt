@@ -1,33 +1,13 @@
 + textshadow where applicable
 + sharpen rotated elements?
 + sharpen images
-+ remove duplication
-+ clean images folder
-+ fix strip in header (>desktop)
-+ define h2 headline style
-+ tweak overal feel (PS)
-+ colors (more greys, text)
-+ proper footer content / layout (copyright, etc.)
 + tweak sponsor logo sizes
-
-- Home page
-  - Don't show attendees at the beginning
-  - Show all confirmed speakers on front page
-  - Use official images (Google drive)
-
-- Colors
-  - More use of color throughout.
-  - Try adding blue.
++ Remove links to empty pages
++ fix headlines for iOS and smaller devices
++ define general headline styles
++ remove some more duplication from page styles
++ nodge text?
 
 - Logo
   - Spikes higher
 
-  - Fix layout
-  - Fix home page
-  - Remove links to empty pages
-
-- Typography
-  - Try using Sonar Sans for h2, h3 headline styles
-
-- Content
-  - Provide content for big header, front-page (AC)

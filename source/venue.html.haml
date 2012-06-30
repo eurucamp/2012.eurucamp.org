@@ -8,42 +8,47 @@ title: Location
     %h3 On Berlin's biggest lake.
 
   = wrapped :section, :class => 'intro' do
-    :markdown
-      It's summer. Who wants to suffer in the urban jungle? This year's eurucamp heads out of town to the biggest of Berlin's abundant lakes, the [Müggelsee](http://en.wikipedia.org/wiki/M%C3%BCggelsee).
-
-      Talks will take place at the [Hotel Müggelsee](http://www.hotel-mueggelsee-berlin.de/index.php).
+    %p
+      It's summer. Who wants to suffer in the urban jungle? This year's eurucamp heads out of town to the biggest of Berlin's abundant lakes, the
+      %a(href="http://en.wikipedia.org/wiki/M%C3%BCggelsee" title="Müggelsee on Wikipedia") Müggelsee
+      \.
+    %p
+      Talks will take place at the
+      %a(href="http://www.hotel-mueggelsee-berlin.de/en" title="Website Hotel Müggelsee") Hotel Müggelsee
+      \.
+    %p
       Activites will take place around (and possibly in) the lake.
 
-  = wrapped :section, :class => '' do
+  = wrapped :section, :class => 'hotel' do
     %h4 Staying at Hotel Müggelsee
-
     %p
-      Hotel Müggelsee sits on the banks of the lake and is surrounded by circa 48,000 m² woodland and parks. Naturally, you'll also be able to stay overnight at the venue. In fact, for the most fun, we recommend staying here.
+      Hotel Müggelsee sits on the banks of the lake and is surrounded by circa 48,000 m² of woodland and parks. Naturally, you'll also be able to stay overnight at the venue. In fact, for the most fun, we recommend staying here.
     %p
       Hotel rooms are available for eurucamp attendees at the following special
       rates until the 17th July:
     %ul
-      %li €59 (inc. VAT) per night for a single room, with breakfast.
-      %li €89 (inc. VAT) per night for a double room, with breakfast.
-
+      %li &euro;59 (inc. VAT) per night for a single room, with breakfast.
+      %li &euro;89 (inc. VAT) per night for a double room, with breakfast.
     %p The booking link will be available shortly.
 
-  = wrapped :section, :class => '' do
+  = wrapped :section, :class => 'camping' do
     %h4 Camping
     %p
-      Prefer to really rough it out and camp? Camping facilities are available
+      Prefer to really ‘rough it‘ and camp? Camping facilities are available
       nearby, and we will be posting further information shortly.
 
-  = wrapped :section, :class => '' do
+  = wrapped :section, :class => 'city-intro' do
     %h4 Staying in the city
     %p
-      Alternatively, if all this talk of outdoors is too much for you, you can
+      Alternatively, if all this talk of the outdoors is too much for you, you can
       also elect to stay in the centre of Berlin and do a reverse commute out
       each day with the local crowd.
 
+  = wrapped :section, :class => 'hostels' do
     %h4 Hostels
     %p Hostel information will be posted shortly.
 
+  = wrapped :section, :class => 'couch' do
     %h4 Couch
     %p
       Berlin has an active couch surfing scene with a monthly meet-up.
@@ -51,8 +56,9 @@ title: Location
       %li= link_to 'Couchsurfing',         'http://www.couchsurfing.org/'
       %li= link_to 'The Hospitality Club', 'http://www.hospitalityclub.org/'
 
+  = wrapped :section, :class => 'apartment' do
     %h4 Apartment Rental
-    %ul
+    %ul.stand-alone
       %li= link_to '9flats',           'http://www.9flats.com/'
       %li= link_to 'AirBnB',           'https://www.airbnb.com/'
       %li= link_to 'housetrip',        'http://www.housetrip.com/'
@@ -67,36 +73,38 @@ title: Location
           %li Train information will be posted shortly
       %li.plane
         %strong By plane
-        Unfortunately, the opening of Berlin's new mega-airport Berlin-Brandenburg (BER) has been delayed until March 2012. In the meantime, Berlin's two existing airports remain open: Berlin Tegel (TXL) and Berlin Schönefeld (SXF).
+        Unfortunately, the opening of Berlin's new mega-airport Berlin-Brandenburg (BER) has been delayed until March 2013. In the meantime, Berlin's two existing airports remain open: Berlin Tegel (TXL) and Berlin Schönefeld (SXF).
 
         Of the two airports, the venue is located nearest to Schönefeld (17km), and 20 minutes by car/taxi. TXL is 37km.
-        -#%ul
-          %li Step 1 and so forth
+
     %h4 From Berlin and surroundings
     %ul
       %li.campbus
         %strong By CampBus
-        If you are coming from the centre of Berlin, please standby for information about the CampBus.
+        If you are coming from the centre of Berlin, please stand by for information about the CampBus.
       %li.bike
         %strong By bike
-        %p
-          The venue lies directly on the <a href="http://www.euroroute-r1.de/EN/Introduction/Details/Introducing_the_Euroroute_R1/K407.htm">Euroroute R1 bicycle path</a>, which runs from Boulogne-sur-Mer in France to St. Petersberg in Russia.
+        The venue lies directly on the <a href="http://www.euroroute-r1.de/EN/Introduction/Details/Introducing_the_Euroroute_R1/K407.htm">Euroroute R1 bicycle path</a>, which runs from Boulogne-sur-Mer in France to St. Petersberg in Russia.
         %ul
           %li Distance to Mitte (city centre): 23km.
           %li Distance to Altstadt Köpenick (S-Bahn): 6.8km.
           %li Distance to Erkner (S-Bahn): 8.8km.
-        //More info: http://www.euroroute-r1.de/EN/Introduction/Germany/Berlin/Brandenburg/Details/Route_Berlin_Brandenburg/K460.htm?RID=435
-        //Want to rent a bike? http://www.vmz-info.de/web/guest/fahrradverleih
+        /More info: http://www.euroroute-r1.de/EN/Introduction/Germany/Berlin/Brandenburg/Details/Route_Berlin_Brandenburg/K460.htm?RID=435
+        /Want to rent a bike? http://www.vmz-info.de/web/guest/fahrradverleih
       %li.public-transportation
         %strong By public transportation
-        Bus 164
-        Richtung: S Kaulsdorf [1]
-        alle 20 Minuten
+        %a(href="http://www.fahrinfo-berlin.de/Fahrinfo/bin/query.bin/en?ld=0.1&" title="Use the journey planner of the BVG") Journey planner of BVG
+        //Bus 164
+        //Richtung: S Kaulsdorf [1]
+        //alle 20 Minuten
 
   = wrapped :address, :class => 'address' do
     %h4 Hotel Müggelsee
-    Müggelheimer Damm 145
-    12559 Berlin-Köpenick
-    Deutschland
+    %p
+      Müggelheimer Damm 145
+      %br
+      12559 Berlin-Köpenick
+      %br
+      Deutschland
 
   %section.map

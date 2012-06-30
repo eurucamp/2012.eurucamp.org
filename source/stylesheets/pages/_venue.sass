@@ -1,9 +1,137 @@
 body.venue
   article
+    +clearfix
+    background: white
+
     header
       +padded
+      text-align: center
+      color: $dark-grey
+
+      h2, h3
+        +brand-stripe(0, $brand-3, false)
+        padding: 0.5em
+        margin: 0
+        display: block
+        +custom-sans(black)
+
+      h3
+        z-index: 400
+        color: $medium-grey
+        background: none
+        +custom-sans(bold, false)
+        text-transform: none
+        font-variant: normal
+        +text-shadow(0 1px 0 white)
+
+    section
+      h4
+        +brand-stripe(0, $black)
+        +custom-sans(bold)
+        margin: 1.5em 0 0 0
+
+      ul
+        +unlisted
+
+        &.stand-alone
+          margin-top: 1em
+
+      &.directions
+        margin-bottom: 0
+
+        .wrapper > ul,
+        & > ul
+          & > li
+            padding: 1.5em 0
+            border-bottom: 1px dotted $grey
+
+            &:last-child
+              border: none
+
+            ul
+              margin: 0.5em 0 0 0
+              background: transparent url(/images/layout/venue/line.png) repeat-y 4px top
+              li
+                padding-left: 20px
+                color: $medium-grey
+                background: transparent url(/images/layout/venue/circle.png) no-repeat left center
+
+            strong
+              display: block
+              +custom-sans(bold)
+              color: $brand-3
+              margin: 0 0 0.25em 0
+
+      &.city
+        ul
+          li
+            padding-left: 20px
+            background: transparent url(/images/layout/venue/circle_grey.png) no-repeat left center
+
+
+    address
+      border-top: 1px solid $grey
+      font-style: normal
+
+      h4
+        margin: 0
+
+    section, address
+      +padded
+      +clearfix
+      color: $dark-grey
+
 
     section.map
       z-index: 0
       width: 100%
       height: 20em
+
+
+  +respond-to(smartphone-portrait)
+    article
+      header
+        h2
+          padding: 0.15em 2em 0.35em 2em
+          width: 100%
+          margin: -1em -4em 0 -2em
+          +transform(rotate(-2deg))
+          +shadowed
+
+
+  +respond-to(tablet-portrait)
+    article
+      header
+        margin: 0 0 4em 0
+
+      section
+        &.hotel
+          float: left
+          width: 50%
+
+        &.camping
+          float: right
+          width: 50%
+
+        &.city-intro,
+        &.directions
+          clear: both
+
+        &.hostels,
+        &.couch,
+        &.apartment
+          float: left
+          width: 33.33333%
+
+        &.directions
+          h4
+            clear: both
+
+          .wrapper > ul
+            & > li
+              width: 50%
+              float: left
+              border: none
+
+
+
