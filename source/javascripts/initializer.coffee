@@ -1,5 +1,7 @@
 $ ->
 
+  setTheme($.cookie 'theme')
+
   # Responsive images
   $('img.resp').responsiveImages()
 
@@ -11,8 +13,7 @@ $ ->
     new TwitterFeed 'eurucamp', $('.twitter-feed .tweets')
 
   # Theme toggle
-  $('a.theme-toggle').on 'click', ->
-    $('html').toggleClass('night')
+  $('a.theme-toggle').on 'click', -> setTheme()
 
   # Map
   if $('body').hasClass 'venue'
@@ -65,3 +66,14 @@ $ ->
       else if !/^http/.test href
         window.location = "#{href}.html?dev"
         false
+
+
+window.setTheme = (theme) ->
+  current = $.cookie 'theme'
+  if !theme
+    theme = if current == 'day' then 'night' else 'day'
+  if theme in ['day', true]
+    $('html').removeClass('night')
+  else
+    $('html').addClass('night')
+  $.cookie 'theme', theme
