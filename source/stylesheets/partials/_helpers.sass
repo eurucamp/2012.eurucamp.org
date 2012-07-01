@@ -2,6 +2,10 @@
   text-transform: lowercase
   font-variant: small-caps
 
+=no-caps
+  text-transform: none
+  font-variant: normal
+
 =custom-sans($weight: normal, $caps: true)
   font-family: "proxima-nova", Helvetica, Arial, sans-serif
   @if $weight == bold
@@ -84,9 +88,7 @@
   margin: 0
 
 =brand-stripe($rotation: -3deg, $color: $brand-2, $shadowed: true)
-  padding: 0.15em 1em 0.35em
-  margin:  0 -1em
-  overflow: hidden
+  padding: 0.15em 0 0.35em
   display: block
   background: transparentize($color, 0.05)
   color: $white
@@ -94,12 +96,15 @@
   position: relative
   z-index: 1000
   +text-shadow(0 1px 0 darken($color, 10%))
-  -webkit-backface-visibility: hidden
   +transform(rotate(#{$rotation}))
   -webkit-background-clip: padding-box
+  -webkit-backface-visibility: hidden
   background-clip: padding-box
   @if $shadowed
     +shadowed
+
+=sticky
+  +brand-stripe
 
 =more
   font-size: 0.8em
