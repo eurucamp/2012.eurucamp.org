@@ -1,5 +1,10 @@
 $ ->
 
+  # if no theme cookie is set, select by time of day
+  if !$.cookie('theme') && ((time = (new Date).getHours()) > 18 || time < 6)
+    $.cookie 'theme', 'night'
+
+  # Set theme by cookie
   setTheme($.cookie 'theme')
 
   # Responsive images
