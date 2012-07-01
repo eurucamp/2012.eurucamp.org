@@ -5,22 +5,20 @@ body.venue
       +padded
 
     section
-      // convert to sticky
-      h4
-        +brand-stripe(0, $black)
-        +custom-sans(bold)
-        margin: 1.5em 0 0 0
+      +clearfix
+      padding-bottom: 2em
 
-      h5
-        +custom-sans(bold)
-        font-size: 1.2em
-        margin-bottom: 0.25em
+      h4
+        +sticky
 
       ul
         +unlisted
 
         &.stand-alone
           margin-top: 1em
+
+      ul, p
+        font-size: 0.9em
 
       &.images
         ul
@@ -31,6 +29,18 @@ body.venue
             img
               width: 100%
               display: block
+
+      &.camping
+        h4
+          left: auto
+          +sticky($brand-3, true)
+
+      &.external,
+      &.internal,
+      &.city-intro,
+      &.hotel,
+      &.camping
+        border-top: 1px dotted $grey
 
       &.directions
         margin-bottom: 0
@@ -60,7 +70,20 @@ body.venue
               color: $brand-3
               margin: 0 0 0.25em 0
 
-      &.city,
+      &.city-intro,
+      &.apartment,
+      &.couch,
+      &.hostels
+        padding-bottom: 0
+
+        .wrapper,
+        .wrapper h5
+          margin-top: 0.5em
+
+      &.apartment
+        padding-bottom: 2em
+
+      &.city-intro,
       &.apartment,
       &.couch,
       &.hostels
@@ -89,14 +112,6 @@ body.venue
 
   +respond-to(smartphone-portrait)
     article
-      header
-        h2
-          padding: 0.15em 2em 0.35em 2em
-          width: 100%
-          margin: -1em 0 0 -2em
-          +transform(rotate(-2deg))
-          +shadowed
-
       section.images
         ul
           li
@@ -127,6 +142,8 @@ body.venue
         &.apartment
           float: left
           width: 33.33333%
+
+
 
         &.images
           ul

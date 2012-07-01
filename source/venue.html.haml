@@ -70,7 +70,7 @@ title: Location
       %li= link_to 'housetrip',        'http://www.housetrip.com/'
       %li= link_to 'Urban Apartments', 'http://www.urban-apartments.com/berlin/'
 
-  = wrapped :section, :class => 'directions' do
+  = wrapped :section, :class => 'directions external' do
     %h4 To Berlin from Out of Town
     %ul
       %li.train
@@ -85,6 +85,7 @@ title: Location
           %br
           Of the two airports, the venue is located nearest to Schönefeld (17km), and 20 minutes by car/taxi. TXL is 37km.
 
+  = wrapped :section, :class => 'directions internal' do
     %h4 From Berlin and surroundings
     %ul
       %li.campbus
