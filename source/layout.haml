@@ -14,18 +14,14 @@
     = stylesheet_link_tag 'screen'
 
     %script(src="/javascripts/lib/modernizr.js")
+    %script(src="http://use.typekit.com/uxm6bkh.js")
 
     :javascript
-      Modernizr.load([{
-        test    : Modernizr.fontface,
-        yep     : 'http://use.typekit.com/uxm6bkh.js',
-        complete: function() {
-          try { Typekit.load(); } catch(e) {};
-        }
-      }]);
+      try { Typekit.load(); } catch(e) {};
 
   %body(class="#{current_page.data.body_class}")
     #container
+      %a.theme-toggle(href="#" title="Toggle theme") Toggle theme
       = link_to '#footer', :id => 'jump-to-nav' do
         %img(src="/images/layout/jump_to_main_nav.png" width="20" height="13" alt="Jump to main navigation")
 
