@@ -10,6 +10,10 @@ $ ->
   if $('body').hasClass 'index'
     new TwitterFeed 'eurucamp', $('.twitter-feed .tweets')
 
+  # Theme toggle
+  $('a.theme-toggle').on 'click', ->
+    $('html').toggleClass('night')
+
   # Map
   if $('body').hasClass 'venue'
     address = 'Mügglheimer Damm 145, 12559 Berlin'
@@ -53,7 +57,7 @@ $ ->
       .on('resize', -> $size.text $(window).width())
       .trigger('resize')
 
-    $('a').on 'click', ->
+    $('a:not(.theme-toggle)').on 'click', ->
       href = $(@).attr 'href'
       if href == '/'
         window.location = "#{href}?dev"
