@@ -11,7 +11,10 @@ $ ->
   $('img.resp').responsiveImages()
 
   # BG image
-  $.backstretch '/images/layout/background.jpg'
+  $.backstretch '/images/layout/background.jpg',
+    centeredX: true
+    centeredY: true
+    speed    : 500
 
   # Twitter
   if $('body').hasClass 'index'
