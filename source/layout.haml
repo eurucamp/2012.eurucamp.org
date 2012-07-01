@@ -26,7 +26,7 @@
 
   %body(class="#{current_page.data.body_class}")
     #container
-      = link_to '#footer', :id => 'jump-to-nav' do
+      %a(href='#footer' id='jump-to-nav')
         %img(src="/images/layout/jump_to_main_nav.png" width="20" height="13" alt="Jump to main navigation")
 
       = wrapped :header, :id => 'header' do

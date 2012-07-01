@@ -1,5 +1,5 @@
 %h1
-  = link_to '/' do
+  %a(href='/')
     - sizes = request.path =~ /index/ ? [360, 1280] : [360]
     = image '/images/layout/header/logo.png', sizes, :alt => "eurucamp 2012"
 
