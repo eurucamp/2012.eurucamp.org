@@ -1,3 +1,0 @@
-+ refactor / compact
-+ blog index
-+ index
