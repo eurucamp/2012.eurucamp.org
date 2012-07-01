@@ -5,6 +5,9 @@ body.venue
       +padded
 
     section
+      +clearfix
+      padding-bottom: 2em
+
       h4
         +sticky
 
@@ -13,6 +16,9 @@ body.venue
 
         &.stand-alone
           margin-top: 1em
+
+      ul, p
+        font-size: 0.9em
 
       &.images
         ul
@@ -23,6 +29,18 @@ body.venue
             img
               width: 100%
               display: block
+
+      &.camping
+        h4
+          left: auto
+          +sticky($brand-3, true)
+
+      &.external,
+      &.internal,
+      &.city-intro,
+      &.hotel,
+      &.camping
+        border-top: 1px dotted $grey
 
       &.directions
         margin-bottom: 0
@@ -52,7 +70,20 @@ body.venue
               color: $brand-3
               margin: 0 0 0.25em 0
 
-      &.city,
+      &.city-intro,
+      &.apartment,
+      &.couch,
+      &.hostels
+        padding-bottom: 0
+
+        .wrapper,
+        .wrapper h5
+          margin-top: 0.5em
+
+      &.apartment
+        padding-bottom: 2em
+
+      &.city-intro,
       &.apartment,
       &.couch,
       &.hostels
@@ -111,6 +142,8 @@ body.venue
         &.apartment
           float: left
           width: 33.33333%
+
+
 
         &.images
           ul
