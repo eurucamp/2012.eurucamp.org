@@ -20,9 +20,8 @@ body
     &:hover
       opacity: 1
 
-    html.night &
+    +at-night
       background-position: top center
-
 
   #jump-to-nav
     color: $white
@@ -33,7 +32,7 @@ body
     text-align: right
     border-bottom: 1px solid $grey
     vertical-align: middle
-    background: white
+    +don(background, white, $black)
 
 
   +respond-to(tablet-lite)
