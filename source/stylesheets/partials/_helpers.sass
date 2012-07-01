@@ -89,6 +89,7 @@
 
 =brand-stripe($rotation: -3deg, $color: $brand-2, $shadowed: true)
   padding: 0.15em 0 0.35em
+  margin: 0
   display: block
   background: transparentize($color, 0.05)
   color: $white
@@ -103,8 +104,32 @@
   @if $shadowed
     +shadowed
 
-=sticky
-  +brand-stripe
+=sticky($color: $brand-3, $right: false)
+  padding: 0.15em 1em 0.35em
+  margin: 0
+  display: block
+  background: transparentize($color, 0.05)
+  color: $white
+  text-align: center
+  position: relative
+  z-index: 1000
+  +text-shadow(0 1px 0 darken($color, 10%))
+
+  +respond-to(smartphone-portrait)
+    position: absolute
+    top: -0.5em
+    +shadowed
+    @if $right == true
+      right: -0.5em
+    @else
+      left: -0.5em
+
+  +respond-to(tablet-oversize)
+    @if $right == true
+      right: -1.75em
+    @else
+      left: -1.75em
+
 
 =more
   font-size: 0.8em

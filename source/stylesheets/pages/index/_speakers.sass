@@ -5,9 +5,7 @@ article
     border-bottom: 1px dotted $grey
 
     h3
-      +brand-stripe(0, $brand-3, false)
-      +custom-sans(black)
-      margin: 0
+      +sticky
 
     ul
       +unlisted
@@ -67,17 +65,6 @@ article
           float: left
 
 
-    +respond-to(smartphone-portrait)
-      h3
-        top: 0.5em
-        left: 0
-        position: absolute
-        padding: 0.15em 1em 0.35em
-        margin: 0 -1em 0 -1em
-        +shadowed
-        +transform(rotation(-1deg))
-
-
     +respond-to(smartphone-landscape)
       ul
         li
@@ -103,9 +90,6 @@ article
 
 
     +respond-to(tablet-oversize)
-      h3
-        left: -1em
-
       p.cfp
         right: -1em
 
