@@ -138,3 +138,16 @@
   border-top: 1px dotted $grey
   color: $medium-grey
   text-align: center
+
+
+
+// don = Day Or Night
+=at-night
+  html.night &
+    @content
+
+=don($property, $a, $b)
+  #{$property}: $a
+  +at-night
+    #{$property}: $b
+

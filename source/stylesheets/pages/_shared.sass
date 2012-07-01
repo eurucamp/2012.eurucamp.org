@@ -6,6 +6,24 @@ body
     width: 100%
     overflow: hidden
 
+  a.theme-toggle
+    display: block
+    width: 30px
+    height: 30px
+    background: transparent url(/images/layout/theme_toggle.png) no-repeat bottom center
+    text-indent: -999em
+    position: fixed
+    top: 0.5em
+    right: 0.5em
+    opacity: 0.5
+
+    &:hover
+      opacity: 1
+
+    html.night &
+      background-position: top center
+
+
   #jump-to-nav
     color: $white
     display: block
