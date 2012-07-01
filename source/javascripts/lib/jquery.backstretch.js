@@ -14,6 +14,9 @@
 ;(function($) {
 
     $.backstretch = function(src, options, callback) {
+      if (src == 'destroy') {
+        $("#backstretch").remove();
+      } else {
         var defaultSettings = {
             centeredX: true         // Should we center the image on the X axis?
           , centeredY: true         // Should we center the image on the Y axis?
@@ -90,7 +93,7 @@
             // Initialize the plugin
             _init();
         });
-
+        }
         // For chaining
         return this;
 
