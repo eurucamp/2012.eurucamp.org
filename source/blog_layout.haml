@@ -1,0 +1,45 @@
+!!! 5
+- ie_html :lang => 'en', :class => 'no-js' do
+  %head
+    %meta(charset="utf-8")
+    %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
+    %title= [current_page.data.title, 'eurucamp'].compact.flatten.join(' | ')
+    %meta(content="" name="description")
+    %meta(content="" name="author")
+    %meta(content="width=device-width, initial-scale=1.0" name="viewport")
+    = feed_tag :atom, "/feed.xml", :title => "ATOM"
+
+    %link(href="favicon.png" rel="shortcut icon")
+
+    = stylesheet_link_tag 'screen'
+
+    %script(src="/javascripts/lib/modernizr.js")
+
+    :javascript
+      Modernizr.load([{
+        test    : Modernizr.fontface,
+        yep     : 'http://use.typekit.com/uxm6bkh.js',
+        complete: function() {
+          try { Typekit.load(); } catch(e) {};
+        }
+      }]);
+
+  %body(class="blog")
+    #container
+      = link_to '#footer', :id => 'jump-to-nav' do
+        %img(src="/images/layout/jump_to_main_nav.png" width="20" height="13" alt="Jump to main navigation")
+
+      = wrapped :header, :id => 'header' do
+        = partial 'partials/header'
+
+      #main(role="main")
+        %article
+          = wrapped :header do
+            %h2 Blog
+
+          = wrapped :section, :class => 'articles' do
+            = yield
+
+      = wrapped :footer, :id => 'footer' do
+        = partial 'partials/footer'
+        = javascript_include_tag 'application'
