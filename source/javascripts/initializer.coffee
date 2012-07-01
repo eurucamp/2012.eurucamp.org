@@ -1,3 +1,10 @@
+BG_OPTIONS =
+  centeredX: true
+  centeredY: true
+  speed    : 500
+
+BG_PATH = '/images/layout/background.jpg'
+
 $ ->
 
   # if no theme cookie is set, select by time of day
@@ -9,12 +16,6 @@ $ ->
 
   # Responsive images
   $('img.resp').responsiveImages()
-
-  # BG image
-  $.backstretch '/images/layout/background.jpg',
-    centeredX: true
-    centeredY: true
-    speed    : 500
 
   # Twitter
   if $('body').hasClass 'index'
@@ -77,6 +78,8 @@ window.setTheme = (theme) ->
     theme = if current == 'day' then 'night' else 'day'
   if theme in ['day', true]
     $('html').removeClass('night')
+    $.backstretch BG_PATH, BG_OPTIONS
   else
     $('html').addClass('night')
+    $.backstretch 'destroy'
   $.cookie 'theme', theme
