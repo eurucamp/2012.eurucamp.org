@@ -5,16 +5,8 @@ body.venue
       +padded
 
     section
-      // convert to sticky
       h4
-        +brand-stripe(0, $black)
-        +custom-sans(bold)
-        margin: 1.5em 0 0 0
-
-      h5
-        +custom-sans(bold)
-        font-size: 1.2em
-        margin-bottom: 0.25em
+        +sticky
 
       ul
         +unlisted
@@ -89,14 +81,6 @@ body.venue
 
   +respond-to(smartphone-portrait)
     article
-      header
-        h2
-          padding: 0.15em 2em 0.35em 2em
-          width: 100%
-          margin: -1em 0 0 -2em
-          +transform(rotate(-2deg))
-          +shadowed
-
       section.images
         ul
           li
