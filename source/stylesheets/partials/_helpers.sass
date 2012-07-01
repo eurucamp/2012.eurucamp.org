@@ -139,9 +139,15 @@
   color: $medium-grey
   text-align: center
 
+
+
 // don = Day Or Night
+=at-night
+  html.night &
+    @content
+
 =don($property, $a, $b)
   #{$property}: $a
-  html.night &
+  +at-night
     #{$property}: $b
 
