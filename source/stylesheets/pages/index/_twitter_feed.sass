@@ -4,9 +4,7 @@ section.twitter-feed
   +clearfix
 
   h3
-    +brand-stripe(0, $brand-3, false)
-    +custom-sans(black)
-    margin: 0 0 1em 0
+    +sticky($brand-3, true)
 
   ul
     +unlisted
@@ -27,22 +25,9 @@ section.twitter-feed
   +respond-to(smartphone-portrait)
     margin: 1em 0
 
-    h3
-      position: absolute
-      top: -0.5em
-      right: 0.5em
-      margin: 0 -1em 0 -1em
-      +shadowed
-      +transform(rotation(2deg))
 
-
-    +respond-to(tablet-lite)
-      width: 50%
-      float: right
-      margin: 0
-
-
-    +respond-to(tablet-oversize)
-      h3
-        right: -1em
+  +respond-to(tablet-lite)
+    width: 50%
+    float: right
+    margin: 0
 

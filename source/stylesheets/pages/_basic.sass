@@ -1,4 +1,6 @@
 body
+  color: $dark-grey
+
   a
     color: $brand-1
     text-decoration: none
@@ -7,49 +9,54 @@ body
       color: $brand-2
       +transition(color 1.0s)
 
-  &.imprint,
-  &.policies,
-  &.blog
-    color: $dark-grey
+  article
+    +clearfix
+    background: white
 
-    article
-      +clearfix
-      background: white
+    header
+      +padded
+      text-align: center
+      color: $dark-grey
 
-      header
-        +padded
-        text-align: center
-        color: $dark-grey
-
-        h2
-          +brand-stripe(0, $brand-3, false)
-          padding: 0.5em
-          margin: 0
-          display: block
-          +custom-sans(black)
-
-      h3
+      h2
+        +brand-stripe(0, $brand-3, false)
+        padding: 0.15em 2em 0.35em 2em
+        margin: 0
+        display: block
         +custom-sans(black)
 
-      h4, h5, h6
-        +custom-sans(bold)
-
-      h3, h4, h5, h5
-        margin-bottom: 0.25em
+      h3
+        z-index: 400
         color: $medium-grey
+        background: none
+        text-transform: none
+        font-variant: normal
+        +custom-sans(bold, false)
+        +text-shadow(0 1px 0 white)
 
-      address
-        font-style: normal
+    h3
+      +custom-sans(black)
 
-      section
-        +padded
+    h4, h5, h6
+      +custom-sans(bold)
 
-    +respond-to(smartphone-portrait)
-      article
-        header
-          h2
-            padding: 0.15em 2em 0.35em 2em
-            width: 100%
-            margin: -1em 0 0 -2em
-            +transform(rotate(-2deg))
-            +shadowed
+    h3, h4, h5, h5
+      margin-bottom: 0.25em
+      color: $medium-grey
+
+    address
+      font-style: normal
+
+    section
+      +padded
+
+
+  +respond-to(smartphone-portrait)
+    article
+      header
+        h2
+
+          width: 100%
+          margin: -1em 0 0 -2em
+          +transform(rotate(-2deg))
+          +shadowed
