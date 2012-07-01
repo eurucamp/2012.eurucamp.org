@@ -2,6 +2,8 @@ body
   #header
     z-index: 10
     padding: 1em 0
+    +don(background, white, $black)
+
     text-align: center
     +padded
 
@@ -32,7 +34,7 @@ body
 
       nav
         display: block
-        border-top: 1px dotted $grey
+        +don(border-top, 1px dotted $grey, 1px solid $brand-1)
         margin: 1em auto 0 auto
         padding: 0.5em 1em 0.75em
         z-index: 1000
@@ -46,13 +48,16 @@ body
             margin: 0 1em
 
             a
-              color: white
+              +don(color, $dark-grey, $brand-1)
+              +text-inset
               +caps
               +custom-sans(bold)
               +transition(color 0.5s)
+              +at-night
+                +no-text-shadow
 
               &:hover
-                color: $brand-2
+                +don(color, $brand-2, $brand-2)
                 +transition(color 0.5s)
 
               &.active

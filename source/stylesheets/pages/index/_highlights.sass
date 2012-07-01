@@ -1,7 +1,7 @@
 section.highlights
   +padded
   +clearfix
-  +don(background, white, $brand-3)
+  +don(background, white, $black)
   border-bottom: 1px dotted $grey
   z-index: 0
   position: relative
@@ -52,6 +52,8 @@ section.highlights
         span
           padding: 1em 0
           border-right: 1px dotted $grey
+          +at-night
+            border-color: $dark-grey
 
           br
             display: inherit
