@@ -95,7 +95,9 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  # activate :cache_buster
+  activate :cache_buster
+
+  activate :gzip
 
   # Use relative URLs
   # activate :relative_assets
