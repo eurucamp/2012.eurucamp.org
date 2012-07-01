@@ -21,7 +21,7 @@ activate :blog do |blog|
   #blog.year_link  = "/blog/:year"
   #blog.month_link = "/blog/:year/:month"
   #blog.day_link   = "/blog/:year/:month/:day"
-  blog.layout = "blog_layout"
+  #blog.layout = "blog_layout"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.default_extension = ".markdown"
