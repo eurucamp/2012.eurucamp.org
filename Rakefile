@@ -5,8 +5,8 @@ module HerokuSan::Deploy
   class Eurucamp < Sinatra
     def deploy
       super
-      @stage.rake('utils:update_sitemap')
-      @stage.rake('utils:update_attendees')
+      #@stage.rake('utils:update_sitemap')
+      #@stage.rake('utils:update_attendees')
     end
   end
 end
