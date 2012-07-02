@@ -129,6 +129,8 @@ GEM
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
       tilt (~> 1.3, >= 1.3.3)
+    sitemap_generator (3.1.1)
+      builder
     sprockets (2.4.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -163,3 +165,4 @@ DEPENDENCIES
   rack-rewrite
   rake (~> 0.9.2)
   sass!
+  sitemap_generator
