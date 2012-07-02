@@ -24,14 +24,17 @@ namespace :utils do
     SitemapGenerator::Sitemap.default_host = 'http://2012.eurucamp.org'
     SitemapGenerator::Sitemap.public_path = "source"
     SitemapGenerator::Sitemap.create do
-      # , :priority => 0.9
       add '/',           :changefreq => 'hourly'
       add '/policies',   :changefreq => 'weekly'
       add '/imprint',    :changefreq => 'weekly'
-      add '/schedule',   :changefreq => 'daily'
+      add '/schedule',   :changefreq => 'daily', :priority => 0.8
       add '/venue',      :changefreq => 'daily'
 
-      add '/blog',       :changefreq => 'hourly'
+      add '/blog',       :changefreq => 'hourly', :priority => 0.9
+      Dir["source/blog/*"].each do |blog_entry_file|
+        post_link = blog_entry_file.gsub(/^source\/blog\/|\.html.markdown$/,"")
+        add "blog/#{post_link}",   :changefreq => 'hourly', :priority => 0.9
+      end
     end
     # SitemapGenerator::Sitemap.ping_search_engines
   end
