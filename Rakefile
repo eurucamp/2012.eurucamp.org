@@ -33,7 +33,8 @@ namespace :utils do
       add '/blog',       :changefreq => 'hourly', :priority => 0.9
       Dir["source/blog/*"].each do |blog_entry_file|
         post_link = blog_entry_file.gsub(/^source\/blog\/|\.html.markdown$/,"")
-        add "blog/#{post_link}",   :changefreq => 'hourly', :priority => 0.9
+        post_link = post_link[0..10].gsub("-","/") + post_link[11,post_link.size]
+        add post_link,   :changefreq => 'hourly', :priority => 0.9
       end
     end
     # SitemapGenerator::Sitemap.ping_search_engines
