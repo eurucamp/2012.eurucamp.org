@@ -171,6 +171,14 @@ body.venue
               &.bike
                 float: right
 
+  +respond-to(tablet-portrait)
+    article
+      section
+        &.images
+          ul
+            li
+              &:nth-child(odd)
+                display: none
 
   +respond-to(tablet-landscape)
     article
