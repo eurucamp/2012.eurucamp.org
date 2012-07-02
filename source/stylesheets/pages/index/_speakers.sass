@@ -18,14 +18,14 @@ article
         color: $white
         position: relative
         overflow: hidden
+        +custom-sans(normal, false)
 
         &:hover
           cursor: pointer
 
           span
             top: 0
-            +transition(top 0.25s ease-in)
-            +custom-sans(normal, false)
+            +transition(top 0.2s cubic-bezier(1.000, 0.010, 0.800, 0.995))
 
             strong
               +custom-sans(bold, false)
@@ -38,7 +38,7 @@ article
           width: 90%
           padding: 35% 5% 0 5%
           height: 65%
-          +transition(top 0.25s)
+          +transition(top 0.25s cubic-bezier(1.000, 0.010, 0.800, 0.995))
 
         img
           width: 100%
