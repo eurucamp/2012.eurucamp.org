@@ -42,6 +42,12 @@ body_class: index
     = wrapped :section, :class => 'twitter-feed' do
       %h3 Lately on Twitter
       .tweets
+        %noscript
+          Sorry! We have been lazy and are using Javascript to fetch the latest tweets.
+          %br
+          Head over to
+          %a(href="https://twitter.com/eurcuamp/" title="@eurucamp") @eurucamp on Twitter
+          instead?
 
     = wrapped :section, :class => 'attendees' do
       %h3 Attending
