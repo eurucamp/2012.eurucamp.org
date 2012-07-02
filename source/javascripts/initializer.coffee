@@ -72,6 +72,11 @@ $ ->
         window.location = "#{href}.html?dev"
         false
 
+toggleBGImage = ->
+  if $(@).width() > 1024
+    $.backstretch BG_PATH, BG_OPTIONS
+  else
+    $.backstretch 'destroy'
 
 window.setTheme = (theme) ->
   current = $.cookie 'theme'
@@ -79,8 +84,9 @@ window.setTheme = (theme) ->
     theme = if current == 'day' then 'night' else 'day'
   if theme in ['day', true]
     $('html').removeClass('night')
-    $.backstretch BG_PATH, BG_OPTIONS
+    $(window).on 'resize.bgimage', $.debounce(toggleBGImage, 500)
   else
     $('html').addClass('night')
+    $(window).off 'resize.bgimage'
     $.backstretch 'destroy'
   $.cookie 'theme', theme
