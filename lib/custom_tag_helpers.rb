@@ -25,9 +25,10 @@ module CustomTagHelpers
       haml_tag :nav, attrs do
         haml_tag :ul do
           items.each do |item|
+            item, path = item.to_a.flatten if item.is_a? Hash
             haml_tag :li, :class => item.downcase do
-              path  = attrs[:path]  || "/#{item.downcase.dasherize}"
-              title = attrs[:title] || "Read about #{item.downcase}"
+              path ||= "/#{item.downcase.dasherize}"
+              title  = "Read about #{item.downcase}"
 
               new_attrs = {
                 :href  => path,
