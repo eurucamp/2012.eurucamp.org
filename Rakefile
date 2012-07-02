@@ -37,7 +37,7 @@ namespace :utils do
         add post_link,   :changefreq => 'hourly', :priority => 0.9
       end
     end
-    # SitemapGenerator::Sitemap.ping_search_engines
+    SitemapGenerator::Sitemap.ping_search_engines
   end
 
   # scrapes eurucamp page on lanyrd.com and returns
