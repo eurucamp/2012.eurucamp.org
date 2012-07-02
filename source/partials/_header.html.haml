@@ -1,6 +1,11 @@
-%h1
-  %a(href='/')
-    - sizes = request.path =~ /index/ ? [360, 1280] : [360]
-    = image '/images/layout/header/logo.png', sizes, :alt => "eurucamp 2012"
+%a.theme-toggle(href="#" title="Toggle theme") Toggle theme
+= link_to '#footer', :id => 'jump-to-nav' do
+  %img(src="/images/layout/jump_to_main_nav.png" width="20" height="13" alt="Jump to main navigation")
 
-= partial 'partials/primary_navigation'
+= wrapped :header, :id => 'header' do
+  %h1
+    %a(href='/')
+      - sizes = request.path =~ /index/ ? [360, 1280] : [360]
+      = image '/images/layout/header/logo.png', sizes, :alt => "eurucamp 2012"
+
+  = partial 'partials/primary_navigation'
