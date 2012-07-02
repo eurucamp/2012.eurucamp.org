@@ -46,7 +46,7 @@ body_class: index
     = wrapped :section, :class => 'attendees' do
       %h3 Attending
       %ul
-        - data.index.attendees.each do |id|
+        - data.attendees.each do |id|
           %li
             %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
               %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
