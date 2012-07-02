@@ -10,9 +10,8 @@ $ ->
   # if no theme cookie is set, select by time of day
   if !$.cookie('theme') && ((time = (new Date).getHours()) > 18 || time < 6)
      setTheme 'night'
-
-  # Set theme by cookie
-  setTheme($.cookie 'theme')
+  else
+    setTheme($.cookie 'theme')
 
   # Responsive images
   $('img.resp').responsiveImages()
@@ -22,7 +21,9 @@ $ ->
     new TwitterFeed 'eurucamp', $('.twitter-feed .tweets')
 
   # Theme toggle
-  $('a.theme-toggle').on 'click', -> setTheme()
+  $('a.theme-toggle').on 'click', ->
+    setTheme()
+    false
 
   # Map
   if $('body').hasClass 'venue'

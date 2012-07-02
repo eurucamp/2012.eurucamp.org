@@ -6,7 +6,7 @@ body.venue
 
     section
       +clearfix
-      padding-bottom: 2em
+      padding-bottom: 1em
 
       h4
         +sticky
@@ -76,12 +76,14 @@ body.venue
       &.hostels
         padding-bottom: 0
 
-        .wrapper,
         .wrapper h5
           margin-top: 0.5em
 
-      &.apartment
-        padding-bottom: 2em
+      &.hotel,
+      &.camping,
+      &.city-intro
+        .wrapper
+          padding-top: 0.5em
 
       &.city-intro,
       &.apartment,

@@ -108,6 +108,7 @@
   padding: 0.15em 1em 0.35em
   margin: 0
   display: block
+  font-size: 1em
   background: transparentize($color, 0.05)
   color: $white
   text-align: center
@@ -117,25 +118,26 @@
 
   +respond-to(smartphone-portrait)
     position: absolute
-    top: -1.25em
+    top: -1em
     +shadowed
-    @if $right == true
-      right: -0.5em
-    @else
-      left: -0.5em
+    left: -0.5em
 
   +respond-to(smartphone-portrait)
+    left: -1em
+
+  +respond-to(smartphone-landscape)
     @if $right == true
       right: -1em
+      left: auto
     @else
       left: -1em
 
   +respond-to(tablet-portrait)
     top: -1.5em
     @if $right == true
-      right: -1.3em
+      right: -1.5em
     @else
-      left: -1.3em
+      left: -1.5em
 
   +respond-to(tablet-oversize)
     @if $right == true
