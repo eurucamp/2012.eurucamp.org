@@ -1,8 +1,18 @@
 require 'bundler/setup'
 require 'heroku_san'
 
+module HerokuSan::Deploy
+  class Eurucamp < Sinatra
+    def deploy
+      super
+      @stage.rake('utils:update_sitemap')
+      @stage.rake('utils:update_attendees')
+    end
+  end
+end
+
 config_file = File.join(File.expand_path(File.dirname(__FILE__)), 'config', 'heroku.yml')
-HerokuSan.project = HerokuSan::Project.new(config_file, :deploy => HerokuSan::Deploy::Sinatra)
+HerokuSan.project = HerokuSan::Project.new(config_file, :deploy => HerokuSan::Deploy::Eurucamp)
 
 load 'heroku_san/tasks.rb'
 
@@ -37,7 +47,7 @@ namespace :utils do
         add post_link,   :changefreq => 'hourly', :priority => 0.9
       end
     end
-    # SitemapGenerator::Sitemap.ping_search_engines
+    SitemapGenerator::Sitemap.ping_search_engines
   end
 
   # scrapes eurucamp page on lanyrd.com and returns
