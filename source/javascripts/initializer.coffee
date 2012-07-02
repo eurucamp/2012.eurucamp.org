@@ -84,7 +84,9 @@ window.setTheme = (theme) ->
     theme = if current == 'day' then 'night' else 'day'
   if theme in ['day', true]
     $('html').removeClass('night')
-    $(window).on 'resize.bgimage', $.debounce(toggleBGImage, 500)
+    $(window)
+      .on('resize.bgimage', $.debounce(toggleBGImage, 500))
+      .trigger('resize')
   else
     $('html').addClass('night')
     $(window).off 'resize.bgimage'
