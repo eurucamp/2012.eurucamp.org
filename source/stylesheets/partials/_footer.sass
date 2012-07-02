@@ -82,7 +82,6 @@ body
     +respond-to(tablet-lite)
       padding: 1em 0
       text-align: center
-      background: none
 
       .primary-navigation
         display: none
@@ -91,7 +90,7 @@ body
         float: right
 
       ul.links
-        margin: 0
+        margin: 0 1em
         float: left
 
 
@@ -122,6 +121,10 @@ body
           img
             margin: 0
             +transition(margin 0.25s)
+
+
+    +respond-to(tablet-landscape)
+      background: none
 
 
     +respond-to(desktop)
