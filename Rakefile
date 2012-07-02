@@ -9,6 +9,7 @@ load 'heroku_san/tasks.rb'
 require 'nokogiri'
 require 'open-uri'
 require 'yaml'
+require 'sitemap_generator'
 
 namespace :utils do
 
@@ -16,6 +17,23 @@ namespace :utils do
   task :update_attendees do
     data = lanyrd_attendees.to_yaml
     File.open('data/attendees.yml', 'w') {|f| f.write(data) }
+  end
+
+  desc "Update sitemap"
+  task :update_sitemap do
+    SitemapGenerator::Sitemap.default_host = 'http://2012.eurucamp.org'
+    SitemapGenerator::Sitemap.public_path = "source"
+    SitemapGenerator::Sitemap.create do
+      # , :priority => 0.9
+      add '/',           :changefreq => 'hourly'
+      add '/policies',   :changefreq => 'weekly'
+      add '/imprint',    :changefreq => 'weekly'
+      add '/schedule',   :changefreq => 'daily'
+      add '/venue',      :changefreq => 'daily'
+
+      add '/blog',       :changefreq => 'hourly'
+    end
+    # SitemapGenerator::Sitemap.ping_search_engines
   end
 
   # scrapes eurucamp page on lanyrd.com and returns
