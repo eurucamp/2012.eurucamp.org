@@ -117,12 +117,25 @@
 
   +respond-to(smartphone-portrait)
     position: absolute
-    top: -2em
+    top: -1.25em
     +shadowed
     @if $right == true
       right: -0.5em
     @else
       left: -0.5em
+
+  +respond-to(smartphone-portrait)
+    @if $right == true
+      right: -1em
+    @else
+      left: -1em
+
+  +respond-to(tablet-portrait)
+    top: -1.5em
+    @if $right == true
+      right: -1.3em
+    @else
+      left: -1.3em
 
   +respond-to(tablet-oversize)
     @if $right == true
@@ -138,8 +151,6 @@
   border-top: 1px dotted $grey
   color: $medium-grey
   text-align: center
-
-
 
 // don = Day Or Night
 =at-night

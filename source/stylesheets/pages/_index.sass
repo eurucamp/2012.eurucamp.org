@@ -14,6 +14,7 @@ body.index
     & > header
       +don(background, white, $black)
       position: relative
+      margin-top: -1em
       +clearfix
 
       h2, h3
@@ -51,6 +52,8 @@ body.index
   +respond-to(smartphone-landscape)
     article
       header
+        margin-top: 0
+
         h2, h3
           padding: 0.15em 1em 0.35em
           position: absolute
