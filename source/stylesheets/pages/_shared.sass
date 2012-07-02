@@ -7,7 +7,7 @@ body
     overflow: hidden
 
   a.theme-toggle
-    display: block
+    display: none
     width: 30px
     height: 30px
     background: transparent url(/images/layout/theme_toggle.png) no-repeat bottom center
@@ -55,6 +55,9 @@ body
   +respond-to(tablet-oversize)
     #container
       overflow: visible
+
+    a.theme-toggle
+      display: block
 
 
   +respond-to(desktop)
