@@ -48,6 +48,11 @@ body.article
           width: 80%
           margin-bottom: 2em
 
+  +respond-to(tablet-lite)
+    .page-head
+      h2
+        margin-top: -0.75em
+
 
   +respond-to(tablet-portrait)
     article
@@ -57,9 +62,15 @@ body.article
           width: 60%
 
 
+  +respond-to(tablet-landscape)
+    .page-head
+      h2
+        margin-top: -1.33333em
+
+
   +respond-to(tablet-oversize)
     .page-head
       h2
-        margin: -2em -2em 0 -2em
+        margin: -1.33333em -2em 0 -2em
         +transform(rotate(-2deg))
         +shadowed

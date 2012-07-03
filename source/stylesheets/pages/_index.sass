@@ -29,6 +29,9 @@ body.index
         +at-night
           background: transparentize($brand-2, 0.05)
 
+        span
+          display: none
+
       h3
         font-size: 0.9em
         background: none
@@ -47,8 +50,12 @@ body.index
     article
       header
         h2, h3
-          width: auto
           margin: 0
+
+        h3
+          padding-left: 0
+          padding-right: 0
+          width: 100%
 
 
   +respond-to(smartphone-landscape)
@@ -57,61 +64,59 @@ body.index
         margin-top: 0
 
         h2, h3
+          +transition(all 0.5s)
+          +transform(rotate(0deg))
           padding: 0.15em 1em 0.35em
-          position: absolute
-          top: 0
 
         h2
           +shadowed
-          top: -0.75em
-          left: 0
+          margin-right: 5%
 
         h3
-          top: 2em
-          right: 0
-          left: 15em
+          margin-left: 15%
           +text-shadow(0 1px 0 darken($brand-2, 10%))
-          background: transparentize($brand-2, 0.1)
+          background: transparentize($brand-2, 0.2)
           color: $white
           border: none
+          width: 82%
 
 
   +respond-to(tablet-lite)
     article
       header
         h2
-          right: 2em
+          span
+            display: inline
+
+          br
+            display: none
 
 
   +respond-to(tablet-portrait)
+    #container
+      overflow: hidden
+
     article
       header
         h2
-          top: 0
-
-        h3
-          top: 3.25em
-
-
-  +respond-to(tablet-landscape)
-    article
-      header
-        h2
-          top: -1em
-
-        h3
-          top: 1.75em
-
-  +respond-to(tablet-oversize)
-    article
-      header
-        h2
-          left: -1em
-          right: -1em
+          +shadowed
+          margin-left: -1em
+          margin-right: -1em
+          +transition(all 0.5s)
           +transform(rotate(-2deg))
 
         h3
-          +transform(rotate(1deg))
-          width: 82%
-          left: 17%
+          margin-left: 20%
+          +transition(all 0.5s)
+          +transform(rotate(0.5deg))
+
+
+
+  +respond-to(tablet-oversize)
+    #container
+      overflow: visible
+
+    article
+      header
+        h3
 

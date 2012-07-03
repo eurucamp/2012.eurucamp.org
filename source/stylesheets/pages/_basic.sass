@@ -22,7 +22,7 @@ body
       h2
         +brand-stripe(0, $brand-3, false)
         padding: 0.5em
-        margin: 0
+        margin: -1.33333em 0 0 0
         display: block
         +custom-sans(black)
         +at-night
@@ -58,11 +58,24 @@ body
     section
       +padded
 
+  +respond-to(tablet-lite)
+    article
+      header
+        h2
+          margin-top: -0.75em
+
+
+  +respond-to(tablet-landscape)
+    article
+      header
+        h2
+          margin-top: -1.33333em
+
 
   +respond-to(tablet-oversize)
     article
       header
         h2
-          margin: -2em -2em 0 -2em
+          margin: -1.33333em -2em 0 -2em
           +transform(rotate(-2deg))
           +shadowed
