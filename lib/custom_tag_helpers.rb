@@ -47,7 +47,7 @@ module CustomTagHelpers
 
               new_attrs = {
                 :href  => path,
-                :class => ('active' if request.path == path),
+                :class => ('active' if request.path =~ /^#{path.gsub('.html', '')}/),
                 :title => title
               }
               attrs_to_merge.each do |key|
