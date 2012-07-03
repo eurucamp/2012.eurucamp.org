@@ -1,3 +1,18 @@
+# TMP solution:
+# https://github.com/middleman/middleman/pull/370#issuecomment-6727140
+# https://github.com/bhollis/middleman/blob/1229a9991a4bf575bef5edb6180dac5b63fce5c5/middleman-core/lib/middleman-core/application.rb#L220
+module Middleman
+  class Application
+    # Work around this bug: http://bugs.ruby-lang.org/issues/4521
+    # where Ruby will call to_s/inspect while printing exception
+    # messages, which can take a long time (minutes at full CPU)
+    # if the object is huge or has cyclic references, like this.
+    def to_s
+      "the Middleman application context"
+    end
+  end
+end
+
 module CustomTagHelpers
 
   def wrapped(el = :div, attrs = {}, &block)
