@@ -1,6 +1,10 @@
 body
   color: $dark-grey
-  +don(background-color, $white, $black)
+  @if $scope == 'jrubyconf'
+    background: lighten($grey, 5%)
+  @else
+    +don(background-color, $white, $black)
+
 
   a
     color: $brand-1
