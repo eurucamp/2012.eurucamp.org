@@ -2,7 +2,7 @@ body
   #header
     z-index: 10
     padding: 1em 0
-    +don(background, white, $black)
+    background: white
     text-align: center
     +padded
 
@@ -33,7 +33,7 @@ body
 
       nav
         display: block
-        +don(border-top, 1px dotted $grey, 1px solid $brand-1)
+        border-top: 1px dotted $grey
         margin: 1em auto 0 auto
         padding: 0.5em 1em 0
         z-index: 1000
@@ -84,6 +84,8 @@ body
 
 
     +respond-to(tablet-landscape)
+      +don(background, white, $black)
+
       h1
         float: none
 

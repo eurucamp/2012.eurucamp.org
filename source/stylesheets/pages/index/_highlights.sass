@@ -1,12 +1,10 @@
 section.highlights
   +padded
   +clearfix
-  +don(background, white, $black)
+  background: white
   border-bottom: 1px dotted $grey
   z-index: 0
   position: relative
-  +at-night
-    border-color: $black
 
   .wrapper
     margin-bottom: 0
@@ -22,13 +20,11 @@ section.highlights
 
       span
         display: block
-        +don(color, $medium-grey, $white)
+        color: $medium-grey
         +transition(color 0.5s)
         text-align: center
         +custom-sans(bold, false)
         +text-shadow(0 1px 0 white)
-        +at-night
-          +no-text-shadow
 
         br
           display: none
@@ -48,8 +44,7 @@ section.highlights
         span
           padding: 1em 0
           border-right: 1px dotted $grey
-          +at-night
-            border-color: $dark-grey
+
 
           br
             display: inherit
@@ -57,3 +52,17 @@ section.highlights
         &.spare-time
           span
             border: none
+
+
+  +respond-to(tablet-landscape)
+    +don(background, white, $black)
+    +at-night
+      border-color: $black
+
+    ul
+      li
+        span
+          +don(color, $medium-grey, $white)
+          +at-night
+            +no-text-shadow
+            border-color: $dark-grey

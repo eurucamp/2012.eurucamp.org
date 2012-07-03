@@ -12,7 +12,7 @@ body.index
     position: relative
 
     & > header
-      +don(background, white, $black)
+      background: white
       position: relative
       margin-top: -1em
       +clearfix
@@ -110,6 +110,11 @@ body.index
           +transition(all 0.5s)
           +transform(rotate(0.5deg))
 
+
+  +respond-to(tablet-landscape)
+    article
+      header
+        +don(background, white, $black)
 
 
   +respond-to(tablet-oversize)

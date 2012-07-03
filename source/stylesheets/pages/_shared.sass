@@ -31,10 +31,8 @@ body
     padding: 0 1em
     text-align: right
     border-bottom: 1px solid $grey
-    +at-night
-      border-color: $dark-grey
+    background: white
     vertical-align: middle
-    +don(background, white, $black)
 
 
   +respond-to(tablet-lite)
@@ -50,6 +48,11 @@ body
     font-size: 1.2em
     width: 1024px
     margin: 0 auto
+
+    #jump-to-nav
+      +don(background, white, $black)
+      +at-night
+        border-color: $dark-grey
 
 
   +respond-to(tablet-oversize)
