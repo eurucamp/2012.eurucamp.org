@@ -65,10 +65,10 @@ $ ->
 
     $('a:not(.theme-toggle)').on 'click', ->
       href = $(@).attr 'href'
-      if href == '/'
+      if href == '/' || /\.html?/.test(href)
         window.location = "#{href}?dev"
         false
-      else if !/^http/.test(href) && !/\.html?/.test(href)
+      else if !/^http/.test(href)
         window.location = "#{href}.html?dev"
         false
 
