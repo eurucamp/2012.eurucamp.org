@@ -7,16 +7,18 @@ GIT
       compass (>= 0.11.1)
 
 GIT
-  remote: git@github.com:pietia/middleman-blog.git
-  revision: c0c8afcbe19e550f83dccba422407924e603368f
+  remote: git://github.com/pietia/middleman-blog.git
+  revision: 15d15d80646e24b6e7729a6199ed59e71ae406e0
+  ref: 15d15d80646e24b6e7729a6199ed59e71ae406e0
   specs:
     middleman-blog (3.0.0.rc.3)
       maruku (~> 0.6.0)
       middleman-core (= 3.0.0.rc.3)
 
 GIT
-  remote: git@github.com:pietia/middleman.git
+  remote: git://github.com/pietia/middleman.git
   revision: a5a2e1568b9c69ee8dbc9d623e73a4da361956da
+  ref: a5a2e1568b9c69ee8dbc9d623e73a4da361956da
   specs:
     middleman (3.0.0.rc.3)
       middleman-core (= 3.0.0.rc.3)
