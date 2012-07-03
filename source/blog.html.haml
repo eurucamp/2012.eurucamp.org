@@ -10,7 +10,7 @@ body_class: blog
   = wrapped :ul, :class => 'articles' do
     - blog.articles[0...20].each_with_index do |article, index|
       %li(class="#{('first' if index.zero?)}")
-        %h3= link_to article.title, article.url
+        %h3= link_to article.title, article.url_without_extension
         %p.meta
           %small
             %span.date= article.date.strftime('%e %b %Y')
@@ -18,4 +18,4 @@ body_class: blog
         .block
           = article.summary
           %p.more
-            = link_to "Read on&hellip;", article.url
+            = link_to "Read on&hellip;", article.url_without_extension
