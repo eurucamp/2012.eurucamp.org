@@ -1,0 +1,12 @@
+- wrap_layout :layout do
+  %article
+    = wrapped :header do
+      %h2 Blog
+      %h3= current_article.title
+
+    = wrapped :aside, :class => 'meta' do
+      %span.date= current_article.date.strftime('%e %b %Y')
+      %span.author= "by #{current_article.data.author}"
+
+    = wrapped :section, :class => 'body' do
+      = yield

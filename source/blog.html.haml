@@ -2,6 +2,7 @@
 title: Blog
 body_class: blog
 ---
+
 %article
   = wrapped :header do
     %h2 Blog
@@ -9,9 +10,13 @@ body_class: blog
   = wrapped :section, :class => 'articles' do
     - blog.articles[0...20].each do |article|
 
-      %h3= article.title
+      %h3= link_to article.title, article.url
       %p.meta
+
         %span.date= article.date.strftime('%e %b %Y')
         %span.author= "by #{article.data.author}"
 
       %p= article.summary
+
+      %p.more
+        = link_to "Read on&hellip;", article.url
