@@ -1,0 +1,64 @@
+body.blog
+  article
+    ul.articles
+      +padded
+      +unlisted
+
+      li
+        border-bottom: 1px dotted $grey
+
+        &.first
+          border: none
+
+      h3
+        margin-bottom: 0
+
+      p.meta
+        margin-top: 0
+
+        span.author
+          display: inline
+
+
+  +respond-to(tablet-lite)
+    article
+      ul.articles
+        padding: 1em 0
+        +clearfix
+
+        li
+          h3
+            margin-left: 20%
+
+          p.meta
+            float: left
+            width: 20%
+            margin: 1em 0 0 0
+
+            span.author
+              display: block
+
+            small
+              margin: 0 2em 0 0
+
+          .block
+            float: right
+            width: 80%
+
+
+  +respond-to(tablet-portrait)
+    article
+      ul.articles
+        li
+          .block
+            padding-right: 20%
+            width: 60%
+
+
+  +respond-to(tablet-landscape)
+    article
+      ul.articles
+        li
+          .block
+            padding-right: 25%
+            width: 55%
