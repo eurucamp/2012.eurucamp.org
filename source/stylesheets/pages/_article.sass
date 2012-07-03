@@ -1,0 +1,65 @@
+body.article
+  .page-head
+    background: white
+    +padded
+    +clearfix
+
+    h2
+      +brand-stripe(0, $brand-3, false)
+      padding: 0.5em
+      margin: 0
+      display: block
+      +custom-sans(black)
+      +at-night
+        background-color: $brand-3
+  article
+    header
+      +padded
+      h3
+        text-align: left
+
+    aside
+      +padded
+      margin-top: -1em
+      color: $medium-grey
+
+
+  +respond-to(tablet-lite)
+    article
+      header
+        .wrapper
+          padding-left: 20%
+
+      aside
+        width: 20%
+        float: left
+        margin-top: 0.33333em
+
+        span.author
+          display: block
+
+        small
+          display: block
+          margin: 0 2em 0 0
+
+      section
+        &.body
+          float: right
+          width: 80%
+          margin-bottom: 2em
+
+
+  +respond-to(tablet-portrait)
+    article
+      section
+        &.body
+          padding-right: 20%
+          width: 60%
+
+
+  +respond-to(tablet-oversize)
+    .page-head
+      h2
+        margin: -2em -2em 0 -2em
+        +transform(rotate(-2deg))
+        +shadowed
