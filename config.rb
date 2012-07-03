@@ -15,17 +15,16 @@ Middleman::Sitemap::Resource.class_eval do
 end
 
 activate :blog do |blog|
+  blog.layout  = "article_layout"
+  blog.sources = "blog/:year-:month-:day-:title.html"
+
   #blog.permalink  = "blog/:year/:month/:day/:title"
-  blog.sources    = "blog/:year-:month-:day-:title.html"
   #blog.taglink    = "/blog/tags/:tag"
   #blog.year_link  = "/blog/:year"
   #blog.month_link = "/blog/:year/:month"
   #blog.day_link   = "/blog/:year/:month/:day"
-  #blog.layout = "blog_layout"
-  # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.default_extension = ".markdown"
-
   #blog.tag_template      = "blog/tag"
   #blog.calendar_template = "blog/calendar"
 end
