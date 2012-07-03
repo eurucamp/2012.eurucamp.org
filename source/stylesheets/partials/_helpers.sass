@@ -5,6 +5,18 @@
 =no-caps
   text-transform: none
   font-variant: normal
+  
+=image($path, $repeat: false, $position: "center center", $scoped: false, $backgroundcolor: transparent)
+  background-color: $backgroundcolor
+  $folder: ""
+  @if $scoped
+    $folder: "#{$scope}/"
+  background-image: url(/images/layout/#{$folder}#{$path})
+  @if $repeat == false
+    background-repeat: no-repeat
+  @else
+    background-repeat: $repeat
+  background-position: $position
 
 =custom-sans($weight: normal, $caps: true)
   font-family: "proxima-nova", Helvetica, Arial, sans-serif
