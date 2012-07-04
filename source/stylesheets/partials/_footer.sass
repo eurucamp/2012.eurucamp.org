@@ -74,6 +74,8 @@ body
       padding: 1em
       +clearfix
       background-color: $dark-red
+      @if $scope == 'jrubyconf'
+        background-color: $pink
       color: $white
       +transition(background-color 0.5s)
 
