@@ -23,7 +23,7 @@ body
     +at-night
       background-position: top center
 
-  #jump-to-nav
+  a.jump-to-nav
     color: $white
     display: block
     height: 2em
@@ -34,9 +34,45 @@ body
     background: white
     vertical-align: middle
 
+  .fork-on-github
+    position: absolute
+    top: 0
+    left: 0
+    width: 150px
+    height: 150px
+    overflow: hidden
+    display: none
+
+    a
+      display: block
+      width: 190px
+      background: $brand-1
+      padding: 1px 0
+      position: relative
+      top: 40px
+      left: -40px
+      text-align: center
+      +transform(rotate(-45deg))
+      +shadowed
+      +transition(left 0.25s)
+
+      &:hover
+        left: -37px
+        +transition(left 0.25s)
+
+      span
+        color: $white
+        display: block
+        +custom-sans(bold)
+        +text-shadow(0 -1px 0 darken($brand-1, 10%))
+        font-size: 0.8em !important
+        border-top: 1px dotted $grey
+        border-bottom: 1px dotted $grey
+        padding: 0 0 0.15em 0
+
 
   +respond-to(tablet-lite)
-    #jump-to-nav
+    a.jump-to-nav
       display: none
 
 
@@ -49,11 +85,13 @@ body
     width: 1024px
     margin: 0 auto
 
-    #jump-to-nav
+    a.jump-to-nav
       +don(background, white, $black)
       +at-night
         border-color: $dark-grey
 
+    .fork-on-github
+      display: block
 
   +respond-to(tablet-oversize)
     #container
