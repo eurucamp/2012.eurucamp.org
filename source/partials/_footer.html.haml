@@ -1,4 +1,7 @@
 %footer#footer
+  = link_to 'http://jrubyconf.eu', :title => 'JRubyConf.eu', :class => 'twin' do
+    %small Organized in cooperation with
+    %img(src="/images/layout/footer/jrubyconf_logo.png" alt="JRubyConf.eu logo")
   = partial 'partials/primary_navigation'
   = partial 'partials/secondary_navigation'
 
@@ -8,7 +11,6 @@
     %li.lanyrd
       %a(href="http://lanyrd.com/2012/eurucamp" title="eurucamp on Lanyrd") eurucamp
 
-  = link_to 'JRubyConf.eu', '#', :class => 'twin'
   = partial 'partials/analytics'
   %script(src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAOu7SQll9IyZ_csBrwRS7WBh-6by8_IQE&sensor=true")
   = javascript_include_tag 'application'

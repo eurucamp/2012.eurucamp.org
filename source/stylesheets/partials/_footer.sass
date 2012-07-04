@@ -49,7 +49,6 @@ body
               color: $brand-2
               +transition(color 0.5s)
 
-
     ul.links
       +unlisted
       margin: 1em auto
@@ -70,21 +69,39 @@ body
             +image('footer/lanyrd_icon.png')
 
     a.twin
-      margin: 1em 0 0 0
-      display: none
-      padding: 1em 0
-      border-top: 1px dotted $brand-2
+      margin: 0
+      display: block
+      padding: 1em
+      +clearfix
+      background-color: $dark-red
+      color: $white
       +transition(background-color 0.5s)
+
+      small
+        display: block
+        margin-bottom: 1em
+
+      img
+        width: 100%
 
       &:hover
         border: none
-        background-color: $brand-2
+        background-color: $red
         +transition(background-color 0.5s)
+
+
+    +respond-to(mid-range)
+      a.twin
+        img
+          width: auto
 
 
     +respond-to(tablet-lite)
       padding: 1em 0
       text-align: center
+
+      a.twin
+        margin: -1em 0 1em 0
 
       .primary-navigation
         display: none
@@ -99,31 +116,6 @@ body
 
     +respond-to(tablet-landscape)
       padding-bottom: 1em
-
-      a.twin
-        position: fixed
-        right: 0
-        top: 0
-        bottom: 0
-        width: 2em
-        border: none
-        border-left: 1px dotted $brand-2
-        margin: 0
-        +transition(width 0.25s, background-color 0.25s)
-
-        img
-          margin: 0 0 0 -15px
-          +transition(margin 0.25s)
-
-        &:hover
-          width: 100px
-          background-color: $brand-2
-          +box-shadow(-3px 0 0 0 transparentize($grey, 0.2))
-          +transition(width 0.25s, background-color 0.25s)
-
-          img
-            margin: 0
-            +transition(margin 0.25s)
 
 
     +respond-to(tablet-landscape)
