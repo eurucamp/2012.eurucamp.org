@@ -89,6 +89,8 @@ body
       &:hover
         border: none
         background-color: $red
+        @if $scope == 'jrubyconf'
+          background-color: $blue
         +transition(background-color 0.5s)
 
 
