@@ -1,10 +1,19 @@
 -
+  name:         Txus Bach
+  company:      Codegram
+  company_url:  http://codegram.com/
+  twitter:      txustice
+  image:        jbach.jpg
+  url:          http://www.txustice.me/
+  track:        main
+-
   name:         James Coglan
   company:      Songkick
   company_url:  http://www.songkick.com/
   twitter:      jcoglan
   image:        jcoglan.jpg
   url:          http://jcoglan.com/
+  track:        main
 -
   name:         Tom Enebo
   company:      "Red Hat, Inc."
@@ -12,6 +21,7 @@
   twitter:      tom_enebo
   image:        tenebo.jpg
   url:          http://blog.enebo.com/
+  track:        jrubyconfeu
 -
   name:         Konstantin Haase
   company:      Travis CI
@@ -19,6 +29,7 @@
   twitter:      konstantinhaase
   image:        khaase.jpg
   url:          http://rkh.im/
+  track:        main
 -
   name:         Theo Hultberg
   company:      Burt
@@ -26,6 +37,7 @@
   twitter:      iconara
   image:        thultberg.jpg
   url:          http://architecturalatrocities.com/
+  track:        jrubyconfeu
 -
   name:         Steve Klabnik
   company:      Jumpstart Lab
@@ -33,11 +45,21 @@
   twitter:      steveklabnik
   image:        sklabnik.jpg
   url:          http://www.steveklabnik.com/
+  track:        main
+-
+  name:         Srdan Kvrgic
+  company:      Burt
+  company_url:  http://burtcorp.com/
+  twitter:      srdan
+  image:        skvrgic.jpg
+  url:          http://home5.swipnet.se/~w-52132/
+  track:        main
 -
   name:         Erik Michaels-Ober
   company:      RailsAdmin
   image:        emichaelsober.jpg
   twitter:      sferik
+  track:        main
 -
   name:         Nicolás Sanguinetti
   company:      Cubox
@@ -45,9 +67,20 @@
   twitter:      godfoca
   image:        nsanguinetti.jpg
   url:          http://nicolassanguinetti.info/
+  track:        main
+#-
+  name:         Laurent Sansonetti
+  company:      Hipbyte
+  company_url:  http://www.hipbyte.com/
+  twitter:      lrz
+  image:        lsansonetti.jpg
+  url:          http://chopine.be/
+  track:        main
 -
   name:         Nick Sutterer
   company:      Freelancer
   twitter:      apotonick
   image:        nsutterer.jpg
   url:          http://nicksda.apotomo.de/
+  track:        main
+
