@@ -6,9 +6,11 @@ title: Schedule
   %header
     %h2 Schedule
 
-  %p Our schedule is currently being prepared. Check back in a day or two!
+    %h3 An overview of the camp days
 
-  -#.schedules
+  %p &nbsp;
+
+  .schedules
     %ul.legend
       - (8..22).step(0.5) do |hour|
         %li
@@ -19,7 +21,7 @@ title: Schedule
         %li(class="#{day.downcase}")
           %strong= day
           %ul
-            - schedule_for data.schedule[day.downcase], :start => 8 do |item, duration, distance|
+            - schedule_for data.overview_schedule[day.downcase], :start => 8 do |item, duration, distance|
               - style = "height: #{duration * 2 - 1}px; top: #{distance * 2}px"
               - title = "#{"%0.2f" % item.start}: #{item.title}"
 
@@ -27,3 +29,9 @@ title: Schedule
                 %span
                   %span= "%0.2f" % item.start
                   %strong= item.title
+
+  %p Friday daytime is multi-track comprising:
+  %ul
+    %li a beginners' track
+    %li= link_to 'JRubyConf EU', 'http://jrubyconf.eu'
+    %li an advanced workshop track

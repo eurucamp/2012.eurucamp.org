@@ -1,0 +1,84 @@
+friday:
+  -
+    start: 8.45
+    title: Coffee, Registration
+    type:  other
+  -
+    start: 9.30
+    title: Morning Sessions
+    type:  talk
+  -
+    start: 12.40
+    title: Lunch
+    type:  break
+  -
+    start: 14.00
+    title: Afternoon Sessions
+    type:  talk
+  -
+    start: 17.15
+    title: Goodbye
+    type:  other
+  -
+    start: 17.30
+    title: Drinks, Dinner-Time
+    type:  other
+  -
+    start: 19.30
+    title: Introduction
+    type:  other
+  -
+    start: 19.45
+    title: Keynote
+    type:  talk
+  -
+    start: 20.30
+    end:   22.00
+    title: Party
+    type:  other
+
+saturday:
+  -
+    start: 9.00
+    title: Coffee
+    type:  other
+  -
+    start: 9.45
+    title: Morning Sessions
+    type:  talk
+  -
+    start: 12.45
+    title: Lunch and Siesta Break
+    type:  break
+  -
+    start: 17.00
+    title: Evening Sessions
+    type:  talk
+  -
+    start: 20.00
+    end:   20.15
+    title: Close
+    type:  other
+
+sunday:
+  -
+    start: 9.00
+    title: Coffee
+    type:  other
+  -
+    start: 9.30
+    title: Morning Sessions
+    type:  talk
+  -
+    start: 12.15
+    title: Lunch
+    type:  break
+  -
+    start: 14.15
+    title: Afternoon Sessions
+    type:  talk
+  -
+    start: 15.15
+    end:   15.30
+    title: Close
+    type:  other
