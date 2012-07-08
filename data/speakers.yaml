@@ -6,6 +6,18 @@
   image:        jbach.jpg
   url:          http://www.txustice.me/
   track:        main
+  bio:          |
+    Txus is co-founder and lead developer at Codegram, a Ruby/Rails shop based
+    in Barcelona, which is the company behind Barcelona Ruby Conference.
+
+    He's an active member of the Ruby open-source community. Among others he
+    has contributed to the Rails framework, RSpec, Rubinius and is the author
+    behind many open-source projects at Codegram.
+
+    One of his many passions is understanding the very internals of
+    programming languages: compilers and virtual machines, so he usually
+    spends a lot of time learning and researching about the subject, and
+    building his own programming languages and virtual machines.
 -
   name:         James Coglan
   company:      Songkick
@@ -14,6 +26,12 @@
   image:        jcoglan.jpg
   url:          http://jcoglan.com/
   track:        main
+  bio:          |
+    James is a programmer at London live music start-up Songkick, currently
+    working on a migration to SOA. While not helping people go to more
+    concerts, he works on several open-source Ruby and JS projects, including
+    the popular messaging system Faye. He hates wasting his time and tries to
+    design programs that avoid doing so.
 -
   name:         Tom Enebo
   company:      "Red Hat, Inc."
@@ -22,6 +40,8 @@
   image:        tenebo.jpg
   url:          http://blog.enebo.com/
   track:        jrubyconfeu
+  bio:          |
+    METHOD MISSING
 -
   name:         Konstantin Haase
   company:      Travis CI
@@ -30,6 +50,16 @@
   image:        khaase.jpg
   url:          http://rkh.im/
   track:        main
+  bio:          |
+    As current maintainer of Sinatra, Konstantin is an Open Source developer
+    by heart. Ruby has become his language of choice since 2005. He regularly
+    contributes to different widespread projects, like Rubinius, Rack, Travis,
+    Rails and MRI.
+
+    In 2012, Konstantin recieved the Ruby Hero Award for his outstanding
+    contributions to the community.
+
+    He currently holds the position of "Berry Sparkling Lord" at Travis CI.
 -
   name:         Theo Hultberg
   company:      Burt
@@ -38,6 +68,13 @@
   image:        thultberg.jpg
   url:          http://architecturalatrocities.com/
   track:        jrubyconfeu
+  bio:          |
+    Theo Hultberg is Chief Architect at Burt, a Göteborg based big data
+    startup that wants to revolutionize the advertising industry by showing
+    that there's more to ad analytics than clicks. He’s the co-organizer of
+    his local Ruby, Scala, JavaScript and distributed systems user groups, and
+    his only claim to fame is that he has more reputation on Stack Overflow
+    than both Jeff and Joel.
 -
   name:         Steve Klabnik
   company:      Jumpstart Lab
@@ -46,6 +83,11 @@
   image:        sklabnik.jpg
   url:          http://www.steveklabnik.com/
   track:        main
+  bio:          |
+    Steve is a Ruby Hero, teacher, and an aspiring digital humanities scholar.
+    He spends most of his time contributing to Open Source projects, and
+    maintains both Hackety Hack and Shoes. He also teaches and helps develop
+    curriculum for Jumpstart Lab.
 -
   name:         Srdan Kvrgic
   company:      Burt
@@ -54,12 +96,28 @@
   image:        skvrgic.jpg
   url:          http://home5.swipnet.se/~w-52132/
   track:        main
+  bio:          |
+    Pressing **run** on the ZX Spectrum at the age of 6 led inevitably to the
+    MSc in Computer Engineering and a position as the backend-architect at a
+    startup that scaled from a handful of users to tens of millions within a
+    couple of years.
+
+    Currently working at Burt, developing a multi-billion request ad-tracking
+    service using JRuby. Hey, it's only fun if it's exponential.
 -
   name:         Erik Michaels-Ober
   company:      RailsAdmin
   image:        emichaelsober.jpg
   twitter:      sferik
   track:        main
+  bio:          |
+    Erik Michaels-Ober (@sferik) is the creator of one of the most popular
+    Rails engines: RailsAdmin. He is also the author of MultiXML and T, a
+    command-line power-tool for Twitter. When he's not hacking on those
+    projects, he helps maintain OmniAuth among other Ruby gems and open-source
+    Rails applications, including RubyGems.org. He was a 2010 Ruby Summer of
+    Code mentor and a 2011 Google Summer of Code mentor, while serving as a
+    Code for America Fellow. He resides in San Francisco, California.
 -
   name:         Laurent Sansonetti
   company:      Hipbyte
@@ -68,6 +126,8 @@
   image:        lsansonetti.jpg
   url:          http://chopine.be/
   track:        main
+  bio:          |
+    CONTENT MISSING
 -
   name:         Nick Sutterer
   company:      Freelancer
@@ -75,6 +135,15 @@
   image:        nsutterer.jpg
   url:          http://nicksda.apotomo.de/
   track:        main
+  bio:          |
+    Nick Sutterer is proud to be a member of the Ruby open source community.
+    His Cells and Apotomo projects have been bringing increased view
+    modularity and event-driven programming to Rails for years. He has enjoyed
+    attending, and speaking at, Ruby conferences around the world. Buy him a
+    beer sometime, and with very little prompting, he will tell you why there
+    should be no such thing as a double-render error, why you should not
+    confuse your models with your resources, and how to play a mean bass in a
+    punk rock band.
 -
   name:         Chris Berkhout
   twitter:      chrisberkhout
@@ -82,6 +151,12 @@
   image:        cberkhout.jpg
   url:          http://chrisberkhout.com/
   track:        main
+  bio:          |
+    Chris Berkhout is a programmer from Melbourne, Australia. He spends his
+    days building deployment tools and backend systems at a large Internet
+    company and his evenings wining, dining and rock climbing. He is exited
+    not just by learning new things, but also by learning the same things more
+    deeply.
 -
   name:         Dominik Bamberger
   twitter:      bamb00zzle
@@ -90,6 +165,10 @@
   image:        dbamberger.jpg
   url:          https://github.com/b4mboo/
   track:        main
+  bio:          |
+    Ruby developer, open-source supporter, freedom fighter, martial artist.
+    There are more parallels than one might think at first glance. Let's start
+    by sharing some knowledge. This time about fighting.
 -
   name:         Florian R. Hanke
   company:      Technology Astronauts
@@ -98,6 +177,14 @@
   image:        fhanke.jpg
   url:          http://florianhanke.com/
   track:        main
+  bio:          |
+    I am a wearer of many (some) hats: I've done research in Brazil on space
+    life science, doing research in Melbourne on preserving dying languages
+    using modern technology, and am also co-founder of the Technology
+    Astronauts.
+
+    I love languages, to draw on my iPad using an overly large selection of
+    styluses, to hop on a roadbike, and conquer mountains (overly large, too).
 -
   name:         Isaac Wolkerstorfer
   company:      6Wunderkinder
@@ -106,6 +193,8 @@
   image:        iwolkerstorfer.jpg
   url:          http://agnoster.net/
   track:        main
+  bio:          |
+    CONTENT MISSING
 -
   name:         Jana Vogel
   company:      Freelancer
@@ -113,6 +202,12 @@
   image:        jvogel.jpg
   url:          http://dotless.de/
   track:        main
+  bio:          |
+    Jana Vogel is a Berlin based freelance webdeveloper. She started as a
+    media designer and later on studied International Media and Computing.
+    Nowadays, shes mainly programming in Ruby/Padrino and enjoys developing
+    great frontends.
+
 -
   name:         Lourens Naudé
   company:      Independent Consultant
@@ -120,6 +215,17 @@
   image:        lnaude.jpg
   url:          http://blog.methodmissing.com/
   track:        main
+  bio:          |
+    Lourens is an independent consultant currently based in sunny Madeira
+    Island, but originally from South Africa. He specializes in backend /
+    platform / domain solutions and is well versed full stack, from VM to high
+    level protocols and known for his offbeat Ruby patches and extensions.
+    Current interests include disruptive communications technology like ZeroMQ
+    / libxs and he is working on ZeroMQ monitoring features for better
+    operations support.
+
+    Weekdays are spent in the Operations team @ http://www.wildfireapp.com
+    See http://github.com/methodmissing for Open Source contributions.
 -
   name:         Mike Burns
   company:      thoughtbot
@@ -128,6 +234,10 @@
   image:        mburns.jpg
   url:          http://mike-burns.com/
   track:        main
+  bio:          |
+    Mike Burns plays many roles at thoughtbot, including the Haskell
+    enthusiast, their sole Linux user, an object-oriented programmer, unix
+    historian, and the head of the European branch.
 -
   name:         Pablo Astigarraga
   company:      Cubox
@@ -136,6 +246,11 @@
   image:        pastigarraga.jpg
   url:          http://pote.github.com/
   track:        main
+  bio:          |
+    My name is Pablo Astigarraga, I've been doing software for a couple of
+    years and arrived to the Ruby world after working with Python and
+    Asterisk-based VoIP solutions, I currently work at Cubox
+    (http://cuboxlabs.com) doing mostly Ruby stuff for the web.
 -
   name:         Piotr Solnica
   company:      Code Benders
@@ -144,6 +259,11 @@
   image:        psolnica.jpg
   url:          http://solnic.eu/
   track:        main
+  bio:          |
+    Piotr Solnica is a software developer based in Kraków, Poland. He's been
+    using Ruby as his main language of choice since 2005. He's a member of
+    DataMapper Core Team and a contributor to many open source projects. He's
+    a big fan of OOP and clean code and likes to blog about it at solnic.eu
 -
   name:         Piotr Szotkowski
   company:      Warsaw University of Technology
@@ -152,6 +272,16 @@
   image:        pszotkowski.jpg
   url:          http://chastell.net/
   track:        main
+  bio:          |
+    Piotr Szotkowski is an assistant professor at Warsaw University of
+    Technology (where he happily sneaks Ruby, EventMachine and newfangled
+    database systems into the creaking world of twentieth-century academia), a
+    Ruby developer at Rebased and an alumnus of Mendicant University. He’s
+    also a long-time contributor to various open source projects for the civic
+    sector and co-organiser of NetWtorek – monthly NetTuesday meetings of
+    people from the NGO/non-profit and IT sectors, as well as SocHack –
+    quarterly 48-hour hackatons for worthy causes, in coordination with Random
+    Hacks of Kindness, Open Data Day and Open Education Week.
 -
   name:         Sebastian Burkhard
   company:      FundExplorer
@@ -160,3 +290,7 @@
   image:        sburkhard.jpg
   url:          https://github.com/hasclass
   track:        main
+  bio:          |
+    Cofounder of FundExplorer, a Switzerland based Ruby/Rails consulting and
+    product shop. Gets a buzz out of cramming as many ruby calculations inside
+    a Rails request.

@@ -1,9 +1,17 @@
-%h1 Speakers
+---
+title: Speakers
+body_class: speakers
+---
 
-%ul
-  - data.speakers.each do |speaker|
-    %li
-      %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
-      %strong= link_to speaker.name, speaker.url
-      = link_to speaker.company, speaker.company_url
-      = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
+%article
+  = wrapped :header do
+    %h2 Speakers
+
+  %ul
+    - data.speakers.each do |speaker|
+      %li
+        %img(src="/images/content/speakers/#{speaker.image}"  alt="Portrait: #{speaker.name}")
+        %strong= link_to speaker.name, speaker.url
+        = link_to speaker.company, speaker.company_url
+        = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
+        %p= speaker.bio
