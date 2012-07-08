@@ -7,15 +7,16 @@ body_class: blog
   = wrapped :header do
     %h2 Blog
 
-  = wrapped :ul, :class => 'articles' do
-    - blog.articles[0...20].each_with_index do |article, index|
-      %li(class="#{('first' if index.zero?)}")
-        %h3= link_to article.title, article.url_without_extension
-        %p.meta
-          %small
-            %span.date= article.date.strftime('%e %b %Y')
-            %span.author= "by #{article.data.author}"
-        .block
-          = article.summary
-          %p.more
-            = link_to "Read on&hellip;", article.url_without_extension
+  = wrapped :section, :class => 'articles' do
+    %ul
+      - blog.articles[0...20].each_with_index do |article, index|
+        %li(class="#{('first' if index.zero?)}")
+          %h3= link_to article.title, article.url_without_extension
+          %p.meta
+            %small
+              %span.date= article.date.strftime('%e %b %Y')
+              %span.author= "by #{article.data.author}"
+          .block
+            = article.summary
+            %p.more
+              = link_to "Read on&hellip;", article.url_without_extension

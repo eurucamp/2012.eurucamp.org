@@ -1,14 +1,18 @@
 body.blog
   article
-    ul.articles
+    section.articles
       +padded
-      +unlisted
 
-      li
-        border-bottom: 1px dotted $grey
+      .wrapper > ul
+        +unlisted
 
-        &.first
-          border: none
+        & > li
+          border-bottom: 1px dotted $grey
+          +clearfix
+          margin-bottom: 2em
+
+          &:last-child
+            border: none
 
       h3
         margin-bottom: 0
@@ -23,44 +27,47 @@ body.blog
 
   +respond-to(tablet-lite)
     article
-      ul.articles
+      section.articles
         padding: 1em 0
         +clearfix
 
-        li
-          h3
-            margin-left: 20%
+        ul
+          li
+            h3
+              margin-left: 20%
 
-          p.meta
-            float: left
-            width: 20%
-            margin: 1em 0 0 0
+            p.meta
+              float: left
+              width: 20%
+              margin: 1em 0 0 0
 
-            span.author
-              display: block
+              span.author
+                display: block
 
-            small
-              display: block
-              margin: 0 2em 0 0
+              small
+                display: block
+                margin: 0 2em 0 0
 
-          .block
-            float: right
-            width: 80%
+            .block
+              float: right
+              width: 80%
 
 
   +respond-to(tablet-portrait)
     article
-      ul.articles
-        li
-          .block
-            padding-right: 20%
-            width: 60%
+      section.articles
+        ul
+          li
+            .block
+              padding-right: 20%
+              width: 60%
 
 
   +respond-to(tablet-landscape)
     article
-      ul.articles
-        li
-          .block
-            padding-right: 25%
-            width: 55%
+      section.articles
+        ul
+          li
+            .block
+              padding-right: 25%
+              width: 55%
