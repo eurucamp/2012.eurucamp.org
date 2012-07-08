@@ -8,7 +8,7 @@ body_class: article
 
 We started planning eurucamp several months ago with the idea to bring people together for a slightly different kind of conference, a camp filled with shared ideas and experiences, as outside the norm as our foresty lakeside venue is outside the normal city center.  (There's a whole 'nother blog post coming on that.)   We've been very excited to see the camp grow, becoming a detailed and organized event, and we're excited to share with you a big part of that: our first round of speakers.
 
-We received over thirty-five proposals, and after much electronic discussion met after long, beautiful Berlin summer evening spent with the talk ideas and some delicious Italian food.   The proposals were uniformly excellent, and it was a difficult task to choose from among them -- honestly, all of us would've loved to hear every single talk if the comments timing allowed -- but in the end we've put together what we hope you'll find an exciting and interesting lineup.
+We received over thirty-five proposals, and (after much electronic discussion) all met after long, beautiful Berlin summer evening spent with the talk ideas and some delicious Italian food.   The proposals were uniformly excellent, and it was a difficult task to choose from among them -- honestly, all of us would've loved to hear every single talk if the conference timing allowed -- but in the end we've put together what we hope you'll find an exciting and interesting lineup.
 
 So without further ado, our initial speaker lineup (in alpha order), including invited speakers:
 
