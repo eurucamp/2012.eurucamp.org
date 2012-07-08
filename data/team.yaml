@@ -1,0 +1,99 @@
+-
+  name:         Alex Coles
+  company:      Payango GmbH
+  company_url:  http://payango.com/en
+  twitter:      myabc
+  image:        acoles.jpg
+  url:          http://alexbcoles.com/
+  role:         "Founder, Curator"
+-
+  name:         Alex Koppel
+  company:      6wunderkinder
+  company_url:  http://www.6wunderkinder.com/
+  twitter:      arsduo
+  image:        akoppel.jpg
+  url:          http://www.alexkoppel.com/
+  role:         "Content"
+-
+  name:         Florian Gilcher
+  company:      Asquera
+  company_url:  http://asquera.de/
+  twitter:      Argorak
+  image:        fgilcher.jpg
+  #url:         
+  role:         "Sponsorship"
+-
+  name:         Matthias Günther
+  twitter:      wikimatze
+  image:        mguenther.jpg
+  url:          http://wikimatze.de/
+  role:         "Sponsorship"
+-
+  name:         Florian Plank
+  company:      Polarblau
+  company_url:  http://polarblau.com/
+  twitter:      polarblau
+  image:        fplank.jpg
+  url:          http://polarblau.com/
+  role:         Design and Web
+-
+  name:         Piotr Gęga
+  company:      Appgrindr
+  company_url:  http://appgrinder.pl/
+  twitter:      piotrgega
+  image:        pgega.jpg
+  url:          http://appgrinder.pl/
+  role:         Organisation
+-
+  name:         Guillermo Tirelli
+  twitter:      wordgraphy
+  image:        gtirelli.jpg
+  url:          http://guillermotirelli.com/
+  role:         Logistics
+-
+  name:         Thilo Utke
+  company:      Upstream Agile
+  company_url:  http://upstre.am/
+  twitter:      freaklikeme
+  image:        tutke.jpg
+  role:         "Finance, Ruby Berlin e.V. Management"
+-
+  name:         Alex Lang
+  company:      Upstream Agile
+  company_url:  http://upstre.am/
+  image:        alang.jpg
+  twitter:      langalex
+  url:          http://alex.io/
+  role:         Videography
+-
+  name:         Jan Lelis
+  company:      d:evolute
+  company_url:  http://devolute.org/
+  image:        jlelis.jpg
+  twitter:      rbjl
+  url:          http://rbjl.net/
+  role:         Team Member
+-
+  name:         Jana Vogel
+  company:      Dotless
+  company_url:  http://dotless.de/
+  image:        jvogel.jpg
+  twitter:      langalex
+  url:          http://dotless.de/
+  role:         Team Member
+-
+  name:         Robert Schulze
+  company:      Dotless
+  company_url:  http://dotless.de/
+  image:        rschulze.jpg
+  twitter:      fnordfish
+  url:          http://dotless.de/
+  role:         Team Member
+-
+  name:         Christian Requena
+  company:      ResearchGate
+  company_url:  http://www.researchgate.net/
+  image:        crequena.jpg
+  twitter:      crekev71
+  url:          http://notdeadhead.wordpress.com/
+  role:         Founder, Alumni
