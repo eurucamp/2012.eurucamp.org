@@ -1,2 +1,25 @@
-%h1 Sponsors
-%h2 Yet to be announced
+---
+body_class: sponsors
+title: Sponsors
+---
+
+%article
+  = wrapped :header do
+    %h2 Sponsors
+
+  = wrapped :section, :class => 'prospectus' do
+    %h4 Become a eurucamp Sponsor
+    %p
+      Opportunities to sponsor eurucamp are still available.
+      We rely on the generosity of our sponsors to offer an impressive
+      programme of activities, while keeping the event as affordable as
+      possible.
+    %p
+      Sponsoring eurucamp is a great way for your company to reach a diverse
+      and talented group of Rubyists, from across Europe (and the World).
+
+    = partial 'prospectus_table'
+
+    %p
+      For more information about sponsorship, please drop us a line at
+      sponsor at eurucamp dot org.
