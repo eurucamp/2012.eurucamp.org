@@ -6,7 +6,7 @@ author: Alex Coles
 body_class: article
 ---
 
-Regsitration for eurucamp and JRubyConf EU will begin this **Monday, 9 July
+Registration for eurucamp and JRubyConf EU will begin this **Monday, 9 July
 at 12 noon CEST**.
 
 Tickets will be priced as follows:
