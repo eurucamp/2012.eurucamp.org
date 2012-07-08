@@ -62,7 +62,13 @@ body
           text-indent: -999em
           width: 40px
           height: 40px
+          opacity: 0.75
+          +transition(opacity, 0.5s)
           +image('footer/twitter_icon.png')
+
+          &:hover
+            opacity: 1
+            +transition(opacity, 0.5s)
 
         &.lanyrd
           a
