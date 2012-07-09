@@ -36,10 +36,42 @@ body.index
         font-size: 0.9em
         background: none
         color: $brand-2
-        border-bottom: 1px dotted $brand-2
         z-index: 400
         margin: 0
         +no-text-shadow
+
+    section.register
+      border-bottom: 1px dotted $grey
+      background-color: $grey
+      +clearfix
+      +padded
+
+      a.primary
+        background: $brand-1
+        +shadowed
+        padding: 2px
+        display: block
+        color: $white
+        text-align: center
+        +custom-sans(black)
+        +transition(all 0.15s)
+        +text-shadow(0 1px 0 darken($brand-1, 10%))
+        font-size: 1.5em
+
+        span
+          padding-bottom: 0.15em
+          display: block
+          border: 1px dotted transparentize($white, 0.5)
+
+        &:hover
+          background-color: $white
+          color: $brand-1
+          +no-text-shadow
+
+      p
+        color: $medium-grey
+        margin: 0 0 -0.5em 0
+        text-align: center
 
     .block
       +clearfix
@@ -80,6 +112,12 @@ body.index
           border: none
           width: 82%
 
+      section.register
+        .wrapper
+          width: 50%
+          margin-right: auto
+          margin-left: auto
+
 
   +respond-to(tablet-lite)
     article
@@ -109,6 +147,11 @@ body.index
           margin-left: 20%
           +transition(all 0.5s)
           +transform(rotate(0.5deg))
+
+      section.register
+        .wrapper
+          width: 33.33333%
+
 
 
   +respond-to(tablet-landscape)

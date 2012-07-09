@@ -30,6 +30,16 @@ body_class: index
           %br
           Siesta breaks and Grill.
 
+  = wrapped :section, :class => 'register' do
+    = link_to 'http://tickets.eurucamp.org', :title => 'Get your ticket', :class => 'primary' do
+      %span
+        Register now
+    %p
+      %small
+        Ticket prices are
+        = link_to 'starting from &euro;50', '/2012/07/05/ticket-sales-begin-monday', :title => 'More information on our blog'
+        \.
+
   .block
     = wrapped :section, :class => 'speakers' do
       %h3 Our speakers
