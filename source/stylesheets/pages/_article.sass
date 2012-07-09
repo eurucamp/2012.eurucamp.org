@@ -74,3 +74,104 @@ body.article
         margin: -1.33333em -2em 0 -2em
         +transform(rotate(-2deg))
         +shadowed
+
+
+  // styles for single articles
+  &.pricing
+    article
+      section.pricing-info
+        ul
+          +unlisted
+
+          &.legend
+            display: none
+
+          &.pricing
+            li
+              margin-bottom: 0.5em
+              padding-bottom: 0.5em
+              border-bottom: 1px dotted $grey
+
+              strong
+                display: inline-block
+                float: right
+                text-align: right
+                width: 20%
+
+    +respond-to(tablet-lite)
+      article
+        section.pricing-info
+          ul
+            &.legend
+              position: relative
+              display: block
+              +clearfix
+
+              li
+                display: block
+                float: left
+                width: 33.33333%
+                +custom-sans
+
+                &:first-child
+                  border-left: 1px solid $grey
+
+                span
+                  display: block
+                  border-right: 1px solid $grey
+                  text-align: center
+
+            &.pricing
+              margin-top: 0.5em
+
+              li
+                height: 3em
+                line-height: 3em
+                color: $white
+                +custom-sans(light, false)
+                font-size: 1em
+                white-space: nowrap
+                text-align: center
+                border: none
+                margin: 0
+                padding: 0
+                letter-spacing: 0.1
+                position: relative
+
+                &.all
+                  background-color: $pink
+                  +text-shadow(0 1px 0 darken($pink, 10%))
+
+                &.only-eurucamp
+                  background-color: $green
+                  width: 75%
+                  float: right
+                  +text-shadow(0 1px 0 darken($green, 10%))
+
+                &.only-jrubyconf
+                  background-color: $red
+                  width: 50%
+                  clear: right
+                  +text-shadow(0 1px 0 darken($red, 10%))
+
+                &.workshops
+                  background-color: $blue
+                  width: 50%
+                  +text-shadow(0 1px 0 darken($blue, 10%))
+
+                  strong
+                    +caps
+
+                strong
+                  float: none
+                  position: absolute
+                  right: -1.25em
+                  top: 0.25em
+                  width: 2.5em
+                  height: 2.5em
+                  line-height: 2.5em
+                  text-align: center
+                  background: $black
+                  +border-radius(1.5em)
+                  color: $white
+                  +no-text-shadow
