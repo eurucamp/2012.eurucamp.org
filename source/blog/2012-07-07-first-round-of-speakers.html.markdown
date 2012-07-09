@@ -4,6 +4,7 @@ date: 2012-07-07
 tags: website
 author: Alex Koppel
 body_class: article
+published: true
 ---
 
 We started planning eurucamp several months ago with the idea to bring people together for a slightly different kind of conference, a camp filled with shared ideas and experiences, as outside the norm as our foresty lakeside venue is outside the normal city center.  (There's a whole 'nother blog post coming on that.)   We've been very excited to see the camp grow, becoming a detailed and organized event, and we're excited to share with you a big part of that: our first round of speakers.

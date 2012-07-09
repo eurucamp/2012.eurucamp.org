@@ -4,6 +4,7 @@ date: 2012-07-05
 tags: website
 author: Alex Coles
 body_class: article
+published: true
 ---
 
 Registration for eurucamp and JRubyConf EU will begin this **Monday, 9 July
