@@ -26,6 +26,9 @@ body.sponsors
             border-left: 1px dotted $grey
             +custom-sans(normal, false)
 
+            &.half
+              width: 10%
+
             &.first
               text-align: left
               width: auto
@@ -38,11 +41,10 @@ body.sponsors
 
             &.check
               color: $green
-              font-weight: bold
 
-            &.cross
+            &.cross,
+            &.secondary
               color: $red
-              font-weight: bold
 
             &.kastanien
               background: lighten($green, 45%)
@@ -76,3 +78,4 @@ body.sponsors
             color: $brand-2
             font-size: 1.1em
             font-style: normal
+            border-left: none
