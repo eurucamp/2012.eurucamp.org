@@ -60,8 +60,73 @@ title: Location
       %h4 Camping
     = wrapped do
       %p
-        Prefer to really ‘rough it’ and camp? Camping facilities are available
-        nearby, and we will be posting further information shortly.
+        Prefer to really ‘rough it’ and camp? There are two options available
+        to you.
+
+      %h5 For 1 or 2-Person Tents
+      %p
+        Camping for small tents (‘wilderness-style‘) is available at
+        = succeed '.' do
+          = link_to 'Kuhle Wampe', 'http://zeltplatz-kuhle-wampe.de/'
+        Approximately 3km away, it a short cycle ride or trek through the forest
+        away. Space is limited. eurucamp has pre-reserved spaces for up to 20 of
+        our attendees. Prices are as follows (to be paid on arrival):
+
+      %ul
+        %li €4 for a tent per night <em>and</em>
+        %li €6    per adult person, per night
+        %li €3.50 per person under 18, per night
+
+      %p
+        To stay at Kuhle Wampe, please fill in our
+        = succeed '.' do
+          = link_to 'reservation request form', 'https://docs.google.com/spreadsheet/viewform?formkey=dE4xSUMtUlMwc3pCSjJkdmhvb3FRQVE6MQ'
+
+      %p
+        Kuhle Wampe is recommended if you have a bicycle (or don't mind walking).
+        The nearest parking is a 20 minute walk from this location.
+
+      //%p
+      //  Zeltplatz ‘Kuhle Wampe‘
+      //  Straße zur Krampenburg 12559 Berlin
+
+      %h5 For bigger tents
+
+      %p
+        A bigger camping site is available
+        = succeed '.' do
+          = link_to 'on the Krossinensee', 'http://www.campingplatz-berlin.de'
+        It is approximately 15 minutes away by car.
+        This site offers more organised camping than Kuhle Wampe, with spaces
+        for larger tents and many conveniences (restaurant, shop, WiFi,
+        activities). Châlets are also offered at this location.
+
+      %ul
+        %li €3.00 for a small (<= 2-person) tent, per night
+        %li €5.00 for a large (>= 3-person) tent, per night <em>and</em>
+        %li €7.50 per adult person, per night
+        %li €3.00 per person 6 - 15, per night
+        %li Children under 6 are free.
+
+      %p
+        Prices are listed in full in their
+        = succeed '.' do
+          = link_to 'price list (PDF)', 'http://campingplatz-berlin.de/public/wp-content/uploads/2012/02/Preise-2012.pdf'
+
+      %p
+        To make a reservation direct with the camping site,
+        = link_to 'use their online form', 'http://www.campingplatz-berlin.de/buchen_en/'
+        or call them on
+        = succeed '.' do
+          = link_to '+49 (0)30 675 86 87', 'tel:+49306758687'
+
+      %p
+        This location is recommended if you have a car. It is accessible by
+        public transport, but because of the situation involves crossing many
+        lakes, this is not recommended.
+        We assist by organising a morning/evening shuttle taxi/bus service for
+        eurucamp attendees without a car, who want to stay at Campingplatz
+        Krossinenesee.
 
   %section.city-intro
     = wrapped :header do
