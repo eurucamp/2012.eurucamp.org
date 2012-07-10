@@ -83,10 +83,10 @@ body
       display: block
       padding: 1em
       +clearfix
-      background-color: $dark-red
+      color: $dark-red
       @if $scope == 'jrubyconf'
-        background-color: $pink
-      color: $white
+        color: $pink
+      background: $grey
       +transition(background-color 0.5s)
 
       small
@@ -98,9 +98,7 @@ body
 
       &:hover
         border: none
-        background-color: $red
-        @if $scope == 'jrubyconf'
-          background-color: $blue
+        background-color: $white
         +transition(background-color 0.5s)
 
 
