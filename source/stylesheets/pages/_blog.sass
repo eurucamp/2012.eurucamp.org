@@ -16,14 +16,28 @@ body.blog
 
       h3
         margin-bottom: 0
+        +custom-sans(light)
         +no-caps
 
-      p.meta
+      .meta
         margin-top: 0
         color: $medium-grey
+        +custom-sans(normal, false)
 
         span.author
           display: inline
+
+        ul.tags
+          +unlisted
+          margin: 0.5em 0 0 0
+
+          li
+            background: $grey
+            display: inline-block
+            +border-radius(1em)
+            +caps
+            font-size: 0.8em
+            padding: 0 0.5em 0.15em
 
 
   +respond-to(tablet-lite)
@@ -37,7 +51,7 @@ body.blog
             h3
               margin-left: 20%
 
-            p.meta
+            .meta
               float: left
               width: 20%
               margin: 1em 0 0 0

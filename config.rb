@@ -15,7 +15,7 @@ Middleman::Sitemap::Resource.class_eval do
 end
 
 activate :blog do |blog|
-  blog.layout  = "article_layout"
+  blog.layout  = "article"
   blog.sources = "blog/:year-:month-:day-:title.html"
 
   #blog.permalink  = "blog/:year/:month/:day/:title"
