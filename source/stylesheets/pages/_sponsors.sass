@@ -1,6 +1,78 @@
 body.sponsors
+  article
+    header
+      +padded
 
-  section.prospectus
-    table
-      width: 100%
-      border: none
+    section.prospectus
+      +padded
+
+      p
+        padding-right: 33.33333%
+
+      table
+        width: 100%
+        border: none
+
+        tr
+          td, th
+            border-bottom: 1px solid $grey
+            text-align: center
+            padding: 0.75em 0
+            width: 20%
+            font-weight: bold
+            color: $green
+            font-size: 0.9em
+            line-height: 1em
+            border-left: 1px dotted $grey
+            +custom-sans(normal, false)
+
+            &.first
+              text-align: left
+              width: auto
+              color: $medium-grey
+              padding-right: 1em
+              border-left: none
+
+              strong
+                font-weight: normal
+
+            &.check
+              color: $green
+              font-weight: bold
+
+            &.cross
+              color: $red
+              font-weight: bold
+
+            &.kastanien
+              background: lighten($green, 45%)
+
+            &.linden
+              background: lighten($green, 50%)
+
+          &.divider
+            td
+              font-size: 0.75em
+              padding: 0
+              border-left: none
+
+        thead
+          th
+            +custom-sans(bold)
+            color: $brand-2
+            font-size: 1.25em
+            vertical-align: bottom
+
+            img
+              display: block
+              width: 100%
+              max-width: 120px
+              margin: 0 auto 1em
+
+        tbody
+          th
+            padding: 2em 1em 0.5em
+            +custom-sans(bold)
+            color: $brand-2
+            font-size: 1.1em
+            font-style: normal
