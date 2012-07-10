@@ -31,11 +31,22 @@ title: Location
       Hotel Müggelsee sits on the banks of the lake and is surrounded by circa 48,000 m² of woodland and parks. Naturally, you'll also be able to stay overnight at the venue. In fact, for the most fun, we recommend staying here.
     %p
       Hotel rooms are available for eurucamp attendees at the following special
-      rates until the 17th July:
+      rates until the 27th July:
     %ul
       %li &euro;59 (inc. VAT) per night for a single room, with breakfast.
       %li &euro;89 (inc. VAT) per night for a double room, with breakfast.
-    %p The booking link will be available shortly.
+
+    %p
+      To obtain the special rate, make your reservations by telephone
+      = surround '(', ')' do
+        = link_to '+49 (0)30 65882 200', 'tel:+493065882200'
+        %em or
+        = link_to '+49 (0)30 65882 500', 'tel:+493065882500'
+      or
+      = succeed '.' do
+        = link_to 'by email', 'mailto:Ines.vonHeine@grandcityhotels.com?subject=eurucamp 2012 Hotel Reservation'
+      and mention you are attending eurucamp 2012.
+      %em Regrettably the special rate is not currently available through the Hotel website.
 
   = wrapped :section, :class => 'camping' do
     %h4 Camping
