@@ -7,7 +7,7 @@ body_class: article sponsors
 published: false
 ---
 
-One sad fact about conferences: they all cost money and ticket sales rarely cover all expenses. This is especially true for Eurucamp: as an inclusionist conference, we try to keep ticket prices as low as possible. We'd to allow anyone to visit our camp, regardless whether being a professional, an interested amateur and also regardless financial situation. We know that we may never meet this goal fully, but we try to come as close as possible.
+The saddest fact about conferences: they all cost money and ticket sales rarely cover all expenses. This is especially true for Eurucamp: as an inclusionist conference, we try to keep ticket prices as low as possible. We try to give anyone the possibility to visit our camp and with that the ruby community, regardless whether being a professional, an interested amateur and also regardless of financial situation. We know that we may never meet this goal fully, but we try to come as close as possible.
 
 This is where sponsors come in: companies and individuals kind enough to give us with the means to provide our guests with the greatest experience possible. There are many ways you can sponsor eurucamp, the most direct being money. You can find all details about sponsoring eurucamp monetarily on our [sponsorship page](/sponsors "Sponsors"). These levels are intended for corporate sponsorship. If these 3 default options do not suit you (e.g. you want to sponsor as an individual), we are open to other models of sponsoring. Please contact us at sponsor at eurucamp dot org to ask us about what else we have to offer.
 
