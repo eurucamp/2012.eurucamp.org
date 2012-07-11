@@ -1,0 +1,44 @@
+-
+  company:    BusyConf
+  twitter:    busyconf
+  image:      busyconf.png
+  url:        http://busyconf.com/
+  level:      Birken
+  description:
+-
+  company:    Heroku
+  twitter:    heroku
+  image:      heroku.png
+  url:        http://www.heroku.com/
+  level:      Birken
+  description:
+-
+  company:    Planio
+  twitter:    planio
+  image:      planio.png
+  url:        http://plan.io/
+  level:      Birken
+  description:
+-
+  company:    Selleo
+  twitter:    selleo
+  image:      selleo.png
+  url:        http://www.selleo.com/
+  level:      Birken
+  description:
+-
+  company:    Scalarium
+  twitter:    scalarium
+  image:      scalarium.png
+  url:        http://www.scalarium.com/
+  level:      Kastanien
+  description:
+-
+  name:       6wunderkinder
+  twitter:    arsduo
+  image:      6wunderkinder.jpg
+  url:        http://www.alexkoppel.com/
+  level:      Birken / Coffee
+  description:
+#
+
