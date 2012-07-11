@@ -29,6 +29,18 @@ activate :blog do |blog|
   #blog.calendar_template = "blog/calendar"
 end
 
+Middleman::Blog::BlogData.class_eval do
+  def published_articles
+    articles.select &:published?
+  end
+end
+
+Middleman::Blog::BlogArticle.class_eval do
+  def published?
+    data['published']
+  end
+end
+
 page "/feed.xml", :layout => false
 
 ###
