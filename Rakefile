@@ -54,9 +54,21 @@ namespace :utils do
   # scrapes eurucamp page on lanyrd.com and returns
   # array of Twitter names
   def lanyrd_attendees
-    url = 'http://lanyrd.com/2012/eurucamp/'
-    sel = '.attendees-placeholder ul li a'
-    doc = Nokogiri::HTML(open(url))
-    doc.css(sel).map { |a| a[:title].match('@(.*)')[1] }
+    base_url             = 'http://lanyrd.com/2012/eurucamp/attendees/'
+    profile_selector     = '.primary .mini-profile .meta a'
+    first_page           = Nokogiri::HTML(open(base_url))
+    attendees            = first_page.css(profile_selector).map(&:content)
+
+    other_pages_selector = '.pagination li a'
+    other_pages          = first_page.css(other_pages_selector).map do |a|
+      'http://lanyrd.com' + a[:href]
+    end
+
+    other_pages.each do |page|
+      page = Nokogiri::HTML(open(page))
+      attendees += page.css(profile_selector).map(&:content)
+    end
+
+    attendees
   end
 end
