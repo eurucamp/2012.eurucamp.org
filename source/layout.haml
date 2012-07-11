@@ -17,10 +17,20 @@
     = stylesheet_link_tag 'screen'
 
     %script(src="/javascripts/lib/modernizr.js")
-    %script(src="http://use.typekit.com/uxm6bkh.js")
 
     :javascript
-      try { Typekit.load(); } catch(e) {};
+      Modernizr.load([
+        {
+          test: Modernizr.fontface,
+          yep : 'http://use.typekit.com/uxm6bkh.js',
+          complete: function() {
+            try { Typekit.load(); } catch(e) {};
+          }
+        },{
+          load: '/javascripts/application.js'
+        }
+      ]);
+
     = partial 'partials/analytics'
 
   %body(class="#{current_page.data.body_class}")
