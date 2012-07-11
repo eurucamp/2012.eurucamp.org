@@ -175,3 +175,9 @@
   #{$property}: $a
   +at-night
     #{$property}: $b
+
+=greyscale
+  +prefixer(filter, grayscale(100%))
+
+=no-greyscale
+  +prefixer(filter, grayscale(0%))

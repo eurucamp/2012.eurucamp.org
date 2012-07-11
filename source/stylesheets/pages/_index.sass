@@ -80,7 +80,7 @@ body.index
 
   +respond-to(smartphone-portrait)
     article
-      header
+      & > header
         h2, h3
           margin: 0
 
@@ -93,7 +93,7 @@ body.index
 
   +respond-to(smartphone-landscape)
     article
-      header
+      & > header
         margin-top: 0
 
         h2, h3
@@ -122,7 +122,7 @@ body.index
 
   +respond-to(tablet-lite)
     article
-      header
+      & > header
         h2
           span
             display: inline
@@ -136,7 +136,7 @@ body.index
       overflow: hidden
 
     article
-      header
+      & > header
         h2
           +shadowed
           margin-left: -1em
@@ -157,14 +157,10 @@ body.index
 
   +respond-to(tablet-landscape)
     article
-      header
+      & > header
         +don(background, white, $black)
 
 
   +respond-to(tablet-oversize)
     #container
       overflow: visible
-
-    article
-      header
-        h3

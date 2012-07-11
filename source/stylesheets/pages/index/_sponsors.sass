@@ -1,48 +1,89 @@
 article
   section.sponsors
-    padding: 2em 0
-    background: $brand-3
+    +clearfix
+    border-top: 1px dotted $grey
+    //background: lighten($grey, 10%)
 
     header
       h3
+        width: auto
+        margin: 0
+        +sticky
 
     div
       +padded
+      border-bottom: 1px dotted lighten($grey, 5%)
+
+      &:last-child
+        border-bottom: none
 
       h4
         margin-bottom: 0.5em
+        margin-top: 0
         color: $grey
         +custom-sans
 
+        .wrapper
+          margin-bottom: 0
+          margin-top: 0
+
       ul
-        border: 1px solid lighten($grey, 7%)
         +clearfix
         +unlisted
 
         li
           +padded
+          float: left
 
           a
             display: block
-            border-bottom: 1px solid white
-            +transition(border-color, 0.25s)
 
             img
               width: 100%
+              opacity: 0.75
+              +transition(all 0.25s)
+              +greyscale
 
             &:hover
-              border-color: $brand-2
-              +transition(border-color, 0.25s)
+              img
+                opacity: 1
+                +transition(all 0.25s)
+                +no-greyscale
+
+      &.kastanien
+        h4
+          margin-top: -0.75em
+
+      &.linden,
+      &.birken
+        ul
+          li
+            width: 50%
 
 
     +respond-to(mid-range)
       div
+        &.kastanien
+          ul
+            li
+              width: 50%
+
         &.linden,
         &.birken
           ul
             li
-              width: 50%
-              float: left
+              width: 33.33333%
+
+
+    +respond-to(smartphone-portrait)
+      div
+        h4
+          text-align: right
+
+        &.kastanien
+          h4
+            margin-top: -1em
+
 
 
     +respond-to(smartphone-landscape)
@@ -50,21 +91,16 @@ article
         &.kastanien
           ul
             li
-              width: 25%
-              float: left
+              width: 33.33333%
+
         &.linden,
         &.birken
           ul
             li
-              width: 20%
-              float: left
+              width: 25%
 
 
     +respond-to(tablet-lite)
-      clear: both
-
-
-    +respond-to(tablet-portrait)
       div
         &.kastanien
           ul
@@ -77,3 +113,10 @@ article
             li
               width: 20%
               float: left
+
+    +respond-to(tablet-portrait)
+      div
+        &.kastanien
+          h4
+            margin-top: -1.5em
+

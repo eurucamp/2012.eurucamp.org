@@ -73,16 +73,19 @@ body_class: index
         If you are attending
         %a(href="http://lanyrd.com/2012/eurucamp" title="eurucamp on lanyard.com") Let us know on Lanyrd
 
--#
   %section.sponsors
     = wrapped :header do
       %h3 Our sponsors
-
-      - data.index.sponsors.each do |group|
-        = wrapped :div, :class => group.type.downcase do
-          %h4= group.type
+    -# Ugly, but let's us sort by groups -- move into helper?
+    - sponsor_groups = data.sponsors.group_by(&:level)
+    - %w(Kastanien Birken Linden).each do |group|
+      - sponsors = sponsor_groups[group]
+      - if sponsors
+        %div(class="#{group.underscore.gsub(' ', '').gsub('/', '-')}")
+          = wrapped :h4 do
+            = "#{group} level"
           %ul
-            - group.companies.each do |company|
+            - sponsors.each do |sponsor|
               = wrapped :li do
-                = link_to company.url do
-                  %img(src="/images/content/sponsors/#{company.image}" alt="Sponsor: #{company.name}")
+                = link_to sponsor.url do
+                  %img(src="/images/content/sponsors/#{sponsor.image}" alt="Sponsor: #{sponsor.company}")

@@ -1,7 +1,7 @@
 -
   company:    BusyConf
   twitter:    busyconf
-  image:      busyconf.png
+  image:      busy_conf.png
   url:        http://busyconf.com/
   level:      Birken
   description:
@@ -33,12 +33,11 @@
   url:        http://www.scalarium.com/
   level:      Kastanien
   description:
--
-  name:       6wunderkinder
-  twitter:    arsduo
-  image:      6wunderkinder.jpg
-  url:        http://www.alexkoppel.com/
-  level:      Birken / Coffee
-  description:
 #
-
+  -
+    name:       6wunderkinder
+    twitter:    arsduo
+    image:      6wunderkinder.jpg
+    url:        http://www.alexkoppel.com/
+    level:      Birken / Coffee
+    description:
