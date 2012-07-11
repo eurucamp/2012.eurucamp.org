@@ -57,7 +57,7 @@ namespace :utils do
     base_url             = 'http://lanyrd.com/2012/eurucamp/attendees/'
     profile_selector     = '.primary .mini-profile .meta a'
     first_page           = Nokogiri::HTML(open(base_url))
-    attendees            = first_page.css(profile_selector).map {|a| a[:content].gsub('@', '') }
+    attendees            = first_page.css(profile_selector).map {|a| a.content.gsub('@', '') }
 
     other_pages_selector = '.pagination li a'
     other_pages          = first_page.css(other_pages_selector).map do |a|
@@ -66,7 +66,7 @@ namespace :utils do
 
     other_pages.each do |page|
       page = Nokogiri::HTML(open(page))
-      attendees += page.css(profile_selector).map {|a| a[:content].gsub('@', '') }
+      attendees += page.css(profile_selector).map {|a| a.content.gsub('@', '') }
     end
 
     attendees
