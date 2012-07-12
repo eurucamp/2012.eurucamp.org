@@ -7,6 +7,11 @@ title: Sponsors
   = wrapped :header do
     %h2 Sponsors
 
+  = wrapped :section, :class => 'sponsors-listing' do
+    %h3
+      Our Sponsors
+    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
+
   = wrapped :section, :class => 'prospectus' do
     %h3 Become a eurucamp Sponsor
     %p
@@ -22,6 +27,8 @@ title: Sponsors
       and Eurucamp sponsorships differ in the way their sponsorship is
       presented. All sponsors will be mentioned on all days in relevant
       material.
+
+  = wrapped :section, :class => 'prospectus-table' do
     = partial 'partials/prospectus_table'
     %p
       For more information about sponsorship, please drop us a line at

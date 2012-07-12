@@ -3,8 +3,39 @@ body.sponsors
     header
       +padded
 
+    section.sponsors-listing
+
+      h4
+        border-bottom: 1px dotted $grey
+        .wrapper
+          margin: 0
+      ul
+        +unlisted
+        +clearfix
+
+        li
+          +padded
+          float: left
+          width: 100%
+
+          a
+            display: block
+
+            img
+              width: 100%
+
+
     section.prospectus
       +padded
+
+    section.prospectus-table
+      clear: both
+      background: lighten($grey, 10%)
+      border-top: 1px dotted $grey
+      +padded
+
+      .wrapper
+        +clearfix
 
       table
         width: 100%
@@ -77,9 +108,43 @@ body.sponsors
             font-style: normal
             border-left: none
 
+
+  +respond-to(mid-range)
+    article
+      section
+        &.sponsors-listing
+          .kastanien
+            ul
+              li
+                width: 50%
+
+          .linden,
+          .birken
+            ul
+              li
+                width: 33.33333%
+
+
   +respond-to(tablet-lite)
     article
       section
-        p
-          padding-right: 33.33333%
+        &.sponsors-listing
+          width: 50%
+          float: right
+
+          .linden,
+          .birken
+            ul
+              li
+                width: 50%
+
+        &.prospectus
+          width: 50%
+          float: left
+
+
+  +respond-to(tablet-portrait)
+    article
+      section
+        &.prospectus-table
 
