@@ -9,8 +9,7 @@ body_class: blog
 
   = wrapped :section, :class => 'articles' do
     %ul
-      - articles = blog.articles.select{|a| a.data['published'] }
-      - articles[0...20].each_with_index do |article, index|
+      - blog.published_articles[0...20].each_with_index do |article, index|
         %li(class="#{('first' if index.zero?)}")
           %h3= link_to article.title, article.url_without_extension
           .meta

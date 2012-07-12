@@ -5,10 +5,10 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.id   'http://2012.eurucamp.org/'
   xml.link href: 'http://2012.eurucamp.org/'
   xml.link href: 'http://2012.eurucamp.org/feed.xml', rel: 'self'
-  xml.updated blog.articles.first.date.to_time.iso8601
+  xml.updated blog.published_articles.first.date.to_time.iso8601
   xml.author { xml.name 'eurucamp Team' }
 
-  blog.articles[0..5].each do |article|
+  blog.published_articles[0..5].each do |article|
     xml.entry do
       full_url = "http://2012.eurucamp.org" + article.url_without_extension
 
