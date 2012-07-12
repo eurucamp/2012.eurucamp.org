@@ -22,6 +22,9 @@
     :javascript
       Modernizr.load([
         {
+          test: Modernizr.mq('only all'),
+          nope: '/javascripts/lib/mq_polyfill.js'
+        },{
           test: Modernizr.fontface,
           yep : 'http://use.typekit.com/uxm6bkh.js',
           complete: function() {
