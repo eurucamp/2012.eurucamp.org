@@ -4,7 +4,7 @@ date: 2012-07-10
 tags: sponsors
 author: Florian Gilcher
 body_class: article sponsors
-published: false
+published: true
 ---
 
 The saddest thing about conferences is that they all cost money and ticket sales rarely cover all the expenses. This is especially true for eurucamp - as an inclusive conference, we try to keep ticket prices as low as possible. We try to give everyone the chance to participate in our event as part of the Ruby community, whether professionals or keen amateurs and regardless of financial  circumstances. We know that we may never meet this goal fully, but we try to come as close as possible.
