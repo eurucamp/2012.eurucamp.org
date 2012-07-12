@@ -6,7 +6,8 @@
     %title= [current_page.data.title, 'eurucamp'].compact.flatten.join(' | ')
     %meta(content="" name="description")
     %meta(content="" name="author")
-    %meta(content="width=device-width, initial-scale=1.0" name="viewport")
+    %meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport")
+
     = feed_tag :atom, "/feed.xml", :title => "ATOM"
 
     %link(href="favicon.ico" rel="shortcut icon")
