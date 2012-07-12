@@ -21,6 +21,7 @@ body.index
         +brand-stripe(0, $brand-2, false)
         +custom-serif(bold)
         +no-caps
+        +box-shadow(0 0 1px 1px transparentize(white, 1))
         padding-left: 1em
         padding-right: 1em
 
@@ -102,13 +103,12 @@ body.index
           padding: 0.15em 1em 0.35em
 
         h2
-          +shadowed
           margin-right: 5%
 
         h3
           margin-left: 15%
           +text-shadow(0 1px 0 darken($brand-2, 10%))
-          background: transparentize($brand-2, 0.2)
+          background: lighten($brand-2, 10%)
           color: $white
           border: none
           width: 82%
@@ -138,7 +138,6 @@ body.index
     article
       & > header
         h2
-          +shadowed
           margin-left: -1em
           margin-right: -1em
           +transition(all 0.5s)
@@ -161,8 +160,13 @@ body.index
         background: white
         +at-night
           background: $black
-          
+
 
   +respond-to(tablet-oversize)
     #container
       overflow: visible
+
+    article
+      & > header
+        h2
+          +shadowed
