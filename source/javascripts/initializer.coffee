@@ -73,10 +73,11 @@ $ ->
         false
 
 toggleBGImage = ->
-  if $(@).width() > 1024
-    $.backstretch BG_PATH, BG_OPTIONS
-  else
-    $.backstretch 'destroy'
+  if Modernizr.mq('only all')
+    if $(@).width() > 1024
+      $.backstretch BG_PATH, BG_OPTIONS
+    else
+      $.backstretch 'destroy'
 
 window.setTheme = (theme) ->
   current = $.cookie 'theme'
