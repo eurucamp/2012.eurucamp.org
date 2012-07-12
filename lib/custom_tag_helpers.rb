@@ -96,6 +96,14 @@ module CustomTagHelpers
     "#{"%02d" % hours}.#{"%02d" % minutes}"
   end
 
+  def group_and_sort_by(elements, grouped_by, blueprint, &block)
+    groups = elements.group_by {|e| e[grouped_by] }
+    blueprint.each do |group|
+      slice = groups[group]
+      yield group, slice if slice
+    end
+   end
+
 private
 
   def inject_class(attributes, klass)

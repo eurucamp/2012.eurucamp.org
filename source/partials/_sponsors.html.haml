@@ -1,0 +1,9 @@
+- group_and_sort_by sponsors, :level, %w(Kastanien Birken Linden) do |group, sponsors|
+  %div(class="#{group.underscore.gsub(' ', '').gsub('/', '-')}")
+    = wrapped :h4 do
+      = "#{group} level"
+    %ul
+      - sponsors.each do |sponsor|
+        = wrapped :li do
+          = link_to sponsor.url do
+            %img(src="/images/content/sponsors/#{sponsor.image}" alt="Sponsor: #{sponsor.company}")

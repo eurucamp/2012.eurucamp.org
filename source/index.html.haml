@@ -78,16 +78,4 @@ body_class: index
   %section.sponsors
     = wrapped :header do
       %h3 Our sponsors
-    -# Ugly, but let's us sort by groups -- move into helper?
-    - sponsor_groups = data.sponsors.group_by(&:level)
-    - %w(Kastanien Birken Linden).each do |group|
-      - sponsors = sponsor_groups[group]
-      - if sponsors
-        %div(class="#{group.underscore.gsub(' ', '').gsub('/', '-')}")
-          = wrapped :h4 do
-            = "#{group} level"
-          %ul
-            - sponsors.each do |sponsor|
-              = wrapped :li do
-                = link_to sponsor.url do
-                  %img(src="/images/content/sponsors/#{sponsor.image}" alt="Sponsor: #{sponsor.company}")
+    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
