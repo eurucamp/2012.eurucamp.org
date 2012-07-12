@@ -158,8 +158,10 @@ body.index
   +respond-to(tablet-landscape)
     article
       & > header
-        +don(background, white, $black)
-
+        background: white
+        +at-night
+          background: $black
+          
 
   +respond-to(tablet-oversize)
     #container

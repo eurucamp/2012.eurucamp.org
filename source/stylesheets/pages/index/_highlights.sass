@@ -54,14 +54,16 @@ section.highlights
 
 
   +respond-to(tablet-landscape)
-    +don(background, white, $black)
+    background: white
     +at-night
+      background: $black
       border-color: $black
 
     ul
       li
         span
-          +don(color, $medium-grey, $white)
+          color: $medium-grey
           +at-night
+            color: $white
             +no-text-shadow
             border-color: $dark-grey

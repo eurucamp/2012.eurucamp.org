@@ -47,16 +47,17 @@ body
             margin: 0 1em
 
             a
-              +don(color, $dark-grey, $brand-1)
+              color: $dark-grey
               +text-inset
               +caps
               +custom-sans(bold)
               +transition(color 0.5s)
               +at-night
+                color: $brand-1
                 +no-text-shadow
 
               &:hover
-                +don(color, $brand-2, $brand-2)
+                color: $brand-2
                 +transition(color 0.5s)
 
               &.active
@@ -84,14 +85,18 @@ body
 
 
     +respond-to(tablet-landscape)
-      +don(background, white, $black)
+      background: white
+      +at-night
+        background: $black
 
       h1
         float: none
 
       nav
         float: none
-        +don(border-top, 1px dotted $grey, 1px solid $brand-1)
+        border-top: 1px dotted $grey
+        +at-night
+          border-color: $brand-1
         margin: 1em auto 0 auto
         padding: 0.5em 1em 0
 

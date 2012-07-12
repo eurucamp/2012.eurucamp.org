@@ -3,8 +3,9 @@ body
   @if $scope == 'jrubyconf'
     background: lighten($grey, 5%)
   @else
-    +don(background-color, $white, $black)
-
+    background-color: $white
+    +at-night
+      background-color: $black
 
   a
     color: $brand-1

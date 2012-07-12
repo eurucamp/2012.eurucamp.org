@@ -171,11 +171,6 @@
   html.night &
     @content
 
-=don($property, $a, $b)
-  #{$property}: $a
-  +at-night
-    #{$property}: $b
-
 =greyscale
   +prefixer(filter, grayscale(100%))
 
