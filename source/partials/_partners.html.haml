@@ -1,0 +1,6 @@
+%div
+  %ul
+    - partners.each do |partner|
+      = wrapped :li do
+        = link_to partner.url do
+          %img(src="/images/content/partners/#{partner.image}" alt="Partner: #{partner.company}")
