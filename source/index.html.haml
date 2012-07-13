@@ -41,39 +41,45 @@ body_class: index
         \.
 
   .block
-    = wrapped :section, :class => 'speakers' do
-      %h3 Our speakers
-      %ul
-        - data.speakers.each do |speaker|
-          %li
-            %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
-            %span
-              %strong= speaker.name
-              = speaker.company
+    %section.speakers
+      = wrapped :header do
+        %h3 Our speakers
+      = wrapped do
+        %ul
+          - data.speakers.each do |speaker|
+            %li
+              %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+              %span
+                %strong= speaker.name
+                = speaker.company
 
 
-    = wrapped :section, :class => 'twitter-feed' do
-      %h3 Lately on Twitter
-      .tweets
-        .loading
-          Loading tweets, sit tight &hellip;
-        %noscript
-          Sorry! We have been lazy and are using Javascript to fetch the latest tweets.
-          %br
-          Head over to
-          %a(href="https://twitter.com/eurcuamp/" title="@eurucamp") @eurucamp on Twitter
-          instead?
+    %section.twitter-feed
+      = wrapped :header do
+        %h3 Lately on Twitter
+      = wrapped do
+        .tweets
+          .loading
+            Loading tweets, sit tight &hellip;
+          %noscript
+            Sorry! We have been lazy and are using Javascript to fetch the latest tweets.
+            %br
+            Head over to
+            %a(href="https://twitter.com/eurcuamp/" title="@eurucamp") @eurucamp on Twitter
+            instead?
 
-    = wrapped :section, :class => 'attendees' do
-      %h3 Attending
-      %ul
-        - data.attendees.each do |id|
-          %li
-            %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
-              %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
-      %p.more
-        If you are attending
-        %a(href="http://lanyrd.com/2012/eurucamp" title="eurucamp on lanyard.com") Let us know on Lanyrd
+    %section.attendees
+      = wrapped :header do
+        %h3 Attending
+      = wrapped do
+        %ul
+          - data.attendees.each do |id|
+            %li
+              %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
+                %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
+        %p.more
+          If you are attending
+          %a(href="http://lanyrd.com/2012/eurucamp" title="eurucamp on lanyard.com") Let us know on Lanyrd
 
   %section.sponsors
     = wrapped :header do

@@ -117,45 +117,55 @@
     +shadowed
 
 =sticky($color: $brand-3, $right: false)
-  padding: 0.15em 1em 0.35em
-  margin: 0
-  display: block
-  font-size: 1em
-  background: transparentize($color, 0.05)
-  color: $white
-  text-align: center
-  position: relative
-  z-index: 1000
-  +text-shadow(0 1px 0 darken($color, 10%))
+  +clearfix
+  +padded
+
+  .wrapper
+    margin-bottom: -0.75em !important
+
+  h3, h4
+    padding: 0.15em 1em 0.35em
+    display: block
+    font-size: 1em
+    margin: 0 0 -0em 0
+    background: transparentize($color, 0.05)
+    color: $white
+    text-align: center
+    position: relative
+    z-index: 1000
+    +custom-sans(black)
+    +text-shadow(0 1px 0 darken($color, 10%))
 
   +respond-to(smartphone-portrait)
-    position: absolute
-    top: -1em
-    +shadowed
-    left: -0.5em
-
-  +respond-to(smartphone-portrait)
-    left: -1em
+    h3, h4
+      +shadowed
+      margin-left: -1em
+      float: left
 
   +respond-to(smartphone-landscape)
-    @if $right == true
-      right: -1em
-      left: auto
-    @else
-      left: -1em
+    h3, h4
+      @if $right == true
+        float: right
+        margin-left: inherit
+        margin-right: -1em
 
   +respond-to(tablet-portrait)
-    top: -1.5em
-    @if $right == true
-      right: -1.5em
-    @else
-      left: -1.5em
+    h3, h4
+      padding-left: 1.5em
+      padding-right: 1.5em
+      @if $right == true
+        margin-right: -1.5em
+      @else
+        margin-left: -1.5em
 
   +respond-to(tablet-oversize)
-    @if $right == true
-      right: -1.75em
-    @else
-      left: -1.75em
+    h3, h4
+      padding-left: 2em
+      padding-right: 2em
+      @if $right == true
+        margin-right: -2em
+      @else
+        margin-left: -2em
 
 =more
   font-size: 0.8em

@@ -21,45 +21,56 @@ title: Location
 
   = wrapped :section, :class => 'images' do
     %ul
-      - (1..4).each do |i|
-        %li
-          %img(src="/images/content/venue/hotel_#{i}.jpg" alt="Hotel Müggelsee")
+      %li
+        %img(src="/images/content/venue/hotel_1.jpg" alt="Hotel, patio in the evening")
+      %li
+        %img(src="/images/content/venue/hotel_2.jpg" alt="Hotel, bar")
+      %li
+        %img(src="/images/content/venue/hotel_3.jpg" alt="Hotel, sauna")
+      %li
+        %img(src="/images/content/venue/hotel_4.jpg" alt="Hotel, conference room")
 
-  = wrapped :section, :class => 'hotel' do
-    %h4 Staying at Hotel Müggelsee
-    %p
-      Hotel Müggelsee sits on the banks of the lake and is surrounded by circa 48,000 m² of woodland and parks. Naturally, you'll also be able to stay overnight at the venue. In fact, for the most fun, we recommend staying here.
-    %p
-      Hotel rooms are available for eurucamp attendees at the following special
-      rates until the 27th July:
-    %ul
-      %li &euro;59 (inc. VAT) per night for a single room, with breakfast.
-      %li &euro;89 (inc. VAT) per night for a double room, with breakfast.
+  %section.hotel
+    = wrapped :header do
+      %h4 Staying at Hotel Müggelsee
+    = wrapped do
+      %p
+        Hotel Müggelsee sits on the banks of the lake and is surrounded by circa 48,000 m² of woodland and parks. Naturally, you'll also be able to stay overnight at the venue. In fact, for the most fun, we recommend staying here.
+      %p
+        Hotel rooms are available for eurucamp attendees at the following special
+        rates until the 27th July:
+      %ul
+        %li &euro;59 (inc. VAT) per night for a single room, with breakfast.
+        %li &euro;89 (inc. VAT) per night for a double room, with breakfast.
 
-    %p
-      To obtain the special rate, make your reservations by telephone
-      = surround '(', ')' do
-        = link_to '+49 (0)30 65882 200', 'tel:+493065882200'
-        %em or
-        = link_to '+49 (0)30 65882 500', 'tel:+493065882500'
-      or
-      = succeed '.' do
-        = link_to 'by email', 'mailto:Ines.vonHeine@grandcityhotels.com?subject=eurucamp 2012 Hotel Reservation'
-      and mention you are attending eurucamp 2012.
-      %em Regrettably, the special rate is not currently available through the Hotel website.
+      %p
+        To obtain the special rate, make your reservations by telephone
+        = surround '(', ')' do
+          = link_to '+49 (0)30 65882 200', 'tell:+493065882200'
+          %em or
+          = link_to '+49 (0)30 65882 500', 'tel:+493065882500'
+        or
+        = succeed '.' do
+          = link_to 'by email', 'mailto:Ines.vonHeine@grandcityhotels.com?subject=eurucamp 2012 Hotel Reservation'
+        and mention you are attending eurucamp 2012.
+        %em Regrettably, the special rate is not currently available through the Hotel website.
 
-  = wrapped :section, :class => 'camping' do
-    %h4 Camping
-    %p
-      Prefer to really ‘rough it‘ and camp? Camping facilities are available
-      nearby, and we will be posting further information shortly.
+  %section.camping
+    = wrapped :header do
+      %h4 Camping
+    = wrapped do
+      %p
+        Prefer to really ‘rough it’ and camp? Camping facilities are available
+        nearby, and we will be posting further information shortly.
 
-  = wrapped :section, :class => 'city-intro' do
-    %h4 Staying in the city
-    %p
-      Alternatively, if all this talk of the outdoors is too much for you, you can
-      also elect to stay in the centre of Berlin and do a reverse commute out
-      each day with the local crowd.
+  %section.city-intro
+    = wrapped :header do
+      %h4 Staying in the city
+    = wrapped do
+      %p
+        Alternatively, if all this talk of the outdoors is too much for you, you can
+        also elect to stay in the centre of Berlin and do a reverse commute out
+        each day with the local crowd.
 
   = wrapped :section, :class => 'hostels' do
     %h5 Hostels
@@ -81,45 +92,49 @@ title: Location
       %li= link_to 'housetrip',        'http://www.housetrip.com/'
       %li= link_to 'Urban Apartments', 'http://www.urban-apartments.com/berlin/'
 
-  = wrapped :section, :class => 'directions external' do
-    %h4 To Berlin from Out of Town
-    %ul
-      %li.train
-        %span
-          %strong By train
-          %ul
-            %li Train information will be posted shortly
-      %li.plane
-        %span
-          %strong By plane
-          Unfortunately, the opening of Berlin's new mega-airport Berlin-Brandenburg (BER) has been delayed until March 2013. In the meantime, Berlin's two existing airports remain open: Berlin Tegel (TXL) and Berlin Schönefeld (SXF).
-          %br
-          Of the two airports, the venue is located nearest to Schönefeld (17km), and 20 minutes by car/taxi. TXL is 37km.
+  %section.directions.external
+    = wrapped :header do
+      %h4 To Berlin from Out of Town
+    = wrapped do
+      %ul
+        %li.train
+          %span
+            %strong By train
+            %ul
+              %li Train information will be posted shortly
+        %li.plane
+          %span
+            %strong By plane
+            Unfortunately, the opening of Berlin's new mega-airport Berlin-Brandenburg (BER) has been delayed until March 2013. In the meantime, Berlin's two existing airports remain open: Berlin Tegel (TXL) and Berlin Schönefeld (SXF).
+            %br
+            Of the two airports, the venue is located nearest to Schönefeld (17km), and 20 minutes by car/taxi. TXL is 37km.
 
-  = wrapped :section, :class => 'directions internal' do
-    %h4 From Berlin and surroundings
-    %ul
-      %li.campbus
-        %span
-          %strong By CampBus
-          If you are coming from the centre of Berlin, please stand by for information about the CampBus.
-      %li.bike
-        %div
-          %strong By bike
-          The venue lies directly on the <a href="http://www.euroroute-r1.de/EN/Introduction/Details/Introducing_the_Euroroute_R1/K407.htm">Euroroute R1 bicycle path</a>, which runs from Boulogne-sur-Mer in France to St. Petersberg in Russia.
-          %ul
-            %li Distance to Mitte (city centre): 23km.
-            %li Distance to Altstadt Köpenick (S-Bahn): 6.8km.
-            %li Distance to Erkner (S-Bahn): 8.8km.
-        /More info: http://www.euroroute-r1.de/EN/Introduction/Germany/Berlin/Brandenburg/Details/Route_Berlin_Brandenburg/K460.htm?RID=435
-        /Want to rent a bike? http://www.vmz-info.de/web/guest/fahrradverleih
-      %li.public-transportation
-        %span
-          %strong By public transportation
-          %a(href="http://www.fahrinfo-berlin.de/Fahrinfo/bin/query.bin/en?ld=0.1&" title="Use the journey planner of the BVG") Journey planner of BVG
-          //Bus 164
-          //Richtung: S Kaulsdorf [1]
-          //alle 20 Minuten
+  %section.directions.internal
+    = wrapped :header do
+      %h4 From Berlin and surroundings
+    = wrapped do
+      %ul
+        %li.campbus
+          %span
+            %strong By CampBus
+            If you are coming from the centre of Berlin, please stand by for information about the CampBus.
+        %li.bike
+          %div
+            %strong By bike
+            The venue lies directly on the <a href="http://www.euroroute-r1.de/EN/Introduction/Details/Introducing_the_Euroroute_R1/K407.htm">Euroroute R1 bicycle path</a>, which runs from Boulogne-sur-Mer in France to St. Petersberg in Russia.
+            %ul
+              %li Distance to Mitte (city centre): 23km.
+              %li Distance to Altstadt Köpenick (S-Bahn): 6.8km.
+              %li Distance to Erkner (S-Bahn): 8.8km.
+          /More info: http://www.euroroute-r1.de/EN/Introduction/Germany/Berlin/Brandenburg/Details/Route_Berlin_Brandenburg/K460.htm?RID=435
+          /Want to rent a bike? http://www.vmz-info.de/web/guest/fahrradverleih
+        %li.public-transportation
+          %span
+            %strong By public transportation
+            %a(href="http://www.fahrinfo-berlin.de/Fahrinfo/bin/query.bin/en?ld=0.1&" title="Use the journey planner of the BVG") Journey planner of BVG
+            //Bus 164
+            //Richtung: S Kaulsdorf [1]
+            //alle 20 Minuten
 
   = wrapped :address, :class => 'address' do
     %p

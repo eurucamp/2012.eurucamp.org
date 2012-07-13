@@ -1,25 +1,20 @@
 article
   section.sponsors
     +clearfix
+    padding-bottom: 2em
     border-top: 1px dotted $grey
-
-    header
-      h3
-        width: auto
-        margin: 0
-        +sticky
-        +custom-sans(black)
+    background: lighten($grey, 8%)
 
     div
       +padded
-      border-bottom: 1px dotted lighten($grey, 5%)
+      border-bottom: 1px dotted lighten($grey, 2%)
 
       &:last-child
         border-bottom: none
 
       h4
         margin-bottom: 0.5em
-        margin-top: 0
+        margin-top: 0.5em
         color: $grey
         +custom-sans
 
@@ -34,6 +29,10 @@ article
         li
           +padded
           float: left
+
+          .wrapper
+            margin-top: 0
+            margin-bottom: 0
 
           a
             display: block
