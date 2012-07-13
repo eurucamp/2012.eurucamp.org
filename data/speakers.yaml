@@ -61,14 +61,6 @@
   twitter:      sferik
   track:        main
 -
-  name:         Nicolás Sanguinetti
-  company:      Cubox
-  company_url:  http://cuboxlabs.com/
-  twitter:      godfoca
-  image:        nsanguinetti.jpg
-  url:          http://nicolassanguinetti.info/
-  track:        main
-#-
   name:         Laurent Sansonetti
   company:      Hipbyte
   company_url:  http://www.hipbyte.com/
@@ -83,4 +75,88 @@
   image:        nsutterer.jpg
   url:          http://nicksda.apotomo.de/
   track:        main
-
+-
+  name:         Chris Berkhout
+  twitter:      chrisberkhout
+  company:      Freelancer
+  image:        cberkhout.jpg
+  url:          http://chrisberkhout.com/
+  track:        main
+-
+  name:         Dominik Bamberger
+  twitter:      bamb00zzle
+  company:      SUSE
+  company_url:  http://www.suse.com/
+  image:        dbamberger.jpg
+  url:          https://github.com/b4mboo/
+  track:        main
+-
+  name:         Florian R. Hanke
+  company:      Technology Astronauts
+  company_url:  http://www.technologyastronauts.ch/
+  twitter:      hanke
+  image:        fhanke.jpg
+  url:          http://florianhanke.com/
+  track:        main
+-
+  name:         Isaac Wolkerstorfer
+  company:      6Wunderkinder
+  company_url:  http://www.6wunderkinder.com/
+  twitter:      agnoster
+  image:        iwolkerstorfer.jpg
+  url:          http://agnoster.net/
+  track:        main
+-
+  name:         Jana Vogel
+  company:      Freelancer
+  twitter:      janacharlotte
+  image:        jvogel.jpg
+  url:          http://dotless.de/
+  track:        main
+-
+  name:         Lourens Naudé
+  company:      Independent Consultant
+  twitter:      methodmissing
+  image:        lnaude.jpg
+  url:          http://blog.methodmissing.com/
+  track:        main
+-
+  name:         Mike Burns
+  company:      thoughtbot
+  company_url:  http://thoughtbot.com/
+  twitter:      mikeburns
+  image:        mburns.jpg
+  url:          http://mike-burns.com/
+  track:        main
+-
+  name:         Pablo Astigarraga
+  company:      Cubox
+  company_url:  http://cuboxlabs.com/
+  twitter:      poteland
+  image:        pastigarraga.jpg
+  url:          http://pote.github.com/
+  track:        main
+-
+  name:         Piotr Solnica
+  company:      Code Benders
+  company_url:  http://codebenders.com/
+  twitter:      _solnic_
+  image:        psolnica.jpg
+  url:          http://solnic.eu/
+  track:        main
+-
+  name:         Piotr Szotkowski
+  company:      Warsaw University of Technology
+  company_url:  http://eng.pw.edu.pl/
+  twitter:      chastell
+  image:        pszotkowski.jpg
+  url:          http://chastell.net/
+  track:        main
+-
+  name:         Sebastian Burkhard
+  company:      FundExplorer
+  company_url:  http://www.etfxp.com/
+  twitter:      hasclass
+  image:        sburkhard.jpg
+  url:          https://github.com/hasclass
+  track:        main
