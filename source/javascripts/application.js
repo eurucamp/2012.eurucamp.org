@@ -6,4 +6,7 @@
 //= require "lib/jquery.backstretch"
 //= require "lib/jquery.cookie"
 //= require "lib/twitter_feed"
+//= require "lib/quantize"
+//= require "lib/colorthief"
+//= require "lib/trixel_art"
 //= require "initializer"

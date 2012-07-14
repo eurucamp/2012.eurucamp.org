@@ -69,6 +69,16 @@ namespace :utils do
       attendees += page.css(profile_selector).map {|a| a.content.gsub('@', '') }
     end
 
+    attendees.each do |id|
+      image_uri = "https://api.twitter.com/1/users/profile_image/#{id}"
+      image_path = "source/images/content/attendees/#{id.tr('_', '')}.jpg"
+      unless File.exists?(image_path)
+        File.open(image_path, 'w') {|f| f.write(open(image_uri).read) }
+      end
+    end
+
     attendees
+
   end
+
 end

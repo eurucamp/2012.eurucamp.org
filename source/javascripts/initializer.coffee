@@ -46,6 +46,9 @@ $ ->
       map     : map
       icon    : image
 
+  if $('body').hasClass 'index'
+    new TrixelArt $('.attendees ul li img')
+
 
   # ----------------------------------------------------------------------------
   # development
