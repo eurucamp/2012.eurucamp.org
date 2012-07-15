@@ -16,4 +16,4 @@ So far we have only mentioned traditional sponsorship. However, there are other 
 If you're strapped for cash, the simplest way of helping us is free. If you know anyone who wants to sponsor eurucamp, please send them our [sponsorship page](/sponsors "Sponsors") and retweet the announcement of this blog post.
 
 Thank you all,
-Florian and Matthias
+[Florian](https://twitter.com/Argorak) and [Matthias](https://twitter.com/wikimatze)

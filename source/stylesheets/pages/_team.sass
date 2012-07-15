@@ -1,0 +1,76 @@
+body.team
+  article
+    section
+      +clearfix
+
+      ul
+        +unlisted
+        +clearfix
+        padding-bottom: 1em
+
+        li
+          +padded
+          margin-bottom: 1em
+
+          img
+            width: 100%
+
+          strong, span
+            display: block
+            a
+              +transition(color 0.5s)
+              color: $medium-grey
+
+              &:hover
+                color: $brand-2
+
+          span
+            font-size: 0.8em
+
+          strong
+            +custom-sans(bold)
+            a
+              color: $dark-grey
+
+  +respond-to(mid-range)
+    article
+      section
+        ul
+          li
+            width: 50%
+            float: left
+            height: 14em
+            margin: 0
+
+  +respond-to(smartphone-portrait)
+    article
+      section
+        ul
+          li
+            height: 15em
+            width: 33.33333%
+
+
+  +respond-to(smartphone-landscape)
+    article
+      section
+        ul
+          li
+            width: 25%
+
+
+  +respond-to(tablet-lite)
+    article
+      section
+        ul
+          li
+            width: 20%
+            height: 14em
+
+
+  +respond-to(tablet-portrait)
+    article
+      section
+        ul
+          li
+            width: 16.66666%
