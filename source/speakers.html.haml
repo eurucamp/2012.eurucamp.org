@@ -11,7 +11,7 @@ body_class: speakers
     - data.speakers.select{ |s| s.track == 'main' }.sort{ |a,b| a.name <=> b.name }.each do |speaker|
       %li
         %img(src="/images/content/speakers/#{speaker.image}"  alt="Portrait: #{speaker.name}")
-        %strong= link_to speaker.name, speaker.url
+        %h3(id="#{speaker.name.parameterize}")= link_to speaker.name, speaker.url
         = link_to speaker.company, speaker.company_url
         = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
         %p= speaker.bio
