@@ -8,7 +8,7 @@
   track:        main
   bio:          |
     Txus is co-founder and lead developer at Codegram, a Ruby/Rails shop based
-    in Barcelona, which is the company behind Barcelona Ruby Conference.
+    in Barcelona, the company behind Barcelona Ruby Conference.
 
     He's an active member of the Ruby open-source community. Among others he
     has contributed to the Rails framework, RSpec, Rubinius and is the author
@@ -60,7 +60,7 @@
   talk_summary: |
     There's been much talk in the Rails community lately about more strongly
     object-oriented approaches to design. The argument goes, we should create
-    more maintainable applications through modular code, focussing on the
+    more maintainable applications through modular code, focusing on the
     Single Responsibility Principle, Dependency Injection, and so on. These
     approaches tend to be talked about in quite abstract terms, cited as
     being 'good for testing' or simply 'the right way to do OOP'. But really
@@ -181,12 +181,12 @@
   url:          http://home5.swipnet.se/~w-52132/
   track:        main
   bio:          |
-    Pressing **run** on the ZX Spectrum at the age of 6 led inevitably to the
-    MSc in Computer Engineering and a position as the backend-architect at a
-    startup that scaled from a handful of users to tens of millions within a
-    couple of years.
+    Pressing **run** on the ZX Spectrum at the age of 6 led Srdan inevitably to
+    the MSc in Computer Engineering and a position as the backend-architect at
+    a startup that scaled from a handful of users to tens of millions within
+    a couple of years.
 
-    Currently working at Burt, developing a multi-billion request ad-tracking
+    Srdan currently works at Burt, developing a multi-billion request ad-tracking
     service using JRuby. Hey, it's only fun if it's exponential.
   talk_title: Idempotence as the holy grail of scaling
   talk_type: 30min
@@ -210,7 +210,7 @@
   twitter:      sferik
   track:        main
   bio:          |
-    Erik Michaels-Ober (@sferik) is the creator of one of the most popular
+    Erik is the creator of one of the most popular
     Rails engines: RailsAdmin. He is also the author of MultiXML and T, a
     command-line power-tool for Twitter. When he's not hacking on those
     projects, he helps maintain OmniAuth among other Ruby gems and open-source
@@ -258,7 +258,7 @@
   url:          http://nicksda.apotomo.de/
   track:        main
   bio:          |
-    Nick Sutterer is proud to be a member of the Ruby open source community.
+    Nick is proud to be a member of the Ruby open source community.
     His Cells and Apotomo projects have been bringing increased view
     modularity and event-driven programming to Rails for years. He has enjoyed
     attending, and speaking at, Ruby conferences around the world. Buy him a
@@ -272,7 +272,7 @@
     Rails - a word that stirs programmer's blood. It brought us testing, easy
     web app building, database abstraction and hundreds of extension gems. Why
     not take it to another level and discover how Rails turns into a real OOP
-    framework? By exploring chosen gems let's discuss what MVC really is and
+    framework? By exploring chosen gems, let's discuss what MVC really is and
     how it boosts your AJAX user interface, how to apply patterns like DCI,
     dependency injection and POROs to your database layer and how to expose
     your Rails system through a real RESTful API. Also, have you ever tried
@@ -286,7 +286,7 @@
   url:          http://chrisberkhout.com/
   track:        main
   bio:          |
-    Chris Berkhout is a programmer from Melbourne, Australia. He spends his
+    Chris is a programmer from Melbourne, Australia. He spends his
     days building deployment tools and backend systems at a large Internet
     company and his evenings wining, dining and rock climbing. He is exited
     not just by learning new things, but also by learning the same things more
@@ -320,9 +320,10 @@
   url:          https://github.com/b4mboo/
   track:        main
   bio:          |
-    Ruby developer, open-source supporter, freedom fighter, martial artist.
-    There are more parallels than one might think at first glance. Let's start
-    by sharing some knowledge. This time about fighting.
+    Dominik is a Ruby developer by heart.  He thrives working in an open-source
+    environment and loves people who freely share their ideas (and code) with
+    others, and loves the infinite possibilities that come with that freedom.
+    He's created several open source tools, such as pullerman and git-review.
   talk_title: Create your own tools (and share them)!
   talk_type: 15min
   talk_summary: |
@@ -344,32 +345,32 @@
   url:          http://florianhanke.com/
   track:        main
   bio:          |
-    I am a wearer of many (some) hats: I've done research in Brazil on space
-    life science, doing research in Melbourne on preserving dying languages
-    using modern technology, and am also co-founder of the Technology
+    Florian is the wearer of many hats: he's done research in Brazil on space
+    life science, worked in Melbourne on preserving dying languages
+    using modern technology, and is also co-founder of the Technology
     Astronauts.
 
-    I love languages, to draw on my iPad using an overly large selection of
+    He loves languages, to draw on his iPad using an overly large selection of
     styluses, to hop on a roadbike, and conquer mountains (overly large, too).
   talk_title: Superheroes can do it and so can you!
-  talk_type: 30min
+  talk_type: 15min
   talk_summary: |
-  You don't know it yet. But: You're like Peter Parker, before he was bitten
-  by a radioactive spider. You're Bruce Wayne, before his parents were killed.
-  You're the daughter of Hypolitta and Zeus.
+    You don't know it yet. But: You're like Peter Parker, before he was bitten
+    by a radioactive spider. You're Bruce Wayne, before his parents were killed.
+    You're the daughter of Hyppolyta and Zeus.
 
-  How are you putting your abilities to use? You're probably already giving
-  back to the tech community, by writing great open source projects. However,
-  you can make a much greater difference by stepping outside your field for
-  a moment – and by returning afterwards, with new ideas, and experiences.
+    How are you putting your abilities to use? You're probably already giving
+    back to the tech community by writing great open source projects. However,
+    you can make a much greater difference by stepping outside your field for
+    a moment – and by returning afterwards, with new ideas, and experiences.
 
-  I'll show one example of this: Doing field work in preserving endangered
-  languages in Papua New Guinea, using my knowledge in technology.
-  With Google stepping in (http://www.endangeredlanguages.com/), this is
-  rapidly becoming a big topic right now.
+    I'll show one example of this: Doing field work in preserving endangered
+    languages in Papua New Guinea, using my knowledge in technology.
+    With Google stepping in (http://www.endangeredlanguages.com/), this is
+    rapidly becoming a big topic right now.
 
-  Chances are, you can't just run away to a strange faraway place. So what
-  can you do, right now? What's your calling? Follow it!
+    Chances are, you can't just run away to a strange faraway place. So what
+    can you do, right now? What's your calling? Follow it!
 -
   name:         Isaac Wolkerstorfer
   company:      6Wunderkinder
@@ -379,7 +380,7 @@
   url:          http://agnoster.net/
   track:        main
   bio:          |
-    Isaac Wolkerstorfer is the CTO of 6Wunderkinder, where he works closely
+    Isaac is the CTO of 6Wunderkinder, where he works closely
     with a talented team to build the next big leap forward for productivity.
 
     Isaac’s experience at Yahoo!, Inc. as a Front-End Technical Lead prepared
@@ -394,7 +395,7 @@
   talk_title: All You Need Is Love
   talk_type: 15min
   talk_summary: |
-    Infered from the title, you might think this talk is completely misplaced
+    Inferring from the title, you might think this talk is completely misplaced
     for a Ruby conference and would better fit in a wedding fair. But the
     message describes a future trend not only for programming, but for every
     kind of creative work: love driven development.
@@ -414,7 +415,7 @@
   url:          http://dotless.de/
   track:        main
   bio:          |
-    Jana Vogel is a Berlin based freelance webdeveloper. She started as a
+    Jana is a Berlin based freelance webdeveloper. She started as a
     media designer and later on studied International Media and Computing.
     Nowadays, shes mainly programming in Ruby/Padrino and enjoys developing
     great frontends.
@@ -452,15 +453,15 @@
     ZeroMQ is a socket abstraction and concurrency framework that's changing
     the way we think and reason about distributed systems. Mailboxes, atomic
     message delivery and swappable transports allow for fast, flexible and
-    resilient network topologies. It's I/O model also sits very well with
-    all Ruby implementations. In this talk we'll discuss :
+    resilient network topologies. Its I/O model also sits very well with
+    all Ruby implementations. In this talk we'll discuss:
     * What's wrong with socket I/O ?
     * Supported messaging patterns
     * Transport agnostic messaging
     * Resiliency (operations and upgrades)
     * Building out topologies just in time (interjection principle)
     * Performance and throughput
-    * Mongrel2 Ruby adapter
+    * The Mongrel2 Ruby adapter
     * How to use it from Ruby
     * Small case study
 -
@@ -472,8 +473,8 @@
   url:          http://mike-burns.com/
   track:        main
   bio:          |
-    Mike Burns plays many roles at thoughtbot, including the Haskell
-    enthusiast, their sole Linux user, an object-oriented programmer, unix
+    Mike plays many roles at thoughtbot, including the Haskell
+    enthusiast, their sole Linux user, an object-oriented programmer, Unix
     historian, and the head of the European branch.
   talk_title: When Not to Use Object-Oriented Techniques
   talk_type: 30min
@@ -502,9 +503,8 @@
   url:          http://pote.github.com/
   track:        main
   bio:          |
-    My name is Pablo Astigarraga, I've been doing software for a couple of
-    years and arrived to the Ruby world after working with Python and
-    Asterisk-based VoIP solutions, I currently work at Cubox
+    Pablo arrived to the Ruby world after working with Python and
+    Asterisk-based VoIP solutions.  He currently works at Cubox
     (http://cuboxlabs.com) doing mostly Ruby stuff for the web.
   talk_title: Monolithic vs Distributed Software: No Holy Grails.
   talk_type: 30min
@@ -513,21 +513,21 @@
     a big problem, and not always easy to solve, the sheer number of requests
     that large applications need to process is huge, and increasing every day.
 
-  One of the most elegant and widely adopted techniques to deal with this is
-  favoring distributed architectures over monolithic ones. Having a distributed
-  network of tiny apps makes it easier to have a robust, maintainable codebase.
-  Adopting the Unix philosophy of doing one thing right is a topic that has
-  been coming up on conferences and blog posts all over the world lately,
-  and with good reason.
+    One of the most elegant and widely adopted techniques to deal with this is
+    favoring distributed architectures over monolithic ones. Having a distributed
+    network of tiny apps makes it easier to have a robust, maintainable codebase.
+    Adopting the Unix philosophy of doing one thing right is a topic that has
+    been coming up on conferences and blog posts all over the world lately,
+    and with good reason.
 
-  But is a distributed architecture always the best solution? Is then a
-  monolithic approach "wrong" from the get go? Sometimes building a distributed
-  system is worth it, sometimes it just isn't. In this talk I put forward my
-  thoughts and experiences dealing with refactoring you application into
-  several small ones, how to build a monolithic app that can be easily
-  split, how to approach the refactor gradually and incrementally so as not
-  to lose the ability to deliver new features, and how to decide when it's
-  simply not worth it.
+    But is a distributed architecture always the best solution? Is then a
+    monolithic approach "wrong" from the get go? Sometimes building a distributed
+    system is worth it, sometimes it just isn't. In this talk I put forward my
+    thoughts and experiences dealing with refactoring you application into
+    several small ones, how to build a monolithic app that can be easily
+    split, how to approach the refactor gradually and incrementally so as not
+    to lose the ability to deliver new features, and how to decide when it's
+    simply not worth it.
 -
   name:         Piotr Solnica
   company:      Code Benders
@@ -537,7 +537,7 @@
   url:          http://solnic.eu/
   track:        main
   bio:          |
-    Piotr Solnica is a software developer based in Kraków, Poland. He's been
+    Piotr is a software developer based in Kraków, Poland. He's been
     using Ruby as his main language of choice since 2005. He's a member of
     DataMapper Core Team and a contributor to many open source projects. He's
     a big fan of OOP and clean code and likes to blog about it at solnic.eu
@@ -545,8 +545,8 @@
   talk_type: 30min
   talk_summary: |
     Ideas we've been talking about for the last couple of years are finally
-    becoming a reality and DataMapper 2 is shaping up this year. I'd like to
-    show you how it's like to say good bye to Active Record. It's awesome,
+    becoming a reality, and DataMapper 2 is shaping up this year. I'll
+    show you what it's like to say good bye to ActiveRecord -- it's awesome,
     you'll see.
 -
   name:         Piotr Szotkowski
@@ -557,7 +557,7 @@
   url:          http://chastell.net/
   track:        main
   bio:          |
-    Piotr Szotkowski is an assistant professor at Warsaw University of
+    Piotr is an assistant professor at Warsaw University of
     Technology (where he happily sneaks Ruby, EventMachine and newfangled
     database systems into the creaking world of twentieth-century academia), a
     Ruby developer at Rebased and an alumnus of Mendicant University. He’s
@@ -566,18 +566,18 @@
     people from the NGO/non-profit and IT sectors, as well as SocHack –
     quarterly 48-hour hackatons for worthy causes, in coordination with Random
     Hacks of Kindness, Open Data Day and Open Education Week.
-  talk_title: Ruby on the Command-Line
+  talk_title: Ruby on the Command Line
   talk_type: 15min
   talk_summary: |
     Ruby, thanks to its various frameworks, is known to be *the* language
     for web applications – and recent developments in graphic libraries
     make it a worthy contestant in the world of GUI-driven desktop
     programs. But Ruby is also great for writing command-line applications;
-    the ability to mix no-boilerplate toplevel functions with full-fledged
+    the ability to mix no-boilerplate top-level functions with full-fledged
     OOP means its usage can vary from one-off trivial scripts to
-    complicated, option-heavy commandline powerhouses.
+    complicated, option-heavy command-line powerhouses.
 
-    This talk presetens the nits and bolts of writing a command-line
+    This talk presents the nuts and bolts of writing a command-line
     application with Ruby – from option parsing and accessing
     standard input/output to playing nice with POSIX standards
     like exit codes and signal/interrupt handling.
@@ -590,17 +590,17 @@
   url:          https://github.com/hasclass
   track:        main
   bio:          |
-    Cofounder of FundExplorer, a Switzerland based Ruby/Rails consulting and
-    product shop. Gets a buzz out of cramming as many ruby calculations inside
-    a Rails request.
+    Sebastian is a cofounder of FundExplorer, a Switzerland based Ruby/Rails
+    consulting and product shop. He gets a buzz out of cramming as many Ruby
+    calculations inside a Rails request as he can.
   talk_title: Complex Calculations Within a Web Request
   talk_type: 30min
   talk_summary: |
-    Ruby is slow therefore we let complex calculations run outside a web
-    request using tools like delayed_job or extract them to c/java code.
+    Ruby is slow, so therefore we let complex calculations run outside a web
+    request using tools like delayed_job or extract them to C or Java code.
     But what if these two options are not available?
 
-    With an example app featuring a recommendation algorithm I will show
-    you how to load thousands of database records, the ins and outs of caching
-    object graphs. The second part is about writing more efficient and faster
-    Ruby code.
+    In the first part of my talk,, I will use an example app featuring a
+    recommendation algorithmto show you how to load thousands of database
+    records and the ins and outs of caching object graphs. In a second part
+    of my talk, I'll discuss writing more efficient and faster Ruby code.
