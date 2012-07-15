@@ -48,10 +48,11 @@ body_class: index
         %ul
           - data.speakers.each do |speaker|
             %li
-              %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
-              %span
-                %strong= speaker.name
-                = speaker.company
+              %a{href:"/speakers.html##{speaker.name.parameterize}"}
+                %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+                %span
+                  %strong= speaker.name
+                  = speaker.company
 
 
     %section.twitter-feed
