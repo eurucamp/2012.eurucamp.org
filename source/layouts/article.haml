@@ -23,9 +23,9 @@
           - if (n = current_article.next_article)
             %li.next
               %span Next:
-              = link_to n.title, n.url, :title => "Read '#{n.title}'"
+              = link_to n.title, n.url_without_extension, :title => "Read '#{n.title}'"
           - if (p = current_article.previous_article)
             %li.prev
               %span Previous:
-              = link_to p.title, p.url, :title => "Read '#{p.title}'"
+              = link_to p.title, p.url_without_extension, :title => "Read '#{p.title}'"
 
