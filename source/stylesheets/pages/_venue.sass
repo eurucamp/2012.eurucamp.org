@@ -10,6 +10,7 @@ body.venue
 
       header
         +sticky
+        margin-bottom: 1.5em
 
       ul
         +unlisted
@@ -33,10 +34,6 @@ body.venue
               width: 100%
               display: block
 
-      &.camping
-        header
-          +sticky($brand-3, true)
-
       &.external,
       &.internal,
       &.city-intro,
@@ -50,11 +47,14 @@ body.venue
         .wrapper > ul,
         & > ul
           & > li
-            //padding: 1.5em 0
             border-bottom: 1px dotted $grey
+            margin-bottom: 1em
+            padding-bottom: 1em
 
             &:last-child
               border: none
+              margin-bottom: 0
+              padding-bottom: 0
 
             ul
               margin: 0.5em 0 0 0
@@ -75,17 +75,12 @@ body.venue
       &.city-intro,
       &.apartment,
       &.couch,
-      &.hostels
+      &.hostels,
+      &.camping
         padding-bottom: 0
 
         .wrapper h5
           margin-top: 0.5em
-      //
-        &.hotel,
-        &.camping,
-        &.city-intro
-          .wrapper
-            padding-top: 0.5em
 
       &.city-intro,
       &.apartment,
@@ -130,14 +125,19 @@ body.venue
     article
       section
 
-        &.intro,
-        &.hotel
+        &.intro
           float: left
           width: 50%
           clear: both
 
-        &.images,
+        &.hotel,
         &.camping
+          clear: both
+          .column
+            float: left
+            width: 50%
+
+        &.images
           float: right
           width: 50%
 
@@ -165,6 +165,7 @@ body.venue
               width: 50%
               float: left
               border: none
+              padding-bottom: 0
 
               div
                 display: block
@@ -172,6 +173,13 @@ body.venue
 
               &.bike
                 float: right
+
+      .pre
+        .wrapper,
+        .wrapper p
+          margin-bottom: 0
+
+
 
   +respond-to(tablet-portrait)
     article

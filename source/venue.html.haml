@@ -33,16 +33,20 @@ title: Location
   %section.hotel
     = wrapped :header do
       %h4 Staying at Hotel Müggelsee
-    = wrapped do
+    = wrapped :div, :class => 'column' do
       %p
         Hotel Müggelsee sits on the banks of the lake and is surrounded by circa 48,000 m² of woodland and parks. Naturally, you'll also be able to stay overnight at the venue. In fact, for the most fun, we recommend staying here.
       %p
         Hotel rooms are available for eurucamp attendees at the following special
         rates until the 27th July:
+    = wrapped :div, :class => 'column' do
       %ul
-        %li &euro;59 (inc. VAT) per night for a single room, with breakfast.
-        %li &euro;89 (inc. VAT) per night for a double room, with breakfast.
-
+        %li
+          %span.price &euro;59
+          (inc. VAT) per night for a single room, with breakfast.
+        %li
+          %span.price &euro;89
+          (inc. VAT) per night for a double room, with breakfast.
       %p
         To obtain the special rate, make your reservations by telephone
         = surround '(', ')' do
@@ -58,12 +62,12 @@ title: Location
   %section.camping
     = wrapped :header do
       %h4 Camping
-    = wrapped do
+    = wrapped :div, :class => 'pre' do
       %p
         Prefer to really ‘rough it’ and camp? There are two options available
         to you.
-
-      %h5 For 1 or 2-Person Tents
+    = wrapped :div, :class => 'column' do
+      %h5 For One or Two-Person Tents
       %p
         Camping for small tents (‘wilderness-style‘) is available at
         = succeed '.' do
@@ -73,9 +77,15 @@ title: Location
         our attendees. Prices are as follows (to be paid on arrival):
 
       %ul
-        %li €4 for a tent per night <em>and</em>
-        %li €6    per adult person, per night
-        %li €3.50 per person under 18, per night
+        %li
+          %span.price &euro;4
+          for a tent per night <em>and</em>
+        %li
+          %span.price &euro;6
+          per adult person, per night
+        %li
+          %span.price &euro;3.50
+          per person under 18, per night
 
       %p
         To stay at Kuhle Wampe, please fill in our
@@ -90,6 +100,7 @@ title: Location
       //  Zeltplatz ‘Kuhle Wampe‘
       //  Straße zur Krampenburg 12559 Berlin
 
+    = wrapped :div, :class => 'column' do
       %h5 For bigger tents
 
       %p
@@ -102,10 +113,18 @@ title: Location
         activities). Châlets are also offered at this location.
 
       %ul
-        %li €3.00 for a small (<= 2-person) tent, per night
-        %li €5.00 for a large (>= 3-person) tent, per night <em>and</em>
-        %li €7.50 per adult person, per night
-        %li €3.00 per person 6 - 15, per night
+        %li
+          %span.price &euro;3
+          for a small (<= 2-person) tent, per night
+        %li
+          %span.price &euro;5
+          for a large (>= 3-person) tent, per night <em>and</em>
+        %li
+          %span.price &euro;7.5
+          per adult person, per night
+        %li
+          %span.price &euro;3
+          per person 6 - 15, per night
         %li Children under 6 are free.
 
       %p
@@ -132,7 +151,7 @@ title: Location
   %section.city-intro
     = wrapped :header do
       %h4 Staying in the city
-    = wrapped do
+    = wrapped :div, :class => 'pre' do
       %p
         Alternatively, if all this talk of the outdoors is too much for you, you can
         also elect to stay in the centre of Berlin and do a reverse commute out
