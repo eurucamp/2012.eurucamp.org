@@ -12,9 +12,14 @@ body.article
       +custom-sans(black)
       +at-night
         background-color: $brand-3
+
   article
     header
       +padded
+
+      .wrapper
+        margin-bottom: 0
+
       h3
         text-align: left
 
@@ -30,10 +35,13 @@ body.article
         .wrapper
           padding-left: 20%
 
+      // TODO: remove duplication with _blog.sass
       aside
         width: 20%
         float: left
         margin-top: 0.33333em
+        color: $medium-grey
+        +custom-sans(normal, false)
 
         span.author
           display: block
@@ -41,6 +49,18 @@ body.article
         small
           display: block
           margin: 0 2em 0 0
+
+        ul.tags
+          +unlisted
+          margin: 0.5em 0 0 0
+
+          li
+            background: $grey
+            display: inline-block
+            +border-radius(1em)
+            +caps
+            font-size: 0.8em
+            padding: 0 0.5em 0.15em
 
       section
         &.body

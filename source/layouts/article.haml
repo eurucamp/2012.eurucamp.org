@@ -10,6 +10,9 @@
       %small
         %span.date= current_article.date.strftime('%e %b %Y')
         %span.author= "by #{current_article.data.author}"
+      %ul.tags
+        - current_article.tags.each do |tag|
+          %li= tag
 
     = wrapped :section, :class => 'body' do
       = yield
