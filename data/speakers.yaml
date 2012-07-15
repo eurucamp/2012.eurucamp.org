@@ -243,7 +243,7 @@
     iLife and OS X. A long time rubyist, he created and still maintains the
     MacRuby project. In a previous life, he worked on IDA Pro and was an
     active contributor to RubyCocoa and GNOME.
-  talk_title: RubyMotion: Ruby In Your Pocket
+  talk_title: "RubyMotion: Ruby In Your Pocket"
   talk_type: 30min
   talk_summary: |
     RubyMotion is a revolutionary toolchain for iOS development using Ruby.
@@ -447,7 +447,7 @@
 
     Weekdays are spent in the Operations team @ http://www.wildfireapp.com
     See http://github.com/methodmissing for Open Source contributions.
-  talk_title: ZeroMQ: Scriptable Sockets
+  talk_title: "ZeroMQ: Scriptable Sockets"
   talk_type: 30min
   talk_summary: |
     ZeroMQ is a socket abstraction and concurrency framework that's changing
@@ -488,7 +488,7 @@
     when to use an aspect instead of a decorator, a mixin instead of a
     presenter, or a monoid instead of a factory.
 
-   Topics will include:
+    Topics will include:
     * The benefits of code coupling.
     * What makes Rails so anti-OO, and why that is good.
     * Testing non-object oriented code.
@@ -506,7 +506,7 @@
     Pablo arrived to the Ruby world after working with Python and
     Asterisk-based VoIP solutions.  He currently works at Cubox
     (http://cuboxlabs.com) doing mostly Ruby stuff for the web.
-  talk_title: Monolithic vs Distributed Software: No Holy Grails.
+  talk_title: "Monolithic vs Distributed Software: No Holy Grails"
   talk_type: 30min
   talk_summary: |
     One of the biggest problems in web development today is scalability. It's
