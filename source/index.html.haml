@@ -48,7 +48,7 @@ body_class: index
         %ul
           - data.speakers.each do |speaker|
             %li
-              %a{href:"/speakers.html##{speaker.name.parameterize}"}
+              %a(href="/speakers.html##{speaker.name.parameterize}")
                 %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
                 %span
                   %strong= speaker.name
