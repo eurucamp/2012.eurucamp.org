@@ -23,10 +23,28 @@ body.article
       h3
         text-align: left
 
+    // TODO: remove duplication with _blog.sass
     aside
       +padded
       margin-top: -1em
       color: $medium-grey
+
+      ul.tags
+        +unlisted
+        margin: 0.5em 0 0 0
+
+        li
+          background: $grey
+          display: inline-block
+          +border-radius(1em)
+          +custom-sans(normal)
+          font-size: 0.8em
+          padding: 0 0.5em 0.15em
+
+    footer
+      display: none
+      +padded
+      +custom-sans(normal, false)
 
 
   +respond-to(tablet-lite)
@@ -35,7 +53,6 @@ body.article
         .wrapper
           padding-left: 20%
 
-      // TODO: remove duplication with _blog.sass
       aside
         width: 20%
         float: left
@@ -50,23 +67,47 @@ body.article
           display: block
           margin: 0 2em 0 0
 
-        ul.tags
-          +unlisted
-          margin: 0.5em 0 0 0
-
-          li
-            background: $grey
-            display: inline-block
-            +border-radius(1em)
-            +caps
-            font-size: 0.8em
-            padding: 0 0.5em 0.15em
-
       section
         &.body
           float: right
           width: 80%
           margin-bottom: 2em
+
+      footer
+        border-top: 1px dotted $grey
+        display: block
+        clear: both
+
+        nav
+          ul
+            +unlisted
+
+            li
+              margin-bottom: 1em
+              width: 50%
+              float: left
+
+              span
+                display: none
+
+              a
+                display: block
+                color: $medium-grey
+                padding-left: 20px
+                +image('article/prev.png', false, left center)
+
+                &:hover
+                  color: $brand-2
+
+              &.next
+                text-align: right
+                float: right
+
+                a
+                  padding-left: 0
+                  padding-right: 20px
+                  +image('article/next.png', false, right center)
+
 
   +respond-to(tablet-lite)
     .page-head
@@ -80,6 +121,31 @@ body.article
         &.body
           padding-right: 20%
           width: 60%
+
+      footer
+        float: left
+        width: 20%
+        clear: none
+        font-size: 0.8em
+
+        nav
+          ul
+            li
+              &.next,
+              &.prev
+                float: none
+                width: auto
+                text-align: left
+
+                span
+                  +custom-sans(bold)
+                  display: block
+
+                a
+                  display: inline
+                  background-image: none
+                  padding-right: 0
+                  padding-left: 0
 
 
   +respond-to(tablet-landscape)
