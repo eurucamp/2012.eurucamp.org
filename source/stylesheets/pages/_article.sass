@@ -42,9 +42,34 @@ body.article
           padding: 0 0.5em 0.15em
 
     footer
-      display: none
       +padded
       +custom-sans(normal, false)
+      clear: both
+
+      nav
+        ul
+          +unlisted
+
+          li
+            margin-bottom: 1em
+            padding-top: 1em
+            border-top: 1px dotted $grey
+
+            span
+              display: block
+
+            a
+              display: block
+              color: $medium-grey
+              //
+
+                &:hover
+                  color: $brand-2
+
+
+
+  +respond-to(smartphone-portrait)
+    article
 
 
   +respond-to(tablet-lite)
@@ -75,29 +100,21 @@ body.article
 
       footer
         border-top: 1px dotted $grey
-        display: block
-        clear: both
 
         nav
           ul
-            +unlisted
-
             li
-              margin-bottom: 1em
+              border: none
               width: 50%
               float: left
+              padding: 0
 
               span
                 display: none
 
               a
-                display: block
-                color: $medium-grey
                 padding-left: 20px
                 +image('article/prev.png', false, left center)
-
-                &:hover
-                  color: $brand-2
 
               &.next
                 text-align: right
