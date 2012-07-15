@@ -15,3 +15,6 @@ body_class: speakers
         = link_to speaker.company, speaker.company_url
         = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
         %p= speaker.bio
+
+        %h4 Talk on ‘#{lorem.sentence}’
+        %p= lorem.paragraph
