@@ -30,8 +30,13 @@ activate :blog do |blog|
 end
 
 Middleman::Blog::BlogData.class_eval do
+  alias :all_articles :articles
+  def articles
+    published_articles
+  end
+
   def published_articles
-    articles.select &:published?
+    all_articles.select &:published?
   end
 end
 

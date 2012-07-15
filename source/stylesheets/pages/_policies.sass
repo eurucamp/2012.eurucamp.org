@@ -1,6 +1,51 @@
 body.policies
+  article
+    header
+      margin-bottom: 3em
+
+    aside
+      display: none
+      +padded
+
+
+  +respond-to(smartphone-landscape)
+    article
+      aside
+        margin-top: 3em
+        width: 20%
+        float: left
+
+        display: block
+        border-top: 1px dotted $grey
+        +custom-sans(normal, false)
+
+        ul
+          +unlisted
+
+          li
+            margin-bottom: 0.5em
+
+            a
+              font-size: 0.8em
+              color: $medium-grey
+              +transition(color 0.5s)
+
+              &:hover
+                color: $brand-2
+
+              &.active
+                +custom-sans(bold, false)
+
+      section
+        margin-left: 20%
+        width: 75%
+        padding-right: 5%
+
 
   +respond-to(tablet-lite)
     article
       section
-        padding-right: 33.33333%
+        margin-left: 20%
+        width: 60%
+        padding-right: 20%
+
