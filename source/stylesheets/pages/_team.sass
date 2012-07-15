@@ -17,6 +17,8 @@ body.team
 
           strong, span
             display: block
+            padding-right: 1em
+
             a
               +transition(color 0.5s)
               color: $medium-grey
@@ -26,9 +28,13 @@ body.team
 
           span
             font-size: 0.8em
+            line-height: 1.4em
 
           strong
             +custom-sans(bold)
+            font-size: 0.9em
+            line-height: 1.5em
+
             a
               color: $dark-grey
 
@@ -47,6 +53,7 @@ body.team
       section
         ul
           li
+            font-size: 1.1em
             height: 15em
             width: 33.33333%
 
@@ -68,7 +75,7 @@ body.team
             height: 14em
 
 
-  +respond-to(tablet-portrait)
+  +respond-to(tablet-landscape)
     article
       section
         ul
