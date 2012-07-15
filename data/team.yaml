@@ -20,11 +20,13 @@
   company_url:  http://asquera.de/
   twitter:      Argorak
   image:        fgilcher.jpg
-  #url:         
+  #url:
   role:         "Sponsorship"
 -
   name:         Matthias Günther
   twitter:      wikimatze
+  company:      MyHammer
+  company_url:  http://myhammer.de
   image:        mguenther.jpg
   url:          http://wikimatze.de/
   role:         "Sponsorship"

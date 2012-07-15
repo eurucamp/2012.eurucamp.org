@@ -6,14 +6,18 @@ body_class: team
 %article
   = wrapped :header do
     %h2 Team
+    %p Two Florians and two Alexes. It's going to get confusing…
 
-  %p Two Florians and two Alexes. It's going to get confusing…
-
-  %ul
-    - data.team.each do |member|
-      %li
-        %img(src="/images/content/speakers/#{member.image}" alt="Portrait: #{member.name}")
-        %h3(id="#{member.name.parameterize}")= link_to member.name, member.url
-        = link_to member.company, member.company_url
-        = link_to "@#{member.twitter}", "http://twitter.com/#{member.twitter}"
-        %p= member.bio
+  = wrapped :section do
+    %ul
+      - data.team.each do |member|
+        %li(id="#{member.name.parameterize}")
+          %img(src="/images/content/team/#{member.image}" alt="Portrait: #{member.name}")
+          %strong
+            = link_to member.name, member.url
+          %span.company
+            = link_to member.company, member.company_url
+          %span.twitter
+            = link_to "@#{member.twitter}", "http://twitter.com/#{member.twitter}"
+          %p
+            = member.bio
