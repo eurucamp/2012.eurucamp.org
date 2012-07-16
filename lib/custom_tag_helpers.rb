@@ -15,8 +15,8 @@ end
 
 module CustomTagHelpers
 
-  def md(text)
-    Maruku.new(text).to_html
+  def md2html(text)
+    Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(text)
   end
 
   def wrapped(el = :div, attrs = {}, &block)

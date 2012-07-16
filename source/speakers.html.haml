@@ -14,7 +14,7 @@ body_class: speakers
         %h3= link_to speaker.name, speaker.url
         %div= link_to speaker.company, speaker.company_url
         %div= link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
-        %p= md speaker.bio
+        %p= md2html speaker.bio
 
         %h4 #{speaker.talk_title}
-        %p= md speaker.talk_summary
+        %p= md2html speaker.talk_summary
