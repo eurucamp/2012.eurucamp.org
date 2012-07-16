@@ -15,6 +15,10 @@ end
 
 module CustomTagHelpers
 
+  def md(text)
+    Maruku.new(text).to_html
+  end
+
   def wrapped(el = :div, attrs = {}, &block)
     capture_haml do
       haml_tag el, attrs do
