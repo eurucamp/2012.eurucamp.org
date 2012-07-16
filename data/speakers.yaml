@@ -105,6 +105,7 @@
   talk_summary: |
     A fun code analysis.
 
+    ```
     %w.rack tilt backports INT TERM..map{|l|trap(l){$r.stop}rescue require l}
     $n=Sinatra=Module.new{extend Rack;a,D,S,$p,q,Application=Builder.new,Object.method(:define_method),/@@ *([^\n]+)\n(((?!@@)[^\n]*\n)*)/m,4567,a
     %w[get post put delete].map{|m|D.(m){|u,&b|a.map(u){run->(e){[200,{"Content-Type"=>"text/html"},[a.instance_eval(&b)]]}}}}
@@ -113,6 +114,7 @@
     %w[params session].map{|m|D.(m){q.send m}};a.use Session::Cookie;a.use Lock
     D.(:before){|&b|a.use Rack::Config,&b};before{|e|q=Request.new e;q.params.dup.map{|k,v|params[k.to_sym]=v}}}
     puts "== almost #$n/No Version has taken the stage on #$p for development with backup from Webrick"
+    ```
 
 -
   name:         Theo Hultberg
