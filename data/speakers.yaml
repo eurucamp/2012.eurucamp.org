@@ -457,6 +457,7 @@
     message delivery and swappable transports allow for fast, flexible and
     resilient network topologies. Its I/O model also sits very well with
     all Ruby implementations. In this talk we'll discuss:
+
     * What's wrong with socket I/O ?
     * Supported messaging patterns
     * Transport agnostic messaging
@@ -491,6 +492,7 @@
     presenter, or a monoid instead of a factory.
 
     Topics will include:
+
     * The benefits of code coupling.
     * What makes Rails so anti-OO, and why that is good.
     * Testing non-object oriented code.
