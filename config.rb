@@ -4,6 +4,8 @@ helpers CustomTagHelpers
 require 'active_support/core_ext/string'
 require 'app/helpers/html5_boilerplate_helper'
 
+set :markdown_engine, :redcarpet
+
 ###
 # Blog settings
 ###

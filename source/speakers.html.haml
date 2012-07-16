@@ -9,12 +9,12 @@ body_class: speakers
 
   %ul
     - data.speakers.select{ |s| s.track == 'main' }.sort{ |a,b| a.name <=> b.name }.each do |speaker|
-      %li
+      %li(id="#{speaker.name.parameterize}")
         %img(src="/images/content/speakers/#{speaker.image}"  alt="Portrait: #{speaker.name}")
-        %h3(id="#{speaker.name.parameterize}")= link_to speaker.name, speaker.url
-        = link_to speaker.company, speaker.company_url
-        = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
-        %p= speaker.bio
+        %h3= link_to speaker.name, speaker.url
+        %div= link_to speaker.company, speaker.company_url
+        %div= link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
+        %p= md2html speaker.bio
 
-        %h4 Talk on ‘#{lorem.sentence}’
-        %p= lorem.paragraph
+        %h4 #{speaker.talk_title}
+        %p= md2html speaker.talk_summary
