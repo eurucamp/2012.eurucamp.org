@@ -216,7 +216,7 @@
     Rails engines: RailsAdmin. He is also the author of MultiXML and T, a
     command-line power-tool for Twitter. When he's not hacking on those
     projects, he helps maintain OmniAuth among other Ruby gems and open-source
-    Rails applications, including RubyGems.org. He was a 2010 Ruby Summer of
+    Rails applications, including [RubyGems](http://rubygems.org). He was a 2010 Ruby Summer of
     Code mentor and a 2011 Google Summer of Code mentor, while serving as a
     Code for America Fellow. He resides in San Francisco, California.
   talk_title: Writing a Rails Engine
@@ -368,7 +368,7 @@
 
     I'll show one example of this: Doing field work in preserving endangered
     languages in Papua New Guinea, using my knowledge in technology.
-    With Google stepping in (http://www.endangeredlanguages.com/), this is
+    With Google stepping in [Endangered Languages](http://www.endangeredlanguages.com/), this is
     rapidly becoming a big topic right now.
 
     Chances are, you can't just run away to a strange faraway place. So what
@@ -447,8 +447,8 @@
     / libxs and he is working on ZeroMQ monitoring features for better
     operations support.
 
-    Weekdays are spent in the Operations team @ http://www.wildfireapp.com
-    See http://github.com/methodmissing for Open Source contributions.
+    Weekdays are spent in the Operations team @ [Wildfire](http://www.wildfireapp.com).
+    See [github.com/methodmissing](http://github.com/methodmissing) for Open Source contributions.
   talk_title: "ZeroMQ: Scriptable Sockets"
   talk_type: 30min
   talk_summary: |
