@@ -15,6 +15,10 @@ end
 
 module CustomTagHelpers
 
+  def md2html(text)
+    Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(text)
+  end
+
   def wrapped(el = :div, attrs = {}, &block)
     capture_haml do
       haml_tag el, attrs do

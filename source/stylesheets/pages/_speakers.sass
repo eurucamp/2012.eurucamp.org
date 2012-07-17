@@ -1,0 +1,124 @@
+body.speakers
+  article
+    section
+    +clearfix
+
+    .wrapper > ul
+      +unlisted
+      +clearfix
+      padding-bottom: 1em
+
+      & > li
+        margin-bottom: 2em
+        color: $medium-grey
+
+        &:last-child
+          margin-bottom: 0
+
+        .column
+          .wrapper
+            margin: 0
+
+        .info
+          a
+            display: block
+
+        .bio
+          border-bottom: 1px dotted $grey
+
+        img
+          width: 100%
+
+        h3
+          +custom-sans(bold)
+          margin-top: 0
+
+          a
+            color: $dark-grey
+
+            &:hover
+              color: $brand-2
+
+        h4
+          color: $dark-grey
+          +no-caps
+
+
+  +respond-to(smartphone-landscape)
+    article
+      section
+        .wrapper > ul
+          & > li
+            width: 50%
+            float: left
+
+            &.odd
+              clear: both
+
+              .column
+                margin-right: 1em
+
+              .info
+                margin-right: 0
+
+            &.even
+              .column
+                padding-right: 1em
+
+              .info
+                padding-right: 0
+
+
+  +respond-to(tablet-lite)
+    article
+      section
+        .wrapper
+          margin: 0
+
+          & > ul
+            & > li
+              width: auto
+              float: none
+              margin: 0
+              padding-bottom: 2em
+              +clearfix
+              border-bottom: 1px dotted $grey
+
+              &:last-child
+                padding-bottom: 0
+                border-bottom: none
+
+              &.odd,
+              &.even
+                .column
+                  margin-right: 0
+                  padding-right: 0
+                  border: none
+
+                .wrapper
+                  margin: 1em
+
+              .info
+                float: left
+                width: 33.33333%
+
+              .bio, .talk
+                width: 66.66666%
+                float: right
+
+
+  +respond-to(tablet-portrait)
+    article
+      section
+        .wrapper > ul
+          & > li
+            position: relative
+
+            &.odd,
+            &.even
+              .info
+                width: 20%
+
+              .bio, .talk
+                width: 60%
+                margin-right: 20%
