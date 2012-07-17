@@ -30,7 +30,7 @@ title: Location
       %li
         %img(src="/images/content/venue/hotel_4.jpg" alt="Hotel, conference room")
 
-  %section.hotel
+  %section.hotel#hotel
     = wrapped :header do
       %h4 Staying at Hotel Müggelsee
     = wrapped :div, :class => 'column' do
@@ -59,7 +59,7 @@ title: Location
         and mention you are attending eurucamp 2012.
         %em Regrettably, the special rate is not currently available through the Hotel website.
 
-  %section.camping
+  %section.camping#camping
     = wrapped :header do
       %h4 Camping
     = wrapped :div, :class => 'pre' do
@@ -148,7 +148,7 @@ title: Location
         for car-less eurucamp attendees who want to stay at Campingplatz
         Krossinenesee.
 
-  %section.city-intro
+  %section.city-intro#city
     = wrapped :header do
       %h4 Staying in the city
     = wrapped :div, :class => 'pre' do
@@ -177,7 +177,7 @@ title: Location
       %li= link_to 'housetrip',        'http://www.housetrip.com/'
       %li= link_to 'Urban Apartments', 'http://www.urban-apartments.com/berlin/'
 
-  %section.directions.external
+  %section.directions.external#directions
     = wrapped :header do
       %h4 To Berlin from Out of Town
     = wrapped do
@@ -187,7 +187,7 @@ title: Location
             %strong By train
             %ul
               %li Train information will be posted shortly
-        %li.plane
+        %li.plane#lufthansa
           %div
             %strong By plane
             :markdown
@@ -199,7 +199,7 @@ title: Location
 
               <small>* Fares from Japan and certain full-fare and heavily discounted fares are excluded. Valid for travel between 10 - 28 August.</small>
 
-  %section.directions.internal
+  %section.directions.internal#directionsinternal
     = wrapped :header do
       %h4 From Berlin and surroundings
     = wrapped do
