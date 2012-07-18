@@ -1,4 +1,11 @@
 -
+  company:    Bitcrowd
+  twitter:    bitcrowd
+  image:      bitcrowd.png
+  url:        http://bitcrowd.net/
+  level:      Birken
+  description: Agile Ruby on Rails und iOS-Entwicklung in Berlin
+-
   company:    BusyConf
   twitter:    busyconf
   image:      busy_conf.png
