@@ -27,3 +27,6 @@ gem 'heroku_san',   '3.0.2'
 
 gem 'rack-contrib'
 gem 'rack-rewrite'
+
+gem 'execjs'
+gem 'therubyracer'
