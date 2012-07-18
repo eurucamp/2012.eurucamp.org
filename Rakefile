@@ -40,6 +40,8 @@ namespace :utils do
       add '/schedule',   :changefreq => 'daily', :priority => 0.8
       add '/venue',      :changefreq => 'daily'
       add '/sponsors',   :changefreq => 'daily'
+      add '/speakers',   :changefreq => 'daily'
+      add '/team',       :changefreq => 'daily'
 
       add '/blog',       :changefreq => 'hourly', :priority => 0.9
       Dir["source/blog/*"].each do |blog_entry_file|
