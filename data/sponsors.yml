@@ -34,6 +34,13 @@
   level:      Birken
   description: Agile Ruby on Rails und iOS-Entwicklung in Berlin
 -
+  company:    Airbrake
+  twitter:    airbrake
+  image:      airbrake.png
+  url:        https://airbrake.io/
+  level:      Birken
+  description: The error app.
+-
   company:    Scalarium
   twitter:    scalarium
   image:      scalarium.png
