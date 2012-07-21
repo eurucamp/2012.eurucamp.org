@@ -199,12 +199,12 @@
     data to fill in the gaps without accidentally affecting the good data.
 
     Once you've got the idempotency down, you are free to venture boldly into
-    a veritable Narnia* of scaling solutions.
+    a veritable Narnia<sup>*</sup> of scaling solutions.
 
     This talk will describe the problem and offer a couple of solutions by
     looking at some real-life implementations.
 
-    * But, you know...warmer. And with fewer lions.
+    <small>* But, you know… warmer. And with fewer lions.</small>
 -
   name:         Erik Michaels-Ober
   company:      RailsAdmin
