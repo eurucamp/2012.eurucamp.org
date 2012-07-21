@@ -510,8 +510,8 @@
   track:        main
   bio:          |
     Pablo arrived to the Ruby world after working with Python and
-    Asterisk-based VoIP solutions.  He currently works at Cubox
-    (http://cuboxlabs.com) doing mostly Ruby stuff for the web.
+    Asterisk-based VoIP solutions.  He currently works at [Cubox](http://cuboxlabs.com)
+    doing mostly Ruby stuff for the web.
   talk_title: "Monolithic vs Distributed Software: No Holy Grails"
   talk_type: 30min
   talk_summary: |
