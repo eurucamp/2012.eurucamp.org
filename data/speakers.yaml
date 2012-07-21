@@ -16,8 +16,8 @@
 
     One of his many passions is understanding the very internals of
     programming languages: compilers and virtual machines, so he usually
-    spends a lot of time learning and researching about the subject, and
-    building his own programming languages and virtual machines.
+    spends a lot of time learning and researching the subject, and building
+    his own programming languages and virtual machines.
   talk_title: Polyglot Rails applications with Rubinius
   talk_type: 30min
   talk_summary: |
@@ -67,7 +67,7 @@
     they're just a means to an end: how do you know when one of these
     approaches is good for you?
 
-    In this talk you'll see several examples of real-world uses of dependency
+    In this talk you'll see several examples of the real-world uses of dependency
     injection I've used in my own projects. You'll say how and why DI emerges
     from the program's design goals, how it affects the implementation, and
     what effects it has on the project's structure, and you should gain enough
@@ -96,7 +96,7 @@
     contributes to different widespread projects, like Rubinius, Rack, Travis,
     Rails and MRI.
 
-    In 2012, Konstantin recieved the Ruby Hero Award for his outstanding
+    In 2012, Konstantin received the Ruby Hero Award for his outstanding
     contributions to the community.
 
     He currently holds the position of "Berry Sparkling Lord" at Travis CI.
@@ -224,11 +224,11 @@
   talk_summary: |
     As of Rails 3.2, plugins are officially deprecated. They have been
     replaced by Rails Engines, a class of public methods for hooking into
-    Rails applications. This session will explain how to write a Rails
-    Engine from scratch or convert your existing plugin to an engine. It
-    will also cover best practices for making your engine play well with
-    others and when to factor pieces of your existing Rails application
-    code into an engine, for reuse across multiple applications.
+    Rails applications. This session will explain how to write a Rails Engine
+    from scratch or convert your existing plugin to an engine. It will also
+    cover best practices for making your engine play well with others and
+    determing when to factor pieces of your existing Rails application code
+    into an engine, for reuse across multiple applications.
 -
   name:         Laurent Sansonetti
   company:      Hipbyte
@@ -261,25 +261,26 @@
   track:        main
   bio:          |
     Nick is proud to be a member of the Ruby open source community.
-    His Cells and Apotomo projects have been bringing increased view
+    His projects, Cells and Apotomo, have been bringing increased view
     modularity and event-driven programming to Rails for years. He has enjoyed
     attending, and speaking at, Ruby conferences around the world. Buy him a
-    beer sometime, and with very little prompting, he will tell you why there
+    beer some time, and with very little prompting, he will tell you why there
     should be no such thing as a double-render error, why you should not
     confuse your models with your resources, and how to play a mean bass in a
     punk rock band.
   talk_title: Off the Tracks - Challenging the Rails Mindset
   talk_type: 30min
   talk_summary: |
-    Rails - a word that stirs programmer's blood. It brought us testing, easy
-    web app building, database abstraction and hundreds of extension gems. Why
-    not take it to another level and discover how Rails turns into a real OOP
-    framework? By exploring chosen gems, let's discuss what MVC really is and
-    how it boosts your AJAX user interface, how to apply patterns like DCI,
-    dependency injection and POROs to your database layer and how to expose
-    your Rails system through a real RESTful API. Also, have you ever tried
-    using Rails helpers outside of Rails, maybe in Sinatra? Let's do it and
-    learn about some refreshing aspects of this framework.
+    Rails - a word that stirs programmer's blood. It has brought us testing,
+    easy web app building, database abstraction and hundreds of extension
+    gems. Why not take it to another level and discover how Rails can be
+    turned into a real OOP framework? By exploring chosen gems, let's discuss
+    what MVC really is and how it boosts your AJAX user interface, how to
+    apply patterns like DCI, dependency injection and POROs to your database
+    layer and how to expose your Rails system through a real RESTful API.
+    Also, have you ever tried using Rails helpers outside of Rails, maybe in
+    Sinatra? Let's do it and learn about some refreshing aspects of this
+    framework.
 -
   name:         Chris Berkhout
   twitter:      chrisberkhout
@@ -290,9 +291,8 @@
   bio:          |
     Chris is a programmer from Melbourne, Australia. He spends his
     days building deployment tools and backend systems at a large Internet
-    company and his evenings wining, dining and rock climbing. He is exited
-    not just by learning new things, but also by learning the same things more
-    deeply.
+    company and his evenings wining, dining and rock climbing. He is excited
+    about learning new things, and exploring those subjects in depth.
   talk_title: Clean Docs
   talk_type: 15min
   talk_summary: |
@@ -301,13 +301,13 @@
 
     Have a single source of truth and don't repeat yourself. Avoid writing
     brittle code. Use ubiquitous terminology and choose searchable names.
-    Be consistent in your formatting. Test your code. Refactor and practice
+    Be consistent in your formatting. Test your code. Refactor and practise
     successive refinement. Don't write any more than you need to.
 
     These principles of clean code can be applied with great effect to the
     production and maintenance of documentation, but there's more to it
     than that. Code needs to satisfy machines and coders. Documentation needs
-    to satisfy people performing range of different tasks: from cursory
+    to satisfy people who perform a range of different tasks: from cursory
     inspection through to intensive development.
 
     This talk will review relevant principles and examine real-world examples,
@@ -322,9 +322,10 @@
   url:          https://github.com/b4mboo/
   track:        main
   bio:          |
-    Dominik is a Ruby developer by heart.  He thrives working in an open-source
-    environment and loves people who freely share their ideas (and code) with
-    others, and loves the infinite possibilities that come with that freedom.
+    Dominik is a Ruby developer by heart. He thrives when working in an
+    open-source environment and loves people who freely share their ideas (and
+    code) with others. He relishes the infinite possibilities that come with
+    that freedom.
     He's created several open source tools, such as pullerman and git-review.
   talk_title: Create your own tools (and share them)!
   talk_type: 15min
@@ -357,19 +358,19 @@
   talk_title: Superheroes can do it and so can you!
   talk_type: 15min
   talk_summary: |
-    You don't know it yet. But: You're like Peter Parker, before he was bitten
-    by a radioactive spider. You're Bruce Wayne, before his parents were killed.
-    You're the daughter of Hyppolyta and Zeus.
+    You don't know it yet, but you're like Peter Parker, before he was bitten
+    by a radioactive spider. You're Bruce Wayne, before his parents were
+    killed. You're the daughter of Hyppolyta and Zeus.
 
     How are you putting your abilities to use? You're probably already giving
     back to the tech community by writing great open source projects. However,
     you can make a much greater difference by stepping outside your field for
     a moment – and by returning afterwards, with new ideas, and experiences.
 
-    I'll show one example of this: Doing field work in preserving endangered
+    I'll show one example of this – doing field work in preserving endangered
     languages in Papua New Guinea, using my knowledge in technology.
-    With Google stepping in [Endangered Languages](http://www.endangeredlanguages.com/), this is
-    rapidly becoming a big topic right now.
+    With Google stepping in to help save [Endangered Languages](http://www.endangeredlanguages.com/),
+    this is rapidly becoming a topic of great importance.
 
     Chances are, you can't just run away to a strange faraway place. So what
     can you do, right now? What's your calling? Follow it!
@@ -390,10 +391,10 @@
     into entrepreneurship as co-founder of OpenHive, Inc. helped whet his
     appetite for being actively involved in the start-up scene.
 
-    He is excited to be part of large, flourishing tech start-up community in
-    Berlin. He received an A. B. with Honors in Computer Science from the
-    University of Chicago, and is currently writing his thesis for a C. S.
-    Master’s Degree from the Berlin Institute of Technology.
+    He is excited about being part of the large, flourishing tech start-up
+    community in Berlin. He received an A.B. with Honors in Computer Science
+    from the University of Chicago, and is currently writing his thesis for a
+    C.S. Master’s Degree from the Berlin Institute of Technology.
   talk_title: All You Need Is Love
   talk_type: 15min
   talk_summary: |
@@ -441,13 +442,13 @@
   bio:          |
     Lourens is an independent consultant currently based in sunny Madeira
     Island, but originally from South Africa. He specializes in backend /
-    platform / domain solutions and is well versed full stack, from VM to high
+    platform / domain solutions and is well versed in full stack, from VM to high
     level protocols and known for his offbeat Ruby patches and extensions.
     Current interests include disruptive communications technology like ZeroMQ
     / libxs and he is working on ZeroMQ monitoring features for better
     operations support.
 
-    Weekdays are spent in the Operations team @ [Wildfire](http://www.wildfireapp.com).
+    Weekdays are spent in the Operations team at [Wildfire](http://www.wildfireapp.com).
     See [github.com/methodmissing](http://github.com/methodmissing) for Open Source contributions.
   talk_title: "ZeroMQ: Scriptable Sockets"
   talk_type: 30min
@@ -515,22 +516,22 @@
   talk_type: 30min
   talk_summary: |
     One of the biggest problems in web development today is scalability. It's
-    a big problem, and not always easy to solve, the sheer number of requests
+    a big problem, and not always easy to solve. The sheer number of requests
     that large applications need to process is huge, and increasing every day.
 
     One of the most elegant and widely adopted techniques to deal with this is
     favoring distributed architectures over monolithic ones. Having a distributed
     network of tiny apps makes it easier to have a robust, maintainable codebase.
     Adopting the Unix philosophy of doing one thing right is a topic that has
-    been coming up on conferences and blog posts all over the world lately,
+    been coming up at conferences and on blog posts all over the world lately,
     and with good reason.
 
     But is a distributed architecture always the best solution? Is then a
     monolithic approach "wrong" from the get go? Sometimes building a distributed
     system is worth it, sometimes it just isn't. In this talk I put forward my
-    thoughts and experiences dealing with refactoring you application into
+    thoughts and experiences dealing with refactoring your application into
     several small ones, how to build a monolithic app that can be easily
-    split, how to approach the refactor gradually and incrementally so as not
+    split, how to approach the refactor gradually and incrementally, so as not
     to lose the ability to deliver new features, and how to decide when it's
     simply not worth it.
 -
@@ -583,9 +584,9 @@
     complicated, option-heavy command-line powerhouses.
 
     This talk presents the nuts and bolts of writing a command-line
-    application with Ruby – from option parsing and accessing
-    standard input/output to playing nice with POSIX standards
-    like exit codes and signal/interrupt handling.
+    application with Ruby – from option parsing and accessing standard
+    input/output to playing nicely with POSIX standards like exit codes and
+    signal/interrupt handling.
 -
   name:         Sebastian Burkhard
   company:      FundExplorer
@@ -605,7 +606,7 @@
     request using tools like delayed_job or extract them to C or Java code.
     But what if these two options are not available?
 
-    In the first part of my talk,, I will use an example app featuring a
-    recommendation algorithmto show you how to load thousands of database
+    In the first part of my talk, I will use an example app featuring a
+    recommendation algorithm to show you how to load thousands of database
     records and the ins and outs of caching object graphs. In a second part
     of my talk, I'll discuss writing more efficient and faster Ruby code.
