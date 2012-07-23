@@ -57,9 +57,9 @@ namespace :utils do
   # array of Twitter names
   def lanyrd_attendees
     base_url             = 'http://lanyrd.com/2012/eurucamp/attendees/'
-    profile_selector     = '.primary .mini-profile .meta a'
+    profile_selector     = '.primary .mini-profile .name a'
     first_page           = Nokogiri::HTML(open(base_url))
-    attendees            = first_page.css(profile_selector).map {|a| a.content.gsub('@', '') }
+    attendees            = first_page.css(profile_selector).map {|a| a['href'].gsub(/^\/profile\/|\/$/,'') }
 
     other_pages_selector = '.pagination li a'
     other_pages          = first_page.css(other_pages_selector).map do |a|
@@ -68,7 +68,7 @@ namespace :utils do
 
     other_pages.each do |page|
       page = Nokogiri::HTML(open(page))
-      attendees += page.css(profile_selector).map {|a| a.content.gsub('@', '') }
+      attendees += page.css(profile_selector).map {|a| a['href'].gsub(/^\/profile\/|\/$/,'') }
     end
 
     attendees
