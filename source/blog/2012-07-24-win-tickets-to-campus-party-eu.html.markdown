@@ -1,5 +1,5 @@
 ---
-title: Win (or get discounted) tickets to Campus Party EU
+title: Win tickets (or get a discount) to Campus Party EU
 date: 2012-07-24
 tags: partners
 author: Alex Coles
