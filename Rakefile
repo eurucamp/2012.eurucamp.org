@@ -56,21 +56,17 @@ namespace :utils do
   # scrapes eurucamp page on lanyrd.com and returns
   # array of Twitter names
   def lanyrd_attendees
-    base_url             = 'http://lanyrd.com/2012/eurucamp/attendees/'
-    profile_selector     = '.primary .mini-profile .name a'
-    first_page           = Nokogiri::HTML(open(base_url))
-    attendees            = first_page.css(profile_selector).map {|a| a['href'].gsub(/^\/profile\/|\/$/,'') }
+    profile_selector     = '.primary .mini-profile .name a'.freeze
+    pagination_selector  = '.pagination li a'.freeze
+    base_url             = 'http://lanyrd.com'.freeze
+    first_page_path      = '/2012/eurucamp/attendees/'.freeze
 
-    other_pages_selector = '.pagination li a'
-    other_pages          = first_page.css(other_pages_selector).map do |a|
-      'http://lanyrd.com' + a[:href]
-    end
+    first_page           = Nokogiri::HTML(open(base_url + first_page_path))
+    other_pages_paths    = first_page.css(pagination_selector).map { |a| a[:href] }
 
-    other_pages.each do |page|
-      page = Nokogiri::HTML(open(page))
-      attendees += page.css(profile_selector).map {|a| a['href'].gsub(/^\/profile\/|\/$/,'') }
-    end
-
-    attendees
+    (other_pages_paths << first_page_path).map do |relative_path|
+      page = Nokogiri::HTML(open(base_url + relative_path))
+      page.css(profile_selector).map {|a| a['href'].gsub(/^\/profile\/|\/$/,'') }
+    end.flatten.sort
   end
 end
