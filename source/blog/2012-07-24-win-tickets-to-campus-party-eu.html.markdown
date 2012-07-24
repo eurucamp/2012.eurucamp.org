@@ -1,6 +1,6 @@
 ---
 title: Win Tickets to Campus Party EU
-date: 2012-07-19
+date: 2012-07-24
 tags: partners
 author: Alex Coles
 body_class: article campuspartyeu
