@@ -18,10 +18,18 @@ title: Schedule
 
     %ul.days
       - %w(Friday Saturday Sunday).each do |day|
-        %li(class="#{day.downcase}")
+        - multi_track_sessions = data.overview_schedule[day.downcase]["mutli_track"] rescue false
+        %li(class="#{day.downcase} #{'multi_track' if multi_track_sessions}")
           %strong= day
           %ul
+            - if multi_track_sessions
+              - multi_track_sessions.each do |track|
+                %li.track
+                  %strong= track.name
+                  %ul
+                    = partial 'partials/sessions', :locals => {:sessions => track.sessions}
 
+            - else
               = partial 'partials/sessions', :locals => {:sessions => data.overview_schedule[day.downcase]}
 
   %p Friday daytime is multi-track comprising:
