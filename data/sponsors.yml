@@ -47,6 +47,13 @@
   url:        http://www.scalarium.com/
   level:      Kastanien
   description:
+-
+  company:    Workhub
+  twitter:    workhub
+  image:      workhub.png
+  url:        https://www.workhub.com/
+  level:      Birken
+  description: Your time is precious.
 #
   -
     name:       6wunderkinder
