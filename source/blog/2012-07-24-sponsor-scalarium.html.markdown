@@ -1,5 +1,5 @@
 ---
-title: "Gold sponsors round-up: Scalarium"
+title: "Featured Kastanien sponsor: Scalarium"
 date: 2012-07-24
 tags: sponsors
 author: Florian Gilcher
@@ -7,7 +7,16 @@ body_class: article
 published: true
 ---
 
-With eurucamp 2012 being only 4 weeks away, we want to start introducing our sponsors. Already a eurucamp 2011 sponsor, [Scalarium](www.scalarium.com) were so kind to take over a Kastanien sponsorship this year as well. Scalarium has been around in the hosting scene for a considerable while now, but let them tell their story themselves:
+With eurucamp 2012 being just under 3 weeks away, we wanted to start introducing our sponsors.
+
+Already a eurucamp 2011 sponsor, [Scalarium](www.scalarium.com) were generous enough to join us once again in 2012, this time as a top-level _Kastanien_ sponsor.
+
+Scalarium has been on the hosting scene for a while now and their Berlin-based team is still growing. They are always on the look out for talented developers – so if you <3 automation and clouds – apply for an open position online or get in contact with the Scalarium team during eurucamp.
+
+READMORE
+
+As for their story? _We'll let them tell explain: –_
+
 
 ![Scalarium](/images/content/sponsors/scalarium.png "Scalarium Logo")
 
