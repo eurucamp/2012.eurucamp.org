@@ -54,6 +54,13 @@
   url:        https://www.workhub.com/
   level:      Birken
   description:
+-
+  company:    Wooga
+  twitter:    wooga
+  image:      wooga.png
+  url:        http://www.wooga.com/
+  level:      Birken
+  description:
 #
   -
     name:       6wunderkinder
