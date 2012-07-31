@@ -1,5 +1,5 @@
 ---
-title: Main Ticket Sale is Over: Last Minute tickets
+title: "Main Ticket Sale is Over: Last Minute tickets"
 date: 2012-07-30
 tags: tickets
 author: Alex Coles
