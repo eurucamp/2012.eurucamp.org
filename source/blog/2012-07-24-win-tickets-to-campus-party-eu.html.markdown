@@ -23,8 +23,9 @@ This event was held for many years in Valencia, rallying young and not so young 
 eurucamp has teamed up with Campus Party in a couple of ways:
 
 * Together, we will be offering **50% discount** on Campus Party tickets for all eurucamp attendees. If you have already registered for eurucamp, then we will be in touch with more information on how to obtain the discount.
-* We are having a draw for **20 free tickets**. The [draw opens today][draw-microsite], and runs until the 31st of July.
+* We are having a draw for **20 free <s>tickets</s> pairs of tickets**. The [draw opens today][draw-microsite], and runs until the 31st of July.
 
+_Update: Good news! Campus Party EU will now offer two tickets to each draw winner!_
 
 _We hope to see there!_
 
