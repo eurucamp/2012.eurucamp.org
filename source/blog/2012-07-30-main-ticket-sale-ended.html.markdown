@@ -1,4 +1,11 @@
-# Main Ticket Sale is Over: Last Minute tickets
+---
+title: Main Ticket Sale is Over: Last Minute tickets
+date: 2012-07-30
+tags: tickets
+author: Alex Coles
+body_class: article tickets
+published: true
+---
 
 You will have from [our][tweet1] [tweets][tweet2] that the main registration period for eurucamp and JRubyConf EU ended at **Monday, 31 July at 12 noon CEST**. Given we have multiple tracks on Friday, this gives us time  to make sure we can accommodate everyone comfortably at our venue (not to mention, feed and water).
 
