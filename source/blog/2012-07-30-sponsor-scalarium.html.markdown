@@ -1,6 +1,6 @@
 ---
 title: "Featured Kastanien sponsor: Scalarium"
-date: 2012-07-24
+date: 2012-07-30
 tags: sponsors
 author: Florian Gilcher
 body_class: article
