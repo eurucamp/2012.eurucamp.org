@@ -61,11 +61,10 @@
   url:        http://www.wooga.com/
   level:      Birken
   description:
-#
-  -
-    name:       6wunderkinder
-    twitter:    arsduo
-    image:      6wunderkinder.jpg
-    url:        http://www.alexkoppel.com/
-    level:      Birken / Coffee
-    description:
+-
+  name:       6Wunderkinder
+  twitter:    6Wunderkinder
+  image:      6wunderkinder.png
+  url:        http://www.6wunderkinder.com
+  level:      espresso
+  description:
