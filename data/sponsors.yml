@@ -47,11 +47,24 @@
   url:        http://www.scalarium.com/
   level:      Kastanien
   description:
-#
-  -
-    name:       6wunderkinder
-    twitter:    arsduo
-    image:      6wunderkinder.jpg
-    url:        http://www.alexkoppel.com/
-    level:      Birken / Coffee
-    description:
+-
+  company:    Workhub
+  twitter:    workhub
+  image:      workhub.png
+  url:        https://www.workhub.com/
+  level:      Birken
+  description:
+-
+  company:    Wooga
+  twitter:    wooga
+  image:      wooga.png
+  url:        http://www.wooga.com/
+  level:      Birken
+  description:
+-
+  name:       6Wunderkinder
+  twitter:    6Wunderkinder
+  image:      6wunderkinder.png
+  url:        http://www.6wunderkinder.com
+  level:      espresso
+  description:

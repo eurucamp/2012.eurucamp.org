@@ -227,7 +227,7 @@
     Rails applications. This session will explain how to write a Rails Engine
     from scratch or convert your existing plugin to an engine. It will also
     cover best practices for making your engine play well with others and
-    determing when to factor pieces of your existing Rails application code
+    determining when to factor pieces of your existing Rails application code
     into an engine, for reuse across multiple applications.
 -
   name:         Laurent Sansonetti

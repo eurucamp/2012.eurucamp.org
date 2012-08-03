@@ -33,12 +33,18 @@ body_class: index
   = wrapped :section, :class => 'register' do
     = link_to 'http://eurucamp2012.eventbrite.com', :title => 'Get your ticket', :class => 'primary' do
       %span
-        Register now
+        Join Us!
     %p
       %small
-        Ticket prices are
-        = link_to 'starting from &euro;50', '/2012/07/05/ticket-sales-begin-monday', :title => 'More information on our blog'
-        \.
+        = succeed '.' do
+          Last Minute and Beginners' workshop tickets
+          %br/
+          = link_to 'available from 5pm Friday 3.8', '/2012/07/30/main-ticket-sale-ended', :title   => 'More information on our blog'
+
+  %section.sponsors
+    = wrapped :header do
+      %h3 Our sponsors
+    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
 
   .block
     %section.speakers
@@ -83,9 +89,6 @@ body_class: index
           %a(href="http://lanyrd.com/2012/eurucamp" title="eurucamp on lanyard.com") Let us know on Lanyrd
 
   %section.sponsors
-    = wrapped :header do
-      %h3 Our sponsors
-    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
     = wrapped :header do
       %h3 Our partners
     = partial 'partials/partners', :locals => { :partners => data.partners }
