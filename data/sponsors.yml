@@ -62,7 +62,14 @@
   level:      Birken
   description:
 -
-  name:       6Wunderkinder
+  company:    New Relic
+  twitter:    NewRelic
+  image:      newrelic.png
+  url:        http://newrelic.com/
+  level:      Birken
+  description:
+-
+  company:    6Wunderkinder
   twitter:    6Wunderkinder
   image:      6wunderkinder.png
   url:        http://www.6wunderkinder.com
