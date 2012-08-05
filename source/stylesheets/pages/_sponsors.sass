@@ -24,6 +24,14 @@ body.sponsors
             img
               width: 100%
 
+      div
+        &.linden,
+        &.birken,
+        &.espresso
+          ul
+            li
+              width: 50%
+
 
     section.prospectus
       +padded
@@ -114,37 +122,51 @@ body.sponsors
     article
       section
         &.sponsors-listing
-          .kastanien
-            ul
-              li
-                width: 50%
+          div
+            &.kastanien
+              ul
+                li
+                  width: 50%
 
-          .linden,
-          .birken
-            ul
-              li
-                width: 33.33333%
+            &.linden,
+            &.birken,
+            &.espresso
+              ul
+                li
+                  width: 33.33333%
+
+
+  +respond-to(smartphone-landscape)
+    article
+      section
+        &.sponsors-listing
+          div
+            &.kastanien
+              ul
+                li
+                  width: 33.33333%
+
+            &.linden,
+            &.birken,
+            &.espresso
+              ul
+                li
+                  width: 25%
 
 
   +respond-to(tablet-lite)
     article
       section
         &.sponsors-listing
-          width: 50%
-          float: right
+          div
+            &.kastanien
+              ul
+                li
+                  width: 25%
 
-          .linden,
-          .birken
-            ul
-              li
-                width: 50%
-
-        &.prospectus
-          width: 50%
-          float: left
-
-
-  +respond-to(tablet-portrait)
-    article
-      section
-        &.prospectus-table
+            &.linden,
+            &.birken,
+            &.espresso
+              ul
+                li
+                  width: 20%
