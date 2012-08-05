@@ -8,6 +8,14 @@ body_class: speakers
     %h2 Speakers
 
   = wrapped :section do
+    %aside
+      %nav
+        %ul
+          - data.speakers.select{ |s| s.track == 'main' }.sort{ |a,b| a.name <=> b.name }.each do |speaker|
+            %li
+              %a(href="##{speaker.name.parameterize}" title="Jump to #{speaker.name}")
+                = speaker.name
+
     %ul
       - data.speakers.select{ |s| s.track == 'main' }.sort{ |a,b| a.name <=> b.name }.each_with_index do |speaker, index|
         %li(id="#{speaker.name.parameterize}" class="#{index % 2 == 0 ? "odd" : "even"}")
