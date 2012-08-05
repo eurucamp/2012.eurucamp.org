@@ -11,6 +11,8 @@ gem 'sitemap_generator'
 gem 'coffee-script'
 gem 'bourbon'
 gem 'nokogiri'
+gem 'redcarpet'
+gem 'pygments.rb'
 
 gem 'html5-boilerplate', :require => 'html5-boilerplate',
                          :git     => 'git://github.com/edenspiekermann/compass-html5-boilerplate.git',

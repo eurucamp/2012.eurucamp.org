@@ -10,7 +10,7 @@ title: Sponsors
   = wrapped :section, :class => 'sponsors-listing' do
     %h3
       Our Sponsors
-    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
+    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors.select{|s| s.track == 'eurucamp' } }
 
   = wrapped :section, :class => 'prospectus' do
     %h3 Become a eurucamp Sponsor
