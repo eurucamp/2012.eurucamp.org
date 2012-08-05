@@ -5,6 +5,7 @@
   url:        http://busyconf.com/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    Heroku
   twitter:    heroku
@@ -12,6 +13,7 @@
   url:        http://www.heroku.com/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    Planio
   twitter:    planio
@@ -19,6 +21,7 @@
   url:        http://plan.io/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    Selleo
   twitter:    selleo
@@ -26,6 +29,7 @@
   url:        http://www.selleo.com/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    Bitcrowd
   twitter:    bitcrowd
@@ -33,6 +37,7 @@
   url:        http://bitcrowd.net/
   level:      Birken
   description: Agile Ruby on Rails und iOS-Entwicklung in Berlin
+  track:      eurucamp
 -
   company:    Airbrake
   twitter:    airbrake
@@ -40,6 +45,7 @@
   url:        https://airbrake.io/
   level:      Birken
   description: The error app.
+  track:      eurucamp
 -
   company:    Scalarium
   twitter:    scalarium
@@ -47,6 +53,7 @@
   url:        http://www.scalarium.com/
   level:      Kastanien
   description:
+  track:      eurucamp
 -
   company:    Workhub
   twitter:    workhub
@@ -54,6 +61,7 @@
   url:        https://www.workhub.com/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    Wooga
   twitter:    wooga
@@ -61,6 +69,7 @@
   url:        http://www.wooga.com/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    New Relic
   twitter:    NewRelic
@@ -68,6 +77,7 @@
   url:        http://newrelic.com/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    6Wunderkinder
   twitter:    6Wunderkinder
@@ -75,3 +85,12 @@
   url:        http://www.6wunderkinder.com
   level:      espresso
   description:
+  track:      eurucamp
+-
+  company:    innoQ
+  twitter:    innoQ
+  image:      innoq.png
+  url:        http://www.innoq.com/
+  level:      Linden
+  description: They focus on enterprise architecture consulting for Fortune 1000 companies.
+  track:      jrubyconfeu
