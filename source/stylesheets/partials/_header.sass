@@ -52,9 +52,6 @@ body
               +caps
               +custom-sans(bold)
               +transition(color 0.5s)
-              +at-night
-                color: $brand-1
-                +no-text-shadow
 
               &:hover
                 color: $brand-2
@@ -68,3 +65,12 @@ body
       background: white
       +at-night
         background: $black
+
+      nav
+        ul
+          li
+            a
+              +at-night
+                color: $brand-1
+                +no-text-shadow
+
