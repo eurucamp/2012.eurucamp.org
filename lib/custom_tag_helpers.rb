@@ -38,7 +38,7 @@ module CustomTagHelpers
     end
   end
 
-  def nav(items, attrs)
+  def nav(items, attrs = {})
     attrs_to_merge = [:type, :rel].freeze
     capture_haml do
       haml_tag :nav, attrs do
