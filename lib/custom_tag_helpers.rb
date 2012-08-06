@@ -44,15 +44,17 @@ module CustomTagHelpers
       haml_tag :nav, attrs do
         haml_tag :ul do
           items.each do |item|
-            item, path = item.to_a.flatten if item.is_a? Hash
-            haml_tag :li, :class => item.downcase do
-              path ||= "/#{item.downcase.dasherize}"
-              title  = "Read about #{item.downcase}"
+            item, item_options = item.is_a?(Hash) ? item.to_a.flatten : [item, {}]
+            item_options       = {:path => item_options} if item_options.is_a? String
 
+            path        = item_options[:path]        || "/#{item.downcase.dasherize}"
+            path_regexp = item_options[:path_regexp] || /^#{path.gsub('.html', '')}/
+
+            haml_tag :li, :class => item.downcase do
               new_attrs = {
                 :href  => path,
-                :class => ('active' if request.path =~ /^#{path.gsub('.html', '')}/),
-                :title => title
+                :class => ('active' if request.path =~ path_regexp),
+                :title => "Read about #{item.downcase}"
               }
               attrs_to_merge.each do |key|
                 new_attrs.merge! key => attrs[key] if attrs[key]
