@@ -10,7 +10,7 @@ friday:
         -
           start: 9.30
           title: Introduction
-          type:  other
+          type:  talk
         -
           start: 9.45
           title: Session 1 (Keynote)
@@ -32,36 +32,36 @@ friday:
           title: Session 4
           type:  talk
         -
-          start: 12.10
+          start: 12.15
           title: Session 5
           type:  talk
         -
-          start: 12.40
+          start: 12.45
           title: Lunch
           type:  break
         -
-          start: 14.00
+          start: 13.45
           title: Session 6
           type:  talk
         -
-          start: 14.30
+          start: 14.15
           title: Session 7
           type:  talk
         -
-          start: 15.00
+          start: 14.45
           title: Coffee Break
           type:  break
         -
-          start: 15.15
+          start: 15.00
           title: Session 8
           type:  talk
         -
-          start: 15.45
+          start: 15.30
           title: Session 9
           type:  talk
         -
           start: 16.00
-          title: Snack Break
+          title: Break
           type:  break
         -
           start: 16.15
@@ -70,10 +70,14 @@ friday:
         -
           start: 17.15
           title: Goodbye
-          type:  other
+          type:  talk
         -
           start: 17.30
-          title: Drinks, Dinner-Time
+          title: Drinks, Dinner
+          type:  other
+        -
+          start: 18.45
+          title: Drinks, Registration
           type:  other
         -
           start: 19.30
@@ -101,20 +105,24 @@ friday:
           title: Morning Sessions (to be announced)
           type:  talk
         -
-          start: 12.40
+          start: 12.45
           title: Lunch
           type:  break
         -
-          start: 14.00
+          start: 13.45
           title: Afternoon Sessions (to be announced)
           type:  talk
         -
           start: 17.15
           title: Goodbye
-          type:  other
+          type:  talk
         -
           start: 17.30
-          title: Drinks, Dinner-Time
+          title: Drinks, Dinner
+          type:  other
+        -
+          start: 18.45
+          title: Drinks, Registration
           type:  other
         -
           start: 19.30
@@ -143,20 +151,20 @@ friday:
           title: Morning Sessions (to be announced)
           type:  talk
         -
-          start: 12.40
+          start: 12.45
           title: Lunch
           type:  break
         -
-          start: 14.00
+          start: 13.45
           title: Afternoon Sessions (to be announced)
           type:  talk
         -
-          start: 17.15
-          title: Goodbye
+          start: 17.30
+          title: Drinks, Dinner
           type:  other
         -
-          start: 17.30
-          title: Drinks, Dinner-Time
+          start: 18.45
+          title: Drinks, Registration
           type:  other
         -
           start: 19.30
@@ -181,7 +189,7 @@ saturday:
   -
     start:    9.30
     title:    Introduction
-    type:     other
+    type:     talk
   -
     start:    9.45
     title:    Sinatra in 8 Lines
@@ -261,7 +269,7 @@ saturday:
     start:    20.00
     end:      20.15
     title:    Close
-    type:     other
+    type:     talk
 
 sunday:
   -
@@ -323,4 +331,4 @@ sunday:
     start:    15.15
     end:      15.30
     title:    Close
-    type:     other
+    type:     talk
