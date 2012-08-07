@@ -25,6 +25,15 @@ $ ->
     setTheme()
     false
 
+  # Speakers nav
+  if $('body').hasClass 'speakers'
+    [$window, $aside, threshold] = [$(window), $('article aside'), $('article aside').offset().top]
+    positionSpeakersNav = ->
+      $aside.toggleClass 'fixed', $window.scrollTop() > threshold
+    positionSpeakersNavDelayed = _.throttle(positionSpeakersNav, 100)
+    $window.on('scroll', positionSpeakersNavDelayed)
+
+
   # Map
   if $('body').hasClass 'venue'
     hotelLocation = new google.maps.LatLng(52.4263816315, 13.6408942908)
@@ -86,7 +95,7 @@ window.setTheme = (theme) ->
   if theme in ['day', true]
     $('html').removeClass('night')
     $(window)
-      .on('resize.bgimage', $.debounce(toggleBGImage, 500))
+      .on('resize.bgimage', _.debounce(toggleBGImage, 500))
       .trigger('resize')
   else
     $('html').addClass('night')
