@@ -29,6 +29,15 @@
   @if $caps == true
     +caps
 
+=custom-sans-condensed($weight: normal, $caps: false)
+  font-family: "proxima-nova-extra-condensed", Helvetica, Arial, sans-serif
+  @if $weight == bold
+    font-weight: 700
+  @else
+    font-weight: 400 // regular
+  @if $caps == true
+    +caps
+
 =custom-serif($weight: normal)
   font-family: "ff-tisa-web-pro", Georgia, serif
   @if $weight == bold

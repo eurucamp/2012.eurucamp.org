@@ -1,212 +1,324 @@
 friday:
-  -
-    start: 8.45
-    title: Coffee, Registration
-    type: other
-  -
-    start: 9.30
-    title: Introduction
-    type: other
-  -
-    start: 9.45
-    title: Session 1 (Keynote)
-    type: talk
-  -
-    start: 10.30
-    title: Session 2
-    type: talk
-  -
-    start: 11.00
-    title: Coffee Break
-    type: break
-  -
-    start: 11.15
-    title: Session 3
-    type: talk
-  -
-    start: 11.45
-    title: Session 4
-    type: talk
-  -
-    start: 12.10
-    title: Session 5
-    type: talk
-  -
-    start: 12.40
-    title: Lunch
-    type: break
-  -
-    start: 14.00
-    title: Session 6
-    type: talk
-  -
-    start: 14.30
-    title: Session 7
-    type: talk
-  -
-    start: 15.00
-    title: Coffee Break
-    type: break
-  -
-    start: 15.15
-    title: Session 8
-    type: talk
-  -
-    start: 15.45
-    title: Session 9
-    type: talk
-  -
-    start: 16.00
-    title: Snack Break
-    type: break
-  -
-    start: 16.15
-    title: Lightning Talks
-    type: talk
-  -
-    start: 17.15
-    title: Goodbye
-    type: other
-  -
-    start: 17.30
-    title: Drinks, Dinner-Time
-    type: other
-  -
-    start: 19.30
-    title: Introduction
-    type: other
-  -
-    start: 19.45
-    title: Keynote
-    type: talk
-  -
-    start: 20.30
-    end: 22.00
-    title: Party
-    type: other
+  mutli_track:
+    -
+      name: JRubyConf EU
+      sessions:
+        -
+          start: 8.45
+          title: Coffee, Registration
+          type:  other
+        -
+          start: 9.30
+          title: Introduction
+          type:  other
+        -
+          start: 9.45
+          title: Session 1 (Keynote)
+          type:  talk
+        -
+          start: 10.30
+          title: Session 2
+          type:  talk
+        -
+          start: 11.00
+          title: Coffee Break
+          type:  break
+        -
+          start: 11.15
+          title: Session 3
+          type:  talk
+        -
+          start: 11.45
+          title: Session 4
+          type:  talk
+        -
+          start: 12.10
+          title: Session 5
+          type:  talk
+        -
+          start: 12.40
+          title: Lunch
+          type:  break
+        -
+          start: 14.00
+          title: Session 6
+          type:  talk
+        -
+          start: 14.30
+          title: Session 7
+          type:  talk
+        -
+          start: 15.00
+          title: Coffee Break
+          type:  break
+        -
+          start: 15.15
+          title: Session 8
+          type:  talk
+        -
+          start: 15.45
+          title: Session 9
+          type:  talk
+        -
+          start: 16.00
+          title: Snack Break
+          type:  break
+        -
+          start: 16.15
+          title: Lightning Talks
+          type:  talk
+        -
+          start: 17.15
+          title: Goodbye
+          type:  other
+        -
+          start: 17.30
+          title: Drinks, Dinner-Time
+          type:  other
+        -
+          start: 19.30
+          title: Introduction
+          type:  other
+        -
+          start: 19.45
+          title: "Keynote: Development & Philosophy"
+          speaker: "Steve Klabnik"
+          type:  talk
+        -
+          start: 20.30
+          end:   22.00
+          title: Party
+          type:  other
+    -
+      name: Beginners' Workshops
+      sessions:
+        -
+          start: 8.45
+          title: Coffee, Registration
+          type:  other
+        -
+          start: 9.30
+          title: Morning Sessions
+          type:  talk
+        -
+          start: 12.40
+          title: Lunch
+          type:  break
+        -
+          start: 14.00
+          title: Afternoon Sessions
+          type:  talk
+        -
+          start: 17.15
+          title: Goodbye
+          type:  other
+        -
+          start: 17.30
+          title: Drinks, Dinner-Time
+          type:  other
+        -
+          start: 19.30
+          title: Introduction
+          type:  other
+        -
+          start: 19.45
+          title: Keynote
+          type:  talk
+        -
+          start: 20.30
+          end:   22.00
+          title: Party
+          type:  other
+
+    -
+      name: Advanced Workshops
+      sessions:
+        -
+          start: 8.45
+          title: Coffee, Registration
+          type:  other
+        -
+          start: 9.30
+          title: Morning Sessions
+          type:  talk
+        -
+          start: 12.40
+          title: Lunch
+          type:  break
+        -
+          start: 14.00
+          title: Afternoon Sessions
+          type:  talk
+        -
+          start: 17.15
+          title: Goodbye
+          type:  other
+        -
+          start: 17.30
+          title: Drinks, Dinner-Time
+          type:  other
+        -
+          start: 19.30
+          title: Introduction
+          type:  other
+        -
+          start: 19.45
+          title: Keynote
+          type:  talk
+        -
+          start: 20.30
+          end:   22.00
+          title: Party
+          type:  other
 
 saturday:
   -
-    start: 9.00
-    title: Coffee, Registration
-    type: other
+    start:    9.00
+    title:    Coffee
+    type:     other
   -
-    start: 9.45
-    title: Introduction to the Day
-    type: other
+    start:    9.30
+    title:    Introduction
+    type:     other
   -
-    start: 10.00
-    title: Session 1
-    type: talk
+    start:    9.45
+    title:    Sinatra in 8 Lines
+    speaker:  Konstantin Haase
+    type:     talk
   -
-    start: 10.30
-    title: Session 2
-    type: talk
+    start:    10.15
+    title:    "ZeroMQ: Scriptable Sockets"
+    speaker:  Lourens Naudé
+    type:     talk
   -
-    start: 11.00
-    title: Coffee Break
-    type: break
+    start:    10.45
+    title:    Coffee Break
+    type:     break
   -
-    start: 11.15
-    title: Micro Talk 1
-    type: talk
+    start:    11.00
+    title:    "Slanger & Data Warehousing"
+    speaker:  Jana Vogel
+    type:     talk
   -
-    start: 11.30
-    title: Micro Talk 2
-    type: talk
+    start:    11.15
+    title:    Ruby on the Command Line
+    speaker:  Piotr Szotkowski
+    type:     talk
   -
-    start: 11.45
-    title: Session 3
-    type: talk
+    start:    11.30
+    title:    Writing a Rails Engine
+    speaker:  Erik Michaels-Ober
+    type:     talk
   -
-    start: 12.15
-    title: Session 4
-    type: talk
+    start:    12.00
+    title:    Do I need DI?
+    speaker:  James Coglan
+    type:     talk
   -
-    start: 12.45
-    title: Lunch
-    type: break
+    start:    12.30
+    title:    Lunch
+    type:     break
   -
-    start: 17.00
-    title: Session 5
-    type: talk
+    start:    17.00
+    title:    RubyMotion
+    speaker:  Laurent Sansonetti
+    type:     talk
   -
-    start: 17.30
-    title: Session 6
-    type: talk
+    start:    17.30
+    title:    Fishbowl Discussion
+    type:     talk
   -
-    start: 18.00
-    title: Break
-    type: break
+    start:    18.00
+    title:    Break
+    type:     break
   -
-    start: 18.15
-    title: Session 7
-    type: talk
+    start:    18.15
+    title:    Idempotence as the holy grail of scaling
+    speaker:  Srdan Kvrgic
+    type:     talk
   -
-    start: 18.45
-    title: Session 8
-    type: talk
+    start:    18.45
+    title:    Clean Documentation
+    speaker:  Chris Berkhout
+    type:     talk
   -
-    start: 19.15
-    title: Break
-    type: break
+    start:    19.00
+    title:    Superheroes can do it and so can you!
+    speaker:  Florian R. Hanke
+    type:     talk
   -
-    start: 19.30
-    title: Session 9
-    type: talk
+    start:    19.15
+    title:    Break
+    type:     break
   -
-    start: 20.00
-    end: 20.15
-    title: Close
-    type: other
+    start:    19.30
+    title:    Polyglot Rails Applications in Rubinius
+    speaker:  Txus Bach
+    type:     talk
+  -
+    start:    20.00
+    end:      20.15
+    title:    Close
+    type:     other
 
 sunday:
   -
-    start: 9.00
-    title: Coffee, Registration
-    type: other
+    start:    9.00
+    title:    Coffee
+    type:     other
   -
-    start: 9.30
-    title: Session 1 (45 minutes)
-    type: talk
+    start:    9.30
+    title:    All you need is love
+    speaker:  Isaac Wolkerstorfer
+    type:     talk
   -
-    start: 10.15
-    title: Micro Talk 1
-    type: talk
+    start:    10.15
+    title:    Complex Calculations Within a Web Request
+    speaker:  Sebastian Burkhard
+    type:     talk
   -
-    start: 10.30
-    title: Micro Talk 2
-    type: talk
+    start:    10.45
+    title:    Coffee Break
+    type:     break
   -
-    start: 10.45
-    title: Coffee Break
-    type: break
+    start:    11.00
+    title:    Lightning Talks
+    type:     talk
   -
-    start: 11.00
-    title: Lightning Talks
-    type: talk
+    start:    11.45
+    title:    "Create your own tools (and share them)!"
+    speaker:  Dominik Bamberger
+    type:     talk
   -
-    start: 11.45
-    title: Micro Talk 3
-    type: talk
+    start:    12.00
+    title:    "Monolithic vs Distributed Software: No Holy Grails"
+    speaker:  Pablo Astigarraga
+    type:     talk
   -
-    start: 12.00
-    title: Micro Talk 4
-    type: talk
+    start:    12.30
+    title:    Lunch
+    type:     break
   -
-    start: 12.15
-    title: Lunch
-    type: break
+    start:    13.30
+    title:    When Not to Use Object-Oriented Techniques
+    speaker:  Mike Burns
+    type:     talk
   -
-    start: 14.15
-    title: Session 2
-    type: talk
+    start:    14.00
+    title:    Living in the data mapping world
+    speaker:  Piotr Solnica
+    type:     talk
   -
-    start: 14.45
-    title: Session 3
-    type: talk
+    start:    14.30
+    title:    Break
+    type:     break
   -
-    start: 15.15
-    end: 15.30
-    title: Close
-    type: other
+    start:    14.45
+    title:    Off the Tracks - Challenging the Rails Mindset
+    speaker:  Nick Sutterer
+    type:     talk
+  -
+    start:    15.15
+    end:      15.30
+    title:    Close
+    type:     other
