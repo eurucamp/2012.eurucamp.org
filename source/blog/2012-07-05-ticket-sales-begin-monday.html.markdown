@@ -1,7 +1,7 @@
 ---
 title: Ticket sales begin Monday, 9 July
 date: 2012-07-05
-tags: website
+tags: tickets
 author: Alex Coles
 body_class: article
 published: true
