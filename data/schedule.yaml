@@ -122,7 +122,8 @@ friday:
           type:  other
         -
           start: 19.45
-          title: Keynote
+          title: "Keynote: Development & Philosophy"
+          speaker: "Steve Klabnik"
           type:  talk
         -
           start: 20.30
@@ -163,7 +164,8 @@ friday:
           type:  other
         -
           start: 19.45
-          title: Keynote
+          title: "Keynote: Development & Philosophy"
+          speaker: "Steve Klabnik"
           type:  talk
         -
           start: 20.30
