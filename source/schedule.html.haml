@@ -18,8 +18,8 @@ title: Schedule
 
     %ul.days
       - %w(Friday Saturday Sunday).each do |day|
-        - multi_track_sessions = data.schedule[day.downcase]["mutli_track"] rescue false
-        %li(class="#{day.downcase} #{'multi_track' if multi_track_sessions}")
+        - multi_track_sessions = data.schedule[day.downcase]["multi_track"] rescue false
+        %li(class="#{day.downcase} #{'multi-track' if multi_track_sessions}")
           %strong= day
           %ul
             - if multi_track_sessions
