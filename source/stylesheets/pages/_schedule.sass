@@ -29,6 +29,12 @@ body.schedule
               border-bottom: 1px dotted $grey
               margin: 1em 0
 
+            &.multi-track
+              li > strong
+                +custom-sans-condensed
+                +no-caps
+                border: none
+
             ul
               +unlisted
 
@@ -36,6 +42,16 @@ body.schedule
                 color: $medium-grey
                 +custom-sans-condensed
                 border-bottom: 1px dotted $white
+
+                &.jrubyconf-eu
+                  li
+                    &.talk
+                      background-color: $red
+
+                &.beginners-workshops
+                  li
+                    &.talk
+                      background-color: darken($blue, 10)
 
                 span
                   display: block
@@ -117,7 +133,7 @@ body.schedule
                   width: 100%
                   font-size: 0.8em
 
-              &.multi_track
+              &.multi-track
                 li.track
                   position: relative
                   float: left
@@ -128,27 +144,7 @@ body.schedule
 
                   & > strong
                     margin: 0
-                    +custom-sans-condensed
-                    +no-caps
                     line-height: 1em
                     font-size: 1em
                     color: $medium-grey
                     padding-top: 1.1em
-
-                  li
-                    width: 100%
-                    font-size: 0.9em
-                    position: absolute
-                    top: 0
-                    left: 0
-                    margin: 0
-
-                  &.jrubyconf-eu
-                    li
-                      &.talk
-                        background-color: $red
-
-                  &.beginners-workshops
-                    li
-                      &.talk
-                        background-color: darken($blue, 10)
