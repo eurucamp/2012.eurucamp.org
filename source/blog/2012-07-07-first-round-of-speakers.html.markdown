@@ -1,7 +1,7 @@
 ---
 title: Announcing our first round of speakers
 date: 2012-07-07
-tags: speakers
+tags: website
 author: Alex Koppel
 body_class: article
 published: true

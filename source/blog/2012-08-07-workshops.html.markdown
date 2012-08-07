@@ -1,9 +1,9 @@
 ---
 title: Announcing our Workshops
 date: 2012-08-07
-tags: speakers
+tags: website
 author: Alex Koppel
-body_class: article speakers
+body_class: article website
 published: false
 ---
 
