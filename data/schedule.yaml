@@ -82,6 +82,7 @@ friday:
         -
           start: 19.45
           title: "Keynote: Development & Philosophy"
+          speaker: "Steve Klabnik"
           type:  talk
         -
           start: 20.30
@@ -176,45 +177,45 @@ saturday:
     title:    Coffee
     type:     other
   -
-    start:    9.45
+    start:    9.30
     title:    Introduction
     type:     other
   -
-    start:    10.00
+    start:    9.45
     title:    Sinatra in 8 Lines
     speaker:  Konstantin Haase
     type:     talk
   -
-    start:    10.30
+    start:    10.15
     title:    "ZeroMQ: Scriptable Sockets"
     speaker:  Lourens Naudé
     type:     talk
   -
-    start:    11.00
+    start:    10.45
     title:    Coffee Break
     type:     break
   -
-    start:    11.15
+    start:    11.00
     title:    "Slanger & Data Warehousing"
     speaker:  Jana Vogel
     type:     talk
   -
-    start:    11.30
+    start:    11.15
     title:    Ruby on the Command Line
     speaker:  Piotr Szotkowski
     type:     talk
   -
-    start:    11.45
+    start:    11.30
     title:    Writing a Rails Engine
     speaker:  Erik Michaels-Ober
     type:     talk
   -
-    start:    12.15
-    title:    Idempotence as the holy grail of scaling
-    speaker:  Srdan Kvrgic
+    start:    12.00
+    title:    Do I need DI?
+    speaker:  James Coglan
     type:     talk
   -
-    start:    12.45
+    start:    12.30
     title:    Lunch
     type:     break
   -
@@ -232,13 +233,18 @@ saturday:
     type:     break
   -
     start:    18.15
-    title:    When Not to Use Object-Oriented Techniques
-    speaker:  Mike Burns
+    title:    Idempotence as the holy grail of scaling
+    speaker:  Srdan Kvrgic
     type:     talk
   -
     start:    18.45
-    title:    Polyglot Rails Apps
-    speaker:  Txus Bach
+    title:    Clean Documentation
+    speaker:  Chris Berkhout
+    type:     talk
+  -
+    start:    19.00
+    title:    Superheroes can do it and so can you!
+    speaker:  Florian R. Hanke
     type:     talk
   -
     start:    19.15
@@ -246,8 +252,8 @@ saturday:
     type:     break
   -
     start:    19.30
-    title:    Off the Tracks - Challenging the Rails Mindset
-    speaker:  Nick Sutterer
+    title:    Polyglot Rails Applications in Rubinius
+    speaker:  Txus Bach
     type:     talk
   -
     start:    20.00
@@ -294,8 +300,8 @@ sunday:
     type:     break
   -
     start:    13.30
-    title:    Do I need DI?
-    speaker:  James Coglan
+    title:    When Not to Use Object-Oriented Techniques
+    speaker:  Mike Burns
     type:     talk
   -
     start:    14.00
@@ -308,13 +314,8 @@ sunday:
     type:     break
   -
     start:    14.45
-    title:    Clean docs
-    speaker:  Chris Berkhout
-    type:     talk
-  -
-    start:    15.00
-    title:    Super heroes can do it and so can you!
-    speaker:  Florian R. Hanke
+    title:    Off the Tracks - Challenging the Rails Mindset
+    speaker:  Nick Sutterer
     type:     talk
   -
     start:    15.15
