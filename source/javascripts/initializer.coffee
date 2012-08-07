@@ -25,13 +25,43 @@ $ ->
     setTheme()
     false
 
-  # Speakers nav
+  # Sticky speakers nav
   if $('body').hasClass 'speakers'
-    [$window, $aside, threshold] = [$(window), $('article aside'), $('article aside').offset().top]
+    $window       = $(window)
+    $article      = $('article')
+    $aside        = $article.find('aside')
+    $nav          = $aside.find('nav')
+    threshold     = null
+    articleOffset = null
+
+    # make sure that the nav is always visible while scrolling
     positionSpeakersNav = ->
-      $aside.toggleClass 'fixed', $window.scrollTop() > threshold
+      threshold     ||= $aside.offset().top
+      articleOffset ||= $article.offset().top + $article.height()
+      scrollTop       = $window.scrollTop()
+      windowHeight    = $window.height()
+      $aside.toggleClass('fixed', scrollTop > threshold)
+      if (articleBottom = articleOffset - scrollTop) < windowHeight
+        $nav.css('bottom': "#{windowHeight - articleBottom}px")
+      else
+        $nav.css('bottom': '')
+
+
     positionSpeakersNavDelayed = _.throttle(positionSpeakersNav, 100)
     $window.on('scroll', positionSpeakersNavDelayed)
+
+    setTimeout positionSpeakersNav, 500
+
+    # highlight the current speaker
+    $window.hashchange ->
+      $aside
+        .find('li.active')
+        .removeClass('active')
+        .end()
+        .find("a[href='#{window.location.hash}']")
+        .parent('li')
+        .addClass('active')
+    $window.hashchange()
 
 
   # Map
@@ -76,10 +106,11 @@ $ ->
       href = $(@).attr 'href'
       if href == '/' || /\.html?/.test(href)
         window.location = "#{href}?dev"
-        false
+      else if /^#/.test(href)
+        window.location.hash = href
       else if !/^http/.test(href)
         window.location = "#{href}.html?dev"
-        false
+      false
 
 toggleBGImage = ->
   if Modernizr.mq('only all')

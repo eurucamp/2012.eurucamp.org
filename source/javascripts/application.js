@@ -4,5 +4,6 @@
 //= require "lib/jquery.responsive_images"
 //= require "lib/jquery.backstretch"
 //= require "lib/jquery.cookie"
+//= require "lib/jquery.hashchange"
 //= require "lib/twitter_feed"
 //= require "initializer"

@@ -1,7 +1,7 @@
 body.speakers
   article
     section
-    +clearfix
+      +clearfix
 
     .wrapper > ul
       +unlisted
@@ -43,6 +43,25 @@ body.speakers
           color: $dark-grey
           +no-caps
 
+    aside
+      +padded
+      +clearfix
+      padding-bottom: 1em
+      border-bottom: 1px dotted $grey
+
+      ul
+        +unlisted
+        +custom-sans
+
+        li
+          padding-bottom: 0.5em
+
+          a
+            color: $dark-grey
+
+            &:hover
+              color: $brand-2
+
 
   +respond-to(smartphone-landscape)
     article
@@ -67,6 +86,12 @@ body.speakers
 
               .info
                 padding-right: 0
+
+      aside
+        ul
+          li
+            float: left
+            width: 50%
 
 
   +respond-to(tablet-lite)
@@ -96,7 +121,7 @@ body.speakers
                   border: none
 
                 .wrapper
-                  margin: 1em
+                  margin: 1.5em
 
               .info
                 float: left
@@ -106,19 +131,45 @@ body.speakers
                 width: 66.66666%
                 float: right
 
+      aside
+        ul
+          li
+            float: left
+            width: 25%
+
 
   +respond-to(tablet-portrait)
     article
       section
+        width: 74.8%
+        float: right
+        border-left: 1px dotted $grey
+
         .wrapper > ul
           & > li
             position: relative
 
-            &.odd,
-            &.even
-              .info
-                width: 20%
+      aside
+        width: 25%
+        float: left
+        position: relative
+        border: none
+        padding: 0
 
-              .bio, .talk
-                width: 60%
-                margin-right: 20%
+        ul
+          li
+            float: none
+            opacity: 0.5
+            width: auto
+
+            &.active
+              opacity: 1
+
+        &.fixed
+          nav
+            position: fixed
+            top: 0
+            bottom: 0
+            padding: 1em 0
+            width: 100%
+            overflow: auto
