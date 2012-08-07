@@ -87,6 +87,38 @@
   description:
   track:      eurucamp
 -
+  company:    SysEleven
+  twitter:    syseleven
+  image:      syseleven.png
+  url:        http://www.syseleven.de
+  level:      Linden
+  description:
+  track:      eurucamp
+-
+  company:    SoundCloud
+  twitter:    SoundCloud
+  image:      soundcloud.png
+  url:        http://soundcloud.com/
+  level:      Linden
+  description:
+  track:      eurucamp
+-
+  company:    basho
+  twitter:    basho
+  image:      basho-logo.png
+  url:        http://www.basho.com/
+  level:      Birken
+  description:
+  track:      eurucamp
+-
+  company:    innoQ
+  twitter:    innoQ
+  image:      innoq.png
+  url:        http://www.innoq.com/
+  level:      Linden
+  description: They focus on enterprise architecture consulting for Fortune 1000 companies.
+  track:      eurucamp
+-
   company:    innoQ
   twitter:    innoQ
   image:      innoq.png
