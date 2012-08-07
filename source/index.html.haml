@@ -32,13 +32,20 @@ body_class: index
 
   = wrapped :section, :class => 'register' do
     = link_to 'http://eurucamp2012.eventbrite.com', :title => 'Get your ticket', :class => 'primary' do
-      %span
-        Register now
+      %strong
+        Join Us
+        %span<> !
     %p
       %small
-        Ticket prices are
-        = link_to 'starting from &euro;50', '/2012/07/05/ticket-sales-begin-monday', :title => 'More information on our blog'
-        \.
+        = succeed '.' do
+          Last Minute and Beginners' workshop tickets
+          %br/
+          = link_to 'available from 5pm Friday 3.8', '/2012/07/30/main-ticket-sale-ended', :title   => 'More information on our blog'
+
+  %section.sponsors
+    = wrapped :header do
+      %h3 Our sponsors
+    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors.select{|s| s.track == 'eurucamp' } }
 
   .block
     %section.speakers
@@ -48,10 +55,11 @@ body_class: index
         %ul
           - data.speakers.each do |speaker|
             %li
-              %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
-              %span
-                %strong= speaker.name
-                = speaker.company
+              %a(href="/speakers.html##{speaker.name.parameterize}")
+                %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
+                %span
+                  %strong= speaker.name
+                  = speaker.company
 
 
     %section.twitter-feed
@@ -81,10 +89,7 @@ body_class: index
           If you are attending
           %a(href="http://lanyrd.com/2012/eurucamp" title="eurucamp on lanyard.com") Let us know on Lanyrd
 
-  %section.sponsors
-    = wrapped :header do
-      %h3 Our sponsors
-    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
+  %section.partners.sponsors
     = wrapped :header do
       %h3 Our partners
     = partial 'partials/partners', :locals => { :partners => data.partners }

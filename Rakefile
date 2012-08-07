@@ -40,6 +40,8 @@ namespace :utils do
       add '/schedule',   :changefreq => 'daily', :priority => 0.8
       add '/venue',      :changefreq => 'daily'
       add '/sponsors',   :changefreq => 'daily'
+      add '/speakers',   :changefreq => 'daily'
+      add '/team',       :changefreq => 'daily'
 
       add '/blog',       :changefreq => 'hourly', :priority => 0.9
       Dir["source/blog/*"].each do |blog_entry_file|
@@ -54,31 +56,18 @@ namespace :utils do
   # scrapes eurucamp page on lanyrd.com and returns
   # array of Twitter names
   def lanyrd_attendees
-    base_url             = 'http://lanyrd.com/2012/eurucamp/attendees/'
-    profile_selector     = '.primary .mini-profile .meta a'
-    first_page           = Nokogiri::HTML(open(base_url))
-    attendees            = first_page.css(profile_selector).map {|a| a.content.gsub('@', '') }
+    profile_selector     = '.primary .mini-profile .name a'.freeze
+    pagination_selector  = '.pagination li a'.freeze
+    base_url             = 'http://lanyrd.com'.freeze
+    first_page_path      = '/2012/eurucamp/attendees/'.freeze
 
-    other_pages_selector = '.pagination li a'
-    other_pages          = first_page.css(other_pages_selector).map do |a|
-      'http://lanyrd.com' + a[:href]
-    end
+    first_page           = Nokogiri::HTML(open(base_url + first_page_path))
+    other_pages_paths    = first_page.css(pagination_selector).map { |a| a[:href] }
 
-    other_pages.each do |page|
-      page = Nokogiri::HTML(open(page))
-      attendees += page.css(profile_selector).map {|a| a.content.gsub('@', '') }
-    end
-
-    attendees.each do |id|
-      image_uri = "https://api.twitter.com/1/users/profile_image/#{id}"
-      image_path = "source/images/content/attendees/#{id.tr('_', '')}.jpg"
-      unless File.exists?(image_path)
-        File.open(image_path, 'w') {|f| f.write(open(image_uri).read) }
-      end
-    end
-
-    attendees
-
+    (other_pages_paths << first_page_path).map do |relative_path|
+      page = Nokogiri::HTML(open(base_url + relative_path))
+      page.css(profile_selector).map {|a| a['href'].gsub(/^\/profile\/|\/$/,'') }
+    end.flatten.sort
   end
 
 end

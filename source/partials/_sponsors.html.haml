@@ -1,9 +1,11 @@
-- group_and_sort_by sponsors, :level, %w(Kastanien Birken Linden) do |group, sponsors|
+- group_and_sort_by sponsors, :level, %w(Kastanien Linden espresso Birken) do |group, sponsors|
   %div(class="#{group.underscore.gsub(' ', '').gsub('/', '-')}")
     = wrapped :h4 do
       = "#{group} level"
     %ul
-      - sponsors.each do |sponsor|
+      - sponsors.sort{ |a,b| a.company.downcase <=> b.company.downcase }.each do |sponsor|
         = wrapped :li do
           = link_to sponsor.url do
             %img(src="/images/content/sponsors/#{sponsor.image}" alt="Sponsor: #{sponsor.company}")
+          .description
+            = md2html sponsor.description if sponsor.level == 'Kastanien' && sponsor.description

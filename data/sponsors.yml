@@ -5,6 +5,7 @@
   url:        http://busyconf.com/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    Heroku
   twitter:    heroku
@@ -12,6 +13,7 @@
   url:        http://www.heroku.com/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    Planio
   twitter:    planio
@@ -19,6 +21,7 @@
   url:        http://plan.io/
   level:      Birken
   description:
+  track:      eurucamp
 -
   company:    Selleo
   twitter:    selleo
@@ -26,18 +29,104 @@
   url:        http://www.selleo.com/
   level:      Birken
   description:
+  track:      eurucamp
+-
+  company:    Bitcrowd
+  twitter:    bitcrowd
+  image:      bitcrowd.png
+  url:        http://bitcrowd.net/
+  level:      Birken
+  description: Agile Ruby on Rails und iOS-Entwicklung in Berlin
+  track:      eurucamp
+-
+  company:    Airbrake
+  twitter:    airbrake
+  image:      airbrake.png
+  url:        https://airbrake.io/
+  level:      Birken
+  description: The error app.
+  track:      eurucamp
 -
   company:    Scalarium
   twitter:    scalarium
   image:      scalarium.png
   url:        http://www.scalarium.com/
   level:      Kastanien
+  description: |
+    Scalarium automates Amazon EC2 and other cloud providers. Scalarium
+    powers several high traffic sites and games around the globe. Deploy
+    and manage Rails, Node.js, PHP, Java, Python, or anything else with
+    the click of a button.
+  track:      eurucamp
+-
+  company:    Workhub
+  twitter:    workhub
+  image:      workhub.png
+  url:        https://www.workhub.com/
+  level:      Birken
   description:
-#
-  -
-    name:       6wunderkinder
-    twitter:    arsduo
-    image:      6wunderkinder.jpg
-    url:        http://www.alexkoppel.com/
-    level:      Birken / Coffee
-    description:
+  track:      eurucamp
+-
+  company:    Wooga
+  twitter:    wooga
+  image:      wooga.png
+  url:        http://www.wooga.com/
+  level:      Birken
+  description:
+  track:      eurucamp
+-
+  company:    New Relic
+  twitter:    NewRelic
+  image:      newrelic.png
+  url:        http://newrelic.com/
+  level:      Birken
+  description:
+  track:      eurucamp
+-
+  company:    6Wunderkinder
+  twitter:    6Wunderkinder
+  image:      6wunderkinder.png
+  url:        http://www.6wunderkinder.com
+  level:      espresso
+  description:
+  track:      eurucamp
+-
+  company:    SysEleven
+  twitter:    syseleven
+  image:      syseleven.png
+  url:        http://www.syseleven.de
+  level:      Linden
+  description:
+  track:      eurucamp
+-
+  company:    SoundCloud
+  twitter:    SoundCloud
+  image:      soundcloud.png
+  url:        http://soundcloud.com/
+  level:      Linden
+  description:
+  track:      eurucamp
+-
+  company:    basho
+  twitter:    basho
+  image:      basho-logo.png
+  url:        http://www.basho.com/
+  level:      Birken
+  description:
+  track:      eurucamp
+-
+  company:    innoQ
+  twitter:    innoQ
+  image:      innoq.png
+  url:        http://www.innoq.com/
+  level:      Linden
+  description: They focus on enterprise architecture consulting for Fortune 1000 companies.
+  track:      eurucamp
+-
+  company:    innoQ
+  twitter:    innoQ
+  image:      innoq.png
+  url:        http://www.innoq.com/
+  level:      Linden
+  description: They focus on enterprise architecture consulting for Fortune 1000 companies.
+  track:      jrubyconfeu

@@ -1,10 +1,10 @@
 body
   #header
     z-index: 10
-    padding: 1em 0
     background: white
     text-align: center
     +padded
+    +clearfix
 
     h1
       margin: 0
@@ -52,9 +52,6 @@ body
               +caps
               +custom-sans(bold)
               +transition(color 0.5s)
-              +at-night
-                color: $brand-1
-                +no-text-shadow
 
               &:hover
                 color: $brand-2
@@ -64,42 +61,16 @@ body
                 border-bottom: 3px solid $brand-2
 
 
-
-    +respond-to(tablet-portrait)
-      padding-top: 1.5em
-
-      h1
-        float: left
-
-      nav
-        float: right
-        margin: 0
-        padding: 0
-        border: none
-        +at-night
-          border: none
-
-        ul
-          li
-            margin: 0 0 0 2em
-
-
-    +respond-to(tablet-landscape)
+    +respond-to(tablet-oversize)
       background: white
       +at-night
         background: $black
 
-      h1
-        float: none
-
       nav
-        float: none
-        border-top: 1px dotted $grey
-        +at-night
-          border-color: $brand-1
-        margin: 1em auto 0 auto
-        padding: 0.5em 1em 0
-
         ul
           li
-            margin: 0 1em
+            a
+              +at-night
+                color: $brand-1
+                +no-text-shadow
+

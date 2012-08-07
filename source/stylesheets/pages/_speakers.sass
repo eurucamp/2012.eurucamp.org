@@ -1,0 +1,175 @@
+body.speakers
+  article
+    section
+      +clearfix
+
+    .wrapper > ul
+      +unlisted
+      +clearfix
+      padding-bottom: 1em
+
+      & > li
+        margin-bottom: 2em
+        color: $medium-grey
+
+        &:last-child
+          margin-bottom: 0
+
+        .column
+          .wrapper
+            margin: 0
+
+        .info
+          a
+            display: block
+
+        .bio
+          border-bottom: 1px dotted $grey
+
+        img
+          width: 100%
+
+        h3
+          +custom-sans(bold)
+          margin-top: 0
+
+          a
+            color: $dark-grey
+
+            &:hover
+              color: $brand-2
+
+        h4
+          color: $dark-grey
+          +no-caps
+
+    aside
+      +padded
+      +clearfix
+      padding-bottom: 1em
+      border-bottom: 1px dotted $grey
+
+      ul
+        +unlisted
+        +custom-sans
+
+        li
+          padding-bottom: 0.5em
+
+          a
+            color: $dark-grey
+
+            &:hover
+              color: $brand-2
+
+
+  +respond-to(smartphone-landscape)
+    article
+      section
+        .wrapper > ul
+          & > li
+            width: 50%
+            float: left
+
+            &.odd
+              clear: both
+
+              .column
+                margin-right: 1em
+
+              .info
+                margin-right: 0
+
+            &.even
+              .column
+                padding-right: 1em
+
+              .info
+                padding-right: 0
+
+      aside
+        ul
+          li
+            float: left
+            width: 50%
+
+
+  +respond-to(tablet-lite)
+    article
+      section
+        .wrapper
+          margin: 0
+
+          & > ul
+            & > li
+              width: auto
+              float: none
+              margin: 0
+              padding-bottom: 2em
+              +clearfix
+              border-bottom: 1px dotted $grey
+
+              &:last-child
+                padding-bottom: 0
+                border-bottom: none
+
+              &.odd,
+              &.even
+                .column
+                  margin-right: 0
+                  padding-right: 0
+                  border: none
+
+                .wrapper
+                  margin: 1.5em
+
+              .info
+                float: left
+                width: 33.33333%
+
+              .bio, .talk
+                width: 66.66666%
+                float: right
+
+      aside
+        ul
+          li
+            float: left
+            width: 25%
+
+
+  +respond-to(tablet-portrait)
+    article
+      section
+        width: 74.8%
+        float: right
+        border-left: 1px dotted $grey
+
+        .wrapper > ul
+          & > li
+            position: relative
+
+      aside
+        width: 25%
+        float: left
+        position: relative
+        border: none
+        padding: 0
+
+        ul
+          li
+            float: none
+            opacity: 0.5
+            width: auto
+
+            &.active
+              opacity: 1
+
+        &.fixed
+          nav
+            position: fixed
+            top: 0
+            bottom: 0
+            padding: 1em 0
+            width: 100%
+            overflow: auto

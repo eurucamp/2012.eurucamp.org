@@ -4,3 +4,15 @@
   image:      lufthansa.png
   url:        http://www.lufthansa.com/
   description:
+-
+  company:    Rails Girls Berlin
+  twitter:    railsgirls_bln
+  image:      railsgirls_bln.png
+  url:        http://railsgirlsberlin.tumblr.com/
+  description:
+-
+  company:    Campus Party Europe
+  twitter:    campuspartyeu
+  image:      campuspartyeu.png
+  url:        http://www.campus-party.eu/2012/
+  description:

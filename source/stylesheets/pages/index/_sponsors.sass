@@ -1,66 +1,75 @@
 article
-  section.sponsors
-    +clearfix
-    padding-bottom: 2em
-    border-top: 1px dotted $grey
-    background: lighten($grey, 8%)
+  section
+    &.sponsors
+      +clearfix
+      background: lighten($grey, 8%)
 
-    div
-      +padded
-      border-bottom: 1px dotted lighten($grey, 2%)
+      div
+        +padded
+        border-bottom: 1px dotted lighten($grey, 2%)
 
-      &:last-child
-        border-bottom: none
+        &:last-child
+          border-bottom: none
 
-      h4
-        margin-bottom: 0.5em
-        margin-top: 0.5em
-        color: $grey
-        +custom-sans
-
-        .wrapper
-          margin-bottom: 0
-          margin-top: 0
-
-      ul
-        +clearfix
-        +unlisted
-
-        li
-          +padded
-          float: left
+        h4
+          margin-bottom: 0.5em
+          margin-top: 0.5em
+          color: $grey
+          +custom-sans
 
           .wrapper
-            margin-top: 0
             margin-bottom: 0
+            margin-top: 0
 
-          a
-            display: block
-
-            img
-              width: 100%
-              opacity: 0.75
-              +transition(all 0.25s)
-              +greyscale
-
-            &:hover
-              img
-                opacity: 1
-                +transition(all 0.25s)
-                +no-greyscale
-
-      &.kastanien
-        h4
-          margin-top: -0.75em
-
-      &.linden,
-      &.birken
         ul
+          +clearfix
+          +unlisted
+
           li
-            width: 50%
+            +padded
+            margin: 0.5em 0
+            float: left
+
+            .wrapper
+              margin-top: 0
+              margin-bottom: 0
+
+            .description
+              display: none
+
+            a
+              display: block
+
+              img
+                width: 100%
+                opacity: 0.75
+                +transition(all 0.25s)
+                +greyscale
+
+              &:hover
+                img
+                  opacity: 1
+                  +transition(all 0.25s)
+                  +no-greyscale
+
+        &.kastanien
+          h4
+            margin-top: -0.75em
+
+        &.linden,
+        &.birken,
+        &.espresso
+          ul
+            li
+              width: 50%
+
+    &.partners
+      border-top: 1px dotted $grey
+      padding-bottom: 1em
 
 
-    +respond-to(mid-range)
+  +respond-to(mid-range)
+    section.sponsors
       div
         &.kastanien
           ul
@@ -68,13 +77,21 @@ article
               width: 50%
 
         &.linden,
-        &.birken
+        &.birken,
+        &.espresso
+          ul
+            li
+              width: 33.33333%
+
+      &.partners
+        div
           ul
             li
               width: 33.33333%
 
 
-    +respond-to(smartphone-portrait)
+  +respond-to(smartphone-portrait)
+    section.sponsors
       div
         h4
           text-align: right
@@ -84,8 +101,8 @@ article
             margin-top: -1em
 
 
-
-    +respond-to(smartphone-landscape)
+  +respond-to(smartphone-landscape)
+    section.sponsors
       div
         &.kastanien
           ul
@@ -93,29 +110,44 @@ article
               width: 33.33333%
 
         &.linden,
-        &.birken
+        &.birken,
+        &.espresso
+          ul
+            li
+              width: 25%
+
+      &.partners
+        div
           ul
             li
               width: 25%
 
 
-    +respond-to(tablet-lite)
+  +respond-to(tablet-lite)
+    section.sponsors
       div
         &.kastanien
           ul
             li
               width: 25%
-              float: left
+
         &.linden,
-        &.birken
+        &.birken,
+        &.espresso
           ul
             li
               width: 20%
-              float: left
 
-    +respond-to(tablet-portrait)
+      &.partners
+        div
+          ul
+            li
+              width: 20%
+
+
+  +respond-to(tablet-portrait)
+    section.sponsors
       div
         &.kastanien
           h4
             margin-top: -1.5em
-

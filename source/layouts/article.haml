@@ -10,6 +10,21 @@
       %small
         %span.date= current_article.date.strftime('%e %b %Y')
         %span.author= "by #{current_article.data.author}"
+      %ul.tags
+        - current_article.tags.each do |tag|
+          %li= tag
 
     = wrapped :section, :class => 'body' do
       = yield
+
+    = wrapped :footer do
+      %nav
+        %ul
+          - if (n = current_article.next_article)
+            %li.next
+              %span Next:
+              = link_to n.title, n.url_without_extension, :title => "Read '#{n.title}'"
+          - if (p = current_article.previous_article)
+            %li.prev
+              %span Previous:
+              = link_to p.title, p.url_without_extension, :title => "Read '#{p.title}'"

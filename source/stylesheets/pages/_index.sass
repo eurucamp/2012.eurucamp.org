@@ -63,10 +63,16 @@ body.index
         +text-shadow(0 1px 0 darken($brand-1, 10%))
         font-size: 1.5em
 
-        span
+        strong
           padding-bottom: 0.15em
           display: block
+          +custom-sans(black)
           border: 1px dotted transparentize($white, 0.5)
+
+        // sincerely hoping the typography gods will spare my soul
+        span
+          font-size: 0.69em
+          padding-left: 0.15em
 
         &:hover
           background-color: $white
@@ -75,8 +81,9 @@ body.index
 
       p
         color: $medium-grey
-        margin: 0 0 -0.5em 0
+        margin: 0.25em 0 -0.5em 0
         text-align: center
+        line-height: 0.85em
 
     .block
       +clearfix

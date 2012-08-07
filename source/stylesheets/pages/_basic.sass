@@ -37,13 +37,11 @@ body
         z-index: 400
         color: $medium-grey
         background: none
-        text-transform: none
-        font-variant: normal
         +custom-sans(bold, false)
         +text-shadow(0 1px 0 white)
 
     h3
-      +custom-sans(black)
+      +custom-sans(bold, false)
 
     h4, h5, h6
       +custom-sans(bold)
@@ -60,8 +58,25 @@ body
     address
       font-style: normal
 
+    .price
+      background: $grey
+      +custom-sans(bold, false)
+      color: $dark-grey
+      +text-inset
+      +border-radius(1em)
+      padding: 0.15em 0.45em 0 0.45em
+
     section
       +padded
+
+    hr
+      background-color: $grey
+      border-width: 0
+      color: $grey
+      height: 1px
+      line-height: 0
+      page-break-after: always
+      text-align: center
 
   +respond-to(tablet-lite)
     article
