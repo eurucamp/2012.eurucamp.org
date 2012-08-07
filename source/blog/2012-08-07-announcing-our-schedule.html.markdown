@@ -7,7 +7,7 @@ body_class: article website
 published: true
 ---
 
-  Our schedule is now online!  We're excited.
+  Our schedule for main sessions is now online!  We're excited.
 
   READMORE
 
