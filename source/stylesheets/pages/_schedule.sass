@@ -34,6 +34,7 @@ body.schedule
 
               li
                 color: $medium-grey
+                +custom-sans-condensed
                 border-bottom: 1px dotted $white
 
                 span
@@ -54,8 +55,9 @@ body.schedule
                   background: transparentize($brand-1, 0.15)
                   +shadowed
 
-                  span,
-                    strong ,span
+                  span
+                    color: $white
+                    strong, span
                       color: $white
 
 
@@ -89,15 +91,15 @@ body.schedule
 
               &.friday
                 left: 10%
-                width: 25%
+                width: 35%
 
               &.saturday
-                left: 40%
-                width: 25%
+                left: 48%
+                width: 23%
 
               &.sunday
-                left: 70%
-                width: 25%
+                left: 74%
+                width: 23%
 
               & > strong
                 color: $medium-grey
@@ -113,3 +115,31 @@ body.schedule
                 li
                   width: 100%
                   font-size: 0.8em
+
+              &.multi_track
+                li.track
+                  position: relative
+                  float: left
+                  width: 32%
+
+                  &:nth-child(n+2)
+                    margin-left: 2%
+
+                  & > strong
+                    margin: 0
+                    +custom-sans-condensed
+                    +no-caps
+                    line-height: 1em
+                    font-size: 1em
+                    color: $medium-grey
+                    padding-top: 1.2em
+
+                  li
+                    width: 100%
+                    font-size: 0.9em
+                    position: absolute
+                    top: 0
+                    left: 0
+                    margin: 0
+
+
