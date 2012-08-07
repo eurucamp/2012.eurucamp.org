@@ -52,7 +52,11 @@
   image:      scalarium.png
   url:        http://www.scalarium.com/
   level:      Kastanien
-  description:
+  description: |
+    Scalarium automates Amazon EC2 and other cloud providers. Scalarium
+    powers several high traffic sites and games around the globe. Deploy
+    and manage Rails, Node.js, PHP, Java, Python, or anything else with
+    the click of a button.
   track:      eurucamp
 -
   company:    Workhub
