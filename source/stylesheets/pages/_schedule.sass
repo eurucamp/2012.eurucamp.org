@@ -51,7 +51,8 @@ body.schedule
                 &.break
                   background: transparentize($grey, 0.15)
 
-                &.talk
+                &.talk,
+                &.keynote
                   background: transparentize($brand-1, 0.15)
                   +shadowed
 
@@ -142,4 +143,12 @@ body.schedule
                     left: 0
                     margin: 0
 
+                  &.jrubyconf-eu
+                    li
+                      &.talk
+                        background-color: $red
 
+                  &.beginners-workshops
+                    li
+                      &.talk
+                        background-color: darken($blue, 10)

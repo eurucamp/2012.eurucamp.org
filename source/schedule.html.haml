@@ -24,7 +24,7 @@ title: Schedule
           %ul
             - if multi_track_sessions
               - multi_track_sessions.each do |track|
-                %li.track
+                %li.track(class="#{track.name.parameterize}")
                   %strong= track.name
                   %ul
                     = partial 'partials/sessions', :locals => {:sessions => track.sessions}
