@@ -25,6 +25,14 @@ $ ->
     setTheme()
     false
 
+  # Random speakers video on home page
+  if $('body').hasClass 'index'
+    randomID = _.first(_.shuffle(SPEAKER_VIDEO_IDS))
+    $video   = $ '<div />',
+      class: 'resp-video-wrapper'
+      html: SPEAKER_VIDEO_TEMPLATE.replace('[VIDEO_ID]', randomID)
+    $('section.speakers ul').before($video)
+
   # Sticky speakers nav
   if $('body').hasClass 'speakers'
     $window       = $(window)
