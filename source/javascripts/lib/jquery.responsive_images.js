@@ -36,7 +36,7 @@
         }
       }
 
-      $window.on('resize', $.debounce(onResize, 10)).trigger('resize');
+      $window.on('resize', _.debounce(onResize, 10)).trigger('resize');
 
     });
 

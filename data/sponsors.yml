@@ -52,7 +52,11 @@
   image:      scalarium.png
   url:        http://www.scalarium.com/
   level:      Kastanien
-  description:
+  description: |
+    Scalarium automates Amazon EC2 and other cloud providers. Scalarium
+    powers several high traffic sites and games around the globe. Deploy
+    and manage Rails, Node.js, PHP, Java, Python, or anything else with
+    the click of a button.
   track:      eurucamp
 -
   company:    Workhub
@@ -125,4 +129,20 @@
   url:        http://www.innoq.com/
   level:      Linden
   description: They focus on enterprise architecture consulting for Fortune 1000 companies.
+  track:      jrubyconfeu
+-
+  company:    Red Hat
+  twitter:    redhatnews
+  image:      redhat.png
+  url:        http://www.redhat.com/
+  level:      Birken
+  description:
+  track:      jrubyconfeu
+-
+  company:    Datek Wireless AS
+  #twitter:   datek
+  image:      datek.png
+  url:        http://www.datek.no/
+  level:      Birken
+  description:
   track:      jrubyconfeu

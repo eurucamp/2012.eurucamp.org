@@ -7,18 +7,18 @@ body_class: article website
 published: true
 ---
 
-  Our schedule is now online!  We're excited.
+  Our schedule for main sessions is now online!  We're excited.
 
   READMORE
 
   Over the last few months, we've been working hard to put together the best
   conference the wilderness near Berlin has ever seen.  Personally, I think
-  we've succeeded -- judge for yourself.
+  we've succeeded – judge for yourself.
 
   * Steve Klabnik of Hackety Hack fame will be giving our keynote Friday night
   on [Development and
   Philosophy][klabnik].
-  * Lunch Saturday is *five hours long* -- take a boat out on the water, hike or
+  * Lunch Saturday is *five hours long* – take a boat out on the water, hike or
   bike around the lakeshore, hit up a brewery or take a nap.  The venue is an
   amazing piece of nature, and it's all yours to enjoy with your fellow
   eurucampers.
@@ -32,6 +32,7 @@ published: true
 
   Take a look at our [schedule page][schedule] for the full details!
 
-  [klabnik]:http://2012.eurucamp.org/speakers#steve-klabnik
-  [speakers]:http://2012.eurucamp.org/speakers
+  [klabnik]:/speakers#steve-klabnik
+  [speakers]:/speakers
+  [schedule]:/schedule
   [fishbowl]:http://en.wikipedia.org/wiki/Fishbowl_(discussion)

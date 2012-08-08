@@ -7,6 +7,14 @@ body_class: speakers
   = wrapped :header do
     %h2 Speakers
 
+  = wrapped :aside do
+    %nav
+      %ul
+        - data.speakers.select{ |s| s.track == 'main' }.sort{ |a,b| a.name <=> b.name }.each do |speaker|
+          %li
+            %a(href="##{speaker.name.parameterize}" title="Jump to #{speaker.name}")
+              = speaker.name
+
   = wrapped :section do
     %ul
       - data.speakers.select{ |s| s.track == 'main' }.sort{ |a,b| a.name <=> b.name }.each_with_index do |speaker, index|
@@ -21,10 +29,12 @@ body_class: speakers
               %span.company= speaker.company
             = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}", :class => 'twitter'
           = wrapped :div, :class => 'column bio' do
+            = vimeo speaker.videos.info if speaker.videos
             = md2html speaker.bio
 
           = wrapped :div, :class => 'column talk' do
             %h4
               = speaker.talk_title
+            = vimeo speaker.videos.talk if speaker.videos
             %div
               = md2html speaker.talk_summary

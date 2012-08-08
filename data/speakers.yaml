@@ -90,6 +90,9 @@
   image:        khaase.jpg
   url:          http://rkh.im/
   track:        main
+  videos:
+    info:       45825166
+    talk:       45825167
   bio:          |
     As current maintainer of Sinatra, Konstantin is an Open Source developer
     by heart. Ruby has become his language of choice since 2005. He regularly
@@ -417,6 +420,9 @@
   image:        jvogel.jpg
   url:          http://dotless.de/
   track:        main
+  videos:
+    info:       46157789
+    talk:       46158200
   bio:          |
     Jana is a Berlin based freelance webdeveloper. She started as a
     media designer and later on studied International Media and Computing.
@@ -476,6 +482,9 @@
   image:        mburns.jpg
   url:          http://mike-burns.com/
   track:        main
+  videos:
+    info:       45825164
+    talk:       45825165
   bio:          |
     Mike plays many roles at thoughtbot, including the Haskell
     enthusiast, their sole Linux user, an object-oriented programmer, Unix
@@ -562,6 +571,9 @@
   image:        pszotkowski.jpg
   url:          http://chastell.net/
   track:        main
+  videos:
+    info:       46192311
+    talk:       46192310
   bio:          |
     Piotr is an assistant professor at Warsaw University of
     Technology (where he happily sneaks Ruby, EventMachine and newfangled

@@ -1,0 +1,8 @@
+- schedule_for sessions, :start => 8 do |item, duration, distance|
+  - style = "height: #{duration * 2 - 1}px; top: #{distance * 2}px"
+  - title = "#{"%0.2f" % item.start}: #{item.speaker} / #{item.title}"
+
+  %li(class="#{item.type}" style="#{style}" title="#{title}")
+    %span
+      %span= "%0.2f" % item.start
+      %strong= item.title

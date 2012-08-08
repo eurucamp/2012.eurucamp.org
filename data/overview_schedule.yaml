@@ -1,41 +1,127 @@
 friday:
-  -
-    start: 8.45
-    title: Coffee, Registration
-    type:  other
-  -
-    start: 9.30
-    title: Morning Sessions
-    type:  talk
-  -
-    start: 12.40
-    title: Lunch
-    type:  break
-  -
-    start: 14.00
-    title: Afternoon Sessions
-    type:  talk
-  -
-    start: 17.15
-    title: Goodbye
-    type:  other
-  -
-    start: 17.30
-    title: Drinks, Dinner-Time
-    type:  other
-  -
-    start: 19.30
-    title: Introduction
-    type:  other
-  -
-    start: 19.45
-    title: Keynote
-    type:  talk
-  -
-    start: 20.30
-    end:   22.00
-    title: Party
-    type:  other
+  mutli_track:
+    -
+      name: Track A
+      sessions:
+        -
+          start: 8.45
+          title: Coffee, Registration
+          type:  other
+        -
+          start: 9.30
+          title: Morning Sessions
+          type:  talk
+        -
+          start: 12.40
+          title: Lunch
+          type:  break
+        -
+          start: 14.00
+          title: Afternoon Sessions
+          type:  talk
+        -
+          start: 17.15
+          title: Goodbye
+          type:  other
+        -
+          start: 17.30
+          title: Drinks, Dinner-Time
+          type:  other
+        -
+          start: 19.30
+          title: Introduction
+          type:  other
+        -
+          start: 19.45
+          title: Keynote
+          type:  talk
+        -
+          start: 20.30
+          end:   22.00
+          title: Party
+          type:  other
+
+    -
+      name: Track B
+      sessions:
+        -
+          start: 8.45
+          title: Coffee, Registration
+          type:  other
+        -
+          start: 9.30
+          title: Morning Sessions
+          type:  talk
+        -
+          start: 12.40
+          title: Lunch
+          type:  break
+        -
+          start: 14.00
+          title: Afternoon Sessions
+          type:  talk
+        -
+          start: 17.15
+          title: Goodbye
+          type:  other
+        -
+          start: 17.30
+          title: Drinks, Dinner-Time
+          type:  other
+        -
+          start: 19.30
+          title: Introduction
+          type:  other
+        -
+          start: 19.45
+          title: Keynote
+          type:  talk
+        -
+          start: 20.30
+          end:   22.00
+          title: Party
+          type:  other
+
+    -
+      name: Track C
+      sessions:
+        -
+          start: 8.45
+          title: Coffee, Registration
+          type:  other
+        -
+          start: 9.30
+          title: Morning Sessions
+          type:  talk
+        -
+          start: 12.40
+          title: Lunch
+          type:  break
+        # -
+        #   start: 14.00
+        #   title: Afternoon Sessions
+        #   type:  talk
+        -
+          start: 17.15
+          title: Goodbye
+          type:  other
+        -
+          start: 17.30
+          title: Drinks, Dinner-Time
+          type:  other
+        -
+          start: 19.30
+          title: Introduction
+          type:  other
+        -
+          start: 19.45
+          title: Keynote
+          type:  talk
+        -
+          start: 20.30
+          end:   22.00
+          title: Party
+          type:  other
 
 saturday:
   -
