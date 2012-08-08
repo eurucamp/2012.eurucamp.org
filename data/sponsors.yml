@@ -130,3 +130,19 @@
   level:      Linden
   description: They focus on enterprise architecture consulting for Fortune 1000 companies.
   track:      jrubyconfeu
+-
+  company:    Red Hat
+  twitter:    redhatnews
+  image:      redhat.png
+  url:        http://www.redhat.com/
+  level:      Birken
+  description:
+  track:      jrubyconfeu
+-
+  company:    Datek Wireless AS
+  #twitter:   datek
+  image:      datek.png
+  url:        http://www.datek.no/
+  level:      Birken
+  description:
+  track:      jrubyconfeu
