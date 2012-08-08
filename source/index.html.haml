@@ -50,7 +50,8 @@ body_class: index
   .block
     %section.speakers
       :javascript
-        var SPEAKER_VIDEO_IDS = #{data.speakers.map { |s| s.videos }.compact.map { |v| v.values }.flatten};
+        var SPEAKER_VIDEO_IDS      = #{data.speakers.map { |s| s.videos }.compact.map { |v| v.values }.flatten};
+        var SPEAKER_VIDEO_TEMPLATE = "#{vimeo('[VIDEO_ID]').gsub(/\n/, '')}";
       = wrapped :header do
         %h3 Our speakers
       = wrapped do
