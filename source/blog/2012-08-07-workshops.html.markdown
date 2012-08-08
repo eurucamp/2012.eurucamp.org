@@ -4,7 +4,7 @@ date: 2012-08-07
 tags: website
 author: Alex Koppel
 body_class: article website
-published: false
+published: true
 ---
 
   Check our our advanced workshops.
