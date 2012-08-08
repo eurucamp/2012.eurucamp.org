@@ -1,6 +1,6 @@
 ---
 title: Announcing our Workshops
-date: 2012-08-07
+date: 2012-08-08
 tags: website
 author: Alex Koppel
 body_class: article website
