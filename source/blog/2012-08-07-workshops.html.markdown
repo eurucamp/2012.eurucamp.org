@@ -18,10 +18,10 @@ published: false
   direction.  And, of course, there are the workshops for both beginners and
   advanced developers.
 
-  **Beginners Workshops**
+  **Beginners' Workshops**
 
   We're excited to partner with RailsGirls to provide introductions to Ruby and
-  programming.  For more information, see [here][here].
+  programming.  For more information, [see here][beginners].
 
   **Advanced Workshops**
 
@@ -34,12 +34,11 @@ published: false
   how Rails turns HTTP requests into controller invocations.
   * _Single Page Applications with CoffeeScript:_ Andrzej Krzywda will
   illustrate how to be proud of our frontend code.
-  * _What is Functional Programming?:_  Emily Green covers what exactly the
-  term means and how to apply it to software development with Ruby.
-  * BITCROWD WORKSHOP
-  * Florian - CSS
+  * _Using Joosy:_ Dirk Holzapfel and Sebastian Burkhart will give a hands-on introduction to Joosy, the browser application framework based on Rails and CoffeeScript.
+  * _Maintainable CSS with SASS, even in large projects_: Florian Plank will show us the tools for refactoring, structuring and creating better stylesheets.
 
   The detailed schedule for Friday will be coming out soon.
 
-  [schedule]:[link to schedule post]
-  [fishbowl]:[http://en.wikipedia.org/wiki/Fishbowl_(discussion)]
+  [schedule]:/schedule
+  [fishbowl]:http://en.wikipedia.org/wiki/Fishbowl_(discussion)
+  [beginners]:http://railsgirlsberlin.tumblr.com/workshops/eurucamp-beginners-workshop-supported-by-rails-girls-berlin-august-2012
