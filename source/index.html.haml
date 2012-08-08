@@ -49,6 +49,8 @@ body_class: index
 
   .block
     %section.speakers
+      :javascript
+        var SPEAKER_VIDEO_IDS = #{data.speakers.map { |s| s.videos }.compact.map { |v| v.values }.flatten};
       = wrapped :header do
         %h3 Our speakers
       = wrapped do

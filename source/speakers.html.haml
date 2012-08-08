@@ -29,10 +29,12 @@ body_class: speakers
               %span.company= speaker.company
             = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}", :class => 'twitter'
           = wrapped :div, :class => 'column bio' do
+            = vimeo speaker.videos.info if speaker.videos
             = md2html speaker.bio
 
           = wrapped :div, :class => 'column talk' do
             %h4
               = speaker.talk_title
+            = vimeo speaker.videos.talk if speaker.videos
             %div
               = md2html speaker.talk_summary

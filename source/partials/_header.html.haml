@@ -8,8 +8,6 @@
 = wrapped :header, :id => 'header' do
   %h1
     %a(href='/')
-      / - sizes = request.path =~ /index/ ? [360, 1280] : [360]
-      - sizes = [360, 1024, 1280]
-      = image '/images/layout/header/logo.png', sizes, :alt => "eurucamp 2012"
+      = image '/images/layout/header/logo.png', [360, 1024, 1280], :alt => "eurucamp 2012"
 
   = partial 'partials/primary_navigation'
