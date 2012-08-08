@@ -10,14 +10,14 @@ body_class: speakers
   = wrapped :aside do
     %nav
       %ul
-        - data.speakers.select{ |s| s.track == 'main' }.sort{ |a,b| a.name <=> b.name }.each do |speaker|
+        - data.speakers.select{ |s| s.track == 'main' || s.track == 'advanced_workshops' }.sort{ |a,b| a.name <=> b.name }.each do |speaker|
           %li
             %a(href="##{speaker.name.parameterize}" title="Jump to #{speaker.name}")
               = speaker.name
 
   = wrapped :section do
     %ul
-      - data.speakers.select{ |s| s.track == 'main' }.sort{ |a,b| a.name <=> b.name }.each_with_index do |speaker, index|
+      - data.speakers.select{ |s| s.track == 'main' || s.track == 'advanced_workshops' }.sort{ |a,b| a.name <=> b.name }.each_with_index do |speaker, index|
         %li(id="#{speaker.name.parameterize}" class="#{index % 2 == 0 ? "odd" : "even"}")
           = wrapped :div, :class => 'column info' do
             %img(src="/images/content/speakers/#{speaker.image}"  alt="Portrait: #{speaker.name}")
