@@ -147,16 +147,16 @@ friday:
           title: Coffee, Registration
           type:  other
         -
-          start:   10.45
-          end:     11.30
-          title:   Joosy - a JavaScript application framework
-          speaker: Sebastian Burkhart & Dirk Holzapfel
+          start:   10.30
+          end:     12.00
+          title:   Rubinius Workshop - Diving into the internals of Rubinius
+          speaker: Dirkjan Bussink
           type:    workshop
         -
-          start:   11:45
-          end:     12.30
-          title:   Rails Routing for fun, profit, (and sanity)
-          speaker: Matt Patterson
+          start:   12.00
+          end:     12.45
+          title:   Joosy - a JavaScript application framework
+          speaker: Sebastian Burkhart & Dirk Holzapfel
           type:    workshop
         -
           start:   12.45
@@ -165,8 +165,8 @@ friday:
         -
           start:   13.45
           end:     14.45
-          title:   Debugging with Rubinius
-          speaker: Dirkjan Bussink
+          title:   Rails Routing for fun, profit, (and sanity)
+          speaker: Matt Patterson
           type:    workshop
         -
           start:   15.00

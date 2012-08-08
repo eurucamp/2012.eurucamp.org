@@ -667,9 +667,23 @@
   url:          https://github.com/dbussink
   track:        advanced_workshops
   bio:          |
-  talk_title:   Debugging with Rubinius
+    Dirkjan Bussink spends his working days between cows in the scenic country
+    side of the Netherlands at Nedap (http://www.nedap.com). There he works on
+    software and sometimes even plays with actual hardware devices. As one of
+    his hobby's he likes tinkering with Rubinius and has been an active
+    contributor for the last three years.
+  talk_title:   Rubinius Workshop - Diving into the internals of Rubinius
   talk_type:    workshop
   talk_summary: |
+    This workshop will consist of two parts, first a part in how to optimize
+    some Ruby code so we can run stuff faster. We will use things such as
+    benchmarks and the profiler to investigate the issue and write up a fix.
+
+    The second part is a debugging session much like the online video I
+    published half a year ago at https://vimeo.com/34622441. We will
+    investigate a tricky crash in the garbage collector and use tools such
+    as GDB, the Rubinius disassembler and others to investigate and fix this
+    issue.
 -
   name:         Andrzej Krzywda
   twitter:      andrzejkrzywda
