@@ -610,3 +610,68 @@
     recommendation algorithm to show you how to load thousands of database
     records and the ins and outs of caching object graphs. In a second part
     of my talk, I'll discuss writing more efficient and faster Ruby code.
+-
+  name:         Matt Patterson
+  company:      Constituent Parts
+  company_url:  http://constituentparts.com/
+  twitter:      fidothe
+  image:        mpatterson.jpg
+  url:          https://github.com/fidothe
+  track:        advanced_workshops
+  bio:          |
+    Matt has been building for the web for over 10 years, doing everything
+    from web design and front-end development all the way through to
+    back-end development.
+
+    Matt has worked with Javascript, Perl, PHP, Python, Ruby, various XML
+    technologies. In his day-to-day work he mainly works with Ruby, Rails,
+    HTML/CSS, and Javascript. He was one of the organisers of the 2010 NoSQL
+    Europe conference, and last year he organised the first History Hack Day.
+
+    Along the way he's co-written a book on CSS (Friends of Ed's Cascading
+    Style Sheets: Separating Content from Presentation), which is currently
+    in its second edition and has been translated into Italian and Spanish,
+    led a software team at the BBC, and spent five of the last ten years
+    running design- and development-focussed consultancies. Recently, he was
+    part of the small development team which built the Alpha prototype of
+    the UK Government's landmark http://www.gov.uk/ project.
+  talk_title: Rails Routing for fun, profit, (and sanity)
+  talk_type: workshop
+  talk_summary: |
+    The basics of Rails Routing are pretty straightforward: you have your
+    resources and you're done. Beyond the simple cases, you can quickly get
+    into massively repetitive routing declarations, having to abandon resources
+    even though the route you're trying to create is only a tiny bit different.
+
+    I'll take you on a guided tour behind the scenes and show you how to make
+    use of more advanced bits of the Routing DSL to tame your routes.rb,
+    remove your routing stress, and reduce the chance of being eaten by a Grue.
+-
+  name:         Matt Patterson
+  company:      Constituent Parts
+  company_url:  http://constituentparts.com/
+  twitter:      fidothe
+  image:        mpatterson.jpg
+  url:          https://github.com/fidothe
+  track:        advanced_workshops
+  bio:          |
+    Matt has been building for the web for over 10 years, doing everything
+    from web design and front-end development all the way through to
+    back-end development.
+
+    Matt has worked with Javascript, Perl, PHP, Python, Ruby, various XML
+    technologies. In his day-to-day work he mainly works with Ruby, Rails,
+    HTML/CSS, and Javascript. He was one of the organisers of the 2010 NoSQL
+    Europe conference, and last year he organised the first History Hack Day.
+
+    Along the way he's co-written a book on CSS (Friends of Ed's Cascading
+    Style Sheets: Separating Content from Presentation), which is currently
+    in its second edition and has been translated into Italian and Spanish,
+    led a software team at the BBC, and spent five of the last ten years
+    running design- and development-focussed consultancies. Recently, he was
+    part of the small development team which built the Alpha prototype of
+    the UK Government's landmark http://www.gov.uk/ project.
+  talk_title: Rails Routing for fun, profit, (and sanity)
+  talk_type: workshop
+  talk_summary: |
+
