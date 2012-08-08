@@ -19,6 +19,23 @@ module CustomTagHelpers
     Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(text)
   end
 
+  def vimeo(vimeo_id, attrs = {})
+    video_attrs = {
+      :src                   => "http://player.vimeo.com/video/#{vimeo_id}",
+      :width                 => 500,
+      :height                => 281,
+      :frameborder           => "0",
+      :webkitAllowFullScreen => true,
+      :mozallowfullscreen    => true,
+      :allowFullScreen       => true
+    }
+    capture_haml do
+      haml_tag :div, inject_class(attrs, 'resp-video') do
+        haml_tag :iframe, video_attrs
+      end
+    end
+  end
+
   def wrapped(el = :div, attrs = {}, &block)
     capture_haml do
       haml_tag el, attrs do

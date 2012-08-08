@@ -7,5 +7,6 @@
         = wrapped :li do
           = link_to sponsor.url do
             %img(src="/images/content/sponsors/#{sponsor.image}" alt="Sponsor: #{sponsor.company}")
-          .description
-            = md2html sponsor.description if sponsor.level == 'Kastanien' && sponsor.description
+          - if sponsor.level == 'Kastanien' && sponsor.description
+            .description
+              = md2html sponsor.description
