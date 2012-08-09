@@ -622,3 +622,147 @@
     recommendation algorithm to show you how to load thousands of database
     records and the ins and outs of caching object graphs. In a second part
     of my talk, I'll discuss writing more efficient and faster Ruby code.
+-
+  name:         Matt Patterson
+  company:      Constituent Parts
+  company_url:  http://constituentparts.com/
+  twitter:      fidothe
+  image:        mpatterson.jpg
+  url:          https://github.com/fidothe
+  track:        advanced_workshops
+  bio:          |
+    Matt has been building for the web for over 10 years, doing everything
+    from web design and front-end development all the way through to
+    back-end development.
+
+    Matt has worked with Javascript, Perl, PHP, Python, Ruby, various XML
+    technologies. In his day-to-day work he mainly works with Ruby, Rails,
+    HTML/CSS, and Javascript. He was one of the organisers of the 2010 NoSQL
+    Europe conference, and last year he organised the first History Hack Day.
+
+    Along the way he's co-written a book on CSS (Friends of Ed's Cascading
+    Style Sheets: Separating Content from Presentation), which is currently
+    in its second edition and has been translated into Italian and Spanish,
+    led a software team at the BBC, and spent five of the last ten years
+    running design- and development-focussed consultancies. Recently, he was
+    part of the small development team which built the Alpha prototype of
+    the UK Government's landmark http://www.gov.uk/ project.
+  talk_title: Rails Routing for fun, profit, (and sanity)
+  talk_type: workshop
+  talk_summary: |
+    The basics of Rails Routing are pretty straightforward: you have your
+    resources and you're done. Beyond the simple cases, you can quickly get
+    into massively repetitive routing declarations, having to abandon resources
+    even though the route you're trying to create is only a tiny bit different.
+
+    I'll take you on a guided tour behind the scenes and show you how to make
+    use of more advanced bits of the Routing DSL to tame your routes.rb,
+    remove your routing stress, and reduce the chance of being eaten by a Grue.
+-
+  name:         Dirkjan Bussink
+  company:      Nedap
+  company_url:  http://www.nedap.com
+  twitter:      dbussink
+  image:        dbussink.jpg
+  url:          https://github.com/dbussink
+  track:        advanced_workshops
+  bio:          |
+    Dirkjan Bussink spends his working days between cows in the scenic country
+    side of the Netherlands at Nedap (http://www.nedap.com). There he works on
+    software and sometimes even plays with actual hardware devices. As one of
+    his hobby's he likes tinkering with Rubinius and has been an active
+    contributor for the last three years.
+  talk_title:   Rubinius Workshop - Diving into the internals of Rubinius
+  talk_type:    workshop
+  talk_summary: |
+    This workshop will consist of two parts, first a part in how to optimize
+    some Ruby code so we can run stuff faster. We will use things such as
+    benchmarks and the profiler to investigate the issue and write up a fix.
+
+    The second part is a debugging session much like the online video I
+    published half a year ago at https://vimeo.com/34622441. We will
+    investigate a tricky crash in the garbage collector and use tools such
+    as GDB, the Rubinius disassembler and others to investigate and fix this
+    issue.
+-
+  name:         Andrzej Krzywda
+  twitter:      andrzejkrzywda
+  image:        akrzywda.jpg
+  url:          http://AndrzejKrzywda.com/
+  track:        advanced_workshops
+  bio:          |
+    Ruby and Coffee programmer. The founder of Arkency and GameBoxed. One of
+    the wroc_love.rb conference organizers. Rails teacher at University of
+    Wroclaw.
+
+    He's originally a backend developer, with Rails experience since 2004. He
+    knows all the pains and beauty of Rails. Now, after working for the last 2
+    years on frontends, he knows how to build them properly. He will teach us all
+    the lessons he's learned and he's going to show a lot of production frontend
+    code.
+  talk_title:   Single Page Applications with CoffeeScript
+  talk_type:    workshop
+  talk_summary: |
+    We, the backend programmers, often have troubles working on JS frontends.
+    We avoid it, even when that would be the best User Experience.
+
+    What if you knew how to manage the JavaScript (or rather CoffeeScript)?
+
+    What if you could use even nicer architectures than the ones you build on
+    the backend?
+
+    Once you realize, that the frontend is a separate application and once you
+    learn good patterns of the real MVC, you will be proud of your frontend code.
+
+    DCI, the new hotness in the Rails world, can work even better on the frontend
+    and AOP can be really helpful in the Model Gui communication.
+-
+  name:         Sebastian Burkhart & Dirk Holzapfel
+  twitter:      bitcrowd
+  image:        joosy.jpg
+  url:          http://bitcrowd.net/
+  track:        advanced_workshops
+  bio:          |
+    Driven by their quest for code aesthetics and their passion for Ruby and its
+    ecosystems, Dirk and Sebastian work together at bitcrowd in Berlin, an agile
+    software company with focus on Rails and iOS. Their current favorite challenge:
+    Connecting JavaScript frameworks to Rails in a way that does not hurt.
+  talk_type:    workshop
+  talk_title:   Joosy - a JavaScript application framework based on Rails and CoffeeScript
+  talk_summary: |
+    In this workshop we'll give an introduction to Joosy and its concepts,
+    compare it to Backbone and especially we want to code with you.
+    Bring your laptops and hack with us. We'll build a simple CRUD app with
+    2 connected models and authentication.
+
+    You should have at least medium skills in Rails and CoffeScript to enjoy
+    the session; olease checkout the Github repo mentioned below and make
+    sure you have Ruby 1.9.3 installed.
+
+    Sources:
+    * http://joosy.ws
+    * https://github.com/dirkholzapfel/joosy-awesome-icons
+-
+  name:         Florian Plank
+  twitter:      polarblau
+  image:        fplank.png
+  url:          https://github.com/polarblau
+  track:        advanced_workshops
+  bio:          |
+    Florian solves problems on the open web. He works with his tiny software
+    shop Polarblau somewhere close to the polar circle for companies of all
+    sizes around the globe. Between gigs he builds http://pleaserevise.com
+    and http://heypayme.com/. Florian prefers Ruby over PHP, Coffeescript over
+    Javascript, beer over bubbly, open source over proprietary software, bike
+    over car, work over meetings, small over big, action over talk, learning
+    over degrees and his family over everything.
+  talk_type:    workshop
+  talk_title:   Maintainable CSS with SASS (even in large projects!)
+  talk_summary: |
+    You’re writing beautiful, well tested and refactored code. You do your best
+    to keep your views clean. But your stylesheets are a wasteland you would
+    rather not enter and no dedicated designer around. — Sound familiar?
+    Writing, maintaining and refactoring (yes!) clean and readable stylesheets
+    even in large projects is possible and this workshop will give a few ideas
+    on how to keep the work on the GUI fun.
+

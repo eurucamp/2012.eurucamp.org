@@ -7,7 +7,7 @@ body_class: article website
 published: true
 ---
 
-  Check our our advanced workshops.
+  Check out our advanced workshops.
 
   READMORE
 

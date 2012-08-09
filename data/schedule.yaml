@@ -156,17 +156,39 @@ friday:
           title: Coffee, Registration
           type:  other
         -
-          start: 9.30
-          title: Morning Sessions (to be announced)
-          type:  talk
+          start:   10.30
+          end:     11.15
+          title:   Rails Routing for fun, profit, (and sanity)
+          speaker: Matt Patterson
+          type:    workshop
         -
-          start: 12.45
-          title: Lunch
-          type:  break
+          start:   11.15
+          end:     12.00
+          title:   Joosy - a JavaScript application framework
+          speaker: Sebastian Burkhart & Dirk Holzapfel
+          type:    workshop
         -
-          start: 13.45
-          title: Afternoon Sessions (to be announced)
-          type:  talk
+          start:   12.00
+          end:     12.45
+          title:   Maintainable CSS with SASS (even in large projects!)
+          speaker: Florian Plank
+          type:    workshop
+        -
+          start:   12.45
+          title:   Lunch
+          type:    break
+        -
+          start:   13.45
+          end:     15.45
+          title:   Rubinius Workshop - Diving into the internals of Rubinius
+          speaker: Dirkjan Bussink
+          type:    workshop
+        -
+          start:   16.00
+          end:     17.30
+          title:   Single Page Applications with CoffeeScript
+          speaker: Andrzej Krzywda
+          type:    workshop
         -
           start: 17.30
           title: Drinks, Dinner
