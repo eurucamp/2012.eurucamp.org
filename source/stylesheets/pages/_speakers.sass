@@ -15,16 +15,17 @@ body.speakers
         &:last-child
           margin-bottom: 0
 
-        .column
-          .wrapper
-            margin: 0
-
         .info
           a
             display: block
 
         .bio
           border-bottom: 1px dotted $grey
+
+        .talk,
+        .bio
+          .wrapper
+            overflow: hidden
 
         .resp-video
           margin: 1em 0
@@ -174,5 +175,12 @@ body.speakers
             top: 0
             bottom: 0
             padding: 1em 0
-            width: 100%
             overflow: auto
+            width: 25%
+
+
+  +respond-to(tablet-landscape)
+    article
+      aside.fixed
+        nav
+          width: 228px
