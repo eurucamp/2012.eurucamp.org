@@ -4,77 +4,86 @@ friday:
       name: JRubyConf EU
       sessions:
         -
-          start: 8.45
-          title: Coffee, Registration
-          type:  other
+          start:    8.45
+          title:    Coffee, Registration
+          type:     other
         -
-          start: 9.30
-          title: Introduction
-          type:  talk
+          start:    9.30
+          title:    Introduction
+          type:     talk
         -
-          start: 9.45
-          title: Session 1 (Keynote)
-          type:  talk
+          start:    9.45
+          title:    "Keynote: Today & Today+1"
+          type:     talk
+          speaker:  Tom Enebo
         -
-          start: 10.30
-          title: Session 2
-          type:  talk
+          start:    10.30
+          title:    Gotcha! JRuby performance issues that will come back to bite you
+          type:     talk
+          speaker:  David Tollmyr
         -
-          start: 11.00
-          title: Coffee Break
-          type:  break
+          start:    11.00
+          title:    Coffee Break
+          type:     break
         -
-          start: 11.15
-          title: Session 3
-          type:  talk
+          start:    11.15
+          title:    Building a High-Traffic Game Server in JRuby
+          type:     talk
+          speaker:  Tim Lossen
         -
-          start: 11.45
-          title: Session 4
-          type:  talk
+          start:    11.45
+          title:    Benchmarking the right way with Perfer
+          type:     talk
+          speaker:  Benoit Daloze
         -
-          start: 12.15
-          title: Session 5
-          type:  talk
+          start:    12.15
+          title:    Static or dynamic typing? Why not both? Integrating JRuby and Scala
+          type:     talk
+          speaker:  Mario Camou
         -
-          start: 12.45
-          title: Lunch
-          type:  break
+          start:    12.45
+          title:    Lunch
+          type:     break
         -
-          start: 13.45
-          title: Session 6
-          type:  talk
+          start:    13.45
+          title:    Concurrency and distributed systems with JRuby
+          type:     talk
+          speaker:  Theo Hultberg
         -
-          start: 14.15
-          title: Session 7
-          type:  talk
+          start:    14.15
+          title:    Ruboto - JRuby on Android
+          type:     talk
+          speaker:  Uwe Kubosch
         -
-          start: 14.45
-          title: Coffee Break
-          type:  break
+          start:    14.45
+          title:    Coffee Break
+          type:     break
         -
-          start: 15.00
-          title: Session 8
-          type:  talk
+          start:    15.00
+          title:    Deploy, Scale and Sleep Better with JRuby
+          type:     talk
+          speaker:  Joe Kutner
         -
-          start: 15.30
-          title: Session 9
-          type:  talk
+          start:    15.30
+          title:    Simplify Your Infrastructure With TorqueBox
+          type:     talk
+          speaker:  Toby Crawley
         -
-          start: 16.00
-          title: Break
-          type:  break
+          start:    16.00
+          title:    Break
+          type:     break
         -
-          start: 16.15
-          title: Lightning Talks
-          type:  talk
+          start:    16.15
+          title:    Lightning Talks
+          type:     talk
         -
-          start: 17.15
-          title: Goodbye
-          type:  talk
+          start:    17.15
+          title:    Goodbye
+          type:     other
         -
-          start: 17.30
-          title: Drinks, Dinner
-          type:  other
+          start:    17.30
+          title:    Drinks, Dinner
+          type:     other
         -
           start: 18.45
           title: Drinks, Registration
