@@ -18,8 +18,6 @@ article
         +custom-sans(normal, false)
 
         &:hover
-          cursor: pointer
-
           span
             top: 0
             +transition(top 0.2s cubic-bezier(1.000, 0.010, 0.800, 0.995))
@@ -36,6 +34,7 @@ article
           width: 86%
           padding: 5% 7%
           height: 90%
+          color: $white
           +transition(top 0.25s cubic-bezier(1.000, 0.010, 0.800, 0.995))
 
         img
@@ -90,17 +89,21 @@ article
       margin-bottom: 0
 
       ul
-        width: 60%
+        width: 50%
         float: left
 
         html.no-js &
           width: 100%
 
         li
-          width: 12.5%
+          width: 14.2857142857143%
+
+          span
+            font-size: 0.8em
+            line-height: 1.1em
 
       .resp-video-wrapper
-        width: 40%
+        width: 50%
         float: right
 
       p.cfp
