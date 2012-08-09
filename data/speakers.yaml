@@ -759,4 +759,10 @@
   talk_type:    workshop
   talk_title:   Maintainable CSS with SASS (even in large projects!)
   talk_summary: |
-   Tools for refactoring, structuring and creating better stylesheets.
+    You’re writing beautiful, well tested and refactored code. You do your best
+    to keep your views clean. But your stylesheets are a wasteland you would
+    rather not enter and no dedicated designer around. — Sound familiar?
+    Writing, maintaining and refactoring (yes!) clean and readable stylesheets
+    even in large projects is possible and this workshop will give a few ideas
+    on how to keep the work on the GUI fun.
+
