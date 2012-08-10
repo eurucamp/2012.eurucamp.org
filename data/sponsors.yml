@@ -148,6 +148,14 @@
   description: They focus on enterprise architecture consulting for Fortune 1000 companies.
   track:      jrubyconfeu
 -
+  company:    Neo4J
+  twitter:    Neo4j
+  image:      neo4j.png
+  url:        http://neo4j.org
+  level:      Linden
+  description:
+  track:      jrubyconfeu
+-
   company:    Red Hat
   twitter:    redhatnews
   image:      redhat.png
