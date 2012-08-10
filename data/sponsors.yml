@@ -124,6 +124,15 @@
   track:      eurucamp
 -
   company:    SponsorPay
+  twitter:    
+  image:      neo.png
+  url:        http://neotechnology.com/
+  level:      Linden
+  description:
+  track:      eurucamp
+
+-
+  company:    http://neotechnology.com/
   twitter:    SponsorPay
   image:      sponsorpay.png
   url:        http://www.sponsorpay.com
