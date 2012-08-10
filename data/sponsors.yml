@@ -132,13 +132,32 @@
   track:      eurucamp
 
 -
-  company:    http://neotechnology.com/
+  company:    neotechnology
   twitter:    SponsorPay
   image:      sponsorpay.png
-  url:        http://www.sponsorpay.com
+  url:        http://neotechnology.com/
   level:      Linden
   description:
   track:      eurucamp
+
+-
+  company:    livingsocial
+  twitter:    Dealissime
+  image:      livingsocial.png
+  url:        http://www.livingsocial.com
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    http://springest.com/
+  twitter:    
+  image:      springest.png
+  url:        http://www.springest.com
+  level:      Birken
+  description:
+  track:      eurucamp
+
 -
   company:    innoQ
   twitter:    innoQ
