@@ -123,6 +123,14 @@
   description: They focus on enterprise architecture consulting for Fortune 1000 companies.
   track:      eurucamp
 -
+  company:    SponsorPay
+  twitter:    SponsorPay
+  image:      sponsorpay.png
+  url:        http://www.sponsorpay.com
+  level:      Linden
+  description:
+  track:      eurucamp
+-
   company:    innoQ
   twitter:    innoQ
   image:      innoq.png
