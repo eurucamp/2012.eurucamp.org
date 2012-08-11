@@ -111,7 +111,19 @@ friday:
           type:  other
         -
           start: 9.30
-          title: Morning Sessions (to be announced)
+          title: Welcome
+          type:  talk
+        -
+          start: 9.45
+          title: Installation troubleshooting
+          type:  talk
+        -
+          start: 11.00
+          title: Presenting Rails Girls Berlin, Lightning Talks
+          type:  talk
+        -
+          start: 11.30
+          title: Ruby/Rails Basics, Starting to Code
           type:  talk
         -
           start: 12.45
@@ -119,7 +131,15 @@ friday:
           type:  break
         -
           start: 13.45
-          title: Afternoon Sessions (to be announced)
+          title: Group Coding
+          type:  talk
+        -
+          start: 15.15
+          title: Break
+          type:  break
+        -
+          start: 15.45
+          title: Group Coding
           type:  talk
         -
           start: 17.15
