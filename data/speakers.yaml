@@ -386,18 +386,17 @@
   url:          http://agnoster.net/
   track:        main
   bio:          |
-    Isaac is the CTO of 6Wunderkinder, where he works closely
-    with a talented team to build the next big leap forward for productivity.
+    Isaac is a Rogue Developer at 6Wunderkinder, where he writes API code in
+    Ruby, front-end code in JavaScript, and internal tools in whatever he feels
+    like that day.
 
-    Isaac’s experience at Yahoo!, Inc. as a Front-End Technical Lead prepared
-    him for building responsive user experiences at scale, while his ventures
-    into entrepreneurship as co-founder of OpenHive, Inc. helped whet his
-    appetite for being actively involved in the start-up scene.
+    He started programming in 1991 on an Atari ST 1040 using Omicron Basic, and
+    has never truly recovered (though he's started weaning himself off GOTO).
 
-    He is excited about being part of the large, flourishing tech start-up
-    community in Berlin. He received an A.B. with Honors in Computer Science
-    from the University of Chicago, and is currently writing his thesis for a
-    C.S. Master’s Degree from the Berlin Institute of Technology.
+    He tends to jump back and forth between wanting to build things people will
+    use and tinker on abstract, pseudo-philosophical ideas. This leads him to
+    switch from working in start-ups to academia and back every few years or
+    so.
   talk_title: All You Need Is Love
   talk_type: 15min
   talk_summary: |
