@@ -313,8 +313,8 @@ saturday:
     type:     break
   -
     start:    19.30
-    title:    Polyglot Rails Applications in Rubinius
-    speaker:  Txus Bach
+    title:    Living in the data mapping world
+    speaker:  Piotr Solnica
     type:     talk
   -
     start:    20.00
@@ -366,8 +366,8 @@ sunday:
     type:     talk
   -
     start:    14.00
-    title:    Living in the data mapping world
-    speaker:  Piotr Solnica
+    title:    Polyglot Rails Applications in Rubinius
+    speaker:  Txus Bach
     type:     talk
   -
     start:    14.30
