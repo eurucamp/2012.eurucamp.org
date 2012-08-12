@@ -9,7 +9,7 @@ published: true
 
 With eurucamp 2012 being just under 3 weeks away, we wanted to start introducing our sponsors.
 
-Already a eurucamp 2011 sponsor, [Scalarium](www.scalarium.com) were generous enough to join us once again in 2012, this time as a top-level _Kastanien_ sponsor.
+Already a eurucamp 2011 sponsor, [Scalarium](http://www.scalarium.com) were generous enough to join us once again in 2012, this time as a top-level _Kastanien_ sponsor.
 
 Scalarium has been on the hosting scene for a while now and their Berlin-based team is still growing. They are always on the look out for talented developers – so if you <3 automation and clouds – apply for an open position online or get in contact with the Scalarium team during eurucamp.
 
