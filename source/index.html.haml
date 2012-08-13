@@ -45,7 +45,7 @@ body_class: index
   %section.sponsors
     = wrapped :header do
       %h3 Our sponsors
-    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors.select{|s| s.track == 'eurucamp' } }
+    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
 
   .block
     %section.speakers

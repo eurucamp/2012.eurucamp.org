@@ -3,10 +3,14 @@
     = wrapped :h4 do
       = "#{group} level"
     %ul
-      - sponsors.sort{ |a,b| a.company.downcase <=> b.company.downcase }.each do |sponsor|
+      - sponsors.sort{ |a,b| a.company.downcase <=> b.company.downcase }.uniq { |s| s.company }.each do |sponsor|
         = wrapped :li do
           = link_to sponsor.url do
             %img(src="/images/content/sponsors/#{sponsor.image}" alt="Sponsor: #{sponsor.company}")
           - if sponsor.level == 'Kastanien' && sponsor.description
             .description
               = md2html sponsor.description
+          - if sponsor.track != 'eurucamp'
+            %span
+              JRubyConf.eu sponsor
+              -# %img(src="/images/content/sponsors/jrubyconf_sponsor.png" alt="JRubyconf.eu sponsor")
