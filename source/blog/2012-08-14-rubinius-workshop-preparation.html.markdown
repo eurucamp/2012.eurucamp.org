@@ -8,9 +8,9 @@ published: true
 ---
 
 For the workshop on Rubinius to be a smooth experience, I would like to
-request from people to prepare. This preparation shouldn't take too
-long, but it would prevent everybody trying to download stuff all at
-once and having to wait for compilations at the start of the workshop.
+ask people to prepare. This preparation shouldn't take too long, but it
+will prevent everybody trying to download stuff all at once and having
+to wait for compilations at the start of the workshop.
 
 ## Toolchain setup
 
@@ -87,4 +87,3 @@ You're now all setup for the workshop. If you have any issues with
 getting this stuff up and running, please email me at
 [d.bussink@gmail.com](mailto:d.bussink@gmail.com) or grab me at
 eurucamp on Friday morning or during lunch before the workshop starts.
-
