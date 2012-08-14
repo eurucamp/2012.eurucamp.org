@@ -86,5 +86,5 @@ cd veritas
 You're now all setup for the workshop. If you have any issues with
 getting this stuff up and running, please email me at
 [d.bussink@gmail.com](mailto:d.bussink@gmail.com) or grab me at
-Eurucamp on Friday morning or during lunch before the workshop starts.
+eurucamp on Friday morning or during lunch before the workshop starts.
 
