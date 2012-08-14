@@ -1,6 +1,6 @@
 ---
 title: Win yourself a Señor Developer T-shirt
-date: 2012-08-14
+date: 2012-08-14 9:00 AM CEST
 tags: workshops
 author: Alex Coles
 body_class: article website
