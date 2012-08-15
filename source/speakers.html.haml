@@ -29,7 +29,7 @@ body_class: speakers
               %span.company= speaker.company
             = link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}", :class => 'twitter'
           = wrapped :div, :class => 'column bio' do
-            = vimeo speaker.videos.info if speaker.videos
+            = vimeo speaker.videos.info if speaker.videos && speaker.videos.info
             = md2html speaker.bio
 
           = wrapped :div, :class => 'column talk' do
@@ -38,6 +38,6 @@ body_class: speakers
               - if speaker.track.include? 'workshop'
                 %br
                 %span= speaker.track.humanize.singularize
-            = vimeo speaker.videos.talk if speaker.videos
+            = vimeo speaker.videos.talk if speaker.videos && speaker.videos.talk
             %div
               = md2html speaker.talk_summary
