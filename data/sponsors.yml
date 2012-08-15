@@ -107,6 +107,14 @@
   description:
   track:      eurucamp
 -
+  company:    Readmill
+  twitter:    Readmill
+  image:      readmill.png
+  url:        http://readmill.com/
+  level:      Linden
+  description: Books have a big future.
+  track:      eurucamp
+-
   company:    basho
   twitter:    basho
   image:      basho-logo.png
