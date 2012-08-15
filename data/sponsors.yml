@@ -124,18 +124,9 @@
   track:      eurucamp
 -
   company:    SponsorPay
-  twitter:    
-  image:      neo.png
-  url:        http://neotechnology.com/
-  level:      Linden
-  description:
-  track:      eurucamp
-
--
-  company:    neotechnology
   twitter:    SponsorPay
   image:      sponsorpay.png
-  url:        http://neotechnology.com/
+  url:        http://www.sponsorpay.com/
   level:      Linden
   description:
   track:      eurucamp
@@ -150,10 +141,37 @@
   track:      eurucamp
 
 -
-  company:    http://springest.com/
-  twitter:    
+  company:    Springest
+  twitter:
   image:      springest.png
   url:        http://www.springest.com
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    moviepilot
+  twitter:    moviepilot
+  image:      moviepilot.png
+  url:        http://www.moviepilot.de
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    upstream
+  twitter:    upstream_agile
+  image:      upstream.png
+  url:        http://www.upstre.am/
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    github
+  twitter:    github
+  image:      github.png
+  url:        http://www.github.com
   level:      Birken
   description:
   track:      eurucamp
@@ -165,6 +183,14 @@
   url:        http://www.innoq.com/
   level:      Linden
   description: They focus on enterprise architecture consulting for Fortune 1000 companies.
+  track:      jrubyconfeu
+-
+  company:    Neo4j
+  twitter:    Neo4j
+  image:      neo4j.png
+  url:        http://neo4j.org
+  level:      Linden
+  description:
   track:      jrubyconfeu
 -
   company:    Red Hat

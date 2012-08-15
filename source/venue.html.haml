@@ -205,9 +205,65 @@ title: Location
     = wrapped do
       %ul
         %li.campbus
-          %span
+          %div
             %strong By CampBus
-            If you are coming from the centre of Berlin, please stand by for information about the CampBus.
+            %p
+              If you are coming from the centre of Berlin, we are offering our CampBus service on Thursday and Friday. Tickets are priced
+              %span.price &euro;7.50 (inc. VAT)
+              per journey.
+
+            %p Confirmed departures will run as follows:
+            %ul
+              %li Thursday 9pm from outside Co-up co-working space (U-Bahn Kottbusser Tor in Kreuzberg)
+              %li Friday 8am from Alexanderplatz, with a stop at Treptower Park (approx. 8.15am)
+
+            %p Exact pickup points will be posted shortly.
+
+            %p
+              Please be at the departure points at least 10 minutes in advance. The bus
+              will not able to wait for late arrivals.
+
+            %p
+              CampBus Tickets are available in advance from our
+              = link_to 'ticket site', 'http://campbus.eventbrite.com/'
+
+        %li.public-transportation
+          %div
+            %strong By public transport
+            :markdown
+
+              ### From Tegel Airport
+              AB Zone Ticket (€2,40 EUR).
+              _Estimated duration: 1:30_
+              + Take Bus TXL, direction S-U Alexanderplatz via Hauptbanhof, get off at S Beusselstr.
+              + Take the S-Bahn 41, direction Ringbahn S 41, get off at Ostkreuz
+              + Take the S-Bahn 3, direction S Friedrichshagen or S Erkner, get off at S Köpenick
+              + Take the Bus X69, direction Müggelheim - Odernheimer Str., get off at Müggelseeperle
+
+              ### From Schönefeld Airport
+              ABC Zone Ticket (€3,10 EUR).
+              _Estimated duration: 1:10_
+              + Take Bus 164, direction S Kaulsdorf, get off at Bahnhofstr./Seelenbinderstr.
+              + Take Bus X69, direction Müggelheim/Dorf -> 369 Gosen, get off at Müggelseeperle
+
+              ### From Alexanderplatz
+              AB Zone Ticket (€2,40 EUR).
+              _Estimated duration: 1:00_
+              + Take S-Bahn 75, direction S Wartenberg, get off at Ostkreuz
+              + Take S-Bahn S3, direction S Friedrichshagen or S Erkner, get off at S Köpenick
+              + Take the Bus X69, direction Müggelheim - Odernheimer Str., get off at Müggelseeperle
+
+              ### From Kottbuser Tor (near to [co-up](http://co-up.de) co-working space)
+              AB Zone Ticket (€2,40 EUR).
+              _Estimated duration: 1:10_
+              + Take U-Bahn 1, direction S-U Warschauer Str., get off at S-U Warschauer Str.
+              + Take S-Bahn 75, direction S Wartenberg, get off at Ostkreuz
+              + Take S-Bahn S3, direction S Friedrichshagen or S Erkner, get off at S Köpenick
+              + Take the Bus X69, direction Müggelheim - Odernheimer Str., get off at Müggelseeperle
+
+              An audio and visual announcement will be made for the Müggelseeperle bus stop. 
+
+              From other destinations or schedules, consult [bvg.de](http://bvg.de).
         %li.bike
           %div
             %strong By bike
@@ -218,13 +274,6 @@ title: Location
               %li Distance to Erkner (S-Bahn): 8.8km.
           /More info: http://www.euroroute-r1.de/EN/Introduction/Germany/Berlin/Brandenburg/Details/Route_Berlin_Brandenburg/K460.htm?RID=435
           /Want to rent a bike? http://www.vmz-info.de/web/guest/fahrradverleih
-        %li.public-transportation
-          %span
-            %strong By public transportation
-            %a(href="http://www.fahrinfo-berlin.de/Fahrinfo/bin/query.bin/en?ld=0.1&" title="Use the journey planner of the BVG") Journey planner of BVG
-            //Bus 164
-            //Richtung: S Kaulsdorf [1]
-            //alle 20 Minuten
 
   = wrapped :address, :class => 'address' do
     %p

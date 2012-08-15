@@ -35,6 +35,9 @@ body_class: speakers
           = wrapped :div, :class => 'column talk' do
             %h4
               = speaker.talk_title
+              - if speaker.track.include? 'workshop'
+                %br
+                %span= speaker.track.humanize.singularize
             = vimeo speaker.videos.talk if speaker.videos
             %div
               = md2html speaker.talk_summary

@@ -17,11 +17,21 @@ body.sponsors
           +padded
           float: left
           width: 100%
+          position: relative
 
           .description
             font-size: 0.8em
             color: $medium-grey
             +custom-sans(normal, false)
+
+          span
+            position: absolute
+            top: 0
+            right: 0
+            left: 0
+            background: $red
+            color: $white
+            +custom-sans-condensed
 
           a
             display: block
