@@ -673,6 +673,8 @@
     I'll take you on a guided tour behind the scenes and show you how to make
     use of more advanced bits of the Routing DSL to tame your routes.rb,
     remove your routing stress, and reduce the chance of being eaten by a Grue.
+
+    *Prerequisites* - Rails 3.2 and bundler must be available on your laptop.
 -
   name:         Dirkjan Bussink
   company:      Nedap
@@ -699,6 +701,8 @@
     investigate a tricky crash in the garbage collector and use tools such
     as GDB, the Rubinius disassembler and others to investigate and fix this
     issue.
+
+    *Prerequisites* - http://2012.eurucamp.org/2012/08/14/rubinius-workshop-preparation
 -
   name:         Andrzej Krzywda
   twitter:      andrzejkrzywda
@@ -731,6 +735,8 @@
 
     DCI, the new hotness in the Rails world, can work even better on the frontend
     and AOP can be really helpful in the Model Gui communication.
+
+    *Prerequisites* - https://gist.github.com/3353574
 -
   name:         Sebastian Burkhart & Dirk Holzapfel
   twitter:      bitcrowd
@@ -750,9 +756,9 @@
     Bring your laptops and hack with us. We'll build a simple CRUD app with
     2 connected models and authentication.
 
-    You should have at least medium skills in Rails and CoffeScript to enjoy
-    the session; olease checkout the Github repo mentioned below and make
-    sure you have Ruby 1.9.3 installed.
+    *Prerequsites* - you should have at least medium skills in Rails and
+    CoffeScript to enjoy the session; please check out the Github repo
+    mentioned below and make sure you have Ruby 1.9.3 installed.
 
     Sources:
     * http://joosy.ws
