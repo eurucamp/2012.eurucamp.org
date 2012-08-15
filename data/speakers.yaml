@@ -787,3 +787,15 @@
     even in large projects is possible and this workshop will give a few ideas
     on how to keep the work on the GUI fun.
 
+
+
+-
+  name:         Mathias Meyer
+  twitter:      roidrage
+  image:        mmeyer.jpg
+  url:          http://paperplanes.de
+  track:        outdoor_activities
+  bio:          |
+    Mathias is the author of the Riak Handbook and the Infrastructure
+    Head Honcho at Travis CI.
+  talk_type:    outdoor_activities
