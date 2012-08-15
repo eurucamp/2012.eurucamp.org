@@ -51,12 +51,15 @@ These are the commands:
 <pre>
 git clone git://github.com/dbussink/rubinius.git
 cd rubinius
-./configure
+./configure --skip-system
 rake
 </pre>
 
 Please pay attention that you clone my repository here, not the standard
-Rubinius one.
+Rubinius one. We also use --skip-system as an option for configure so it
+will not try any LLVM already installed on your system. We do this
+because for example having the new LLVM 3.1 installed would break. We
+therefore don't even try to use the system LLVM.
 
 We also clone Veritas, a project written by Dan Kubb that will be part
 of DataMapper 2. It will be used because it exposed a bug in the
