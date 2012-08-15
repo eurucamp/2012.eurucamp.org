@@ -150,6 +150,33 @@
   track:      eurucamp
 
 -
+  company:    moviepilot
+  twitter:    moviepilot
+  image:      moviepilot.png
+  url:        http://www.moviepilot.de
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    upstream
+  twitter:    upstream_agile
+  image:      upstream.png
+  url:        http://www.upstre.am/
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    github
+  twitter:    github
+  image:      github.png
+  url:        http://www.github.com
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
   company:    innoQ
   twitter:    innoQ
   image:      innoq.png

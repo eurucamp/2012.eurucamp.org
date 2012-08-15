@@ -16,3 +16,43 @@
   image:      campuspartyeu.png
   url:        http://www.campus-party.eu/2012/
   description:
+-
+  company:    Code Climate
+  twitter:    codeclimate
+  image:      codeclimate.png
+  url:        https://codeclimate.com/
+  description:
+-
+  company:    O'Reilly
+  twitter:    OReillyMedia
+  image:      oreilly.png
+  url:        http://www.oreilly.de/
+  description:
+-
+  company:    co-up
+  twitter:    co_up
+  image:      co_up.png
+  url:        http://www.co-up.de/
+  description:
+-
+  company:    PeepCode Screencasts
+  twitter:    peepcode
+  image:      peepcode.png
+  url:        https://peepcode.com/
+  description:
+-
+  company:    OleaPark
+  twitter:    oleapark
+  image:      oleapark.png
+  url:        http://www.oleapark.com/
+  description:
+-
+  company:    The Pragmatic Bookshelf
+  twitter:    pragprog
+  image:      pragmatic.png
+  url:        http://www.pragprog.com/
+  description:
+
+
+
+  
