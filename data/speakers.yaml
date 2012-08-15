@@ -6,6 +6,9 @@
   image:        jbach.jpg
   url:          http://www.txustice.me/
   track:        main
+  videos:
+    info:       47467683
+    talk:       47467685
   bio:          |
     Txus is co-founder and lead developer at Codegram, a Ruby/Rails shop based
     in Barcelona, the company behind Barcelona Ruby Conference.
@@ -291,6 +294,8 @@
   image:        cberkhout.jpg
   url:          http://chrisberkhout.com/
   track:        main
+  videos:
+    info: 47439523
   bio:          |
     Chris is a programmer from Melbourne, Australia. He spends his
     days building deployment tools and backend systems at a large Internet
@@ -350,6 +355,8 @@
   image:        fhanke.jpg
   url:          http://florianhanke.com/
   track:        main
+  videos:
+    info: 47439523
   bio:          |
     Florian is the wearer of many hats: he's done research in Brazil on space
     life science, worked in Melbourne on preserving dying languages
@@ -385,6 +392,9 @@
   image:        iwolkerstorfer.jpg
   url:          http://agnoster.net/
   track:        main
+  videos:
+    info:       47467686
+    talk:       47467684
   bio:          |
     Isaac is a Rogue Developer at 6Wunderkinder, where he writes API code in
     Ruby, front-end code in JavaScript, and internal tools in whatever he feels
@@ -444,6 +454,9 @@
   image:        lnaude.jpg
   url:          http://blog.methodmissing.com/
   track:        main
+  videos:
+    info:       47228280
+    talk:       47228281
   bio:          |
     Lourens is an independent consultant currently based in sunny Madeira
     Island, but originally from South Africa. He specializes in backend /
@@ -516,6 +529,9 @@
   image:        pastigarraga.jpg
   url:          http://pote.github.com/
   track:        main
+  videos:
+    info:       47201558
+    talk:       47202934
   bio:          |
     Pablo arrived to the Ruby world after working with Python and
     Asterisk-based VoIP solutions.  He currently works at [Cubox](http://cuboxlabs.com)
