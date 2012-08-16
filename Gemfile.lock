@@ -57,6 +57,7 @@ GEM
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
     i18n (0.6.0)
+    icalendar (1.1.6)
     launchy (2.1.0)
       addressable (~> 2.2.6)
     listen (0.4.7)
@@ -165,6 +166,7 @@ DEPENDENCIES
   heroku (= 2.26.6)
   heroku_san (= 3.0.2)
   html5-boilerplate!
+  icalendar
   middleman (~> 3.0.0)
   middleman-blog (~> 3.0.0)
   nokogiri

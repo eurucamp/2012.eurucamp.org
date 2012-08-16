@@ -3,6 +3,7 @@ helpers CustomTagHelpers
 
 require 'active_support/core_ext/string'
 require 'app/helpers/html5_boilerplate_helper'
+require 'icalendar'
 
 set :markdown_engine, :redcarpet
 
@@ -49,6 +50,7 @@ Middleman::Blog::BlogArticle.class_eval do
 end
 
 page "/feed.xml", :layout => false
+page "/schedule.ics", :layout => false
 
 ###
 # Compass
