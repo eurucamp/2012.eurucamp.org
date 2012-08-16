@@ -32,14 +32,16 @@ body_class: speakers
           = wrapped :div, :class => 'column bio' do
             = vimeo speaker.videos.info if speaker.videos && speaker.videos.info
             = md2html speaker.bio
+            - if speaker.track == 'outdoor_activities'
+              %span.badge= speaker.track.humanize.singularize
 
           - unless speaker.track == 'outdoor_activities'
             = wrapped :div, :class => 'column talk' do
               %h4
                 = speaker.talk_title
-                - if speaker.track.include? 'workshop'
+                - if speaker.track =~ /workshop|activity/
                   %br
-                  %span= speaker.track.humanize.singularize
+                  %span.badge= speaker.track.humanize.singularize
               = vimeo speaker.videos.talk if speaker.videos && speaker.videos.talk
               %div
                 = md2html speaker.talk_summary
