@@ -22,10 +22,10 @@ with Berlin-based startup, [Oleapark](http://oleapark.com/).
 
 ![OleaPark Screenshot](/images/content/partners/oleapark_screenshot.png "OleaPark Screenshot")
 
-Events don't need a separate apps. Instead each event exists within a context called
-a "badge". When you're in a particular context (or have a badge displayed), you
-receive push notifications for that event, and can interact in a number of other
-ways.
+Each new event you attend doesn't need a separate app. Instead each event in
+OleaPark exists within a context called a "badge".
+When you're in a particular context (or have a badge displayed), you receive
+push notifications for that event, and can interact in a number of other ways.
 
 Not only can we send you push notifications to keep you up-to-date with any
 schedule changes or new _siesta-break_ activities, you can also use OleaPark
