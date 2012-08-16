@@ -20,7 +20,7 @@ READMORE
 Rather than spend time and resources developing our own app, we've teamed up
 with Berlin-based startup, [Oleapark](http://oleapark.com/).
 
-![OleaPark Screenshot](/images/content/partners/oleapark/oleapark_screenshot.jpg "OleaPark Screenshot")
+![OleaPark Screenshot](/images/content/partners/oleapark_screenshot.png "OleaPark Screenshot")
 
 Events don't need a separate apps. Instead each event exists within a context called
 a "badge". When you're in a particular context (or have a badge displayed), you
