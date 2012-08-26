@@ -85,6 +85,29 @@ module CustomTagHelpers
     end
   end
 
+  def ics_schedule_for(items, options, &block)
+    schedule_start  = Time.utc 2012, options[:month], options[:day], options[:start], 0, 0
+
+    first_start_h, first_start_min = items.first.start.to_s.split('.')
+    first_start_time = Time.utc 2012, options[:month], options[:day], first_start_h, first_start_min, 0
+
+    items.each_with_index do |item, index|
+      start              = item.start
+      stop               = item.end || items[index + 1].start
+
+      start_h, start_min = start.to_s.split('.')
+      stop_h, stop_min   = stop.to_s.split('.')
+
+      start_min          = start_min.ljust(2, '0')
+      stop_min           = stop_min.ljust(2, '0')
+
+      start_time         = Time.utc 2012, options[:month], options[:day], start_h, start_min, 0
+      stop_time          = Time.utc 2012, options[:month], options[:day], stop_h, stop_min, 0
+
+      yield item, start_time, stop_time
+    end
+  end
+
   def schedule_for(items, options, &block)
     schedule_start  = Time.utc 2012, 1, 1, options[:start], 0, 0
 

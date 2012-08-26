@@ -1,0 +1,24 @@
+<%
+cal = Icalendar::Calendar.new
+event = lambda { |item, start, ending|
+  cal.event do
+    dtstart     start.strftime('%Y%m%dT%H%M%S')
+    dtend       ending.strftime('%Y%m%dT%H%M%S')
+    summary     item.title
+    description "#{"%0.2f" % item.start}: #{item.speaker} / #{item.title}"
+    klass       "PUBLIC"
+  end
+}
+
+%w(Friday Saturday Sunday).zip((17..19)).each do |(day, date)|
+  multi_track_sessions = data.schedule[day.downcase]["multi_track"] rescue false
+
+  if multi_track_sessions
+    multi_track_sessions.each do |track|
+      ics_schedule_for track.sessions, :start => 8, :day => date, :month => 8, &event
+    end
+  else
+    ics_schedule_for data.schedule[day.downcase], :start => 8, :day => date, :month => 8, &event
+  end
+end
+%><%= cal.to_ical.to_s %>
