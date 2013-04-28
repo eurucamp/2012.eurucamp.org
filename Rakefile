@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require 'heroku_san'
+require 'yaml'
 
 module HerokuSan::Deploy
   class Eurucamp < Sinatra

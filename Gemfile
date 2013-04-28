@@ -20,12 +20,8 @@ gem 'html5-boilerplate', :require => 'html5-boilerplate',
                          :git     => 'git://github.com/edenspiekermann/compass-html5-boilerplate.git',
                          :branch  => 'padrino'
 
-group :development do
-  gem 'heroku',       '2.26.6', :require => false
-end
-
 # FIXME: Need to set this up with Bundler groups correctly
-gem 'heroku_san',   '3.0.2'
+gem 'heroku_san',   '~> 3.0.2'
 
 gem 'rack-contrib'
 gem 'rack-rewrite'
