@@ -9,6 +9,8 @@
 # - missing files will try to serve build/404.html or a tiny default 404 page
 
 
+require 'rack/rewrite'
+
 module Rack
 
   class TryStatic
@@ -31,6 +33,9 @@ module Rack
   end
 end
 
+use Rack::Rewrite do
+  r302 '/blog',  'http://blog.eurucamp.org'
+end
 use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html', 'index.html', '/index.html']
 
 # Run your own Rack app here or use this one to serve 404 messages:
